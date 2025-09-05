@@ -2,18 +2,19 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "qsdf",
-  "main": "index.js",
+  "main": "src/command/exportJson.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev-deploy": "",
+    "dev-deploy": "nodemon src/command/deployJson.js",
     "dev_restore": "",
     "deploy": "",
-    "restore":  "",
+    "restore": ""
   },
   "author": "fred",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^17.2.1",
+    "axios": "^1.11.0",
+    "dotenv": "^17.2.2",
     "express": "^5.1.0"
   }
 }
