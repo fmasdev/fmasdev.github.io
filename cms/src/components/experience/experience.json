@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_experience_experiences",
+  "info": {
+    "displayName": "Experience",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Company": {
+      "type": "string"
+    },
+    "City": {
+      "type": "string"
+    },
+    "Start": {
+      "type": "date"
+    },
+    "Stop": {
+      "type": "date"
+    },
+    "Content": {
+      "type": "richtext"
+    }
+  }
+}

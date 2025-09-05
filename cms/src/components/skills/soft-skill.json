@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_skills_soft_skills",
+  "info": {
+    "displayName": "SoftSkill"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    }
+  }
+}

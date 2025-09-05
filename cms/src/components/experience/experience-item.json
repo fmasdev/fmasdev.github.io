@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_experience_experience_items",
+  "info": {
+    "displayName": "DevExperience",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Company": {
+      "type": "string"
+    },
+    "StartDate": {
+      "type": "date"
+    },
+    "Content": {
+      "type": "text"
+    },
+    "Project": {
+      "type": "component",
+      "repeatable": true,
+      "component": "experience.project"
+    },
+    "StopDate": {
+      "type": "date"
+    },
+    "Region": {
+      "type": "string"
+    },
+    "Remote": {
+      "type": "enumeration",
+      "enum": [
+        "FULL-REMOTE",
+        "HYBRID",
+        "OFFICE"
+      ]
+    }
+  }
+}

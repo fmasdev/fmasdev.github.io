@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_social_social_items",
+  "info": {
+    "displayName": "SocialItem"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Url": {
+      "type": "string"
+    },
+    "Iccon": {
+      "type": "string"
+    }
+  }
+}

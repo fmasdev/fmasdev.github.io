@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_experience_projects",
+  "info": {
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Contribution": {
+      "type": "richtext"
+    },
+    "stack_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::stack-item.stack-item"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "webservices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::webservice.webservice"
+    },
+    "IsCompany": {
+      "type": "boolean"
+    }
+  }
+}

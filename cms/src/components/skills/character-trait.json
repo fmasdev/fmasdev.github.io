@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_skills_character_traits",
+  "info": {
+    "displayName": "CharacterTrait",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Positive",
+        "Negative",
+        "Undefined"
+      ]
+    }
+  }
+}

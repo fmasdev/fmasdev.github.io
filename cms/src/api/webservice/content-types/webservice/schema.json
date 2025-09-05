@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "webservices",
+  "info": {
+    "singularName": "webservice",
+    "pluralName": "webservices",
+    "displayName": "Webservice"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Info": {
+      "type": "string"
+    }
+  }
+}
