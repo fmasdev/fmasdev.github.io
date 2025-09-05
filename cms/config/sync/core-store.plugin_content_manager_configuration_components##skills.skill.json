@@ -1,0 +1,57 @@
+{
+  "key": "plugin_content_manager_configuration_components::skills.skill",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "Skill",
+      "defaultSortBy": "Skill",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Skill": {
+        "edit": {
+          "label": "Skill",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Skill",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "Skill"
+      ],
+      "edit": [
+        [
+          {
+            "name": "Skill",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "skills.skill",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

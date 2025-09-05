@@ -998,61 +998,6 @@ export interface PluginNavigationNavigationsItemsRelated
   };
 }
 
-export interface ApiExperienceExperience extends Schema.SingleType {
-  collectionName: 'experiences';
-  info: {
-    singularName: 'experience';
-    pluralName: 'experiences';
-    displayName: 'Experience';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  pluginOptions: {
-    i18n: {
-      localized: true;
-    };
-  };
-  attributes: {
-    Title: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Experience: Attribute.DynamicZone<
-      ['experience.experience-item', 'experience.experience']
-    > &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::experience.experience',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::experience.experience',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    localizations: Attribute.Relation<
-      'api::experience.experience',
-      'oneToMany',
-      'api::experience.experience'
-    >;
-    locale: Attribute.String;
-  };
-}
-
 export interface ApiFooterFooter extends Schema.SingleType {
   collectionName: 'footers';
   info: {
@@ -1077,36 +1022,6 @@ export interface ApiFooterFooter extends Schema.SingleType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::footer.footer',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiIWorkWithIWorkWith extends Schema.SingleType {
-  collectionName: 'i_work_withs';
-  info: {
-    singularName: 'i-work-with';
-    pluralName: 'i-work-withs';
-    displayName: 'IWorkWith';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    Title: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::i-work-with.i-work-with',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::i-work-with.i-work-with',
       'oneToOne',
       'admin::user'
     > &
@@ -1142,43 +1057,12 @@ export interface ApiMeMe extends Schema.SingleType {
   };
 }
 
-export interface ApiProjectProject extends Schema.SingleType {
-  collectionName: 'projects';
+export interface ApiPagePage extends Schema.CollectionType {
+  collectionName: 'pages';
   info: {
-    singularName: 'project';
-    pluralName: 'projects';
-    displayName: 'PersonnalProject';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    name: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::project.project',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::project.project',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiSkillSkill extends Schema.SingleType {
-  collectionName: 'skills';
-  info: {
-    singularName: 'skill';
-    pluralName: 'skills';
-    displayName: 'Skills';
+    singularName: 'page';
+    pluralName: 'pages';
+    displayName: 'Page';
     description: '';
   };
   options: {
@@ -1196,9 +1080,32 @@ export interface ApiSkillSkill extends Schema.SingleType {
           localized: true;
         };
       }>;
-    Skill: Attribute.DynamicZone<
-      ['skills.skill', 'skills.soft-skill', 'skills.feed-backs']
+    slug: Attribute.String &
+      Attribute.Required &
+      Attribute.Unique &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Content: Attribute.DynamicZone<
+      [
+        'experience.experience-item',
+        'experience.experience',
+        'experience.project',
+        'skills.character-trait',
+        'skills.feed-backs',
+        'skills.skill',
+        'skills.soft-skill',
+        'experience.feed-back'
+      ]
     > &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Seo: Attribute.Component<'seo.seo'> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1207,22 +1114,14 @@ export interface ApiSkillSkill extends Schema.SingleType {
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::skill.skill',
-      'oneToOne',
-      'admin::user'
-    > &
+    createdBy: Attribute.Relation<'api::page.page', 'oneToOne', 'admin::user'> &
       Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::skill.skill',
-      'oneToOne',
-      'admin::user'
-    > &
+    updatedBy: Attribute.Relation<'api::page.page', 'oneToOne', 'admin::user'> &
       Attribute.Private;
     localizations: Attribute.Relation<
-      'api::skill.skill',
+      'api::page.page',
       'oneToMany',
-      'api::skill.skill'
+      'api::page.page'
     >;
     locale: Attribute.String;
   };
@@ -1258,83 +1157,6 @@ export interface ApiStackItemStackItem extends Schema.CollectionType {
       'admin::user'
     > &
       Attribute.Private;
-  };
-}
-
-export interface ApiTrainingTraining extends Schema.SingleType {
-  collectionName: 'trainings';
-  info: {
-    singularName: 'training';
-    pluralName: 'trainings';
-    displayName: 'Training';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  pluginOptions: {
-    i18n: {
-      localized: true;
-    };
-  };
-  attributes: {
-    Title: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    TrainingItem: Attribute.Component<'experience.experience', true> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    TrainingCenter: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    City: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    StartDate: Attribute.Date &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    StopDate: Attribute.Date &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::training.training',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::training.training',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    localizations: Attribute.Relation<
-      'api::training.training',
-      'oneToMany',
-      'api::training.training'
-    >;
-    locale: Attribute.String;
   };
 }
 
@@ -1392,14 +1214,10 @@ declare module '@strapi/types' {
       'plugin::navigation.navigation': PluginNavigationNavigation;
       'plugin::navigation.navigation-item': PluginNavigationNavigationItem;
       'plugin::navigation.navigations-items-related': PluginNavigationNavigationsItemsRelated;
-      'api::experience.experience': ApiExperienceExperience;
       'api::footer.footer': ApiFooterFooter;
-      'api::i-work-with.i-work-with': ApiIWorkWithIWorkWith;
       'api::me.me': ApiMeMe;
-      'api::project.project': ApiProjectProject;
-      'api::skill.skill': ApiSkillSkill;
+      'api::page.page': ApiPagePage;
       'api::stack-item.stack-item': ApiStackItemStackItem;
-      'api::training.training': ApiTrainingTraining;
       'api::webservice.webservice': ApiWebserviceWebservice;
     }
   }

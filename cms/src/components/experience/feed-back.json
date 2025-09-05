@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_experience_feed_backs",
+  "info": {
+    "displayName": "FeedBack"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "richtext"
+    }
+  }
+}

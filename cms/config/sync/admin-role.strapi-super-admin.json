@@ -6,78 +6,6 @@
     {
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
-      "subject": "api::experience.experience",
-      "properties": {
-        "fields": [
-          "Title",
-          "Experience"
-        ],
-        "locales": [
-          "en",
-          "fr-FR"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "actionParameters": {},
-      "subject": "api::experience.experience",
-      "properties": {
-        "locales": [
-          "en",
-          "fr-FR"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "actionParameters": {},
-      "subject": "api::experience.experience",
-      "properties": {
-        "locales": [
-          "en",
-          "fr-FR"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "actionParameters": {},
-      "subject": "api::experience.experience",
-      "properties": {
-        "fields": [
-          "Title",
-          "Experience"
-        ],
-        "locales": [
-          "en",
-          "fr-FR"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "actionParameters": {},
-      "subject": "api::experience.experience",
-      "properties": {
-        "fields": [
-          "Title",
-          "Experience"
-        ],
-        "locales": [
-          "en",
-          "fr-FR"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "actionParameters": {},
       "subject": "api::footer.footer",
       "properties": {
         "fields": [
@@ -131,53 +59,6 @@
     {
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
-      "subject": "api::i-work-with.i-work-with",
-      "properties": {
-        "fields": [
-          "Title"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "actionParameters": {},
-      "subject": "api::i-work-with.i-work-with",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "actionParameters": {},
-      "subject": "api::i-work-with.i-work-with",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "actionParameters": {},
-      "subject": "api::i-work-with.i-work-with",
-      "properties": {
-        "fields": [
-          "Title"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "actionParameters": {},
-      "subject": "api::i-work-with.i-work-with",
-      "properties": {
-        "fields": [
-          "Title"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "actionParameters": {},
       "subject": "api::me.me",
       "properties": {
         "fields": [
@@ -186,10 +67,6 @@
           "PostalCode",
           "City",
           "Phone",
-          "Website1",
-          "Website2",
-          "Website3",
-          "Website4",
           "Email"
         ]
       },
@@ -220,10 +97,6 @@
           "PostalCode",
           "City",
           "Phone",
-          "Website1",
-          "Website2",
-          "Website3",
-          "Website4",
           "Email"
         ]
       },
@@ -240,10 +113,6 @@
           "PostalCode",
           "City",
           "Phone",
-          "Website1",
-          "Website2",
-          "Website3",
-          "Website4",
           "Email"
         ]
       },
@@ -252,10 +121,20 @@
     {
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
-      "subject": "api::project.project",
+      "subject": "api::page.page",
       "properties": {
         "fields": [
-          "name"
+          "Title",
+          "slug",
+          "Content",
+          "Seo.MetaTitle",
+          "Seo.MetaDescription",
+          "Seo.MetaSocial",
+          "Seo.MetaRobot"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
         ]
       },
       "conditions": []
@@ -263,24 +142,44 @@
     {
       "action": "plugin::content-manager.explorer.delete",
       "actionParameters": {},
-      "subject": "api::project.project",
-      "properties": {},
+      "subject": "api::page.page",
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "actionParameters": {},
-      "subject": "api::project.project",
-      "properties": {},
+      "subject": "api::page.page",
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
       "actionParameters": {},
-      "subject": "api::project.project",
+      "subject": "api::page.page",
       "properties": {
         "fields": [
-          "name"
+          "Title",
+          "slug",
+          "Content",
+          "Seo.MetaTitle",
+          "Seo.MetaDescription",
+          "Seo.MetaSocial",
+          "Seo.MetaRobot"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
         ]
       },
       "conditions": []
@@ -288,57 +187,20 @@
     {
       "action": "plugin::content-manager.explorer.update",
       "actionParameters": {},
-      "subject": "api::project.project",
+      "subject": "api::page.page",
       "properties": {
         "fields": [
-          "name"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "actionParameters": {},
-      "subject": "api::skill.skill",
-      "properties": {
-        "fields": [
-          "Title"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "actionParameters": {},
-      "subject": "api::skill.skill",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "actionParameters": {},
-      "subject": "api::skill.skill",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "actionParameters": {},
-      "subject": "api::skill.skill",
-      "properties": {
-        "fields": [
-          "Title"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "actionParameters": {},
-      "subject": "api::skill.skill",
-      "properties": {
-        "fields": [
-          "Title"
+          "Title",
+          "slug",
+          "Content",
+          "Seo.MetaTitle",
+          "Seo.MetaDescription",
+          "Seo.MetaSocial",
+          "Seo.MetaRobot"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
         ]
       },
       "conditions": []
@@ -392,83 +254,6 @@
           "Name",
           "Logo",
           "Info"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "actionParameters": {},
-      "subject": "api::training.training",
-      "properties": {
-        "fields": [
-          "Title",
-          "TrainingItem.Title",
-          "TrainingItem.Company",
-          "TrainingItem.City",
-          "TrainingItem.Start",
-          "TrainingItem.Stop",
-          "TrainingItem.Content",
-          "TrainingCenter",
-          "City",
-          "StartDate",
-          "StopDate"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "actionParameters": {},
-      "subject": "api::training.training",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "actionParameters": {},
-      "subject": "api::training.training",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "actionParameters": {},
-      "subject": "api::training.training",
-      "properties": {
-        "fields": [
-          "Title",
-          "TrainingItem.Title",
-          "TrainingItem.Company",
-          "TrainingItem.City",
-          "TrainingItem.Start",
-          "TrainingItem.Stop",
-          "TrainingItem.Content",
-          "TrainingCenter",
-          "City",
-          "StartDate",
-          "StopDate"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "actionParameters": {},
-      "subject": "api::training.training",
-      "properties": {
-        "fields": [
-          "Title",
-          "TrainingItem.Title",
-          "TrainingItem.Company",
-          "TrainingItem.City",
-          "TrainingItem.Start",
-          "TrainingItem.Stop",
-          "TrainingItem.Content",
-          "TrainingCenter",
-          "City",
-          "StartDate",
-          "StopDate"
         ]
       },
       "conditions": []

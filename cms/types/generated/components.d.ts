@@ -34,6 +34,17 @@ export interface ExperienceExperience extends Schema.Component {
   };
 }
 
+export interface ExperienceFeedBack extends Schema.Component {
+  collectionName: 'components_experience_feed_backs';
+  info: {
+    displayName: 'FeedBack';
+  };
+  attributes: {
+    Title: Attribute.String;
+    Content: Attribute.RichText;
+  };
+}
+
 export interface ExperienceProject extends Schema.Component {
   collectionName: 'components_experience_projects';
   info: {
@@ -67,6 +78,57 @@ export interface SeoSeo extends Schema.Component {
     MetaDescription: Attribute.String;
     MetaSocial: Attribute.String;
     MetaRobot: Attribute.String;
+  };
+}
+
+export interface SharedMetaSocial extends Schema.Component {
+  collectionName: 'components_shared_meta_socials';
+  info: {
+    displayName: 'metaSocial';
+    icon: 'project-diagram';
+  };
+  attributes: {
+    socialNetwork: Attribute.Enumeration<['Facebook', 'Twitter']> &
+      Attribute.Required;
+    title: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 60;
+      }>;
+    description: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 65;
+      }>;
+    image: Attribute.Media;
+  };
+}
+
+export interface SharedSeo extends Schema.Component {
+  collectionName: 'components_shared_seos';
+  info: {
+    displayName: 'seo';
+    icon: 'search';
+  };
+  attributes: {
+    metaTitle: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 60;
+      }>;
+    metaDescription: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        minLength: 50;
+        maxLength: 160;
+      }>;
+    metaImage: Attribute.Media;
+    metaSocial: Attribute.Component<'shared.meta-social', true>;
+    keywords: Attribute.Text;
+    metaRobots: Attribute.String;
+    structuredData: Attribute.JSON;
+    metaViewport: Attribute.String;
+    canonicalURL: Attribute.String;
   };
 }
 
@@ -143,8 +205,11 @@ declare module '@strapi/types' {
     export interface Components {
       'experience.experience-item': ExperienceExperienceItem;
       'experience.experience': ExperienceExperience;
+      'experience.feed-back': ExperienceFeedBack;
       'experience.project': ExperienceProject;
       'seo.seo': SeoSeo;
+      'shared.meta-social': SharedMetaSocial;
+      'shared.seo': SharedSeo;
       'skills.character-trait': SkillsCharacterTrait;
       'skills.feed-backs': SkillsFeedBacks;
       'skills.skill': SkillsSkill;

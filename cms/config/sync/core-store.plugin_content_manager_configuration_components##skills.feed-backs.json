@@ -1,5 +1,5 @@
 {
-  "key": "plugin_content_manager_configuration_components::experience.project",
+  "key": "plugin_content_manager_configuration_components::skills.feed-backs",
   "value": {
     "settings": {
       "bulkable": true,
@@ -19,35 +19,6 @@
           "sortable": false
         }
       },
-      "Contribution": {
-        "edit": {
-          "label": "Contribution",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "Contribution",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "stack_items": {
-        "edit": {
-          "label": "stack_items",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "Name"
-        },
-        "list": {
-          "label": "stack_items",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "Name": {
         "edit": {
           "label": "Name",
@@ -62,31 +33,30 @@
           "sortable": true
         }
       },
-      "webservices": {
+      "Content": {
         "edit": {
-          "label": "webservices",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "Name"
-        },
-        "list": {
-          "label": "webservices",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "IsCompany": {
-        "edit": {
-          "label": "IsCustomer",
+          "label": "Content",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "IsCompany",
+          "label": "Content",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Date": {
+        "edit": {
+          "label": "Date",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Date",
           "searchable": true,
           "sortable": true
         }
@@ -96,38 +66,30 @@
       "list": [
         "id",
         "Name",
-        "webservices"
+        "Date"
       ],
       "edit": [
         [
           {
             "name": "Name",
             "size": 6
-          },
-          {
-            "name": "IsCompany",
-            "size": 6
           }
         ],
         [
           {
-            "name": "Contribution",
+            "name": "Content",
             "size": 12
           }
         ],
         [
           {
-            "name": "stack_items",
-            "size": 6
-          },
-          {
-            "name": "webservices",
-            "size": 6
+            "name": "Date",
+            "size": 4
           }
         ]
       ]
     },
-    "uid": "experience.project",
+    "uid": "skills.feed-backs",
     "isComponent": true
   },
   "type": "object",

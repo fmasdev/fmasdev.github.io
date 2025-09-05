@@ -1,13 +1,13 @@
 {
-  "key": "plugin_content_manager_configuration_components::experience.project",
+  "key": "plugin_content_manager_configuration_components::shared.meta-social",
   "value": {
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "Name",
-      "defaultSortBy": "Name",
+      "mainField": "title",
+      "defaultSortBy": "title",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -19,115 +19,94 @@
           "sortable": false
         }
       },
-      "Contribution": {
+      "socialNetwork": {
         "edit": {
-          "label": "Contribution",
+          "label": "socialNetwork",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Contribution",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "stack_items": {
-        "edit": {
-          "label": "stack_items",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "Name"
-        },
-        "list": {
-          "label": "stack_items",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "Name": {
-        "edit": {
-          "label": "Name",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "Name",
+          "label": "socialNetwork",
           "searchable": true,
           "sortable": true
         }
       },
-      "webservices": {
+      "title": {
         "edit": {
-          "label": "webservices",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "Name"
-        },
-        "list": {
-          "label": "webservices",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "IsCompany": {
-        "edit": {
-          "label": "IsCustomer",
+          "label": "title",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "IsCompany",
+          "label": "title",
           "searchable": true,
           "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "image": {
+        "edit": {
+          "label": "image",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "image",
+          "searchable": false,
+          "sortable": false
         }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "Name",
-        "webservices"
+        "socialNetwork",
+        "title",
+        "description"
       ],
       "edit": [
         [
           {
-            "name": "Name",
+            "name": "socialNetwork",
             "size": 6
           },
           {
-            "name": "IsCompany",
+            "name": "title",
             "size": 6
           }
         ],
         [
           {
-            "name": "Contribution",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "stack_items",
+            "name": "description",
             "size": 6
           },
           {
-            "name": "webservices",
+            "name": "image",
             "size": 6
           }
         ]
       ]
     },
-    "uid": "experience.project",
+    "uid": "shared.meta-social",
     "isComponent": true
   },
   "type": "object",

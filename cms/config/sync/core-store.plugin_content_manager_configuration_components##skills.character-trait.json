@@ -1,0 +1,76 @@
+{
+  "key": "plugin_content_manager_configuration_components::skills.character-trait",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "Name",
+      "defaultSortBy": "Name",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Name": {
+        "edit": {
+          "label": "Name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Type": {
+        "edit": {
+          "label": "Type",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Type",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "Name",
+        "Type"
+      ],
+      "edit": [
+        [
+          {
+            "name": "Name",
+            "size": 6
+          },
+          {
+            "name": "Type",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "skills.character-trait",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
