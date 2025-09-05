@@ -1,0 +1,115 @@
+{
+  "key": "plugin_content_manager_configuration_components::seo.seo",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "MetaTitle",
+      "defaultSortBy": "MetaTitle",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "MetaTitle": {
+        "edit": {
+          "label": "MetaTitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "MetaTitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "MetaDescription": {
+        "edit": {
+          "label": "MetaDescription",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "MetaDescription",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "MetaSocial": {
+        "edit": {
+          "label": "MetaSocial",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "MetaSocial",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "MetaRobot": {
+        "edit": {
+          "label": "MetaRobot",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "MetaRobot",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "MetaTitle",
+        "MetaDescription",
+        "MetaSocial"
+      ],
+      "edit": [
+        [
+          {
+            "name": "MetaTitle",
+            "size": 6
+          },
+          {
+            "name": "MetaDescription",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "MetaSocial",
+            "size": 6
+          },
+          {
+            "name": "MetaRobot",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "seo.seo",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
