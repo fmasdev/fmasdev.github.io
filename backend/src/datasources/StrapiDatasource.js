@@ -1,7 +1,8 @@
 // config/datasources/StrapiDatasource.js
 
-const {strapiDataSourceConfig: config, appConfig} = require("../config");
+const {strapiDataSourceConfig: config, appConfig} = require("../config/config");
 const axios = require("axios");
+const { cleanStrapiData } = require("../helpers/cleanStrapiData");
 
 class StrapiDatasource {
   constructor() {
@@ -16,23 +17,22 @@ class StrapiDatasource {
     })
   }
 
-  async getLocalizedData(uri, locale = null, params = {}, useFallback = false) {
-    const hasParams = Object.keys(params).length
+  async getLocalizedData(uri , params = {}, locale = null, useFallback = false) {
+    const hasParams = !!Object.keys(params).length
 
     if (hasParams) {
       Object.entries(params).forEach(([key, value]) => {
         if (!uri.includes('?')) {
           uri += ('?')
         }
-        uri += `${key}=${value}`
+        uri += value === params[Object.keys(params)[0]] ? `${key}=${value}` : `&${key}=${value}`
       })
     }
 
     const contentTypeName = uri.split('?')[0].replace('api/', '')
-    const localizedUri = locale && locale !== appConfig.defaultLocale ?
+    const localizedUri = locale ?
       (hasParams ? `${uri}&locale=${locale}` : `${uri}?locale=${locale}`)
       : uri
-
 
     try {
       return await this.http.get(localizedUri)
@@ -47,42 +47,41 @@ class StrapiDatasource {
     }
   }
 
-  async getExperiences(locale = null) {
-    try {
-      const experiences = await this.getLocalizedData('experience-by-locale', locale, {'populate': 'deep'})
-      console.log(JSON.stringify(experiences.data, null, 2))
+  async getPage(slug, locale) {
+    const params = {
+      'filters[slug][$eq]': slug,
+      'populate': 'deep',
+    }
 
+    try {
+      const res = await this.getLocalizedData(`pages`, params, locale)
+      return cleanStrapiData(res.data.data)
     } catch (err) {
       console.error(err)
     }
   }
 
-  async getConfig() {
+  async getFooter(locale) {
 
-  }
+    try {
+      const res = await this.getLocalizedData('footer-by-locale', {}, locale)
 
-  async getFooter() {
+      return {
+        socials: res.data.SocialBloc
+      }
 
+    } catch (err) {
+      console.error(err.status)
+    }
   }
 
   async getMe() {
-
-  }
-
-  async getPersonnalProjects() {
-
-  }
-
-  async getSkills() {
-
-  }
-
-  async getTraining() {
-
-  }
-
-  async getIWorkWith() {
-
+    try {
+      const res = await this.getLocalizedData('me', {'populate': 'deep'})
+      return cleanStrapiData(res.data.data)
+    } catch (err) {
+      console.error(err)
+    }
   }
 }
 

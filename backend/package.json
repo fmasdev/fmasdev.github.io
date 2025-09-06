@@ -2,12 +2,12 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "qsdf",
-  "main": "src/command/exportJson.js",
+  "main": "src/scripts/exportJson.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev-deploy": "nodemon src/command/deployJson.js",
+    "dev-deploy": "nodemon src/scripts/deployJson.js",
     "dev_restore": "",
-    "deploy": "",
+    "deploy": "node src/scripts/deployJson.js",
     "restore": ""
   },
   "author": "fred",

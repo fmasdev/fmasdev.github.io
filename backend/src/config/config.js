@@ -2,6 +2,7 @@
 const dotenv = require("dotenv");
 
 dotenv.config();
+const pojectPath = './'
 
 const appConfig = {
   defaultLocale: 'fr'
@@ -12,18 +13,19 @@ const strapiDataSourceConfig = {
   token: process.env.STRAPI_API_TOKEN || null
 }
 
-const frontConfig = {
-  path: process.env.FRONT_JSON_PATH || null
+const dirConfig = {
+  export: `${pojectPath}exports/`,
+  import: `${pojectPath}imports/`
 }
 
 const localesConfig = {
-  'France': 'fr',
-  // 'English': 'en'
+  'France': 'fr-FR',
+  // 'English': 'en-GB'
 }
 
 module.exports = {
   strapiDataSourceConfig,
-  frontConfig,
+  dirConfig,
   localesConfig,
   appConfig,
 }
