@@ -1,10 +1,10 @@
-// src/scripts/exportJson.js
+// src/scripts/export.js
 
 const StrapiDatasource = require('../datasources/StrapiDatasource')
 const {localesConfig, dirConfig} = require('../config/config')
 const {fileHelper} = require("../helpers/fileHelper");
 
-async function exportJson() {
+async function export() {
   console.log('## START EXPORT DATA')
   const strapi = new StrapiDatasource()
 
@@ -46,7 +46,7 @@ async function exportJson() {
 
 
 ;(async () => {
-  await exportJson()
+  await export()
 })()
 
 

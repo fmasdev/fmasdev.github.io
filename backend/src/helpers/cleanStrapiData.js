@@ -1,4 +1,5 @@
-//
+// src/helpers/cleanStrapiData.js
+
 const cleanStrapiData = (data) => {
   if (Array.isArray(data)) {
     return data.map(cleanStrapiData)
