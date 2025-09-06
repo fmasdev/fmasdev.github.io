@@ -1110,7 +1110,6 @@ export interface ApiPagePage extends Schema.CollectionType {
         'experience.experience',
         'experience.project',
         'skills.character-trait',
-        'skills.feed-backs',
         'skills.skill',
         'skills.soft-skill',
         'experience.feed-back'
@@ -1182,14 +1181,35 @@ export interface ApiWebserviceWebservice extends Schema.CollectionType {
     singularName: 'webservice';
     pluralName: 'webservices';
     displayName: 'Webservice';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
-    Name: Attribute.String;
-    Logo: Attribute.Media;
-    Info: Attribute.String;
+    Name: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Logo: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    Info: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1205,6 +1225,12 @@ export interface ApiWebserviceWebservice extends Schema.CollectionType {
       'admin::user'
     > &
       Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::webservice.webservice',
+      'oneToMany',
+      'api::webservice.webservice'
+    >;
+    locale: Attribute.String;
   };
 }
 

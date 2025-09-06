@@ -12,6 +12,10 @@
           "SocialBloc.Name",
           "SocialBloc.Url",
           "SocialBloc.Iccon"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
         ]
       },
       "conditions": []
@@ -20,14 +24,24 @@
       "action": "plugin::content-manager.explorer.delete",
       "actionParameters": {},
       "subject": "api::footer.footer",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "actionParameters": {},
       "subject": "api::footer.footer",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
       "conditions": []
     },
     {
@@ -39,6 +53,10 @@
           "SocialBloc.Name",
           "SocialBloc.Url",
           "SocialBloc.Iccon"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
         ]
       },
       "conditions": []
@@ -52,6 +70,10 @@
           "SocialBloc.Name",
           "SocialBloc.Url",
           "SocialBloc.Iccon"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
         ]
       },
       "conditions": []
@@ -267,6 +289,10 @@
           "Name",
           "Logo",
           "Info"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
         ]
       },
       "conditions": []
@@ -275,14 +301,24 @@
       "action": "plugin::content-manager.explorer.delete",
       "actionParameters": {},
       "subject": "api::webservice.webservice",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "actionParameters": {},
       "subject": "api::webservice.webservice",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
       "conditions": []
     },
     {
@@ -294,6 +330,10 @@
           "Name",
           "Logo",
           "Info"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
         ]
       },
       "conditions": []
@@ -307,6 +347,10 @@
           "Name",
           "Logo",
           "Info"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
         ]
       },
       "conditions": []

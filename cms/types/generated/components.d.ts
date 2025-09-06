@@ -38,10 +38,14 @@ export interface ExperienceFeedBack extends Schema.Component {
   collectionName: 'components_experience_feed_backs';
   info: {
     displayName: 'FeedBack';
+    description: '';
   };
   attributes: {
     Title: Attribute.String;
     Content: Attribute.RichText;
+    Date: Attribute.Date;
+    Author: Attribute.String;
+    Job: Attribute.String;
   };
 }
 
@@ -144,19 +148,6 @@ export interface SkillsCharacterTrait extends Schema.Component {
   };
 }
 
-export interface SkillsFeedBacks extends Schema.Component {
-  collectionName: 'components_skills_feed_backs';
-  info: {
-    displayName: 'FeedBacks';
-    description: '';
-  };
-  attributes: {
-    Name: Attribute.String;
-    Content: Attribute.RichText;
-    Date: Attribute.Date;
-  };
-}
-
 export interface SkillsSkill extends Schema.Component {
   collectionName: 'components_skills_skills';
   info: {
@@ -211,7 +202,6 @@ declare module '@strapi/types' {
       'shared.meta-social': SharedMetaSocial;
       'shared.seo': SharedSeo;
       'skills.character-trait': SkillsCharacterTrait;
-      'skills.feed-backs': SkillsFeedBacks;
       'skills.skill': SkillsSkill;
       'skills.soft-skill': SkillsSoftSkill;
       'slider.slider': SliderSlider;
