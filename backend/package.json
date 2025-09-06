@@ -2,9 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "qsdf",
-  "main": "src/index.js",
+  "main": "nodemon src/scripts/deployJson.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon src/index.js",
     "deploy:dev": "nodemon src/scripts/deployJson.js",
     "restore:dev": "nodemon src/scripts/restore.js",
     "deploy:prod": "node src/scripts/deployJson.js",
