@@ -4,7 +4,7 @@ const StrapiDatasource = require('../datasources/StrapiDatasource')
 const {localesConfig, dirConfig} = require('../config/config')
 const {fileHelper} = require("../helpers/fileHelper");
 
-async function export() {
+async function exportData() {
   console.log('## START EXPORT DATA')
   const strapi = new StrapiDatasource()
 
@@ -28,6 +28,7 @@ async function export() {
       await strapi.getFooter(locale),
     ])
 
+
     const finalData = {
       proExperience: professionalExperiences[0]?.attributes,
       training: training[0]?.attributes,
@@ -39,14 +40,19 @@ async function export() {
 
     console.log(`## Exported data of locale ${name}`)
 
-    // save localized json file
-    await fileHelper.writeJson(`${dirConfig.export}/${locale}.json`, finalData)
+
+
+    const saveData = []
+    Object.keys(finalData).forEach((key) => {
+      saveData.push(fileHelper.writeJson(`${dirConfig.export}${locale.substring(0, 2)}/${key}.json`, finalData[key]))
+    })
+
+    await Promise.all(saveData)
   }
 }
 
-
 ;(async () => {
-  await export()
+  await exportData()
 })()
 
 

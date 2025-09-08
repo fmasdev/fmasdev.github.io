@@ -5,11 +5,11 @@
   "main": "nodemon src/scripts/deployJson.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon src/index.js",
-    "deploy:dev": "nodemon src/scripts/deployJson.js",
-    "restore:dev": "nodemon src/scripts/restore.js",
-    "deploy:prod": "node src/scripts/deployJson.js",
-    "restore:prod": "node src/scripts/restore.js"
+    "dev:start": "nodemon src/index.js",
+    "dev:export": "nodemon src/scripts/export.js",
+    "devrestore": "nodemon src/scripts/restore.js",
+    "prod:export": "node src/scripts/export.js",
+    "prod:restore": "node src/scripts/restore.js"
   },
   "author": "fred",
   "license": "ISC",

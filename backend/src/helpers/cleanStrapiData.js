@@ -6,16 +6,18 @@ const cleanStrapiData = (data) => {
   }
 
   if (data && typeof data === 'object') {
-    // on clone sans les champs à supprimer
-    const { createdAt, updatedAt, publishedAt, ...rest } = data
+    // Clone without fields will be deleted
+    const { createdAt, updatedAt, publishedAt, localizations, ...rest } = data
 
-    // récursion sur chaque clé
+    const cleaned = {}
+    // Recursive on each key
     for (const key in rest) {
-      rest[key] = cleanStrapiData(rest[key])
+      cleaned[key.toLowerCase()] = cleanStrapiData(rest[key])
     }
 
-    return rest
+    return cleaned
   }
+
 
   return data
 }
