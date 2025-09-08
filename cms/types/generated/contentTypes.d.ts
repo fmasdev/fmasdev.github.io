@@ -1109,10 +1109,8 @@ export interface ApiPagePage extends Schema.CollectionType {
         'experience.experience-item',
         'experience.experience',
         'experience.project',
-        'skills.character-trait',
-        'skills.skill',
-        'skills.soft-skill',
-        'experience.feed-back'
+        'experience.feed-back',
+        'skills.skills-list'
       ]
     > &
       Attribute.SetPluginOptions<{

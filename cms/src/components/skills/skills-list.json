@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_skills_skills_lists",
+  "info": {
+    "displayName": "skillsList"
+  },
+  "options": {},
+  "attributes": {
+    "skills": {
+      "type": "component",
+      "repeatable": true,
+      "component": "skills.skill"
+    },
+    "softSkill": {
+      "type": "component",
+      "repeatable": true,
+      "component": "skills.soft-skill"
+    },
+    "characterTrait": {
+      "type": "component",
+      "repeatable": true,
+      "component": "skills.character-trait"
+    }
+  }
+}

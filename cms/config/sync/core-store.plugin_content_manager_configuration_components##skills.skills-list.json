@@ -1,0 +1,99 @@
+{
+  "key": "plugin_content_manager_configuration_components::skills.skills-list",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "skills": {
+        "edit": {
+          "label": "skills",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "skills",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "softSkill": {
+        "edit": {
+          "label": "softSkill",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "softSkill",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "characterTrait": {
+        "edit": {
+          "label": "characterTrait",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "characterTrait",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "skills",
+        "softSkill",
+        "characterTrait"
+      ],
+      "edit": [
+        [
+          {
+            "name": "skills",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "softSkill",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "characterTrait",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "uid": "skills.skills-list",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

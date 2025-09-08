@@ -158,6 +158,18 @@ export interface SkillsSkill extends Schema.Component {
   };
 }
 
+export interface SkillsSkillsList extends Schema.Component {
+  collectionName: 'components_skills_skills_lists';
+  info: {
+    displayName: 'skillsList';
+  };
+  attributes: {
+    skills: Attribute.Component<'skills.skill', true>;
+    softSkill: Attribute.Component<'skills.soft-skill', true>;
+    characterTrait: Attribute.Component<'skills.character-trait', true>;
+  };
+}
+
 export interface SkillsSoftSkill extends Schema.Component {
   collectionName: 'components_skills_soft_skills';
   info: {
@@ -203,6 +215,7 @@ declare module '@strapi/types' {
       'shared.seo': SharedSeo;
       'skills.character-trait': SkillsCharacterTrait;
       'skills.skill': SkillsSkill;
+      'skills.skills-list': SkillsSkillsList;
       'skills.soft-skill': SkillsSoftSkill;
       'slider.slider': SliderSlider;
       'social.social-item': SocialSocialItem;
