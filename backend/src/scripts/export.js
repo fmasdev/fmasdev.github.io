@@ -27,7 +27,7 @@ async function exportData() {
       experience: professionalExperiences[0]?.attributes,
       training: training[0]?.attributes,
       skills: skills[0]?.attributes,
-      feedBacks: feedBacks[0]?.attributes,
+      feedbacks: feedBacks[0]?.attributes,
       footer: footer,
       me: me,
     }
