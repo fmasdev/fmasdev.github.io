@@ -46,17 +46,75 @@
           "searchable": false,
           "sortable": false
         }
+      },
+      "Date": {
+        "edit": {
+          "label": "Date",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Date",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Author": {
+        "edit": {
+          "label": "Author",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Author",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Job": {
+        "edit": {
+          "label": "Job",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Job",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "Title"
+        "Title",
+        "Date",
+        "Author"
       ],
       "edit": [
         [
           {
             "name": "Title",
+            "size": 6
+          },
+          {
+            "name": "Date",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "Author",
+            "size": 6
+          },
+          {
+            "name": "Job",
             "size": 6
           }
         ],
