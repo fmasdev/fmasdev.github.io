@@ -1,14 +1,23 @@
 #!/bin/bash
 set -e  # stop si une commande échoue
 
+echo "=== Start strapi"
+cd cms
+npm run start
+cd ..
+
 echo "=== Génération de cv.json ==="
 cd backend
 npm install
-node generate_json.js
+npm run deploy:prod
 cd ..
 
-echo "=== Copie du JSON dans frontend/public ==="
-cp backend/cv.json frontend/public/cv.json
+echo "=== Stop strapi"
+cd cms
+# todo stop strapi
+
+echo "=== Copie des langes cv dans frontend/public ==="
+cp -r backend/exports/* frontend/public/data/
 
 echo "=== Build du frontend Vue.js ==="
 cd frontend
