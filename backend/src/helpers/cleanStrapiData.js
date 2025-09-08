@@ -18,10 +18,9 @@ const cleanStrapiData = (data) => {
     return cleaned
   }
 
-
   return data
 }
 
 module.exports = {
-  cleanStrapiData
+  cleanStrapiData,
 }
