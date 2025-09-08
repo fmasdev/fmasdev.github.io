@@ -1,3 +1,4 @@
 node_modules
 .env
-exports/*.json
+exports/fr/*.json
+exports/en/*.json
