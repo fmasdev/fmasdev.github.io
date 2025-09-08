@@ -1,3 +1,15 @@
 {
-
+  "locales": {
+    "en": "English",
+    "fr": "Français"
+  },
+  "navigation": {
+    "home": "Home",
+    "experience": "Experiences",
+    "training": "Training",
+    "skills": "Skills",
+    "aboutMe": "About me",
+    "projects": "My projects",
+    "contact": "Contact"
+  }
 }

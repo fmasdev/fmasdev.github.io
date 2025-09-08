@@ -1,0 +1,13 @@
+<template>
+  <p class="text-sm text-gray-600">
+    <span class="font-semibold"> {{ title }}: </span>
+    {{ list.join(', ') }}
+  </p>
+</template>
+<script setup lang="ts">
+const props = defineProps<{
+  title: string
+  list: string[]
+}>()
+console.log(props)
+</script>
