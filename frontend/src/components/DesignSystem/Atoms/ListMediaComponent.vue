@@ -9,5 +9,4 @@ const props = defineProps<{
   title: string
   list: string[]
 }>()
-console.log(props)
 </script>

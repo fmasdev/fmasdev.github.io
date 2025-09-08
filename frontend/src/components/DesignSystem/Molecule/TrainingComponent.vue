@@ -35,6 +35,4 @@ const props = defineProps<{
 
 const startDate = dateHelper.dateStringFormatToString(props.training.start)
 const stopDate = dateHelper.dateStringFormatToString(props.training.stop)
-
-console.log(props)
 </script>

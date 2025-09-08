@@ -19,8 +19,7 @@ import { useContentLoader } from '@composables/useContentLoader.js'
 import TrainingComponent from '@components/DesignSystem/Molecule/TrainingComponent.vue'
 
 const { content: trainings } = toRefs(useContentLoader('training'))
-console.log(trainings)
-console.log(trainings)
+
 </script>
 
 <style scoped></style>

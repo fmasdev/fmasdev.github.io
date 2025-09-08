@@ -12,11 +12,9 @@ import { computed } from 'vue'
 const props = defineProps<{
   text: string | null
 }>()
-console.log(props.text)
-console.log(typeof props.text)
+
 const markdown = new MarkdownIt()
 
 const renderedContent = computed(() => markdown.render(props?.text ?? ''))
-console.log(renderedContent)
 </script>
 

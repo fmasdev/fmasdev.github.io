@@ -39,5 +39,4 @@ const stackNameList = props.project?.stack_items.data.map(
 const webservicesList = props.project?.webservices.data.map(
   (item: WebserviceType) => item.attributes.name
 )
-console.log(webservicesList)
 </script>
