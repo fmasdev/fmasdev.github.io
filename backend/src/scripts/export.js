@@ -3,6 +3,7 @@
 const StrapiDatasource = require('../datasources/StrapiDatasource')
 const { localesConfig, dirConfig } = require('../config/config')
 const { fileHelper } = require('../helpers/fileHelper')
+const {extractMediaUrls} = require("../helpers/extractUrls");
 
 async function exportData() {
   console.log('## START EXPORT DATA')
@@ -34,18 +35,32 @@ async function exportData() {
 
     console.log(`## Exported data of locale ${name}`)
 
-    const saveData = []
+    // fileHelper.downloadFile
     Object.keys(finalData).forEach((key) => {
-      saveData.push(
-        fileHelper.writeJson(
-          `${dirConfig.export}${locale.substring(0, 2)}/${key}.json`,
-          finalData[key],
-        ),
+      fileHelper.saveJson(
+        `${dirConfig.export}${locale.substring(0, 2)}/${key}.json`,
+        finalData[key],
       )
     })
 
-    await Promise.all(saveData)
+    console.log(`## Saved data of locale ${name}`)
+    console.log(`## Extracting media URLs`)
+
+    const medias = extractMediaUrls(finalData)
+
+    console.log(`Found ${medias.length} media URLs`)
+
+    await fileHelper.ensureDir(`${dirConfig.export}media`)
+
+    for (const media of medias) {
+      await fileHelper.downloadFile(media, `${dirConfig.export}media/`, strapi)
+    }
+    //
+    // console.log(`## SavedMedia`)
   }
+
+
+
 }
 
 ;(async () => {

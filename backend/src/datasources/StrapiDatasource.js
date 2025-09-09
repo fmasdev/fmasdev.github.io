@@ -9,6 +9,7 @@ const { cleanStrapiData } = require('../helpers/cleanStrapiData')
 
 class StrapiDatasource {
   constructor() {
+    this.baseUrl = config.url
     this.http = axios.create({
       baseURL: config.url,
       timeout: 1000,
@@ -92,6 +93,19 @@ class StrapiDatasource {
     } catch (err) {
       console.error(err)
     }
+  }
+
+  async getMedia(fileUrl) {
+    const url = String(`${this.baseUrl.replace('api/', '')}${fileUrl.slice(1)}`)
+    try {
+      return await this.http.get(url, {responseType: "arraybuffer"});
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  getBaseUrl() {
+    return this.baseUrl
   }
 }
 

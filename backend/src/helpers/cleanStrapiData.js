@@ -7,18 +7,70 @@ const cleanStrapiData = (data) => {
 
   if (data && typeof data === 'object') {
     // Clone without fields will be deleted
-    const { createdAt, updatedAt, publishedAt, localizations, ...rest } = data
+    const {createdAt, updatedAt, publishedAt, localizations, ...rest} = data
 
     const cleaned = {}
-    // Recursive on each key
+
     for (const key in rest) {
-      cleaned[key.toLowerCase()] = cleanStrapiData(rest[key])
+      const value = rest[key]
+
+      if (
+          key === 'data'
+          && Array.isArray(value)
+          && value[0]?.attributes &&
+          value[0].attributes.hasOwnProperty('alternativeText')
+      ) {
+        value[0].attributes
+        cleaned['media'] = mediaFormater(value[0].attributes)
+      } else if (
+          key === 'data'
+          && typeof value === 'object'
+          && value?.attributes
+          && value.attributes.hasOwnProperty('alternativeText')
+      ) {
+        value.attributes
+        cleaned['media'] = mediaFormater(value.attributes)
+      }
+      else {
+        // Recursive on each key
+        const lcFirstKey = String(key).charAt(0).toLowerCase() + String(key).slice(1)
+        cleaned[lcFirstKey] = cleanStrapiData(value)
+      }
     }
+
 
     return cleaned
   }
 
   return data
+}
+
+const mediaFormater = (mediaItem) => {
+  const media = {
+    name: mediaItem.name,
+    alternativeText: mediaItem.alternativeText,
+    original: {
+      path: `original/${mediaItem.name}`,
+      height: mediaItem.height,
+      width: mediaItem.width,
+      mime: mediaItem.mime,
+      size: mediaItem.size,
+      strapiUrl: mediaItem.url,
+    },
+  }
+
+  if (mediaItem.hasOwnProperty('formats') && mediaItem.formats) {
+    media.thumbnail = {
+      path: `thumbnail/${mediaItem.name}`,
+      height: mediaItem.formats.thumbnail.height,
+      width: mediaItem.formats.thumbnail.width,
+      mime: mediaItem.formats.thumbnail.mime,
+      size: mediaItem.formats.thumbnail.size,
+      strapiUrl: mediaItem.formats.thumbnail.url
+    }
+  }
+
+  return media
 }
 
 module.exports = {
