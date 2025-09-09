@@ -79,4 +79,3 @@ const setLocale = (newLocale: string) => {
 }
 </script>
 
-<style scoped></style>

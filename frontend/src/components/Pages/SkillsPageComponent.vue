@@ -14,6 +14,3 @@ console.log(skills)
 console.log(feedbacks)
 
 </script>
-
-
-<style scoped></style>

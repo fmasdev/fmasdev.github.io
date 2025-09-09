@@ -22,4 +22,3 @@ const { content: trainings } = toRefs(useContentLoader('training'))
 
 </script>
 
-<style scoped></style>

@@ -1,0 +1,15 @@
+{
+  "title": "Compétences",
+  "slug": "skills",
+  "locale": "fr-FR",
+  "content": [
+    {
+      "id": 1,
+      "__component": "skills.skills-list",
+      "skills": [],
+      "softSkill": [],
+      "characterTrait": []
+    }
+  ],
+  "seo": null
+}

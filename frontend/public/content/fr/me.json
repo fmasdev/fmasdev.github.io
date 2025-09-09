@@ -1,0 +1,11 @@
+{
+  "id": 1,
+  "attributes": {
+    "name": "Mas",
+    "address": "Frédéric",
+    "postalCode": "66270",
+    "city": "Le Soler",
+    "phone": "0609154216",
+    "email": "f.mas.dev@gamail.com"
+  }
+}

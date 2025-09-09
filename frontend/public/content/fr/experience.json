@@ -1,0 +1,1934 @@
+{
+  "title": "Experience professionnelle",
+  "slug": "experience-pro",
+  "locale": "fr-FR",
+  "content": [
+    {
+      "id": 7,
+      "__component": "experience.experience-item",
+      "title": "Développeur Web",
+      "startDate": "2022-11-15",
+      "stopDate": "2025-08-07",
+      "content": "Chez Kaliop, j’ai travaillé en tant que développeur web dans une équipe dynamique et conviviale. L’entreprise fonctionnait en méthode agile Scrum, ce qui m’a permis de collaborer étroitement avec les équipes produit, design et QA dans un cadre structuré et itératif. Cette expérience m’a permis de renforcer mes compétences techniques tout en évoluant dans une culture d’entreprise bienveillante et tournée vers le collectif.",
+      "company": "Kaliop",
+      "region": "Montpellier",
+      "remote": "FULL-REMOTE",
+      "project": [
+        {
+          "id": 28,
+          "contribution": "Participation à la refonte d’un ERP stratégique d’interfaçage entre l’entreprise et les pharmacies, avec intervention sur des outils internes pour améliorer la fiabilité et la fluidité des processus métier.",
+          "name": "Biogaran",
+          "isCompany": true,
+          "stack_items": {
+            "data": [
+              {
+                "id": 1,
+                "attributes": {
+                  "name": "Symfony",
+                  "info": "Framework PHP orienté MVC, dédié au développement d’applications web robustes et modulaires.",
+                  "logo": {
+                    "media": {
+                      "name": "symfony.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/symfony.jpg",
+                        "height": 200,
+                        "width": 200,
+                        "mime": "image/jpeg",
+                        "size": 5.5,
+                        "strapiUrl": "/uploads/symfony_ade27ba80a.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/symfony.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 4.15,
+                        "strapiUrl": "/uploads/thumbnail_symfony_ade27ba80a.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 2,
+                "attributes": {
+                  "name": "Twig",
+                  "info": "Moteur de templates moderne pour PHP, permettant de séparer la logique applicative de l’affichage.",
+                  "logo": {
+                    "media": {
+                      "name": "twig.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/twig.jpg",
+                        "height": 290,
+                        "width": 290,
+                        "mime": "image/jpeg",
+                        "size": 6.51,
+                        "strapiUrl": "/uploads/twig_98ec2893ce.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/twig.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 2.94,
+                        "strapiUrl": "/uploads/thumbnail_twig_98ec2893ce.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 3,
+                "attributes": {
+                  "name": "MySql",
+                  "info": "systèmes de gestion de bases de données relationnelles fiables et largement adoptés.",
+                  "logo": {
+                    "media": {
+                      "name": "mysql.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/mysql.jpg",
+                        "height": 250,
+                        "width": 250,
+                        "mime": "image/jpeg",
+                        "size": 5.63,
+                        "strapiUrl": "/uploads/mysql_dacae28784.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/mysql.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 3.14,
+                        "strapiUrl": "/uploads/thumbnail_mysql_dacae28784.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 4,
+                "attributes": {
+                  "name": "ExpressJs",
+                  "info": "Framework minimaliste pour Node.js, spécialisé dans la création d’APIs REST et de middlewares performants.",
+                  "logo": {
+                    "media": {
+                      "name": "expressjs.png",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/expressjs.png",
+                        "height": 499,
+                        "width": 1000,
+                        "mime": "image/png",
+                        "size": 16.56,
+                        "strapiUrl": "/uploads/expressjs_a01a265d7b.png"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/expressjs.png",
+                        "height": 122,
+                        "width": 245,
+                        "mime": "image/png",
+                        "size": 7.68,
+                        "strapiUrl": "/uploads/thumbnail_expressjs_a01a265d7b.png"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 5,
+                "attributes": {
+                  "name": "MongoDb",
+                  "info": "Base de données NoSQL orientée documents, conçue pour stocker et manipuler des données flexibles.",
+                  "logo": {
+                    "media": {
+                      "name": "mongodb.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/mongodb.jpg",
+                        "height": 550,
+                        "width": 550,
+                        "mime": "image/jpeg",
+                        "size": 20.37,
+                        "strapiUrl": "/uploads/mongodb_745eb831a8.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/mongodb.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 3.32,
+                        "strapiUrl": "/uploads/thumbnail_mongodb_745eb831a8.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 6,
+                "attributes": {
+                  "name": "SailsJs",
+                  "info": "Framework MVC pour Node.js, inspiré de Ruby on Rails, conçu pour les applications temps réel et orientées données.",
+                  "logo": {
+                    "media": {
+                      "name": "sailsjs.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/sailsjs.jpg",
+                        "height": 300,
+                        "width": 600,
+                        "mime": "image/jpeg",
+                        "size": 11.79,
+                        "strapiUrl": "/uploads/sailsjs_29547d0a2c.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/sailsjs.jpg",
+                        "height": 123,
+                        "width": 245,
+                        "mime": "image/jpeg",
+                        "size": 4.54,
+                        "strapiUrl": "/uploads/thumbnail_sailsjs_29547d0a2c.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 8,
+                "attributes": {
+                  "name": "NestJs",
+                  "info": "Framework Node.js modulaire et typé, basé sur TypeScript, destiné au développement de backends évolutifs.",
+                  "logo": {
+                    "media": {
+                      "name": "nestjs.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/nestjs.jpg",
+                        "height": 719,
+                        "width": 720,
+                        "mime": "image/jpeg",
+                        "size": 21.14,
+                        "strapiUrl": "/uploads/nestjs_c3daf23aad.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/nestjs.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 3.18,
+                        "strapiUrl": "/uploads/thumbnail_nestjs_c3daf23aad.jpg"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "webservices": {
+            "data": []
+          }
+        },
+        {
+          "id": 29,
+          "contribution": "Contribution à la refonte du site vitrine de l’AGPM avec une approche CMS headless, permettant une gestion de contenu centralisée et une meilleure flexibilité pour l’intégration côté front.",
+          "name": "AGPM",
+          "isCompany": true,
+          "stack_items": {
+            "data": [
+              {
+                "id": 9,
+                "attributes": {
+                  "name": "Strapi",
+                  "info": "CMS headless open-source basé sur Node.js, offrant une API flexible et une interface d’administration moderne en React.",
+                  "logo": {
+                    "media": {
+                      "name": "strapi.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/strapi.jpg",
+                        "height": 280,
+                        "width": 280,
+                        "mime": "image/jpeg",
+                        "size": 7.58,
+                        "strapiUrl": "/uploads/strapi_c6550c02fb.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/strapi.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 3.92,
+                        "strapiUrl": "/uploads/thumbnail_strapi_c6550c02fb.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 4,
+                "attributes": {
+                  "name": "ExpressJs",
+                  "info": "Framework minimaliste pour Node.js, spécialisé dans la création d’APIs REST et de middlewares performants.",
+                  "logo": {
+                    "media": {
+                      "name": "expressjs.png",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/expressjs.png",
+                        "height": 499,
+                        "width": 1000,
+                        "mime": "image/png",
+                        "size": 16.56,
+                        "strapiUrl": "/uploads/expressjs_a01a265d7b.png"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/expressjs.png",
+                        "height": 122,
+                        "width": 245,
+                        "mime": "image/png",
+                        "size": 7.68,
+                        "strapiUrl": "/uploads/thumbnail_expressjs_a01a265d7b.png"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 10,
+                "attributes": {
+                  "name": "GraphQL",
+                  "info": "Langage de requête pour APIs offrant un accès unifié, précis et performant aux données.",
+                  "logo": {
+                    "media": {
+                      "name": "graphql.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/graphql.jpg",
+                        "height": 235,
+                        "width": 214,
+                        "mime": "image/jpeg",
+                        "size": 9.83,
+                        "strapiUrl": "/uploads/graphql_efc09849d4.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/graphql.jpg",
+                        "height": 156,
+                        "width": 142,
+                        "mime": "image/jpeg",
+                        "size": 5.59,
+                        "strapiUrl": "/uploads/thumbnail_graphql_efc09849d4.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 11,
+                "attributes": {
+                  "name": "VueJs",
+                  "info": "Framework progressif JavaScript orienté composants, facilitant le développement d’interfaces modernes.",
+                  "logo": {
+                    "media": {
+                      "name": "vueJs.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/vueJs.jpg",
+                        "height": 250,
+                        "width": 250,
+                        "mime": "image/jpeg",
+                        "size": 6.33,
+                        "strapiUrl": "/uploads/vue_Js_b140cc7b4a.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/vueJs.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 3.52,
+                        "strapiUrl": "/uploads/thumbnail_vue_Js_b140cc7b4a.jpg"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "webservices": {
+            "data": []
+          }
+        },
+        {
+          "id": 30,
+          "contribution": "Participation à la création et à l’ajustement de blocs pour une plateforme multisite permettant de gérer plusieurs sites vitrines pour les différentes marques du groupe (Tollens, Zolpan, Plasdox), avec une architecture mutualisée et une identité propre à chaque enseigne.",
+          "name": "Cromology",
+          "isCompany": true,
+          "stack_items": {
+            "data": [
+              {
+                "id": 12,
+                "attributes": {
+                  "name": "Ibexa",
+                  "info": "Evolution d’eZ Publish en CMS headless et modulaire, orienté expérience digitale et e-commerce.",
+                  "logo": {
+                    "media": {
+                      "name": "ibexa.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/ibexa.jpg",
+                        "height": 225,
+                        "width": 225,
+                        "mime": "image/jpeg",
+                        "size": 5.45,
+                        "strapiUrl": "/uploads/ibexa_5a4a3eb437.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/ibexa.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 3.23,
+                        "strapiUrl": "/uploads/thumbnail_ibexa_5a4a3eb437.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 4,
+                "attributes": {
+                  "name": "ExpressJs",
+                  "info": "Framework minimaliste pour Node.js, spécialisé dans la création d’APIs REST et de middlewares performants.",
+                  "logo": {
+                    "media": {
+                      "name": "expressjs.png",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/expressjs.png",
+                        "height": 499,
+                        "width": 1000,
+                        "mime": "image/png",
+                        "size": 16.56,
+                        "strapiUrl": "/uploads/expressjs_a01a265d7b.png"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/expressjs.png",
+                        "height": 122,
+                        "width": 245,
+                        "mime": "image/png",
+                        "size": 7.68,
+                        "strapiUrl": "/uploads/thumbnail_expressjs_a01a265d7b.png"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 10,
+                "attributes": {
+                  "name": "GraphQL",
+                  "info": "Langage de requête pour APIs offrant un accès unifié, précis et performant aux données.",
+                  "logo": {
+                    "media": {
+                      "name": "graphql.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/graphql.jpg",
+                        "height": 235,
+                        "width": 214,
+                        "mime": "image/jpeg",
+                        "size": 9.83,
+                        "strapiUrl": "/uploads/graphql_efc09849d4.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/graphql.jpg",
+                        "height": 156,
+                        "width": 142,
+                        "mime": "image/jpeg",
+                        "size": 5.59,
+                        "strapiUrl": "/uploads/thumbnail_graphql_efc09849d4.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 11,
+                "attributes": {
+                  "name": "VueJs",
+                  "info": "Framework progressif JavaScript orienté composants, facilitant le développement d’interfaces modernes.",
+                  "logo": {
+                    "media": {
+                      "name": "vueJs.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/vueJs.jpg",
+                        "height": 250,
+                        "width": 250,
+                        "mime": "image/jpeg",
+                        "size": 6.33,
+                        "strapiUrl": "/uploads/vue_Js_b140cc7b4a.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/vueJs.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 3.52,
+                        "strapiUrl": "/uploads/thumbnail_vue_Js_b140cc7b4a.jpg"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "webservices": {
+            "data": []
+          }
+        },
+        {
+          "id": 31,
+          "contribution": "Contribution au développement d’un site vitrine et e-commerce.",
+          "name": "Union Matériaux",
+          "isCompany": true,
+          "stack_items": {
+            "data": [
+              {
+                "id": 15,
+                "attributes": {
+                  "name": "Api platform",
+                  "info": "Framework open-source basé sur Symfony, spécialisé dans la création rapide d’APIs REST et GraphQL.",
+                  "logo": {
+                    "media": {
+                      "name": "api-platform.png",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/api-platform.png",
+                        "height": 250,
+                        "width": 250,
+                        "mime": "image/png",
+                        "size": 6.23,
+                        "strapiUrl": "/uploads/api_platform_0b8123e0d8.png"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/api-platform.png",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/png",
+                        "size": 17.78,
+                        "strapiUrl": "/uploads/thumbnail_api_platform_0b8123e0d8.png"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 16,
+                "attributes": {
+                  "name": "MariaDb",
+                  "info": "Systèmes de gestion de bases de données relationnelles fiables et largement adoptés.",
+                  "logo": {
+                    "media": {
+                      "name": "mariadb.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/mariadb.jpg",
+                        "height": 280,
+                        "width": 280,
+                        "mime": "image/jpeg",
+                        "size": 8.4,
+                        "strapiUrl": "/uploads/mariadb_572fe8d2da.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/mariadb.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 3.97,
+                        "strapiUrl": "/uploads/thumbnail_mariadb_572fe8d2da.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 11,
+                "attributes": {
+                  "name": "VueJs",
+                  "info": "Framework progressif JavaScript orienté composants, facilitant le développement d’interfaces modernes.",
+                  "logo": {
+                    "media": {
+                      "name": "vueJs.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/vueJs.jpg",
+                        "height": 250,
+                        "width": 250,
+                        "mime": "image/jpeg",
+                        "size": 6.33,
+                        "strapiUrl": "/uploads/vue_Js_b140cc7b4a.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/vueJs.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 3.52,
+                        "strapiUrl": "/uploads/thumbnail_vue_Js_b140cc7b4a.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 25,
+                "attributes": {
+                  "name": "Wordpress",
+                  "info": "WordPress est un système de gestion de contenu (CMS) open source, flexible et largement utilisé pour créer des sites web allant du simple blog au site e-commerce.",
+                  "logo": {
+                    "media": {
+                      "name": "wordpress.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/wordpress.jpg",
+                        "height": 980,
+                        "width": 980,
+                        "mime": "image/jpeg",
+                        "size": 45.39,
+                        "strapiUrl": "/uploads/wordpress_ea4cb9eb81.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/wordpress.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 4.67,
+                        "strapiUrl": "/uploads/thumbnail_wordpress_ea4cb9eb81.jpg"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "webservices": {
+            "data": []
+          }
+        },
+        {
+          "id": 32,
+          "contribution": "Participation à la refonte complète de la plateforme Yelloh! Village, intégrant un site vitrine multilingue central ainsi que des sites personnalisés pour chaque camping, afin d’offrir une expérience utilisateur cohérente et adaptée à chaque établissement tout en unifiant la gestion e-commerce.",
+          "name": "Yelloh! Village",
+          "isCompany": true,
+          "stack_items": {
+            "data": [
+              {
+                "id": 17,
+                "attributes": {
+                  "name": "EzPublish",
+                  "info": "CMS historique basé sur PHP et Symfony, conçu pour les sites vitrines et applications digitales complexes.",
+                  "logo": {
+                    "media": {
+                      "name": "ezpublish.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/ezpublish.jpg",
+                        "height": 350,
+                        "width": 350,
+                        "mime": "image/jpeg",
+                        "size": 6.51,
+                        "strapiUrl": "/uploads/ezpublish_6cf8d670c2.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/ezpublish.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 2.69,
+                        "strapiUrl": "/uploads/thumbnail_ezpublish_6cf8d670c2.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 1,
+                "attributes": {
+                  "name": "Symfony",
+                  "info": "Framework PHP orienté MVC, dédié au développement d’applications web robustes et modulaires.",
+                  "logo": {
+                    "media": {
+                      "name": "symfony.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/symfony.jpg",
+                        "height": 200,
+                        "width": 200,
+                        "mime": "image/jpeg",
+                        "size": 5.5,
+                        "strapiUrl": "/uploads/symfony_ade27ba80a.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/symfony.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 4.15,
+                        "strapiUrl": "/uploads/thumbnail_symfony_ade27ba80a.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 2,
+                "attributes": {
+                  "name": "Twig",
+                  "info": "Moteur de templates moderne pour PHP, permettant de séparer la logique applicative de l’affichage.",
+                  "logo": {
+                    "media": {
+                      "name": "twig.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/twig.jpg",
+                        "height": 290,
+                        "width": 290,
+                        "mime": "image/jpeg",
+                        "size": 6.51,
+                        "strapiUrl": "/uploads/twig_98ec2893ce.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/twig.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 2.94,
+                        "strapiUrl": "/uploads/thumbnail_twig_98ec2893ce.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 7,
+                "attributes": {
+                  "name": "React",
+                  "info": "Bibliothèque JavaScript pour construire des interfaces utilisateur dynamiques et réactives.",
+                  "logo": {
+                    "media": {
+                      "name": "react.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/react.jpg",
+                        "height": 219,
+                        "width": 230,
+                        "mime": "image/jpeg",
+                        "size": 7.79,
+                        "strapiUrl": "/uploads/react_4a6b8c21e6.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/react.jpg",
+                        "height": 156,
+                        "width": 164,
+                        "mime": "image/jpeg",
+                        "size": 4.95,
+                        "strapiUrl": "/uploads/thumbnail_react_4a6b8c21e6.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 10,
+                "attributes": {
+                  "name": "GraphQL",
+                  "info": "Langage de requête pour APIs offrant un accès unifié, précis et performant aux données.",
+                  "logo": {
+                    "media": {
+                      "name": "graphql.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/graphql.jpg",
+                        "height": 235,
+                        "width": 214,
+                        "mime": "image/jpeg",
+                        "size": 9.83,
+                        "strapiUrl": "/uploads/graphql_efc09849d4.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/graphql.jpg",
+                        "height": 156,
+                        "width": 142,
+                        "mime": "image/jpeg",
+                        "size": 5.59,
+                        "strapiUrl": "/uploads/thumbnail_graphql_efc09849d4.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 4,
+                "attributes": {
+                  "name": "ExpressJs",
+                  "info": "Framework minimaliste pour Node.js, spécialisé dans la création d’APIs REST et de middlewares performants.",
+                  "logo": {
+                    "media": {
+                      "name": "expressjs.png",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/expressjs.png",
+                        "height": 499,
+                        "width": 1000,
+                        "mime": "image/png",
+                        "size": 16.56,
+                        "strapiUrl": "/uploads/expressjs_a01a265d7b.png"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/expressjs.png",
+                        "height": 122,
+                        "width": 245,
+                        "mime": "image/png",
+                        "size": 7.68,
+                        "strapiUrl": "/uploads/thumbnail_expressjs_a01a265d7b.png"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 16,
+                "attributes": {
+                  "name": "MariaDb",
+                  "info": "Systèmes de gestion de bases de données relationnelles fiables et largement adoptés.",
+                  "logo": {
+                    "media": {
+                      "name": "mariadb.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/mariadb.jpg",
+                        "height": 280,
+                        "width": 280,
+                        "mime": "image/jpeg",
+                        "size": 8.4,
+                        "strapiUrl": "/uploads/mariadb_572fe8d2da.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/mariadb.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 3.97,
+                        "strapiUrl": "/uploads/thumbnail_mariadb_572fe8d2da.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 11,
+                "attributes": {
+                  "name": "VueJs",
+                  "info": "Framework progressif JavaScript orienté composants, facilitant le développement d’interfaces modernes.",
+                  "logo": {
+                    "media": {
+                      "name": "vueJs.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/vueJs.jpg",
+                        "height": 250,
+                        "width": 250,
+                        "mime": "image/jpeg",
+                        "size": 6.33,
+                        "strapiUrl": "/uploads/vue_Js_b140cc7b4a.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/vueJs.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 3.52,
+                        "strapiUrl": "/uploads/thumbnail_vue_Js_b140cc7b4a.jpg"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "webservices": {
+            "data": [
+              {
+                "id": 5,
+                "attributes": {
+                  "name": "Secoiasoft",
+                  "info": "Éditeur de logiciels proposant des ERP dédiés au secteur du tourisme et de l’hôtellerie de plein air.",
+                  "locale": "fr-FR",
+                  "logo": {
+                    "media": {
+                      "name": "sequoia_soft.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/sequoia_soft.jpg",
+                        "height": 156,
+                        "width": 323,
+                        "mime": "image/jpeg",
+                        "size": 4.77,
+                        "strapiUrl": "/uploads/sequoia_soft_160d83e83c.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/sequoia_soft.jpg",
+                        "height": 118,
+                        "width": 245,
+                        "mime": "image/jpeg",
+                        "size": 3.47,
+                        "strapiUrl": "/uploads/thumbnail_sequoia_soft_160d83e83c.jpg"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": 33,
+          "contribution": null,
+          "name": "Constellium",
+          "isCompany": true,
+          "stack_items": {
+            "data": [
+              {
+                "id": 19,
+                "attributes": {
+                  "name": "Contentful",
+                  "info": "CMS headless SaaS permettant de centraliser et distribuer les contenus via API.",
+                  "logo": {
+                    "media": {
+                      "name": "contentful.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/contentful.jpg",
+                        "height": 225,
+                        "width": 225,
+                        "mime": "image/jpeg",
+                        "size": 4.76,
+                        "strapiUrl": "/uploads/contentful_1544b12258.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/contentful.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 2.86,
+                        "strapiUrl": "/uploads/thumbnail_contentful_1544b12258.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 18,
+                "attributes": {
+                  "name": "Gatsby",
+                  "info": "Générateur de sites statiques basé sur React, optimisé pour la performance et le SEO.",
+                  "logo": {
+                    "media": {
+                      "name": "gatsby.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/gatsby.jpg",
+                        "height": 145,
+                        "width": 145,
+                        "mime": "image/jpeg",
+                        "size": 3.03,
+                        "strapiUrl": "/uploads/gatsby_c9a22ee112.jpg"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "webservices": {
+            "data": []
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "__component": "experience.experience-item",
+      "title": "Développeur Logiciel",
+      "startDate": "2018-05-25",
+      "stopDate": "2022-11-11",
+      "content": "Chez Pyrescom, j’ai travaillé sur le développement de logiciels web pour la mise en forme des données remontées et le pilotage d’objets connectés, dans des domaines tels que l’éclairage public, la qualité de l’air dans les salles de classe, la télémétrie énergétique des bâtiments et la gestion de badgeuses. Cette expérience m’a permis de renforcer mes compétences en développement full-stack et en traitement de données IoT dans des environnements métiers variés.",
+      "company": "Pyrescom",
+      "region": "Canohes",
+      "remote": "HYBRID",
+      "project": [
+        {
+          "id": 34,
+          "contribution": "Application de gestion des salles et véhicules (réservations, planning).",
+          "name": "Arty",
+          "isCompany": false,
+          "stack_items": {
+            "data": [
+              {
+                "id": 22,
+                "attributes": {
+                  "name": "Zend",
+                  "info": "Framework PHP structuré et modulaire, conçu pour le développement de solutions web professionnelles et évolutives.",
+                  "logo": {
+                    "media": {
+                      "name": "zend.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/zend.jpg",
+                        "height": 225,
+                        "width": 225,
+                        "mime": "image/jpeg",
+                        "size": 6.71,
+                        "strapiUrl": "/uploads/zend_78daf05f73.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/zend.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 4.29,
+                        "strapiUrl": "/uploads/thumbnail_zend_78daf05f73.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 3,
+                "attributes": {
+                  "name": "MySql",
+                  "info": "systèmes de gestion de bases de données relationnelles fiables et largement adoptés.",
+                  "logo": {
+                    "media": {
+                      "name": "mysql.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/mysql.jpg",
+                        "height": 250,
+                        "width": 250,
+                        "mime": "image/jpeg",
+                        "size": 5.63,
+                        "strapiUrl": "/uploads/mysql_dacae28784.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/mysql.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 3.14,
+                        "strapiUrl": "/uploads/thumbnail_mysql_dacae28784.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 21,
+                "attributes": {
+                  "name": "Bulma",
+                  "info": "Framework CSS moderne basé sur Flexbox, centré sur la simplicité et la personnalisation du design.",
+                  "logo": {
+                    "media": {
+                      "name": "bulma.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/bulma.jpg",
+                        "height": 375,
+                        "width": 750,
+                        "mime": "image/jpeg",
+                        "size": 12.34,
+                        "strapiUrl": "/uploads/bulma_3532bddf8f.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/bulma.jpg",
+                        "height": 122,
+                        "width": 245,
+                        "mime": "image/jpeg",
+                        "size": 3.75,
+                        "strapiUrl": "/uploads/thumbnail_bulma_3532bddf8f.jpg"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "webservices": {
+            "data": []
+          }
+        },
+        {
+          "id": 35,
+          "contribution": "Développement d’un logiciel de facturation pour la gestion de déchetteries, comprenant la gestion des pesées de véhicules, le passage par badge, ainsi que le suivi de la facturation et de l’enlèvement des déchets. Ce projet m’a permis de concevoir des solutions métier complètes, intégrant à la fois le suivi opérationnel et le traitement administratif.",
+          "name": "Cyjet",
+          "isCompany": false,
+          "stack_items": {
+            "data": [
+              {
+                "id": 22,
+                "attributes": {
+                  "name": "Zend",
+                  "info": "Framework PHP structuré et modulaire, conçu pour le développement de solutions web professionnelles et évolutives.",
+                  "logo": {
+                    "media": {
+                      "name": "zend.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/zend.jpg",
+                        "height": 225,
+                        "width": 225,
+                        "mime": "image/jpeg",
+                        "size": 6.71,
+                        "strapiUrl": "/uploads/zend_78daf05f73.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/zend.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 4.29,
+                        "strapiUrl": "/uploads/thumbnail_zend_78daf05f73.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 3,
+                "attributes": {
+                  "name": "MySql",
+                  "info": "systèmes de gestion de bases de données relationnelles fiables et largement adoptés.",
+                  "logo": {
+                    "media": {
+                      "name": "mysql.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/mysql.jpg",
+                        "height": 250,
+                        "width": 250,
+                        "mime": "image/jpeg",
+                        "size": 5.63,
+                        "strapiUrl": "/uploads/mysql_dacae28784.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/mysql.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 3.14,
+                        "strapiUrl": "/uploads/thumbnail_mysql_dacae28784.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 2,
+                "attributes": {
+                  "name": "Twig",
+                  "info": "Moteur de templates moderne pour PHP, permettant de séparer la logique applicative de l’affichage.",
+                  "logo": {
+                    "media": {
+                      "name": "twig.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/twig.jpg",
+                        "height": 290,
+                        "width": 290,
+                        "mime": "image/jpeg",
+                        "size": 6.51,
+                        "strapiUrl": "/uploads/twig_98ec2893ce.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/twig.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 2.94,
+                        "strapiUrl": "/uploads/thumbnail_twig_98ec2893ce.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 23,
+                "attributes": {
+                  "name": "Bootstrap",
+                  "info": "Framework CSS responsive offrant un ensemble de composants pour concevoir des interfaces cohérentes et adaptatives.",
+                  "logo": {
+                    "media": {
+                      "name": "bootstrap.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/bootstrap.jpg",
+                        "height": 225,
+                        "width": 224,
+                        "mime": "image/jpeg",
+                        "size": 5.51,
+                        "strapiUrl": "/uploads/bootstrap_bb38ec0927.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/bootstrap.jpg",
+                        "height": 156,
+                        "width": 155,
+                        "mime": "image/jpeg",
+                        "size": 3.83,
+                        "strapiUrl": "/uploads/thumbnail_bootstrap_bb38ec0927.jpg"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "webservices": {
+            "data": []
+          }
+        },
+        {
+          "id": 36,
+          "contribution": "Développement d’un service interne d’agrégation d’APIs tierces (Nexmo, Stripe) pour centraliser les interactions avec différents services externes, notamment pour les applications Aivia, liées au pilotage et au suivi des boîtiers de défibrilateurs. Ce projet m’a permis de concevoir une architecture modulable et sécurisée pour la communication avec plusieurs APIs métiers.",
+          "name": "BlackBox",
+          "isCompany": false,
+          "stack_items": {
+            "data": [
+              {
+                "id": 4,
+                "attributes": {
+                  "name": "ExpressJs",
+                  "info": "Framework minimaliste pour Node.js, spécialisé dans la création d’APIs REST et de middlewares performants.",
+                  "logo": {
+                    "media": {
+                      "name": "expressjs.png",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/expressjs.png",
+                        "height": 499,
+                        "width": 1000,
+                        "mime": "image/png",
+                        "size": 16.56,
+                        "strapiUrl": "/uploads/expressjs_a01a265d7b.png"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/expressjs.png",
+                        "height": 122,
+                        "width": 245,
+                        "mime": "image/png",
+                        "size": 7.68,
+                        "strapiUrl": "/uploads/thumbnail_expressjs_a01a265d7b.png"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 3,
+                "attributes": {
+                  "name": "MySql",
+                  "info": "systèmes de gestion de bases de données relationnelles fiables et largement adoptés.",
+                  "logo": {
+                    "media": {
+                      "name": "mysql.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/mysql.jpg",
+                        "height": 250,
+                        "width": 250,
+                        "mime": "image/jpeg",
+                        "size": 5.63,
+                        "strapiUrl": "/uploads/mysql_dacae28784.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/mysql.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 3.14,
+                        "strapiUrl": "/uploads/thumbnail_mysql_dacae28784.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 24,
+                "attributes": {
+                  "name": "HandlebarsJs",
+                  "info": "Moteur de templates JavaScript logique et déclaratif, facilitant la génération dynamique de vues HTML.",
+                  "logo": {
+                    "media": {
+                      "name": "handlebar.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/handlebar.jpg",
+                        "height": 400,
+                        "width": 400,
+                        "mime": "image/jpeg",
+                        "size": 13.24,
+                        "strapiUrl": "/uploads/handlebar_16c08f3882.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/handlebar.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 4.12,
+                        "strapiUrl": "/uploads/thumbnail_handlebar_16c08f3882.jpg"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "webservices": {
+            "data": [
+              {
+                "id": 4,
+                "attributes": {
+                  "name": "Stripe",
+                  "info": "Solution de paiement en ligne permettant d’accepter, traiter et gérer les transactions de manière sécurisée.",
+                  "locale": "fr-FR",
+                  "logo": {
+                    "media": {
+                      "name": "stripe.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/stripe.jpg",
+                        "height": 150,
+                        "width": 225,
+                        "mime": "image/jpeg",
+                        "size": 4.13,
+                        "strapiUrl": "/uploads/stripe_8ea79b367d.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 6,
+                "attributes": {
+                  "name": "Nexmo (Vonage API)",
+                  "info": "Plateforme de communication cloud permettant d’intégrer facilement dans une application des fonctionnalités de SMS, voix, vidéo et authentification à deux facteurs (2FA).",
+                  "locale": "fr-FR",
+                  "logo": {
+                    "media": {
+                      "name": "nexmo.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/nexmo.jpg",
+                        "height": 475,
+                        "width": 950,
+                        "mime": "image/jpeg",
+                        "size": 17.91,
+                        "strapiUrl": "/uploads/nexmo_46fab3cdba.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/nexmo.jpg",
+                        "height": 122,
+                        "width": 245,
+                        "mime": "image/jpeg",
+                        "size": 3.36,
+                        "strapiUrl": "/uploads/thumbnail_nexmo_46fab3cdba.jpg"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": 37,
+          "contribution": "Développement d’outils de monitoring d’objets connectés (LoRa et Sigfox) pour la télémétrie de consommation électrique, gaz, eau chaude et eau froide, ainsi que pour le suivi de la production électrique solaire de bâtiments et de stations de ski (Les Angles, 66). Ce projet m’a permis de centraliser et visualiser des données IoT complexes afin d’optimiser la gestion énergétique et le pilotage des installations.",
+          "name": "Batnrj",
+          "isCompany": false,
+          "stack_items": {
+            "data": [
+              {
+                "id": 22,
+                "attributes": {
+                  "name": "Zend",
+                  "info": "Framework PHP structuré et modulaire, conçu pour le développement de solutions web professionnelles et évolutives.",
+                  "logo": {
+                    "media": {
+                      "name": "zend.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/zend.jpg",
+                        "height": 225,
+                        "width": 225,
+                        "mime": "image/jpeg",
+                        "size": 6.71,
+                        "strapiUrl": "/uploads/zend_78daf05f73.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/zend.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 4.29,
+                        "strapiUrl": "/uploads/thumbnail_zend_78daf05f73.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 3,
+                "attributes": {
+                  "name": "MySql",
+                  "info": "systèmes de gestion de bases de données relationnelles fiables et largement adoptés.",
+                  "logo": {
+                    "media": {
+                      "name": "mysql.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/mysql.jpg",
+                        "height": 250,
+                        "width": 250,
+                        "mime": "image/jpeg",
+                        "size": 5.63,
+                        "strapiUrl": "/uploads/mysql_dacae28784.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/mysql.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 3.14,
+                        "strapiUrl": "/uploads/thumbnail_mysql_dacae28784.jpg"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "webservices": {
+            "data": [
+              {
+                "id": 1,
+                "attributes": {
+                  "name": "Objenious",
+                  "info": "Plateforme IoT permettant la gestion et l’intégration de capteurs via le réseau LoRaWAN.",
+                  "locale": "fr-FR",
+                  "logo": {
+                    "media": {
+                      "name": "objenious.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/objenious.jpg",
+                        "height": 96,
+                        "width": 177,
+                        "mime": "image/jpeg",
+                        "size": 3.51,
+                        "strapiUrl": "/uploads/objenious_d4127040c5.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 3,
+                "attributes": {
+                  "name": "Orange Iot",
+                  "info": "Solution de connectivité IoT pour la supervision et le pilotage d’objets connectés LoRaWan.",
+                  "locale": "fr-FR",
+                  "logo": {
+                    "media": {
+                      "name": "orange_iot.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/orange_iot.jpg",
+                        "height": 140,
+                        "width": 140,
+                        "mime": "image/jpeg",
+                        "size": 2.43,
+                        "strapiUrl": "/uploads/orange_iot_4686373bfc.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 7,
+                "attributes": {
+                  "name": "Sigfox",
+                  "info": "Sigfox est un réseau IoT longue portée et basse consommation, idéal pour les objets connectés transmettant de petites données à intervalles espacés.",
+                  "locale": "fr-FR",
+                  "logo": {
+                    "media": {
+                      "name": "sigfox.png",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/sigfox.png",
+                        "height": 224,
+                        "width": 224,
+                        "mime": "image/png",
+                        "size": 4.1,
+                        "strapiUrl": "/uploads/sigfox_f803af9697.png"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/sigfox.png",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/png",
+                        "size": 11.95,
+                        "strapiUrl": "/uploads/thumbnail_sigfox_f803af9697.png"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": 38,
+          "contribution": "Développement de solutions pour EPNRJ incluant la télémétrie de la consommation énergétique et la gestion de l’éclairage public, permettant de centraliser et d’optimiser le pilotage des installations électriques urbaines. Ce projet m’a permis d’acquérir une expérience solide dans le suivi et l’analyse de données IoT appliquées aux infrastructures publiques.",
+          "name": "Epnrj",
+          "isCompany": false,
+          "stack_items": {
+            "data": [
+              {
+                "id": 22,
+                "attributes": {
+                  "name": "Zend",
+                  "info": "Framework PHP structuré et modulaire, conçu pour le développement de solutions web professionnelles et évolutives.",
+                  "logo": {
+                    "media": {
+                      "name": "zend.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/zend.jpg",
+                        "height": 225,
+                        "width": 225,
+                        "mime": "image/jpeg",
+                        "size": 6.71,
+                        "strapiUrl": "/uploads/zend_78daf05f73.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/zend.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 4.29,
+                        "strapiUrl": "/uploads/thumbnail_zend_78daf05f73.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 2,
+                "attributes": {
+                  "name": "Twig",
+                  "info": "Moteur de templates moderne pour PHP, permettant de séparer la logique applicative de l’affichage.",
+                  "logo": {
+                    "media": {
+                      "name": "twig.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/twig.jpg",
+                        "height": 290,
+                        "width": 290,
+                        "mime": "image/jpeg",
+                        "size": 6.51,
+                        "strapiUrl": "/uploads/twig_98ec2893ce.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/twig.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 2.94,
+                        "strapiUrl": "/uploads/thumbnail_twig_98ec2893ce.jpg"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "webservices": {
+            "data": [
+              {
+                "id": 1,
+                "attributes": {
+                  "name": "Objenious",
+                  "info": "Plateforme IoT permettant la gestion et l’intégration de capteurs via le réseau LoRaWAN.",
+                  "locale": "fr-FR",
+                  "logo": {
+                    "media": {
+                      "name": "objenious.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/objenious.jpg",
+                        "height": 96,
+                        "width": 177,
+                        "mime": "image/jpeg",
+                        "size": 3.51,
+                        "strapiUrl": "/uploads/objenious_d4127040c5.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 3,
+                "attributes": {
+                  "name": "Orange Iot",
+                  "info": "Solution de connectivité IoT pour la supervision et le pilotage d’objets connectés LoRaWan.",
+                  "locale": "fr-FR",
+                  "logo": {
+                    "media": {
+                      "name": "orange_iot.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/orange_iot.jpg",
+                        "height": 140,
+                        "width": 140,
+                        "mime": "image/jpeg",
+                        "size": 2.43,
+                        "strapiUrl": "/uploads/orange_iot_4686373bfc.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 2,
+                "attributes": {
+                  "name": "The Things Network",
+                  "info": "Solution de connectivité opensource IoT pour la supervision et le pilotage d’objets connectés LoRaWan.",
+                  "locale": "fr-FR",
+                  "logo": {
+                    "media": {
+                      "name": "the_things_network.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/the_things_network.jpg",
+                        "height": 225,
+                        "width": 225,
+                        "mime": "image/jpeg",
+                        "size": 6.52,
+                        "strapiUrl": "/uploads/the_things_network_6f5005af8f.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/the_things_network.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 4.18,
+                        "strapiUrl": "/uploads/thumbnail_the_things_network_6f5005af8f.jpg"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": 39,
+          "contribution": "Développement de Classair, un outil de télémétrie pour le suivi du CO₂ dans les salles de classe, permettant de mesurer et d’analyser la qualité de l’air en temps réel afin d’optimiser le confort et la sécurité des élèves. Ce projet m’a permis de travailler sur la collecte, la centralisation et la visualisation de données IoT critiques.",
+          "name": "Classair",
+          "isCompany": false,
+          "stack_items": {
+            "data": [
+              {
+                "id": 22,
+                "attributes": {
+                  "name": "Zend",
+                  "info": "Framework PHP structuré et modulaire, conçu pour le développement de solutions web professionnelles et évolutives.",
+                  "logo": {
+                    "media": {
+                      "name": "zend.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/zend.jpg",
+                        "height": 225,
+                        "width": 225,
+                        "mime": "image/jpeg",
+                        "size": 6.71,
+                        "strapiUrl": "/uploads/zend_78daf05f73.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/zend.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 4.29,
+                        "strapiUrl": "/uploads/thumbnail_zend_78daf05f73.jpg"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "webservices": {
+            "data": [
+              {
+                "id": 1,
+                "attributes": {
+                  "name": "Objenious",
+                  "info": "Plateforme IoT permettant la gestion et l’intégration de capteurs via le réseau LoRaWAN.",
+                  "locale": "fr-FR",
+                  "logo": {
+                    "media": {
+                      "name": "objenious.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/objenious.jpg",
+                        "height": 96,
+                        "width": 177,
+                        "mime": "image/jpeg",
+                        "size": 3.51,
+                        "strapiUrl": "/uploads/objenious_d4127040c5.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 2,
+                "attributes": {
+                  "name": "The Things Network",
+                  "info": "Solution de connectivité opensource IoT pour la supervision et le pilotage d’objets connectés LoRaWan.",
+                  "locale": "fr-FR",
+                  "logo": {
+                    "media": {
+                      "name": "the_things_network.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/the_things_network.jpg",
+                        "height": 225,
+                        "width": 225,
+                        "mime": "image/jpeg",
+                        "size": 6.52,
+                        "strapiUrl": "/uploads/the_things_network_6f5005af8f.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/the_things_network.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 4.18,
+                        "strapiUrl": "/uploads/thumbnail_the_things_network_6f5005af8f.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 7,
+                "attributes": {
+                  "name": "Sigfox",
+                  "info": "Sigfox est un réseau IoT longue portée et basse consommation, idéal pour les objets connectés transmettant de petites données à intervalles espacés.",
+                  "locale": "fr-FR",
+                  "logo": {
+                    "media": {
+                      "name": "sigfox.png",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/sigfox.png",
+                        "height": 224,
+                        "width": 224,
+                        "mime": "image/png",
+                        "size": 4.1,
+                        "strapiUrl": "/uploads/sigfox_f803af9697.png"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/sigfox.png",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/png",
+                        "size": 11.95,
+                        "strapiUrl": "/uploads/thumbnail_sigfox_f803af9697.png"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": 40,
+          "contribution": "Développement d’un widget JavaScript et de son webservice pour Termod, une badgeuse utilisée pour la télémétrie des temps des employés, permettant de centraliser et de suivre les horaires de manière automatisée.",
+          "name": "Termod",
+          "isCompany": false,
+          "stack_items": {
+            "data": []
+          },
+          "webservices": {
+            "data": []
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "__component": "experience.experience-item",
+      "title": "Développeur logiciel",
+      "startDate": "2018-02-04",
+      "stopDate": "2025-03-07",
+      "content": "Lysias est un logiciel destiné aux cabinets d’avocats, intégrant la gestion documentaire, la signature électronique et le paiement en ligne, permettant de centraliser les dossiers clients, de sécuriser les échanges et de simplifier les procédures administratives.",
+      "company": " JPL Systèmes",
+      "region": "Perpignan",
+      "remote": "OFFICE",
+      "project": [
+        {
+          "id": 41,
+          "contribution": "Stage développeur logiciel où j’ai réalisé l’intégration de l’API Stripe pour le paiement en ligne et de l’API DocuSign pour la signature électronique.",
+          "name": "Lysias",
+          "isCompany": false,
+          "stack_items": {
+            "data": [
+              {
+                "id": 1,
+                "attributes": {
+                  "name": "Symfony",
+                  "info": "Framework PHP orienté MVC, dédié au développement d’applications web robustes et modulaires.",
+                  "logo": {
+                    "media": {
+                      "name": "symfony.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/symfony.jpg",
+                        "height": 200,
+                        "width": 200,
+                        "mime": "image/jpeg",
+                        "size": 5.5,
+                        "strapiUrl": "/uploads/symfony_ade27ba80a.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/symfony.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 4.15,
+                        "strapiUrl": "/uploads/thumbnail_symfony_ade27ba80a.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 2,
+                "attributes": {
+                  "name": "Twig",
+                  "info": "Moteur de templates moderne pour PHP, permettant de séparer la logique applicative de l’affichage.",
+                  "logo": {
+                    "media": {
+                      "name": "twig.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/twig.jpg",
+                        "height": 290,
+                        "width": 290,
+                        "mime": "image/jpeg",
+                        "size": 6.51,
+                        "strapiUrl": "/uploads/twig_98ec2893ce.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/twig.jpg",
+                        "height": 156,
+                        "width": 156,
+                        "mime": "image/jpeg",
+                        "size": 2.94,
+                        "strapiUrl": "/uploads/thumbnail_twig_98ec2893ce.jpg"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "webservices": {
+            "data": [
+              {
+                "id": 4,
+                "attributes": {
+                  "name": "Stripe",
+                  "info": "Solution de paiement en ligne permettant d’accepter, traiter et gérer les transactions de manière sécurisée.",
+                  "locale": "fr-FR",
+                  "logo": {
+                    "media": {
+                      "name": "stripe.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/stripe.jpg",
+                        "height": 150,
+                        "width": 225,
+                        "mime": "image/jpeg",
+                        "size": 4.13,
+                        "strapiUrl": "/uploads/stripe_8ea79b367d.jpg"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": 8,
+                "attributes": {
+                  "name": "Docusign",
+                  "info": "DocuSign est une plateforme de signature électronique sécurisée qui permet de signer, envoyer et gérer des documents numériques de manière rapide et légale.",
+                  "locale": "fr-FR",
+                  "logo": {
+                    "media": {
+                      "name": "docusign.jpg",
+                      "alternativeText": null,
+                      "original": {
+                        "path": "original/docusign.jpg",
+                        "height": 349,
+                        "width": 423,
+                        "mime": "image/jpeg",
+                        "size": 9.62,
+                        "strapiUrl": "/uploads/docusign_7f7c4cc653.jpg"
+                      },
+                      "thumbnail": {
+                        "path": "thumbnail/docusign.jpg",
+                        "height": 156,
+                        "width": 189,
+                        "mime": "image/jpeg",
+                        "size": 3.43,
+                        "strapiUrl": "/uploads/thumbnail_docusign_7f7c4cc653.jpg"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "__component": "experience.experience",
+      "title": "Responsable fichier (Gestion commerciale)",
+      "company": "Intermarché ",
+      "city": "Pollestres",
+      "start": "2004-05-02",
+      "stop": "2016-10-14",
+      "content": "Responsable commercial de points de vente en charge du pilotage opérationnel :\n- gestion et application de la politique tarifaire dans l’ERP\n- gestion des commandes et des tarifs fournisseurs directs\n- mise en place du drive et des caisses libre-service\n- gestion des campagnes publicitaires locales\n- suivi concurrentiel et définition de la stratégie de prix\n- paramétrage des commandes automatiques dans l’ERP\n\nFormateur ERP de gestion commerciale :\n- formation à la stratégie des commandes automatiques, avec mise en pratique directement dans l’ERP\n- formation à la stratégie tarifaire, incluant l’analyse des prix pratiqués par la concurrence et l’intégration de ces informations dans l’ERP"
+    }
+  ],
+  "seo": null
+}

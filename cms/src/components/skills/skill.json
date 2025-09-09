@@ -1,12 +1,29 @@
 {
   "collectionName": "components_skills_skills",
   "info": {
-    "displayName": "Skill"
+    "displayName": "Skill",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Skill": {
+    "Name": {
       "type": "string"
+    },
+    "Advancement": {
+      "type": "integer",
+      "default": 0,
+      "required": true,
+      "max": 10
+    },
+    "Media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
