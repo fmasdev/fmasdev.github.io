@@ -24,6 +24,6 @@ dist-ssr
 *.sw?
 
 
-# Data files
-public/content/fr/*.json
+
+
 
