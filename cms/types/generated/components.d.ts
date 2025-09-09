@@ -152,9 +152,20 @@ export interface SkillsSkill extends Schema.Component {
   collectionName: 'components_skills_skills';
   info: {
     displayName: 'Skill';
+    description: '';
   };
   attributes: {
-    Skill: Attribute.String;
+    Name: Attribute.String;
+    Advancement: Attribute.Integer &
+      Attribute.Required &
+      Attribute.SetMinMax<
+        {
+          max: 10;
+        },
+        number
+      > &
+      Attribute.DefaultTo<0>;
+    Media: Attribute.Media;
   };
 }
 
