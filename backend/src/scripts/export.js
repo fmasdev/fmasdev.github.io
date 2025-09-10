@@ -25,7 +25,7 @@ async function exportData() {
       ])
 
     const finalData = {
-      experience: professionalExperiences[0]?.attributes,
+      experiences: professionalExperiences[0]?.attributes,
       training: training[0]?.attributes,
       skills: skills[0]?.attributes,
       feedbacks: feedBacks[0]?.attributes,
@@ -55,12 +55,10 @@ async function exportData() {
     for (const media of medias) {
       await fileHelper.downloadFile(media, `${dirConfig.export}media/`, strapi)
     }
-    //
-    // console.log(`## SavedMedia`)
+
+    console.log(`## SavedMedia`)
+    console.log('### Export success')
   }
-
-
-
 }
 
 ;(async () => {
