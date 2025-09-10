@@ -15,9 +15,9 @@
       "required": true,
       "max": 100
     },
-    "Media": {
+    "Logo": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",

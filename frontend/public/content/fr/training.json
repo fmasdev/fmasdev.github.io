@@ -15,7 +15,7 @@
       "logo": {
         "media": {
           "name": "idem.jpg",
-          "alternativeText": null,
+          "alternativeText": "L'idem creative arts school logo",
           "original": {
             "path": "original/idem.jpg",
             "height": 110,
@@ -23,14 +23,6 @@
             "mime": "image/jpeg",
             "size": 6.31,
             "strapiUrl": "/uploads/idem_d3ab014208.jpg"
-          },
-          "thumbnail": {
-            "path": "thumbnail/idem.jpg",
-            "height": 84,
-            "width": 245,
-            "mime": "image/jpeg",
-            "size": 5.03,
-            "strapiUrl": "/uploads/thumbnail_idem_d3ab014208.jpg"
           }
         }
       }
@@ -47,7 +39,7 @@
       "logo": {
         "media": {
           "name": "openclassrooms.jpg",
-          "alternativeText": null,
+          "alternativeText": "Openclassrooms logo",
           "original": {
             "path": "original/openclassrooms.jpg",
             "height": 200,
@@ -55,14 +47,6 @@
             "mime": "image/jpeg",
             "size": 12.32,
             "strapiUrl": "/uploads/openclassrooms_32140e58c2.jpg"
-          },
-          "thumbnail": {
-            "path": "thumbnail/openclassrooms.jpg",
-            "height": 156,
-            "width": 242,
-            "mime": "image/jpeg",
-            "size": 8.69,
-            "strapiUrl": "/uploads/thumbnail_openclassrooms_32140e58c2.jpg"
           }
         }
       }
@@ -79,7 +63,7 @@
       "logo": {
         "media": {
           "name": "openclassrooms.jpg",
-          "alternativeText": null,
+          "alternativeText": "Openclassrooms logo",
           "original": {
             "path": "original/openclassrooms.jpg",
             "height": 200,
@@ -87,14 +71,6 @@
             "mime": "image/jpeg",
             "size": 12.32,
             "strapiUrl": "/uploads/openclassrooms_32140e58c2.jpg"
-          },
-          "thumbnail": {
-            "path": "thumbnail/openclassrooms.jpg",
-            "height": 156,
-            "width": 242,
-            "mime": "image/jpeg",
-            "size": 8.69,
-            "strapiUrl": "/uploads/thumbnail_openclassrooms_32140e58c2.jpg"
           }
         }
       }
@@ -111,7 +87,7 @@
       "logo": {
         "media": {
           "name": "openclassrooms.jpg",
-          "alternativeText": null,
+          "alternativeText": "Openclassrooms logo",
           "original": {
             "path": "original/openclassrooms.jpg",
             "height": 200,
@@ -119,14 +95,6 @@
             "mime": "image/jpeg",
             "size": 12.32,
             "strapiUrl": "/uploads/openclassrooms_32140e58c2.jpg"
-          },
-          "thumbnail": {
-            "path": "thumbnail/openclassrooms.jpg",
-            "height": 156,
-            "width": 242,
-            "mime": "image/jpeg",
-            "size": 8.69,
-            "strapiUrl": "/uploads/thumbnail_openclassrooms_32140e58c2.jpg"
           }
         }
       }

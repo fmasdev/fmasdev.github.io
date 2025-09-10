@@ -29,7 +29,7 @@
                   "logo": {
                     "media": {
                       "name": "symfony.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Symfony logo",
                       "original": {
                         "path": "original/symfony.jpg",
                         "height": 200,
@@ -37,14 +37,6 @@
                         "mime": "image/jpeg",
                         "size": 5.5,
                         "strapiUrl": "/uploads/symfony_ade27ba80a.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/symfony.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 4.15,
-                        "strapiUrl": "/uploads/thumbnail_symfony_ade27ba80a.jpg"
                       }
                     }
                   }
@@ -58,7 +50,7 @@
                   "logo": {
                     "media": {
                       "name": "twig.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Twig logo",
                       "original": {
                         "path": "original/twig.jpg",
                         "height": 290,
@@ -66,14 +58,6 @@
                         "mime": "image/jpeg",
                         "size": 6.51,
                         "strapiUrl": "/uploads/twig_98ec2893ce.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/twig.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 2.94,
-                        "strapiUrl": "/uploads/thumbnail_twig_98ec2893ce.jpg"
                       }
                     }
                   }
@@ -87,7 +71,7 @@
                   "logo": {
                     "media": {
                       "name": "mysql.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "MySQL logo",
                       "original": {
                         "path": "original/mysql.jpg",
                         "height": 250,
@@ -95,14 +79,6 @@
                         "mime": "image/jpeg",
                         "size": 5.63,
                         "strapiUrl": "/uploads/mysql_dacae28784.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/mysql.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 3.14,
-                        "strapiUrl": "/uploads/thumbnail_mysql_dacae28784.jpg"
                       }
                     }
                   }
@@ -116,7 +92,7 @@
                   "logo": {
                     "media": {
                       "name": "expressjs.png",
-                      "alternativeText": null,
+                      "alternativeText": "Exoress js logo",
                       "original": {
                         "path": "original/expressjs.png",
                         "height": 499,
@@ -124,14 +100,6 @@
                         "mime": "image/png",
                         "size": 16.56,
                         "strapiUrl": "/uploads/expressjs_a01a265d7b.png"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/expressjs.png",
-                        "height": 122,
-                        "width": 245,
-                        "mime": "image/png",
-                        "size": 7.68,
-                        "strapiUrl": "/uploads/thumbnail_expressjs_a01a265d7b.png"
                       }
                     }
                   }
@@ -145,7 +113,7 @@
                   "logo": {
                     "media": {
                       "name": "mongodb.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "mongoDB logo",
                       "original": {
                         "path": "original/mongodb.jpg",
                         "height": 550,
@@ -153,14 +121,6 @@
                         "mime": "image/jpeg",
                         "size": 20.37,
                         "strapiUrl": "/uploads/mongodb_745eb831a8.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/mongodb.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 3.32,
-                        "strapiUrl": "/uploads/thumbnail_mongodb_745eb831a8.jpg"
                       }
                     }
                   }
@@ -174,7 +134,7 @@
                   "logo": {
                     "media": {
                       "name": "sailsjs.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Sails js logo",
                       "original": {
                         "path": "original/sailsjs.jpg",
                         "height": 300,
@@ -182,14 +142,6 @@
                         "mime": "image/jpeg",
                         "size": 11.79,
                         "strapiUrl": "/uploads/sailsjs_29547d0a2c.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/sailsjs.jpg",
-                        "height": 123,
-                        "width": 245,
-                        "mime": "image/jpeg",
-                        "size": 4.54,
-                        "strapiUrl": "/uploads/thumbnail_sailsjs_29547d0a2c.jpg"
                       }
                     }
                   }
@@ -203,7 +155,7 @@
                   "logo": {
                     "media": {
                       "name": "nestjs.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Nest js logo",
                       "original": {
                         "path": "original/nestjs.jpg",
                         "height": 719,
@@ -211,14 +163,6 @@
                         "mime": "image/jpeg",
                         "size": 21.14,
                         "strapiUrl": "/uploads/nestjs_c3daf23aad.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/nestjs.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 3.18,
-                        "strapiUrl": "/uploads/thumbnail_nestjs_c3daf23aad.jpg"
                       }
                     }
                   }
@@ -245,7 +189,7 @@
                   "logo": {
                     "media": {
                       "name": "strapi.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Strapi logo",
                       "original": {
                         "path": "original/strapi.jpg",
                         "height": 280,
@@ -253,14 +197,6 @@
                         "mime": "image/jpeg",
                         "size": 7.58,
                         "strapiUrl": "/uploads/strapi_c6550c02fb.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/strapi.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 3.92,
-                        "strapiUrl": "/uploads/thumbnail_strapi_c6550c02fb.jpg"
                       }
                     }
                   }
@@ -274,7 +210,7 @@
                   "logo": {
                     "media": {
                       "name": "expressjs.png",
-                      "alternativeText": null,
+                      "alternativeText": "Exoress js logo",
                       "original": {
                         "path": "original/expressjs.png",
                         "height": 499,
@@ -282,14 +218,6 @@
                         "mime": "image/png",
                         "size": 16.56,
                         "strapiUrl": "/uploads/expressjs_a01a265d7b.png"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/expressjs.png",
-                        "height": 122,
-                        "width": 245,
-                        "mime": "image/png",
-                        "size": 7.68,
-                        "strapiUrl": "/uploads/thumbnail_expressjs_a01a265d7b.png"
                       }
                     }
                   }
@@ -303,7 +231,7 @@
                   "logo": {
                     "media": {
                       "name": "graphql.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "GraphQL logo",
                       "original": {
                         "path": "original/graphql.jpg",
                         "height": 235,
@@ -311,14 +239,6 @@
                         "mime": "image/jpeg",
                         "size": 9.83,
                         "strapiUrl": "/uploads/graphql_efc09849d4.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/graphql.jpg",
-                        "height": 156,
-                        "width": 142,
-                        "mime": "image/jpeg",
-                        "size": 5.59,
-                        "strapiUrl": "/uploads/thumbnail_graphql_efc09849d4.jpg"
                       }
                     }
                   }
@@ -332,7 +252,7 @@
                   "logo": {
                     "media": {
                       "name": "vueJs.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Vue js logo",
                       "original": {
                         "path": "original/vueJs.jpg",
                         "height": 250,
@@ -340,14 +260,6 @@
                         "mime": "image/jpeg",
                         "size": 6.33,
                         "strapiUrl": "/uploads/vue_Js_b140cc7b4a.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/vueJs.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 3.52,
-                        "strapiUrl": "/uploads/thumbnail_vue_Js_b140cc7b4a.jpg"
                       }
                     }
                   }
@@ -374,7 +286,7 @@
                   "logo": {
                     "media": {
                       "name": "ibexa.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Ibexa logo",
                       "original": {
                         "path": "original/ibexa.jpg",
                         "height": 225,
@@ -382,14 +294,6 @@
                         "mime": "image/jpeg",
                         "size": 5.45,
                         "strapiUrl": "/uploads/ibexa_5a4a3eb437.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/ibexa.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 3.23,
-                        "strapiUrl": "/uploads/thumbnail_ibexa_5a4a3eb437.jpg"
                       }
                     }
                   }
@@ -403,7 +307,7 @@
                   "logo": {
                     "media": {
                       "name": "expressjs.png",
-                      "alternativeText": null,
+                      "alternativeText": "Exoress js logo",
                       "original": {
                         "path": "original/expressjs.png",
                         "height": 499,
@@ -411,14 +315,6 @@
                         "mime": "image/png",
                         "size": 16.56,
                         "strapiUrl": "/uploads/expressjs_a01a265d7b.png"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/expressjs.png",
-                        "height": 122,
-                        "width": 245,
-                        "mime": "image/png",
-                        "size": 7.68,
-                        "strapiUrl": "/uploads/thumbnail_expressjs_a01a265d7b.png"
                       }
                     }
                   }
@@ -432,7 +328,7 @@
                   "logo": {
                     "media": {
                       "name": "graphql.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "GraphQL logo",
                       "original": {
                         "path": "original/graphql.jpg",
                         "height": 235,
@@ -440,14 +336,6 @@
                         "mime": "image/jpeg",
                         "size": 9.83,
                         "strapiUrl": "/uploads/graphql_efc09849d4.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/graphql.jpg",
-                        "height": 156,
-                        "width": 142,
-                        "mime": "image/jpeg",
-                        "size": 5.59,
-                        "strapiUrl": "/uploads/thumbnail_graphql_efc09849d4.jpg"
                       }
                     }
                   }
@@ -461,7 +349,7 @@
                   "logo": {
                     "media": {
                       "name": "vueJs.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Vue js logo",
                       "original": {
                         "path": "original/vueJs.jpg",
                         "height": 250,
@@ -469,14 +357,6 @@
                         "mime": "image/jpeg",
                         "size": 6.33,
                         "strapiUrl": "/uploads/vue_Js_b140cc7b4a.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/vueJs.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 3.52,
-                        "strapiUrl": "/uploads/thumbnail_vue_Js_b140cc7b4a.jpg"
                       }
                     }
                   }
@@ -503,7 +383,7 @@
                   "logo": {
                     "media": {
                       "name": "api-platform.png",
-                      "alternativeText": null,
+                      "alternativeText": "Api platform logo",
                       "original": {
                         "path": "original/api-platform.png",
                         "height": 250,
@@ -511,14 +391,6 @@
                         "mime": "image/png",
                         "size": 6.23,
                         "strapiUrl": "/uploads/api_platform_0b8123e0d8.png"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/api-platform.png",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/png",
-                        "size": 17.78,
-                        "strapiUrl": "/uploads/thumbnail_api_platform_0b8123e0d8.png"
                       }
                     }
                   }
@@ -532,7 +404,7 @@
                   "logo": {
                     "media": {
                       "name": "mariadb.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "MariaDb logo",
                       "original": {
                         "path": "original/mariadb.jpg",
                         "height": 280,
@@ -540,14 +412,6 @@
                         "mime": "image/jpeg",
                         "size": 8.4,
                         "strapiUrl": "/uploads/mariadb_572fe8d2da.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/mariadb.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 3.97,
-                        "strapiUrl": "/uploads/thumbnail_mariadb_572fe8d2da.jpg"
                       }
                     }
                   }
@@ -561,7 +425,7 @@
                   "logo": {
                     "media": {
                       "name": "vueJs.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Vue js logo",
                       "original": {
                         "path": "original/vueJs.jpg",
                         "height": 250,
@@ -569,14 +433,6 @@
                         "mime": "image/jpeg",
                         "size": 6.33,
                         "strapiUrl": "/uploads/vue_Js_b140cc7b4a.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/vueJs.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 3.52,
-                        "strapiUrl": "/uploads/thumbnail_vue_Js_b140cc7b4a.jpg"
                       }
                     }
                   }
@@ -590,7 +446,7 @@
                   "logo": {
                     "media": {
                       "name": "wordpress.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "WordPress logo",
                       "original": {
                         "path": "original/wordpress.jpg",
                         "height": 980,
@@ -598,14 +454,6 @@
                         "mime": "image/jpeg",
                         "size": 45.39,
                         "strapiUrl": "/uploads/wordpress_ea4cb9eb81.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/wordpress.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 4.67,
-                        "strapiUrl": "/uploads/thumbnail_wordpress_ea4cb9eb81.jpg"
                       }
                     }
                   }
@@ -632,7 +480,7 @@
                   "logo": {
                     "media": {
                       "name": "ezpublish.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "eZ Publish logo",
                       "original": {
                         "path": "original/ezpublish.jpg",
                         "height": 350,
@@ -640,14 +488,6 @@
                         "mime": "image/jpeg",
                         "size": 6.51,
                         "strapiUrl": "/uploads/ezpublish_6cf8d670c2.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/ezpublish.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 2.69,
-                        "strapiUrl": "/uploads/thumbnail_ezpublish_6cf8d670c2.jpg"
                       }
                     }
                   }
@@ -661,7 +501,7 @@
                   "logo": {
                     "media": {
                       "name": "symfony.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Symfony logo",
                       "original": {
                         "path": "original/symfony.jpg",
                         "height": 200,
@@ -669,14 +509,6 @@
                         "mime": "image/jpeg",
                         "size": 5.5,
                         "strapiUrl": "/uploads/symfony_ade27ba80a.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/symfony.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 4.15,
-                        "strapiUrl": "/uploads/thumbnail_symfony_ade27ba80a.jpg"
                       }
                     }
                   }
@@ -690,7 +522,7 @@
                   "logo": {
                     "media": {
                       "name": "twig.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Twig logo",
                       "original": {
                         "path": "original/twig.jpg",
                         "height": 290,
@@ -698,14 +530,6 @@
                         "mime": "image/jpeg",
                         "size": 6.51,
                         "strapiUrl": "/uploads/twig_98ec2893ce.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/twig.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 2.94,
-                        "strapiUrl": "/uploads/thumbnail_twig_98ec2893ce.jpg"
                       }
                     }
                   }
@@ -719,7 +543,7 @@
                   "logo": {
                     "media": {
                       "name": "react.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "React js logo",
                       "original": {
                         "path": "original/react.jpg",
                         "height": 219,
@@ -727,14 +551,6 @@
                         "mime": "image/jpeg",
                         "size": 7.79,
                         "strapiUrl": "/uploads/react_4a6b8c21e6.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/react.jpg",
-                        "height": 156,
-                        "width": 164,
-                        "mime": "image/jpeg",
-                        "size": 4.95,
-                        "strapiUrl": "/uploads/thumbnail_react_4a6b8c21e6.jpg"
                       }
                     }
                   }
@@ -748,7 +564,7 @@
                   "logo": {
                     "media": {
                       "name": "graphql.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "GraphQL logo",
                       "original": {
                         "path": "original/graphql.jpg",
                         "height": 235,
@@ -756,14 +572,6 @@
                         "mime": "image/jpeg",
                         "size": 9.83,
                         "strapiUrl": "/uploads/graphql_efc09849d4.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/graphql.jpg",
-                        "height": 156,
-                        "width": 142,
-                        "mime": "image/jpeg",
-                        "size": 5.59,
-                        "strapiUrl": "/uploads/thumbnail_graphql_efc09849d4.jpg"
                       }
                     }
                   }
@@ -777,7 +585,7 @@
                   "logo": {
                     "media": {
                       "name": "expressjs.png",
-                      "alternativeText": null,
+                      "alternativeText": "Exoress js logo",
                       "original": {
                         "path": "original/expressjs.png",
                         "height": 499,
@@ -785,14 +593,6 @@
                         "mime": "image/png",
                         "size": 16.56,
                         "strapiUrl": "/uploads/expressjs_a01a265d7b.png"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/expressjs.png",
-                        "height": 122,
-                        "width": 245,
-                        "mime": "image/png",
-                        "size": 7.68,
-                        "strapiUrl": "/uploads/thumbnail_expressjs_a01a265d7b.png"
                       }
                     }
                   }
@@ -806,7 +606,7 @@
                   "logo": {
                     "media": {
                       "name": "mariadb.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "MariaDb logo",
                       "original": {
                         "path": "original/mariadb.jpg",
                         "height": 280,
@@ -814,14 +614,6 @@
                         "mime": "image/jpeg",
                         "size": 8.4,
                         "strapiUrl": "/uploads/mariadb_572fe8d2da.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/mariadb.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 3.97,
-                        "strapiUrl": "/uploads/thumbnail_mariadb_572fe8d2da.jpg"
                       }
                     }
                   }
@@ -835,7 +627,7 @@
                   "logo": {
                     "media": {
                       "name": "vueJs.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Vue js logo",
                       "original": {
                         "path": "original/vueJs.jpg",
                         "height": 250,
@@ -843,14 +635,6 @@
                         "mime": "image/jpeg",
                         "size": 6.33,
                         "strapiUrl": "/uploads/vue_Js_b140cc7b4a.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/vueJs.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 3.52,
-                        "strapiUrl": "/uploads/thumbnail_vue_Js_b140cc7b4a.jpg"
                       }
                     }
                   }
@@ -869,7 +653,7 @@
                   "logo": {
                     "media": {
                       "name": "sequoia_soft.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "SequoiaSoft logo",
                       "original": {
                         "path": "original/sequoia_soft.jpg",
                         "height": 156,
@@ -877,14 +661,6 @@
                         "mime": "image/jpeg",
                         "size": 4.77,
                         "strapiUrl": "/uploads/sequoia_soft_160d83e83c.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/sequoia_soft.jpg",
-                        "height": 118,
-                        "width": 245,
-                        "mime": "image/jpeg",
-                        "size": 3.47,
-                        "strapiUrl": "/uploads/thumbnail_sequoia_soft_160d83e83c.jpg"
                       }
                     }
                   }
@@ -908,7 +684,7 @@
                   "logo": {
                     "media": {
                       "name": "contentful.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Contentful logo",
                       "original": {
                         "path": "original/contentful.jpg",
                         "height": 225,
@@ -916,14 +692,6 @@
                         "mime": "image/jpeg",
                         "size": 4.76,
                         "strapiUrl": "/uploads/contentful_1544b12258.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/contentful.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 2.86,
-                        "strapiUrl": "/uploads/thumbnail_contentful_1544b12258.jpg"
                       }
                     }
                   }
@@ -937,7 +705,7 @@
                   "logo": {
                     "media": {
                       "name": "gatsby.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Gatsby logo",
                       "original": {
                         "path": "original/gatsby.jpg",
                         "height": 145,
@@ -960,7 +728,7 @@
       "logo": {
         "media": {
           "name": "kaliop.jpg",
-          "alternativeText": null,
+          "alternativeText": "Kaliop logo",
           "original": {
             "path": "original/kaliop.jpg",
             "height": 100,
@@ -998,7 +766,7 @@
                   "logo": {
                     "media": {
                       "name": "zend.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Zend Framework logo",
                       "original": {
                         "path": "original/zend.jpg",
                         "height": 225,
@@ -1006,14 +774,6 @@
                         "mime": "image/jpeg",
                         "size": 6.71,
                         "strapiUrl": "/uploads/zend_78daf05f73.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/zend.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 4.29,
-                        "strapiUrl": "/uploads/thumbnail_zend_78daf05f73.jpg"
                       }
                     }
                   }
@@ -1027,7 +787,7 @@
                   "logo": {
                     "media": {
                       "name": "mysql.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "MySQL logo",
                       "original": {
                         "path": "original/mysql.jpg",
                         "height": 250,
@@ -1035,14 +795,6 @@
                         "mime": "image/jpeg",
                         "size": 5.63,
                         "strapiUrl": "/uploads/mysql_dacae28784.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/mysql.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 3.14,
-                        "strapiUrl": "/uploads/thumbnail_mysql_dacae28784.jpg"
                       }
                     }
                   }
@@ -1056,7 +808,7 @@
                   "logo": {
                     "media": {
                       "name": "bulma.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Bulma logo",
                       "original": {
                         "path": "original/bulma.jpg",
                         "height": 375,
@@ -1064,14 +816,6 @@
                         "mime": "image/jpeg",
                         "size": 12.34,
                         "strapiUrl": "/uploads/bulma_3532bddf8f.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/bulma.jpg",
-                        "height": 122,
-                        "width": 245,
-                        "mime": "image/jpeg",
-                        "size": 3.75,
-                        "strapiUrl": "/uploads/thumbnail_bulma_3532bddf8f.jpg"
                       }
                     }
                   }
@@ -1098,7 +842,7 @@
                   "logo": {
                     "media": {
                       "name": "zend.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Zend Framework logo",
                       "original": {
                         "path": "original/zend.jpg",
                         "height": 225,
@@ -1106,14 +850,6 @@
                         "mime": "image/jpeg",
                         "size": 6.71,
                         "strapiUrl": "/uploads/zend_78daf05f73.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/zend.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 4.29,
-                        "strapiUrl": "/uploads/thumbnail_zend_78daf05f73.jpg"
                       }
                     }
                   }
@@ -1127,7 +863,7 @@
                   "logo": {
                     "media": {
                       "name": "mysql.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "MySQL logo",
                       "original": {
                         "path": "original/mysql.jpg",
                         "height": 250,
@@ -1135,14 +871,6 @@
                         "mime": "image/jpeg",
                         "size": 5.63,
                         "strapiUrl": "/uploads/mysql_dacae28784.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/mysql.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 3.14,
-                        "strapiUrl": "/uploads/thumbnail_mysql_dacae28784.jpg"
                       }
                     }
                   }
@@ -1156,7 +884,7 @@
                   "logo": {
                     "media": {
                       "name": "twig.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Twig logo",
                       "original": {
                         "path": "original/twig.jpg",
                         "height": 290,
@@ -1164,14 +892,6 @@
                         "mime": "image/jpeg",
                         "size": 6.51,
                         "strapiUrl": "/uploads/twig_98ec2893ce.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/twig.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 2.94,
-                        "strapiUrl": "/uploads/thumbnail_twig_98ec2893ce.jpg"
                       }
                     }
                   }
@@ -1185,7 +905,7 @@
                   "logo": {
                     "media": {
                       "name": "bootstrap.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Bootstrap logo",
                       "original": {
                         "path": "original/bootstrap.jpg",
                         "height": 225,
@@ -1193,14 +913,6 @@
                         "mime": "image/jpeg",
                         "size": 5.51,
                         "strapiUrl": "/uploads/bootstrap_bb38ec0927.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/bootstrap.jpg",
-                        "height": 156,
-                        "width": 155,
-                        "mime": "image/jpeg",
-                        "size": 3.83,
-                        "strapiUrl": "/uploads/thumbnail_bootstrap_bb38ec0927.jpg"
                       }
                     }
                   }
@@ -1227,7 +939,7 @@
                   "logo": {
                     "media": {
                       "name": "expressjs.png",
-                      "alternativeText": null,
+                      "alternativeText": "Exoress js logo",
                       "original": {
                         "path": "original/expressjs.png",
                         "height": 499,
@@ -1235,14 +947,6 @@
                         "mime": "image/png",
                         "size": 16.56,
                         "strapiUrl": "/uploads/expressjs_a01a265d7b.png"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/expressjs.png",
-                        "height": 122,
-                        "width": 245,
-                        "mime": "image/png",
-                        "size": 7.68,
-                        "strapiUrl": "/uploads/thumbnail_expressjs_a01a265d7b.png"
                       }
                     }
                   }
@@ -1256,7 +960,7 @@
                   "logo": {
                     "media": {
                       "name": "mysql.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "MySQL logo",
                       "original": {
                         "path": "original/mysql.jpg",
                         "height": 250,
@@ -1264,14 +968,6 @@
                         "mime": "image/jpeg",
                         "size": 5.63,
                         "strapiUrl": "/uploads/mysql_dacae28784.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/mysql.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 3.14,
-                        "strapiUrl": "/uploads/thumbnail_mysql_dacae28784.jpg"
                       }
                     }
                   }
@@ -1285,7 +981,7 @@
                   "logo": {
                     "media": {
                       "name": "handlebar.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Handlebars logo",
                       "original": {
                         "path": "original/handlebar.jpg",
                         "height": 400,
@@ -1293,14 +989,6 @@
                         "mime": "image/jpeg",
                         "size": 13.24,
                         "strapiUrl": "/uploads/handlebar_16c08f3882.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/handlebar.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 4.12,
-                        "strapiUrl": "/uploads/thumbnail_handlebar_16c08f3882.jpg"
                       }
                     }
                   }
@@ -1319,7 +1007,7 @@
                   "logo": {
                     "media": {
                       "name": "stripe.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Stripe logo",
                       "original": {
                         "path": "original/stripe.jpg",
                         "height": 150,
@@ -1341,7 +1029,7 @@
                   "logo": {
                     "media": {
                       "name": "nexmo.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Nexmo logo",
                       "original": {
                         "path": "original/nexmo.jpg",
                         "height": 475,
@@ -1349,14 +1037,6 @@
                         "mime": "image/jpeg",
                         "size": 17.91,
                         "strapiUrl": "/uploads/nexmo_46fab3cdba.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/nexmo.jpg",
-                        "height": 122,
-                        "width": 245,
-                        "mime": "image/jpeg",
-                        "size": 3.36,
-                        "strapiUrl": "/uploads/thumbnail_nexmo_46fab3cdba.jpg"
                       }
                     }
                   }
@@ -1380,7 +1060,7 @@
                   "logo": {
                     "media": {
                       "name": "zend.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Zend Framework logo",
                       "original": {
                         "path": "original/zend.jpg",
                         "height": 225,
@@ -1388,14 +1068,6 @@
                         "mime": "image/jpeg",
                         "size": 6.71,
                         "strapiUrl": "/uploads/zend_78daf05f73.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/zend.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 4.29,
-                        "strapiUrl": "/uploads/thumbnail_zend_78daf05f73.jpg"
                       }
                     }
                   }
@@ -1409,7 +1081,7 @@
                   "logo": {
                     "media": {
                       "name": "mysql.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "MySQL logo",
                       "original": {
                         "path": "original/mysql.jpg",
                         "height": 250,
@@ -1417,14 +1089,6 @@
                         "mime": "image/jpeg",
                         "size": 5.63,
                         "strapiUrl": "/uploads/mysql_dacae28784.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/mysql.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 3.14,
-                        "strapiUrl": "/uploads/thumbnail_mysql_dacae28784.jpg"
                       }
                     }
                   }
@@ -1443,7 +1107,7 @@
                   "logo": {
                     "media": {
                       "name": "objenious.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Objenious (Bouigues) logo",
                       "original": {
                         "path": "original/objenious.jpg",
                         "height": 96,
@@ -1465,7 +1129,7 @@
                   "logo": {
                     "media": {
                       "name": "orange_iot.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Orange telecom logo",
                       "original": {
                         "path": "original/orange_iot.jpg",
                         "height": 140,
@@ -1487,7 +1151,7 @@
                   "logo": {
                     "media": {
                       "name": "sigfox.png",
-                      "alternativeText": null,
+                      "alternativeText": "Sigfox logo",
                       "original": {
                         "path": "original/sigfox.png",
                         "height": 224,
@@ -1495,14 +1159,6 @@
                         "mime": "image/png",
                         "size": 4.1,
                         "strapiUrl": "/uploads/sigfox_f803af9697.png"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/sigfox.png",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/png",
-                        "size": 11.95,
-                        "strapiUrl": "/uploads/thumbnail_sigfox_f803af9697.png"
                       }
                     }
                   }
@@ -1526,7 +1182,7 @@
                   "logo": {
                     "media": {
                       "name": "zend.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Zend Framework logo",
                       "original": {
                         "path": "original/zend.jpg",
                         "height": 225,
@@ -1534,14 +1190,6 @@
                         "mime": "image/jpeg",
                         "size": 6.71,
                         "strapiUrl": "/uploads/zend_78daf05f73.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/zend.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 4.29,
-                        "strapiUrl": "/uploads/thumbnail_zend_78daf05f73.jpg"
                       }
                     }
                   }
@@ -1555,7 +1203,7 @@
                   "logo": {
                     "media": {
                       "name": "twig.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Twig logo",
                       "original": {
                         "path": "original/twig.jpg",
                         "height": 290,
@@ -1563,14 +1211,6 @@
                         "mime": "image/jpeg",
                         "size": 6.51,
                         "strapiUrl": "/uploads/twig_98ec2893ce.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/twig.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 2.94,
-                        "strapiUrl": "/uploads/thumbnail_twig_98ec2893ce.jpg"
                       }
                     }
                   }
@@ -1589,7 +1229,7 @@
                   "logo": {
                     "media": {
                       "name": "objenious.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Objenious (Bouigues) logo",
                       "original": {
                         "path": "original/objenious.jpg",
                         "height": 96,
@@ -1611,7 +1251,7 @@
                   "logo": {
                     "media": {
                       "name": "orange_iot.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Orange telecom logo",
                       "original": {
                         "path": "original/orange_iot.jpg",
                         "height": 140,
@@ -1633,7 +1273,7 @@
                   "logo": {
                     "media": {
                       "name": "the_things_network.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "The things network logo",
                       "original": {
                         "path": "original/the_things_network.jpg",
                         "height": 225,
@@ -1641,14 +1281,6 @@
                         "mime": "image/jpeg",
                         "size": 6.52,
                         "strapiUrl": "/uploads/the_things_network_6f5005af8f.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/the_things_network.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 4.18,
-                        "strapiUrl": "/uploads/thumbnail_the_things_network_6f5005af8f.jpg"
                       }
                     }
                   }
@@ -1672,7 +1304,7 @@
                   "logo": {
                     "media": {
                       "name": "zend.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Zend Framework logo",
                       "original": {
                         "path": "original/zend.jpg",
                         "height": 225,
@@ -1680,14 +1312,6 @@
                         "mime": "image/jpeg",
                         "size": 6.71,
                         "strapiUrl": "/uploads/zend_78daf05f73.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/zend.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 4.29,
-                        "strapiUrl": "/uploads/thumbnail_zend_78daf05f73.jpg"
                       }
                     }
                   }
@@ -1706,7 +1330,7 @@
                   "logo": {
                     "media": {
                       "name": "objenious.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Objenious (Bouigues) logo",
                       "original": {
                         "path": "original/objenious.jpg",
                         "height": 96,
@@ -1728,7 +1352,7 @@
                   "logo": {
                     "media": {
                       "name": "the_things_network.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "The things network logo",
                       "original": {
                         "path": "original/the_things_network.jpg",
                         "height": 225,
@@ -1736,14 +1360,6 @@
                         "mime": "image/jpeg",
                         "size": 6.52,
                         "strapiUrl": "/uploads/the_things_network_6f5005af8f.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/the_things_network.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 4.18,
-                        "strapiUrl": "/uploads/thumbnail_the_things_network_6f5005af8f.jpg"
                       }
                     }
                   }
@@ -1758,7 +1374,7 @@
                   "logo": {
                     "media": {
                       "name": "sigfox.png",
-                      "alternativeText": null,
+                      "alternativeText": "Sigfox logo",
                       "original": {
                         "path": "original/sigfox.png",
                         "height": 224,
@@ -1766,14 +1382,6 @@
                         "mime": "image/png",
                         "size": 4.1,
                         "strapiUrl": "/uploads/sigfox_f803af9697.png"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/sigfox.png",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/png",
-                        "size": 11.95,
-                        "strapiUrl": "/uploads/thumbnail_sigfox_f803af9697.png"
                       }
                     }
                   }
@@ -1798,7 +1406,7 @@
       "logo": {
         "media": {
           "name": "pyrescom.jpg",
-          "alternativeText": null,
+          "alternativeText": "Pyrescom logo",
           "original": {
             "path": "original/pyrescom.jpg",
             "height": 176,
@@ -1806,14 +1414,6 @@
             "mime": "image/jpeg",
             "size": 8.22,
             "strapiUrl": "/uploads/pyrescom_2be31cba68.jpg"
-          },
-          "thumbnail": {
-            "path": "thumbnail/pyrescom.jpg",
-            "height": 151,
-            "width": 245,
-            "mime": "image/jpeg",
-            "size": 7.15,
-            "strapiUrl": "/uploads/thumbnail_pyrescom_2be31cba68.jpg"
           }
         }
       }
@@ -1844,7 +1444,7 @@
                   "logo": {
                     "media": {
                       "name": "symfony.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Symfony logo",
                       "original": {
                         "path": "original/symfony.jpg",
                         "height": 200,
@@ -1852,14 +1452,6 @@
                         "mime": "image/jpeg",
                         "size": 5.5,
                         "strapiUrl": "/uploads/symfony_ade27ba80a.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/symfony.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 4.15,
-                        "strapiUrl": "/uploads/thumbnail_symfony_ade27ba80a.jpg"
                       }
                     }
                   }
@@ -1873,7 +1465,7 @@
                   "logo": {
                     "media": {
                       "name": "twig.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Twig logo",
                       "original": {
                         "path": "original/twig.jpg",
                         "height": 290,
@@ -1881,14 +1473,6 @@
                         "mime": "image/jpeg",
                         "size": 6.51,
                         "strapiUrl": "/uploads/twig_98ec2893ce.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/twig.jpg",
-                        "height": 156,
-                        "width": 156,
-                        "mime": "image/jpeg",
-                        "size": 2.94,
-                        "strapiUrl": "/uploads/thumbnail_twig_98ec2893ce.jpg"
                       }
                     }
                   }
@@ -1907,7 +1491,7 @@
                   "logo": {
                     "media": {
                       "name": "stripe.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "Stripe logo",
                       "original": {
                         "path": "original/stripe.jpg",
                         "height": 150,
@@ -1929,7 +1513,7 @@
                   "logo": {
                     "media": {
                       "name": "docusign.jpg",
-                      "alternativeText": null,
+                      "alternativeText": "docusign logo",
                       "original": {
                         "path": "original/docusign.jpg",
                         "height": 349,
@@ -1937,14 +1521,6 @@
                         "mime": "image/jpeg",
                         "size": 9.62,
                         "strapiUrl": "/uploads/docusign_7f7c4cc653.jpg"
-                      },
-                      "thumbnail": {
-                        "path": "thumbnail/docusign.jpg",
-                        "height": 156,
-                        "width": 189,
-                        "mime": "image/jpeg",
-                        "size": 3.43,
-                        "strapiUrl": "/uploads/thumbnail_docusign_7f7c4cc653.jpg"
                       }
                     }
                   }
@@ -1957,7 +1533,7 @@
       "logo": {
         "media": {
           "name": "jpl systemes.jpg",
-          "alternativeText": null,
+          "alternativeText": "JPL SYSTEMES logo",
           "original": {
             "path": "original/jpl systemes.jpg",
             "height": 720,
@@ -1965,14 +1541,6 @@
             "mime": "image/jpeg",
             "size": 53.44,
             "strapiUrl": "/uploads/jpl_systemes_6256cbe4fe.jpg"
-          },
-          "thumbnail": {
-            "path": "thumbnail/jpl systemes.jpg",
-            "height": 156,
-            "width": 233,
-            "mime": "image/jpeg",
-            "size": 8.12,
-            "strapiUrl": "/uploads/thumbnail_jpl_systemes_6256cbe4fe.jpg"
           }
         }
       }
@@ -1989,7 +1557,7 @@
       "logo": {
         "media": {
           "name": "intermarche.jpg",
-          "alternativeText": null,
+          "alternativeText": "Mousquetaires logo",
           "original": {
             "path": "original/intermarche.jpg",
             "height": 180,
@@ -1997,14 +1565,6 @@
             "mime": "image/jpeg",
             "size": 5.42,
             "strapiUrl": "/uploads/intermarche_0040c335b3.jpg"
-          },
-          "thumbnail": {
-            "path": "thumbnail/intermarche.jpg",
-            "height": 156,
-            "width": 243,
-            "mime": "image/jpeg",
-            "size": 4.58,
-            "strapiUrl": "/uploads/thumbnail_intermarche_0040c335b3.jpg"
           }
         }
       }
