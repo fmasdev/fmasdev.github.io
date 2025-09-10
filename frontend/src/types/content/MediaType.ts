@@ -1,39 +1,28 @@
 // src/types/common/MediaType.ts
+import type {
+  StackItemType,
+  WebservicesItemType,
+} from '@types/content/ProjectType.js'
+
 export interface MediaType {
-  id: number
-  attributes: MediaAttributesType
+  media: {
+    name: string
+    alternativeText: string | null
+    original: OriginalMediaType
+    thumbnail?: ThumbnailMediaType
+  }
 }
 
-export interface MediaAttributesType {
-  name: string
-  alternativeText: null
-  caption: null
-  width: number
-  heignt: number
-  format: MediaFormatType
-}
+export interface OriginalMediaType extends MediaContentType {}
+export interface ThumbnailMediaType extends MediaContentType {}
 
-export interface MediaFormatType extends MediaFormatCommonType {
-  thumbnail: MediaFormatFormatType
-  small: MediaFormatFormatType
-  medium: MediaFormatFormatType
-  previewUrl: string | null
-  provider: string
-  provider_metadata: string | null
-}
-
-export interface MediaFormatFormatType extends MediaFormatCommonType {
-  name: string
-  path: string | null
-  width: number
+export interface MediaContentType {
+  path: string
   height: number
-  sizeInBytes: number
+  width: number
+  size: number
+  mime: string
+  strapiUrl: string
 }
 
-export interface MediaFormatCommonType {
-  hash: string
-  ext: string
-  mime: string
-  size: number
-  url: string
-}
+export type MediaParentType = StackItemType | WebservicesItemType

@@ -1,12 +1,23 @@
 <template>
-  <p class="text-sm text-gray-600">
-    <span class="font-semibold"> {{ title }}: </span>
-    {{ list.join(', ') }}
-  </p>
+  <div class="text-sm text-gray-600">
+    <div class="font-semibold">{{ title }}:</div>
+    <div class="flex items-center space-x-4 flex-wrap">
+      <img
+        v-for="item in list"
+        :alt="item.logo.media.alternativeText || item.name"
+        :src="`/media/${item.logo.media.original.path}`"
+        class="max-h-20 w-auto rounded border border-gray-300"
+      />
+    </div>
+  </div>
 </template>
+
 <script setup lang="ts">
-const props = defineProps<{
+import type { MediaParentType } from '@types/content/MediaType.js'
+
+defineProps<{
   title: string
-  list: string[]
+  list: MediaParentType[]
 }>()
 </script>
+z

@@ -7,18 +7,18 @@
 
       <TrainingComponent
         v-for="(training, idx) in trainings.content"
+        :key="idx"
         :training="training"
       />
+
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import { toRefs } from 'vue'
-import { useContentLoader } from '@composables/useContentLoader.js'
+import {toRefs} from 'vue'
 import TrainingComponent from '@components/DesignSystem/Molecule/TrainingComponent.vue'
+import {useContentLoader} from '@composables/useContentLoader.js'
 
-const { content: trainings } = toRefs(useContentLoader('training'))
-
+const {content: trainings} = toRefs(useContentLoader('training'))
 </script>
-

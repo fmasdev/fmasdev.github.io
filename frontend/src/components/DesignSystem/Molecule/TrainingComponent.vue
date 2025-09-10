@@ -1,13 +1,25 @@
 <template>
   <div class="mb-12 p-6 rounded-2xl shadow-md bg-white border border-gray-200">
-    <header class="mb-4">
-      <h3 class="text-2xl font-title text-primary mb-2">
-        {{ training.title }}
-      </h3>
-      <div class="text-sm text-gray-600 flex items-center gap-2">
-        <span>{{ startDate }}</span>
-        <span>-</span>
-        <span>{{ stopDate }}</span>
+    <header
+      class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4"
+    >
+      <div>
+        <h3 class="text-2xl font-title text-primary mb-2">
+          {{ training.title }}
+        </h3>
+        <div class="text-sm text-gray-600 flex items-center gap-2">
+          <span>{{ startDate }}</span>
+          <span>-</span>
+          <span>{{ stopDate }}</span>
+        </div>
+      </div>
+
+      <div>
+        <MediaComponent
+          :alt="training.logo?.media.alternativeText || ''"
+          :src="`/media/${training?.logo.media.original.path}` || null"
+          class="max-h-20xl"
+        />
       </div>
     </header>
 
@@ -20,14 +32,14 @@
       </p>
     </div>
 
-    <TextMarkdownComponent
-      :text="training.content"/>
+    <TextMarkdownComponent :text="training.content" />
   </div>
 </template>
 <script setup lang="ts">
 import type { TrainingContentType } from '@types/content/TrainingType.js'
 import { dateHelper } from '../../../helpers/dateHelper.js'
-import TextMarkdownComponent from "@components/DesignSystem/Atoms/TextMarkdownComponent.vue";
+import TextMarkdownComponent from '@components/DesignSystem/Atoms/TextMarkdownComponent.vue'
+import MediaComponent from '@components/DesignSystem/Atoms/MediaComponent.vue'
 
 const props = defineProps<{
   training: TrainingContentType

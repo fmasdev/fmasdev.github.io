@@ -1,8 +1,9 @@
 <template>
   <div
-    class="markdown prose prose-sm text-text"
-    v-html="renderedContent">
-  </div>
+    v-if="text"
+    class="markdown prose prose-sm text-text max-w-none"
+    v-html="renderedContent"
+  ></div>
 </template>
 
 <script setup lang="ts">
@@ -17,4 +18,3 @@ const markdown = new MarkdownIt()
 
 const renderedContent = computed(() => markdown.render(props?.text ?? ''))
 </script>
-

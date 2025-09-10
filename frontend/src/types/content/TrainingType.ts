@@ -1,6 +1,7 @@
 // src/types/common/TrainingType.ts
 
 import type { SeoType } from '@types/content/SeoType.js'
+import type { MediaType } from '@types/content/MediaType.js'
 
 export interface TrainingType {
   title: string
@@ -18,5 +19,6 @@ export interface TrainingContentType {
   start: string
   stop: string
   title: string
+  logo?: MediaType
   __component: string
 }

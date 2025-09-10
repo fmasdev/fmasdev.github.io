@@ -20,5 +20,4 @@ import { useContentLoader } from '@composables/useContentLoader'
 import { toRefs } from 'vue'
 
 const { content: experiences } = toRefs(useContentLoader('experiences'))
-console.log(experiences)
 </script>

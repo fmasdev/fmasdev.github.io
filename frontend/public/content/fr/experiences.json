@@ -7,12 +7,12 @@
       "id": 7,
       "__component": "experience.experience-item",
       "title": "Développeur Web",
-      "startDate": "2022-11-15",
-      "stopDate": "2025-08-07",
       "content": "Chez Kaliop, j’ai travaillé en tant que développeur web dans une équipe dynamique et conviviale. L’entreprise fonctionnait en méthode agile Scrum, ce qui m’a permis de collaborer étroitement avec les équipes produit, design et QA dans un cadre structuré et itératif. Cette expérience m’a permis de renforcer mes compétences techniques tout en évoluant dans une culture d’entreprise bienveillante et tournée vers le collectif.",
       "company": "Kaliop",
       "region": "Montpellier",
       "remote": "FULL-REMOTE",
+      "start": "2022-11-15",
+      "stop": "2025-08-07",
       "project": [
         {
           "id": 28,
@@ -956,18 +956,32 @@
             "data": []
           }
         }
-      ]
+      ],
+      "logo": {
+        "media": {
+          "name": "kaliop.jpg",
+          "alternativeText": null,
+          "original": {
+            "path": "original/kaliop.jpg",
+            "height": 100,
+            "width": 200,
+            "mime": "image/jpeg",
+            "size": 3.62,
+            "strapiUrl": "/uploads/kaliop_302b0fcadc.jpg"
+          }
+        }
+      }
     },
     {
       "id": 8,
       "__component": "experience.experience-item",
       "title": "Développeur Logiciel",
-      "startDate": "2018-05-25",
-      "stopDate": "2022-11-11",
       "content": "Chez Pyrescom, j’ai travaillé sur le développement de logiciels web pour la mise en forme des données remontées et le pilotage d’objets connectés, dans des domaines tels que l’éclairage public, la qualité de l’air dans les salles de classe, la télémétrie énergétique des bâtiments et la gestion de badgeuses. Cette expérience m’a permis de renforcer mes compétences en développement full-stack et en traitement de données IoT dans des environnements métiers variés.",
       "company": "Pyrescom",
       "region": "Canohes",
       "remote": "HYBRID",
+      "start": "2018-05-07",
+      "stop": "2022-11-11",
       "project": [
         {
           "id": 34,
@@ -1780,18 +1794,40 @@
             "data": []
           }
         }
-      ]
+      ],
+      "logo": {
+        "media": {
+          "name": "pyrescom.jpg",
+          "alternativeText": null,
+          "original": {
+            "path": "original/pyrescom.jpg",
+            "height": 176,
+            "width": 286,
+            "mime": "image/jpeg",
+            "size": 8.22,
+            "strapiUrl": "/uploads/pyrescom_2be31cba68.jpg"
+          },
+          "thumbnail": {
+            "path": "thumbnail/pyrescom.jpg",
+            "height": 151,
+            "width": 245,
+            "mime": "image/jpeg",
+            "size": 7.15,
+            "strapiUrl": "/uploads/thumbnail_pyrescom_2be31cba68.jpg"
+          }
+        }
+      }
     },
     {
       "id": 9,
       "__component": "experience.experience-item",
       "title": "Développeur logiciel",
-      "startDate": "2018-02-04",
-      "stopDate": "2025-03-07",
       "content": "Lysias est un logiciel destiné aux cabinets d’avocats, intégrant la gestion documentaire, la signature électronique et le paiement en ligne, permettant de centraliser les dossiers clients, de sécuriser les échanges et de simplifier les procédures administratives.",
       "company": " JPL Systèmes",
       "region": "Perpignan",
       "remote": "OFFICE",
+      "start": "2018-02-05",
+      "stop": "2018-03-12",
       "project": [
         {
           "id": 41,
@@ -1917,7 +1953,29 @@
             ]
           }
         }
-      ]
+      ],
+      "logo": {
+        "media": {
+          "name": "jpl systemes.jpg",
+          "alternativeText": null,
+          "original": {
+            "path": "original/jpl systemes.jpg",
+            "height": 720,
+            "width": 1076,
+            "mime": "image/jpeg",
+            "size": 53.44,
+            "strapiUrl": "/uploads/jpl_systemes_6256cbe4fe.jpg"
+          },
+          "thumbnail": {
+            "path": "thumbnail/jpl systemes.jpg",
+            "height": 156,
+            "width": 233,
+            "mime": "image/jpeg",
+            "size": 8.12,
+            "strapiUrl": "/uploads/thumbnail_jpl_systemes_6256cbe4fe.jpg"
+          }
+        }
+      }
     },
     {
       "id": 7,
@@ -1927,7 +1985,29 @@
       "city": "Pollestres",
       "start": "2004-05-02",
       "stop": "2016-10-14",
-      "content": "Responsable commercial de points de vente en charge du pilotage opérationnel :\n- gestion et application de la politique tarifaire dans l’ERP\n- gestion des commandes et des tarifs fournisseurs directs\n- mise en place du drive et des caisses libre-service\n- gestion des campagnes publicitaires locales\n- suivi concurrentiel et définition de la stratégie de prix\n- paramétrage des commandes automatiques dans l’ERP\n\nFormateur ERP de gestion commerciale :\n- formation à la stratégie des commandes automatiques, avec mise en pratique directement dans l’ERP\n- formation à la stratégie tarifaire, incluant l’analyse des prix pratiqués par la concurrence et l’intégration de ces informations dans l’ERP"
+      "content": "Responsable commercial de points de vente en charge du pilotage opérationnel :\n- gestion et application de la politique tarifaire dans l’ERP\n- gestion des commandes et des tarifs fournisseurs directs\n- mise en place du drive et des caisses libre-service\n- gestion des campagnes publicitaires locales\n- suivi concurrentiel et définition de la stratégie de prix\n- paramétrage des commandes automatiques dans l’ERP\n\nFormateur ERP de gestion commerciale :\n- formation à la stratégie des commandes automatiques, avec mise en pratique directement dans l’ERP\n- formation à la stratégie tarifaire, incluant l’analyse des prix pratiqués par la concurrence et l’intégration de ces informations dans l’ERP",
+      "logo": {
+        "media": {
+          "name": "intermarche.jpg",
+          "alternativeText": null,
+          "original": {
+            "path": "original/intermarche.jpg",
+            "height": 180,
+            "width": 280,
+            "mime": "image/jpeg",
+            "size": 5.42,
+            "strapiUrl": "/uploads/intermarche_0040c335b3.jpg"
+          },
+          "thumbnail": {
+            "path": "thumbnail/intermarche.jpg",
+            "height": 156,
+            "width": 243,
+            "mime": "image/jpeg",
+            "size": 4.58,
+            "strapiUrl": "/uploads/thumbnail_intermarche_0040c335b3.jpg"
+          }
+        }
+      }
     }
   ],
   "seo": null

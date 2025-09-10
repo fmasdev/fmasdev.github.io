@@ -5,15 +5,26 @@
       <p class="text-gray-700 mb-4">
         {{ project.contribution }}
       </p>
-
-      <ListComponent
-        v-if="stackNameList.length"
+      <!-- stack  -->
+      <ListMediaComponent
+        v-if="isStackListMedia && stackList.length"
         :title="$t('experiences.experience.project.stack')"
-        :list="stackNameList"
+        :list="stackList"
+      />
+      <ListStringComponent
+        v-else
+        :title="$t('experiences.experience.project.stack')"
+        :list="stackList"
       />
 
-      <list-component
-        v-if="webservicesList.length"
+      <!-- webservices  -->
+      <ListMediaComponent
+        v-if="isWebservicesListMedia && webservicesList.length"
+        :title="$t('experiences.experience.project.webservices')"
+        :list="webservicesList"
+      />
+      <ListStringComponent
+        v-else
         :title="$t('experiences.experience.project.webservices')"
         :list="webservicesList"
       />
@@ -27,16 +38,43 @@ import type {
   StackType,
   WebserviceType,
 } from '@types/content/ProjectType.js'
-import ListComponent from '@components/DesignSystem/Atoms/ListMediaComponent.vue'
+import ListStringComponent from '@components/DesignSystem/Atoms/ListStringComponent.vue'
+import ListMediaComponent from '@components/DesignSystem/Atoms/ListMediaComponent.vue'
+import { ref } from 'vue'
 
 const props = defineProps<{
   project: ProjectType
 }>()
 
-const stackNameList = props.project?.stack_items.data.map(
-  (item: StackType) => item.attributes.name
+// stack items
+const stackList = ref()
+const isStackListMedia = props.project?.stack_items.data.every(
+  (item: StackType) => item.attributes?.logo?.media
 )
-const webservicesList = props.project?.webservices.data.map(
-  (item: WebserviceType) => item.attributes.name
+
+if (isStackListMedia) {
+  stackList.value = props.project?.stack_items.data.map(
+    (item: StackType) => item.attributes
+  )
+} else {
+  stackList.value = props.project?.stack_items.data.map(
+    (item: StackType) => item.attributes.name
+  )
+}
+
+// webservices
+const webservicesList = ref()
+const isWebservicesListMedia = props.project?.webservices.data.every(
+  (item: WebserviceType) => item.attributes?.logo.media
 )
+
+if (isWebservicesListMedia) {
+  webservicesList.value = props.project?.webservices.data.map(
+    (item: WebserviceType) => item.attributes
+  )
+} else {
+  webservicesList.value = props.project?.webservices.data.map(
+    (item: WebserviceType) => item.attributes.name
+  )
+}
 </script>

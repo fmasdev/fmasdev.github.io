@@ -16,11 +16,18 @@
             {{ $t(jobMode) }}
           </span>
         </p>
+        <p class="text-sm text-gray-500 mt-2 sm:mt-0">
+          {{ startDate }} – {{ stopDate || $t('experience.present') }}
+        </p>
       </div>
 
-      <p class="text-sm text-gray-500 mt-2 sm:mt-0">
-        {{ startDate }} – {{ stopDate || $t('experience.present') }}
-      </p>
+      <div>
+        <MediaComponent
+          class=""
+          :alt="experience.logo.media.alternativeText || ''"
+          :src="`/media/${experience.logo.media.original.path}`"
+        />
+      </div>
     </div>
 
     <p class="text-gray-700 mb-4">
@@ -39,6 +46,7 @@
         v-for="(project, idx) in (experience as ExperienceType).project"
         :key="idx"
         :project="project"
+        :class="idx > 0 ? 'mt-5' : ''"
       />
     </div>
   </div>
@@ -52,6 +60,7 @@ import type {
   ExperienceExperienceType,
   ExperienceType,
 } from '@types/content/ExperiencesType.js'
+import MediaComponent from '@components/DesignSystem/Atoms/MediaComponent.vue'
 
 const props = defineProps<{
   experience: ExperienceType | ExperienceExperienceType

@@ -2,6 +2,7 @@
 
 import type { ProjectType } from '@types/content/ProjectType.js'
 import type { SeoType } from '@types/content/SeoType.js'
+import type { MediaType } from '@types/content/MediaType.js'
 
 export interface ExperiencesType {
   title: string
@@ -21,6 +22,7 @@ export interface ExperienceType {
   region: string
   remote: 'FULL-REMOTE' | 'OFFICE' | 'HYBRID'
   project?: ProjectType[]
+  logo: MediaType
 }
 
 export interface ExperienceExperienceType {
@@ -32,4 +34,5 @@ export interface ExperienceExperienceType {
   start: string
   stop: string
   content: string
+  logo: MediaType
 }

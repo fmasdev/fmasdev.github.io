@@ -19,12 +19,15 @@
         </router-link>
       </div>
 
-      <DropdownComponent
-        :selected="selectedLocale"
-        :list="locales"
-        class-list="hidden sm:flex space-x-0"
-        @selectValue="setLocale"
-      />
+      <div>
+        <DropdownComponent
+          v-if="locales.length > 1"
+          :selected="selectedLocale"
+          :list="locales"
+          class-list="hidden sm:flex space-x-0"
+          @selectValue="setLocale"
+        />
+      </div>
 
       <button
         @click="open = !open"
@@ -50,10 +53,10 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import type { NavItemType } from '@types/common.ts'
+import {ref} from 'vue'
+import type {NavItemType} from '@types/common.ts'
 import DropdownComponent from '@components/DesignSystem/Atoms/DropdownComponent.vue'
-import { useI18n } from 'vue-i18n'
+import {useI18n} from 'vue-i18n'
 
 const open = ref(false)
 const props = defineProps<{
@@ -61,7 +64,7 @@ const props = defineProps<{
 }>()
 
 // Locales
-const { availableLocales, locale } = useI18n()
+const {availableLocales, locale} = useI18n()
 const locales = availableLocales.map((locale) => ({
   label: `locales.${locale}`,
   value: locale,
@@ -78,4 +81,3 @@ const setLocale = (newLocale: string) => {
   locale.value = newLocale
 }
 </script>
-
