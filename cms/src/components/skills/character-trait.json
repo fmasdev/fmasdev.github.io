@@ -8,14 +8,6 @@
   "attributes": {
     "Name": {
       "type": "string"
-    },
-    "Type": {
-      "type": "enumeration",
-      "enum": [
-        "Positive",
-        "Negative",
-        "Undefined"
-      ]
     }
   }
 }

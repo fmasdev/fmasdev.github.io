@@ -1,12 +1,31 @@
 {
   "collectionName": "components_skills_soft_skills",
   "info": {
-    "displayName": "SoftSkill"
+    "displayName": "SoftSkill",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "Name": {
       "type": "string"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "METHOD",
+        "TOOL",
+        "OHTER"
+      ]
+    },
+    "Media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

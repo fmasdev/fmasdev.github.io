@@ -102,6 +102,20 @@
           "searchable": false,
           "sortable": false
         }
+      },
+      "Logo": {
+        "edit": {
+          "label": "Logo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Logo",
+          "searchable": false,
+          "sortable": false
+        }
       }
     },
     "layouts": {
@@ -142,6 +156,12 @@
           {
             "name": "Content",
             "size": 12
+          }
+        ],
+        [
+          {
+            "name": "Logo",
+            "size": 6
           }
         ]
       ]

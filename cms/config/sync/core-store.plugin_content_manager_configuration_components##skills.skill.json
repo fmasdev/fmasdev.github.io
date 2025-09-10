@@ -6,8 +6,8 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "Skill",
-      "defaultSortBy": "Skill",
+      "mainField": "Name",
+      "defaultSortBy": "Name",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -19,16 +19,72 @@
           "sortable": false
         }
       },
-      "Skill": {
+      "Name": {
         "edit": {
-          "label": "Skill",
+          "label": "Name",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Skill",
+          "label": "Name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Advancement": {
+        "edit": {
+          "label": "Advancement",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Advancement",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Media": {
+        "edit": {
+          "label": "Media",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Media",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Type": {
+        "edit": {
+          "label": "Type",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Type",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Language": {
+        "edit": {
+          "label": "Language",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Language",
           "searchable": true,
           "sortable": true
         }
@@ -37,12 +93,34 @@
     "layouts": {
       "list": [
         "id",
-        "Skill"
+        "Name",
+        "Advancement",
+        "Media"
       ],
       "edit": [
         [
           {
-            "name": "Skill",
+            "name": "Name",
+            "size": 6
+          },
+          {
+            "name": "Advancement",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "Media",
+            "size": 6
+          },
+          {
+            "name": "Type",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "Language",
             "size": 6
           }
         ]

@@ -12,7 +12,7 @@
     "Company": {
       "type": "string"
     },
-    "StartDate": {
+    "Start": {
       "type": "date"
     },
     "Content": {
@@ -23,7 +23,7 @@
       "repeatable": true,
       "component": "experience.project"
     },
-    "StopDate": {
+    "Stop": {
       "type": "date"
     },
     "Region": {
@@ -36,6 +36,16 @@
         "HYBRID",
         "OFFICE"
       ]
+    },
+    "Logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

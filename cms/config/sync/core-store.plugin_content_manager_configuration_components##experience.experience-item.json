@@ -47,16 +47,16 @@
           "sortable": true
         }
       },
-      "StartDate": {
+      "Start": {
         "edit": {
-          "label": "StartDate",
+          "label": "Start",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "StartDate",
+          "label": "Start",
           "searchable": true,
           "sortable": true
         }
@@ -89,16 +89,16 @@
           "sortable": false
         }
       },
-      "StopDate": {
+      "Stop": {
         "edit": {
-          "label": "StopDate",
+          "label": "Stop",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "StopDate",
+          "label": "Stop",
           "searchable": true,
           "sortable": true
         }
@@ -130,6 +130,20 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "Logo": {
+        "edit": {
+          "label": "Logo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Logo",
+          "searchable": false,
+          "sortable": false
+        }
       }
     },
     "layouts": {
@@ -137,7 +151,7 @@
         "id",
         "Title",
         "Company",
-        "StartDate"
+        "Start"
       ],
       "edit": [
         [
@@ -162,16 +176,6 @@
         ],
         [
           {
-            "name": "StartDate",
-            "size": 4
-          },
-          {
-            "name": "StopDate",
-            "size": 4
-          }
-        ],
-        [
-          {
             "name": "Content",
             "size": 6
           }
@@ -180,6 +184,22 @@
           {
             "name": "Project",
             "size": 12
+          }
+        ],
+        [
+          {
+            "name": "Start",
+            "size": 4
+          },
+          {
+            "name": "Stop",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "Logo",
+            "size": 6
           }
         ]
       ]

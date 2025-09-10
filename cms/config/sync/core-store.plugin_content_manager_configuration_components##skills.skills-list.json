@@ -19,16 +19,16 @@
           "sortable": false
         }
       },
-      "skills": {
+      "MediaSkills": {
         "edit": {
-          "label": "skills",
+          "label": "MediaSkills",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "skills",
+          "label": "MediaSkills",
           "searchable": false,
           "sortable": false
         }
@@ -65,17 +65,11 @@
     "layouts": {
       "list": [
         "id",
-        "skills",
         "softSkill",
-        "characterTrait"
+        "characterTrait",
+        "MediaSkills"
       ],
       "edit": [
-        [
-          {
-            "name": "skills",
-            "size": 12
-          }
-        ],
         [
           {
             "name": "softSkill",
@@ -85,6 +79,12 @@
         [
           {
             "name": "characterTrait",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "MediaSkills",
             "size": 12
           }
         ]

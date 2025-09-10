@@ -32,17 +32,57 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "Type": {
+        "edit": {
+          "label": "Type",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Type",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Media": {
+        "edit": {
+          "label": "Media",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Media",
+          "searchable": false,
+          "sortable": false
+        }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "Name"
+        "Name",
+        "Type",
+        "Media"
       ],
       "edit": [
         [
           {
             "name": "Name",
+            "size": 6
+          },
+          {
+            "name": "Type",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "Media",
             "size": 6
           }
         ]

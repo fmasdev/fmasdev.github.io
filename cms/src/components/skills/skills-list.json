@@ -1,11 +1,12 @@
 {
   "collectionName": "components_skills_skills_lists",
   "info": {
-    "displayName": "skillsList"
+    "displayName": "skillsList",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "skills": {
+    "MediaSkills": {
       "type": "component",
       "repeatable": true,
       "component": "skills.skill"

@@ -13,17 +13,40 @@
       "type": "integer",
       "default": 0,
       "required": true,
-      "max": 10
+      "max": 100
     },
     "Media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "FRONT_FRAMEWORK",
+        "BACK",
+        "DATABASE",
+        "INFRASTUCTURE",
+        "FRONT_STYLES",
+        "LANGUAGE",
+        "CMS",
+        "MOBILE",
+        "GDS"
+      ]
+    },
+    "Language": {
+      "type": "enumeration",
+      "enum": [
+        "JAVA_SCRIPT",
+        "PHP",
+        "CSS"
+      ]
     }
   }
 }

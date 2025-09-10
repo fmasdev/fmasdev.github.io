@@ -9,12 +9,13 @@ export interface ExperienceExperienceItem extends Schema.Component {
   attributes: {
     Title: Attribute.String;
     Company: Attribute.String;
-    StartDate: Attribute.Date;
+    Start: Attribute.Date;
     Content: Attribute.Text;
     Project: Attribute.Component<'experience.project', true>;
-    StopDate: Attribute.Date;
+    Stop: Attribute.Date;
     Region: Attribute.String;
     Remote: Attribute.Enumeration<['FULL-REMOTE', 'HYBRID', 'OFFICE']>;
+    Logo: Attribute.Media;
   };
 }
 
@@ -31,6 +32,7 @@ export interface ExperienceExperience extends Schema.Component {
     Start: Attribute.Date;
     Stop: Attribute.Date;
     Content: Attribute.RichText;
+    Logo: Attribute.Media;
   };
 }
 
@@ -46,6 +48,30 @@ export interface ExperienceFeedBack extends Schema.Component {
     Date: Attribute.Date;
     Author: Attribute.String;
     Job: Attribute.String;
+  };
+}
+
+export interface ExperiencePersonnalProject extends Schema.Component {
+  collectionName: 'components_experience_personnal_projects';
+  info: {
+    displayName: 'PersonnalProject';
+    description: '';
+  };
+  attributes: {
+    Name: Attribute.String;
+    Image: Attribute.Media;
+    IsImageLeft: Attribute.Boolean & Attribute.DefaultTo<true>;
+    Content: Attribute.RichText;
+    StackItems: Attribute.Relation<
+      'experience.personnal-project',
+      'oneToMany',
+      'api::stack-item.stack-item'
+    >;
+    webservices: Attribute.Relation<
+      'experience.personnal-project',
+      'oneToMany',
+      'api::webservice.webservice'
+    >;
   };
 }
 
@@ -144,7 +170,6 @@ export interface SkillsCharacterTrait extends Schema.Component {
   };
   attributes: {
     Name: Attribute.String;
-    Type: Attribute.Enumeration<['Positive', 'Negative', 'Undefined']>;
   };
 }
 
@@ -160,12 +185,26 @@ export interface SkillsSkill extends Schema.Component {
       Attribute.Required &
       Attribute.SetMinMax<
         {
-          max: 10;
+          max: 100;
         },
         number
       > &
       Attribute.DefaultTo<0>;
     Media: Attribute.Media;
+    Type: Attribute.Enumeration<
+      [
+        'FRONT_FRAMEWORK',
+        'BACK',
+        'DATABASE',
+        'INFRASTUCTURE',
+        'FRONT_STYLES',
+        'LANGUAGE',
+        'CMS',
+        'MOBILE',
+        'GDS'
+      ]
+    >;
+    Language: Attribute.Enumeration<['JAVA_SCRIPT', 'PHP', 'CSS']>;
   };
 }
 
@@ -173,9 +212,10 @@ export interface SkillsSkillsList extends Schema.Component {
   collectionName: 'components_skills_skills_lists';
   info: {
     displayName: 'skillsList';
+    description: '';
   };
   attributes: {
-    skills: Attribute.Component<'skills.skill', true>;
+    MediaSkills: Attribute.Component<'skills.skill', true>;
     softSkill: Attribute.Component<'skills.soft-skill', true>;
     characterTrait: Attribute.Component<'skills.character-trait', true>;
   };
@@ -185,9 +225,12 @@ export interface SkillsSoftSkill extends Schema.Component {
   collectionName: 'components_skills_soft_skills';
   info: {
     displayName: 'SoftSkill';
+    description: '';
   };
   attributes: {
     Name: Attribute.String;
+    Type: Attribute.Enumeration<['METHOD', 'TOOL', 'OHTER']>;
+    Media: Attribute.Media;
   };
 }
 
@@ -220,6 +263,7 @@ declare module '@strapi/types' {
       'experience.experience-item': ExperienceExperienceItem;
       'experience.experience': ExperienceExperience;
       'experience.feed-back': ExperienceFeedBack;
+      'experience.personnal-project': ExperiencePersonnalProject;
       'experience.project': ExperienceProject;
       'seo.seo': SeoSeo;
       'shared.meta-social': SharedMetaSocial;

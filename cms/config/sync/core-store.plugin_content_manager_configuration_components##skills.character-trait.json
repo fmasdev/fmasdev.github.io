@@ -32,36 +32,17 @@
           "searchable": true,
           "sortable": true
         }
-      },
-      "Type": {
-        "edit": {
-          "label": "Type",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "Type",
-          "searchable": true,
-          "sortable": true
-        }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "Name",
-        "Type"
+        "Name"
       ],
       "edit": [
         [
           {
             "name": "Name",
-            "size": 6
-          },
-          {
-            "name": "Type",
             "size": 6
           }
         ]
