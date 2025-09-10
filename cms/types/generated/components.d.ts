@@ -190,7 +190,7 @@ export interface SkillsSkill extends Schema.Component {
         number
       > &
       Attribute.DefaultTo<0>;
-    Media: Attribute.Media;
+    Logo: Attribute.Media;
     Type: Attribute.Enumeration<
       [
         'FRONT_FRAMEWORK',
@@ -230,7 +230,7 @@ export interface SkillsSoftSkill extends Schema.Component {
   attributes: {
     Name: Attribute.String;
     Type: Attribute.Enumeration<['METHOD', 'TOOL', 'OHTER']>;
-    Media: Attribute.Media;
+    Logo: Attribute.Media;
   };
 }
 
