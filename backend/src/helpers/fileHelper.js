@@ -25,13 +25,6 @@ const fileHelper = {
       }
     }
 
-    if (media.thumbnail) {
-      utilities.thumbnail = {
-        path: path.join(destRoot, media.thumbnail.path),
-        url: media.thumbnail.strapiUrl
-      }
-    }
-
     for (const key in utilities) {
       const filePath = utilities[key].path
       const dirPath = path.dirname(filePath)

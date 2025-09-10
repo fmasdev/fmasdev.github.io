@@ -15,8 +15,12 @@ async function exportData() {
   for (const [name, locale] of Object.entries(localesConfig)) {
     console.log(`## Export data for locale ${name}`)
 
-    const [professionalExperiences, training, skills, feedBacks, footer] =
-      await Promise.all([
+    const [
+      professionalExperiences,
+      training,
+      skills,
+      footer
+    ] = await Promise.all([
         strapi.getPage('experience-pro', locale),
         strapi.getPage('training', locale),
         strapi.getPage('skills', locale),
@@ -28,7 +32,6 @@ async function exportData() {
       experiences: professionalExperiences[0]?.attributes,
       training: training[0]?.attributes,
       skills: skills[0]?.attributes,
-      feedbacks: feedBacks[0]?.attributes,
       footer: footer,
       me: me,
     }
