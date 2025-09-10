@@ -20,7 +20,6 @@ const cleanStrapiData = (data) => {
           && value[0]?.attributes &&
           value[0].attributes.hasOwnProperty('alternativeText')
       ) {
-        value[0].attributes
         cleaned['media'] = mediaFormater(value[0].attributes)
       } else if (
           key === 'data'
@@ -28,7 +27,6 @@ const cleanStrapiData = (data) => {
           && value?.attributes
           && value.attributes.hasOwnProperty('alternativeText')
       ) {
-        value.attributes
         cleaned['media'] = mediaFormater(value.attributes)
       }
       else {
@@ -46,7 +44,7 @@ const cleanStrapiData = (data) => {
 }
 
 const mediaFormater = (mediaItem) => {
-  const media = {
+  return {
     name: mediaItem.name,
     alternativeText: mediaItem.alternativeText,
     original: {
@@ -58,19 +56,6 @@ const mediaFormater = (mediaItem) => {
       strapiUrl: mediaItem.url,
     },
   }
-
-  if (mediaItem.hasOwnProperty('formats') && mediaItem.formats) {
-    media.thumbnail = {
-      path: `thumbnail/${mediaItem.name}`,
-      height: mediaItem.formats.thumbnail.height,
-      width: mediaItem.formats.thumbnail.width,
-      mime: mediaItem.formats.thumbnail.mime,
-      size: mediaItem.formats.thumbnail.size,
-      strapiUrl: mediaItem.formats.thumbnail.url
-    }
-  }
-
-  return media
 }
 
 module.exports = {
