@@ -1,6 +1,9 @@
 <template>
-  <section v-if="experiences" class="bg-background text-text py-12">
-    <div class="max-w-5xl mx-auto px-6">
+  <section
+    v-if="experiences"
+    class="bg-background text-text py-12"
+  >
+    <div class="max-w-5xl mx-auto px-2 md:px-6">
       <TitleComponent
         :title="experiences?.title"
         level="h2"

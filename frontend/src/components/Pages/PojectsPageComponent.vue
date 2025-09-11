@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-5xl mx-auto px-6">
+  <div class="max-w-5xl mx-auto px-2 md:px-6">
     <TitleComponent
       :title="project?.title"
       level="h2"

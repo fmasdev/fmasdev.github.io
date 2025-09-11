@@ -2,7 +2,7 @@
   <header class="fixed top-0 left-0 w-full bg-primary text-white z-50">
     <navbar-component :links="links" />
   </header>
-  <main class="bg-background text-text min-h-screen pt-16 px-6">
+  <main class="bg-background text-text min-h-screen pt-16 px-0 md:px-6">
     <router-view />
   </main>
   <FooterComponent
