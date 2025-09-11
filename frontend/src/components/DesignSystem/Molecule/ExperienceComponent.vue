@@ -4,9 +4,11 @@
       class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4"
     >
       <div>
-        <h3 class="text-xl font-semibold text-primary">
-          {{ experience.title }}
-        </h3>
+        <TitleComponent
+          :title="experience?.title"
+          level="h3"
+          class="text-2xl font-title text-primary mb-2"
+        />
         <p class="text-sm text-gray-600">
           {{ experience.company }} • {{ experience.region }}
           <span
@@ -38,9 +40,11 @@
       class="mt-4"
       v-if="experience.__component === 'experience.experience-item'"
     >
-      <h4 class="text-lg font-semibold text-secondary mb-2">
-        {{ $t('experiences.experience.projects') }} :
-      </h4>
+      <TitleComponent
+        :title="$t('experiences.experience.projects')"
+        level="h4"
+        class="text-lg font-semibold text-secondary mb-2"
+      />
 
       <ProjectComponent
         v-for="(project, idx) in (experience as ExperienceType).project"
@@ -61,6 +65,7 @@ import type {
   ExperienceType,
 } from '@types/content/ExperiencesType.js'
 import MediaComponent from '@components/DesignSystem/Atoms/MediaComponent.vue'
+import TitleComponent from "@components/DesignSystem/Atoms/TitleComponent.vue";
 
 const props = defineProps<{
   experience: ExperienceType | ExperienceExperienceType

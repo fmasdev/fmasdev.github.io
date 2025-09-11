@@ -2,9 +2,11 @@
   <footer class="bg-primary text-white py-10">
     <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-3 gap-8">
       <div class="space-y-2 text-left">
-        <h3 class="font-title text-lg">
-          {{ $t('footer.about') }}
-        </h3>
+        <TitleComponent
+          :title="$t('footer.about')"
+          level="h3"
+          class="font-title text-lg"
+        />
         <p class="text-sm">
           Frédéric Mas – {{ $t('common.job') }}<br />
           CV & portfolio
@@ -12,16 +14,22 @@
       </div>
 
       <div class="space-y-2 text-left">
-        <h3 class="font-title text-lg">
-          {{ $t('footer.contact') }}
-        </h3>
+        <TitleComponent
+          :title="$t('footer.contact')"
+          level="h3"
+          class="font-title text-lg"
+        />
 
         <p class="text-sm">email@example.com</p>
         <p class="text-sm">+33 6 12 34 56 78</p>
       </div>
 
       <div class="space-y-2 text-left">
-        <h3 class="font-title text-lg">{{ $t('footer.followMe') }}</h3>
+        <TitleComponent
+          :title="$t('footer.followMe')"
+          level="h3"
+          class="font-title text-lg"
+        />
         <div class="space-x-4">
           <!-- todo rooter link -->
           <a href="#" class="hover:text-accent transition-colors footer-link">
@@ -43,6 +51,7 @@
 import { computed } from 'vue'
 import type { MeType } from '@types/content/MeType.js'
 import type { FooterType } from '@types/content/FooterType.js'
+import TitleComponent from "@components/DesignSystem/Atoms/TitleComponent.vue";
 
 defineProps<{
   footerContent: FooterType
