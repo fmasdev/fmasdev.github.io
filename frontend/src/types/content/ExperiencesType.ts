@@ -35,4 +35,5 @@ export interface ExperienceExperienceType {
   stop: string
   content: string
   logo: MediaType
+  region?: string
 }

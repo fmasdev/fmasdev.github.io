@@ -6,7 +6,7 @@
         v-for="item in list"
         :alt="item.logo.media.alternativeText || item.name"
         :src="`/media/${item.logo.media.original.path}`"
-        class="md:max-h-10 max-h-20 w-auto rounded border border-gray-300"
+        class="max-h-10 lg:max-h-20 w-auto rounded border border-gray-300"
       />
     </div>
   </div>

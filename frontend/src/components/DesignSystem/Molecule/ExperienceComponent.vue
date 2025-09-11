@@ -10,7 +10,10 @@
           class="text-2xl font-title text-primary mb-2"
         />
         <p class="text-sm text-gray-600">
-          {{ experience.company }} • {{ experience.region }}
+          {{ experience.company }}
+          <span v-if="experience?.region" >
+            • {{ experience.region }}
+          </span>
           <span
             v-if="jobMode"
             class="ml-2 px-2 py-0.5 rounded-full text-xs font-medium bg-primaryLight text-primary"
