@@ -56,7 +56,11 @@ class StrapiDatasource {
         }
       }
 
-      throw error
+      if (uri === 'page') {
+        throw new Error(`❌ Error on fetch localized page ${params['filters[slug][$eq]']} : ${error.message}`)
+      } else {
+        throw new Error(`❌ Error on fetch localized ${uri} : ${error.message}`)
+      }
     }
   }
 
@@ -70,7 +74,7 @@ class StrapiDatasource {
       const res = await this.getLocalizedData(`pages`, params, locale)
       return cleanStrapiData(res.data.data)
     } catch (err) {
-      console.error(err)
+      console.error(err.message)
     }
   }
 
@@ -82,7 +86,7 @@ class StrapiDatasource {
         socials: res.data.SocialBloc,
       }
     } catch (err) {
-      console.error(err.status)
+      console.error(err.message)
     }
   }
 
@@ -91,7 +95,7 @@ class StrapiDatasource {
       const res = await this.getLocalizedData('me', { populate: 'deep' })
       return cleanStrapiData(res.data.data)
     } catch (err) {
-      console.error(err)
+      console.error(err.message)
     }
   }
 
@@ -100,12 +104,8 @@ class StrapiDatasource {
     try {
       return await this.http.get(url, {responseType: "arraybuffer"});
     } catch (err) {
-      console.error(err)
+      console.error("❌ Error on fetch medias :", err.message)
     }
-  }
-
-  getBaseUrl() {
-    return this.baseUrl
   }
 }
 
