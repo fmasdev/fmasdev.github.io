@@ -934,24 +934,6 @@
           "name": "volontaire"
         }
       ]
-    },
-    {
-      "id": 4,
-      "__component": "experience.feed-back",
-      "title": "Message linkedin sobecki",
-      "content": "Tu restes impressionnant de motivation, d'implication peu importe le projet, les technos, et peu importe les moments personnels qui sont parfois difficile a gérer. ",
-      "date": null,
-      "author": "Stéphane Sobecki",
-      "job": "Kaliop"
-    },
-    {
-      "id": 3,
-      "__component": "experience.feed-back",
-      "title": "Test",
-      "content": "###### Caractéristiques générales \n\n- Fixe pour lui même des normes exigeantes\n- Il éprouve le besoin d'exactitude\n- Sait mettre la dernière main à la tache\n- Préfère la sécurité d'un environnement professionnel structuré où les attentes sont clairement définies.\n- Redoute les conflits, les problèmes et les ennuits\n\n###### Motivation\n\nFrédéric Mas aime pouvoir travailler sur base de procédures et disposer d'informations précises. Il apprécie la sincérité et sa loyauté sont des éléments importants\n\n###### Son apport à une organisation\n\nL'apport de Frédéric Mas à l'organisation se situe notamment dans sa capacité à implanter des systèmes de contrôle de qualité, des normes et des procédures. Il fera également preuve d'objectivité et de précision dans ses analyses qui ne seront pas biaisées par des éléments d'ordre émotionnel. ",
-      "date": "2009-05-05",
-      "author": "Test Thomas",
-      "job": null
     }
   ],
   "seo": null

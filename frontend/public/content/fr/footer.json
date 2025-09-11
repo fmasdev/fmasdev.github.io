@@ -1,1 +1,16 @@
-[]
+{
+  "socials": [
+    {
+      "id": 1,
+      "Name": "LinkedIn",
+      "Url": "https://www.linkedin.com/in/fredericmas66/",
+      "Iccon": null
+    },
+    {
+      "id": 2,
+      "Name": "GitHub",
+      "Url": "https://github.com/fmasdev",
+      "Iccon": null
+    }
+  ]
+}
