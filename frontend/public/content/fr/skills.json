@@ -936,5 +936,15 @@
       ]
     }
   ],
-  "seo": null
+  "seo": {
+    "id": 2,
+    "metaTitle": "Compétences — Frédéric Mas",
+    "metaDescription": "Expertises techniques et méthodologies : Symfony, Vue.js, React, Strapi, Node.js. Soft skills et savoir-faire pour projets web et logiciels.",
+    "metaRobots": "index, follow",
+    "canonicalUrl": null,
+    "metaSocial": [],
+    "photo": {
+      "data": null
+    }
+  }
 }

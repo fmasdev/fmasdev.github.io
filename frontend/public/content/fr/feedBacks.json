@@ -22,5 +22,26 @@
       "job": null
     }
   ],
-  "seo": null
+  "seo": {
+    "id": 4,
+    "metaTitle": "Avis & retours — Frédéric Mas",
+    "metaDescription": "Retours clients et collaborateurs sur les projets réalisés : qualité, expertise technique et professionnalisme en développement web et logiciel.",
+    "metaRobots": "index, follow",
+    "canonicalUrl": null,
+    "metaSocial": [],
+    "photo": {
+      "media": {
+        "name": "og-feedback.jpg",
+        "alternativeText": null,
+        "original": {
+          "path": "original/og-feedback.jpg",
+          "height": 853,
+          "width": 1280,
+          "mime": "image/jpeg",
+          "size": 169.52,
+          "strapiUrl": "/uploads/og_feedback_0a281bcdcf.jpg"
+        }
+      }
+    }
+  }
 }

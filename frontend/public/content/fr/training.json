@@ -100,5 +100,37 @@
       }
     }
   ],
-  "seo": null
+  "seo": {
+    "id": 5,
+    "metaTitle": "Formation — Frédéric Mas",
+    "metaDescription": "Formations et parcours académiques : développement web et logiciel, maîtrise des technologies modernes et frameworks front-end/back-end.",
+    "metaRobots": "index, follow",
+    "canonicalUrl": null,
+    "metaSocial": [
+      {
+        "id": 2,
+        "platform": "linkedin",
+        "title": "https://www.linkedin.com/in/fredericmas66/",
+        "description": null,
+        "twitterCard": "summary",
+        "image": {
+          "data": null
+        }
+      }
+    ],
+    "photo": {
+      "media": {
+        "name": "og-learn.jpg",
+        "alternativeText": null,
+        "original": {
+          "path": "original/og-learn.jpg",
+          "height": 908,
+          "width": 1280,
+          "mime": "image/jpeg",
+          "size": 65.26,
+          "strapiUrl": "/uploads/og_learn_c2ba8d267a.jpg"
+        }
+      }
+    }
+  }
 }

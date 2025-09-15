@@ -34,5 +34,28 @@
         "webservices": "Werbservices"
       }
     }
+  },
+  "skills": {
+    "title": {
+      "characterTrait": "Forces personnelles",
+      "technical": "Stack technique",
+      "methodAndTools": "Méthodologies & Outils de collaboration",
+      "method": "Méthodologies agiles",
+      "tools": "Outils collaboratifs"
+    },
+    "listTitle": {
+      "languages": "Langage",
+      "infrastructureToolsList": "Environnement, runtime et outils d'infrastructure",
+      "frontJsFrameworks": "Frameworks JavaScript front",
+      "frontCssFrameworks": "Frameworks css",
+      "backendPhpFrameworks": "Frameworks backend PHP",
+      "backendJsFrameworks": "Frameworks backend JavaScript",
+      "databases": "Base de données",
+      "gdsList": "Gestionnaires de sources",
+      "frontStyle": "Frameworks styles",
+      "cmsLis": "Gestionnaire de contenu",
+      "mobile": "Framework mobile",
+      "gds": "Gestionnaires de sources"
+    }
   }
 }
