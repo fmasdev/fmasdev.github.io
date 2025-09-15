@@ -1,12 +1,12 @@
 // src/helpers/deviceHelper.ts
 
-import {ref} from "vue";
+import { ref } from 'vue'
 
 export type DeviceType = 'mobile' | 'tablet' | 'desktop'
 
 const breakpoints = {
   mobile: 640, // < 640px
-  tablet: 1024 // < 1024
+  tablet: 1024, // < 1024
 }
 
 export const currentDeviceType = ref<DeviceType>('desktop')
@@ -20,4 +20,3 @@ export const updateDeviceType = () => {
     currentDeviceType.value = 'desktop'
   }
 }
-

@@ -53,10 +53,10 @@
 </template>
 
 <script setup lang="ts">
-import {ref} from 'vue'
-import type {NavItemType} from '@types/common.ts'
+import { ref } from 'vue'
+import type { NavItemType } from '@types/common.ts'
 import DropdownComponent from '@components/DesignSystem/Atoms/DropdownComponent.vue'
-import {useI18n} from 'vue-i18n'
+import { useI18n } from 'vue-i18n'
 
 const open = ref(false)
 const props = defineProps<{
@@ -64,7 +64,7 @@ const props = defineProps<{
 }>()
 
 // Locales
-const {availableLocales, locale} = useI18n()
+const { availableLocales, locale } = useI18n()
 const locales = availableLocales.map((locale) => ({
   label: `locales.${locale}`,
   value: locale,

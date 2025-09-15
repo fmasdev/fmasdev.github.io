@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-12 p-6 rounded-2xl shadow-md bg-white border border-gray-200  ">
+  <div class="mb-12 p-6 rounded-2xl shadow-md bg-white border border-gray-200">
     <div
       class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4"
     >
@@ -7,13 +7,10 @@
         <TitleComponent
           :title="experience?.title"
           level="h3"
-          class="text-2xl font-title text-primary mb-2"
         />
         <p class="text-sm text-gray-600">
           {{ experience.company }}
-          <span v-if="experience?.region" >
-            • {{ experience.region }}
-          </span>
+          <span v-if="experience?.region"> • {{ experience.region }} </span>
           <span
             v-if="jobMode"
             class="ml-2 px-2 py-0.5 rounded-full text-xs font-medium bg-primaryLight text-primary"
@@ -46,7 +43,6 @@
       <TitleComponent
         :title="$t('experiences.experience.projects')"
         level="h4"
-        class="text-lg font-semibold text-secondary mb-2"
       />
 
       <ProjectComponent
@@ -68,7 +64,7 @@ import type {
   ExperienceType,
 } from '@types/content/ExperiencesType.js'
 import MediaComponent from '@components/DesignSystem/Atoms/MediaComponent.vue'
-import TitleComponent from "@components/DesignSystem/Atoms/TitleComponent.vue";
+import TitleComponent from '@components/DesignSystem/Atoms/TitleComponent.vue'
 
 const props = defineProps<{
   experience: ExperienceType | ExperienceExperienceType

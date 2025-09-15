@@ -3,6 +3,7 @@ import type {
   StackItemType,
   WebservicesItemType,
 } from '@types/content/ProjectType.js'
+import type {SoftSkillArrayType, SoftSkillMediaType, SoftSkillType} from "@types/content/SkillsType.js";
 
 export interface MediaType {
   media: {
@@ -25,4 +26,7 @@ export interface MediaContentType {
   strapiUrl: string
 }
 
-export type MediaParentType = StackItemType | WebservicesItemType
+export type MediaParentType =
+  | StackItemType
+  | WebservicesItemType
+  | SoftSkillMediaType

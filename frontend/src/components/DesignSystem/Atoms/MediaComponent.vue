@@ -8,6 +8,7 @@
       :alt="alt"
       :src="src"
       class="max-h-20 w-auto rounded border border-gray-300"
+      :class="classList"
     />
   </RouterLink>
 
@@ -16,6 +17,7 @@
     :alt="alt"
     :src="src"
     class="max-h-20 w-auto rounded border border-gray-300"
+    :class="classList"
   />
 </template>
 
@@ -23,11 +25,10 @@
 defineProps<{
   alt: string
   src: string | null
-  class?: string
+  classList?: string
   link?: {
     url: string
     target?: '_self' | '_blank'
   }
 }>()
-
 </script>

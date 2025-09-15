@@ -3,6 +3,7 @@
 import type { SeoType } from '@types/content/SeoType.js'
 
 export interface FeedbackType {
+  __component: string
   title: string
   slug: string
   content: FeedbackContentType[]
