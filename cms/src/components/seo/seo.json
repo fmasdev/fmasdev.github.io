@@ -1,21 +1,42 @@
 {
   "collectionName": "components_seo_seos",
   "info": {
-    "displayName": "Seo"
+    "displayName": "SEO",
+    "description": "SEO configuration for meta tags, social sharing and robots."
   },
   "options": {},
   "attributes": {
-    "MetaTitle": {
+    "metaTitle": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "metaDescription": {
+      "type": "text",
+      "required": true,
+      "maxLength": 160
+    },
+    "metaRobots": {
+      "type": "string",
+      "default": "index, follow"
+    },
+    "canonicalUrl": {
       "type": "string"
     },
-    "MetaDescription": {
-      "type": "string"
+    "metaSocial": {
+      "type": "component",
+      "repeatable": true,
+      "component": "seo.social"
     },
-    "MetaSocial": {
-      "type": "string"
-    },
-    "MetaRobot": {
-      "type": "string"
+    "photo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

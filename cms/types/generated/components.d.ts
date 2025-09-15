@@ -101,13 +101,40 @@ export interface ExperienceProject extends Schema.Component {
 export interface SeoSeo extends Schema.Component {
   collectionName: 'components_seo_seos';
   info: {
-    displayName: 'Seo';
+    displayName: 'SEO';
+    description: 'SEO configuration for meta tags, social sharing and robots.';
   };
   attributes: {
-    MetaTitle: Attribute.String;
-    MetaDescription: Attribute.String;
-    MetaSocial: Attribute.String;
-    MetaRobot: Attribute.String;
+    metaTitle: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 60;
+      }>;
+    metaDescription: Attribute.Text &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 160;
+      }>;
+    metaRobots: Attribute.String & Attribute.DefaultTo<'index, follow'>;
+    canonicalUrl: Attribute.String;
+    metaSocial: Attribute.Component<'seo.social', true>;
+    photo: Attribute.Media;
+  };
+}
+
+export interface SeoSocial extends Schema.Component {
+  collectionName: 'components_seo_socials';
+  info: {
+    displayName: 'Social';
+    description: 'Meta information for social networks (Open Graph, Twitter, etc.)';
+  };
+  attributes: {
+    platform: Attribute.Enumeration<['facebook', 'twitter', 'linkedin']>;
+    title: Attribute.String;
+    description: Attribute.Text;
+    image: Attribute.Media;
+    twitterCard: Attribute.Enumeration<['summary', 'summary_large_image']> &
+      Attribute.DefaultTo<'summary'>;
   };
 }
 
@@ -266,6 +293,7 @@ declare module '@strapi/types' {
       'experience.personnal-project': ExperiencePersonnalProject;
       'experience.project': ExperienceProject;
       'seo.seo': SeoSeo;
+      'seo.social': SeoSocial;
       'shared.meta-social': SharedMetaSocial;
       'shared.seo': SharedSeo;
       'skills.character-trait': SkillsCharacterTrait;

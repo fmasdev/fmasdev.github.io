@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_seo_socials",
+  "info": {
+    "displayName": "Social",
+    "description": "Meta information for social networks (Open Graph, Twitter, etc.)"
+  },
+  "options": {},
+  "attributes": {
+    "platform": {
+      "type": "enumeration",
+      "enum": ["facebook", "twitter", "linkedin"]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "allowedTypes": ["images"],
+      "multiple": false
+    },
+    "twitterCard": {
+      "type": "enumeration",
+      "enum": ["summary", "summary_large_image"],
+      "default": "summary"
+    }
+  }
+}

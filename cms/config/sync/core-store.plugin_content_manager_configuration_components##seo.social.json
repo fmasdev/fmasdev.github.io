@@ -1,13 +1,13 @@
 {
-  "key": "plugin_content_manager_configuration_components::skills.skill",
+  "key": "plugin_content_manager_configuration_components::seo.social",
   "value": {
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "Name",
-      "defaultSortBy": "Name",
+      "mainField": "title",
+      "defaultSortBy": "title",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -19,72 +19,72 @@
           "sortable": false
         }
       },
-      "Name": {
+      "platform": {
         "edit": {
-          "label": "Name",
+          "label": "platform",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Name",
+          "label": "platform",
           "searchable": true,
           "sortable": true
         }
       },
-      "Advancement": {
+      "title": {
         "edit": {
-          "label": "Advancement",
+          "label": "title",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Advancement",
+          "label": "title",
           "searchable": true,
           "sortable": true
         }
       },
-      "Logo": {
+      "description": {
         "edit": {
-          "label": "Logo",
+          "label": "description",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Logo",
+          "label": "description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "image": {
+        "edit": {
+          "label": "image",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "image",
           "searchable": false,
           "sortable": false
         }
       },
-      "Type": {
+      "twitterCard": {
         "edit": {
-          "label": "Type",
+          "label": "twitterCard",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Type",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "Language": {
-        "edit": {
-          "label": "Language",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "Language",
+          "label": "twitterCard",
           "searchable": true,
           "sortable": true
         }
@@ -93,40 +93,40 @@
     "layouts": {
       "list": [
         "id",
-        "Name",
-        "Advancement",
-        "Logo"
+        "platform",
+        "title",
+        "description"
       ],
       "edit": [
         [
           {
-            "name": "Name",
+            "name": "platform",
             "size": 6
           },
           {
-            "name": "Advancement",
-            "size": 4
-          }
-        ],
-        [
-          {
-            "name": "Type",
+            "name": "title",
             "size": 6
           }
         ],
         [
           {
-            "name": "Language",
+            "name": "description",
             "size": 6
           },
           {
-            "name": "Logo",
+            "name": "image",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "twitterCard",
             "size": 6
           }
         ]
       ]
     },
-    "uid": "skills.skill",
+    "uid": "seo.social",
     "isComponent": true
   },
   "type": "object",

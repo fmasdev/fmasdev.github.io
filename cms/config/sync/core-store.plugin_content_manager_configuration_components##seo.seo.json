@@ -6,8 +6,8 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "MetaTitle",
-      "defaultSortBy": "MetaTitle",
+      "mainField": "metaTitle",
+      "defaultSortBy": "metaTitle",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -19,89 +19,109 @@
           "sortable": false
         }
       },
-      "MetaTitle": {
+      "metaTitle": {
         "edit": {
-          "label": "MetaTitle",
+          "label": "metaTitle",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "MetaTitle",
+          "label": "metaTitle",
           "searchable": true,
           "sortable": true
         }
       },
-      "MetaDescription": {
+      "metaDescription": {
         "edit": {
-          "label": "MetaDescription",
+          "label": "metaDescription",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "MetaDescription",
+          "label": "metaDescription",
           "searchable": true,
           "sortable": true
         }
       },
-      "MetaSocial": {
+      "metaRobots": {
         "edit": {
-          "label": "MetaSocial",
+          "label": "metaRobots",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "MetaSocial",
+          "label": "metaRobots",
           "searchable": true,
           "sortable": true
         }
       },
-      "MetaRobot": {
+      "canonicalUrl": {
         "edit": {
-          "label": "MetaRobot",
+          "label": "canonicalUrl",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "MetaRobot",
+          "label": "canonicalUrl",
           "searchable": true,
           "sortable": true
+        }
+      },
+      "metaSocial": {
+        "edit": {
+          "label": "metaSocial",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "metaSocial",
+          "searchable": false,
+          "sortable": false
         }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "MetaTitle",
-        "MetaDescription",
-        "MetaSocial"
+        "metaTitle",
+        "metaDescription",
+        "metaRobots"
       ],
       "edit": [
         [
           {
-            "name": "MetaTitle",
+            "name": "metaTitle",
             "size": 6
           },
           {
-            "name": "MetaDescription",
+            "name": "metaDescription",
             "size": 6
           }
         ],
         [
           {
-            "name": "MetaSocial",
+            "name": "metaRobots",
             "size": 6
           },
           {
-            "name": "MetaRobot",
+            "name": "canonicalUrl",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "metaSocial",
+            "size": 12
           }
         ]
       ]

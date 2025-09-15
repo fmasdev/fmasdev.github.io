@@ -47,16 +47,16 @@
           "sortable": true
         }
       },
-      "Media": {
+      "Logo": {
         "edit": {
-          "label": "Media",
+          "label": "Logo",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Media",
+          "label": "Logo",
           "searchable": false,
           "sortable": false
         }
@@ -67,7 +67,7 @@
         "id",
         "Name",
         "Type",
-        "Media"
+        "Logo"
       ],
       "edit": [
         [
@@ -82,7 +82,7 @@
         ],
         [
           {
-            "name": "Media",
+            "name": "Logo",
             "size": 6
           }
         ]

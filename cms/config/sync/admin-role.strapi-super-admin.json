@@ -149,10 +149,15 @@
           "Title",
           "slug",
           "Content",
-          "Seo.MetaTitle",
-          "Seo.MetaDescription",
-          "Seo.MetaSocial",
-          "Seo.MetaRobot"
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard"
         ],
         "locales": [
           "en",
@@ -194,10 +199,15 @@
           "Title",
           "slug",
           "Content",
-          "Seo.MetaTitle",
-          "Seo.MetaDescription",
-          "Seo.MetaSocial",
-          "Seo.MetaRobot"
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard"
         ],
         "locales": [
           "en",
@@ -215,10 +225,15 @@
           "Title",
           "slug",
           "Content",
-          "Seo.MetaTitle",
-          "Seo.MetaDescription",
-          "Seo.MetaSocial",
-          "Seo.MetaRobot"
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard"
         ],
         "locales": [
           "en",
