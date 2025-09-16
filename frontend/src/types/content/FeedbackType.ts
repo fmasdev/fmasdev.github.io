@@ -6,7 +6,7 @@ export interface FeedbackType {
   __component: string
   title: string
   slug: string
-  content: FeedbackContentType[]
+  feedBackItems: FeedbackContentType[]
   seo: SeoType
 }
 
