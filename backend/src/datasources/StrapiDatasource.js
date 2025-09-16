@@ -85,7 +85,6 @@ class StrapiDatasource {
   async getTrainings(locale) {
     try {
       const res = await this.getLocalizedData(`training-by-locale`, {}, locale)
-      // console.log(JSON.stringify(res.data, null, 2))
       return cleanStrapiData(res.data)
     } catch (err) {
       console.error(err.message)
