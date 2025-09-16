@@ -8,28 +8,34 @@ const cleanStrapiData = (data) => {
   if (data && typeof data === 'object') {
     // Clone without fields will be deleted
     const {createdAt, updatedAt, publishedAt, localizations, ...rest} = data
-
+    const imageKeys = ['image', 'logo', 'photo']
     const cleaned = {}
 
     for (const key in rest) {
       const value = rest[key]
 
       if (
-          key === 'data'
-          && Array.isArray(value)
-          && value[0]?.attributes &&
-          value[0].attributes.hasOwnProperty('alternativeText')
+        value
+        && imageKeys.includes(key.toLowerCase())
+        && Array.isArray(value)
+        && value[0].hasOwnProperty('alternativeText')
       ) {
-        cleaned['media'] = mediaFormater(value[0].attributes)
+        cleaned['media'] = mediaFormater(value[0])
       } else if (
-          key === 'data'
-          && typeof value === 'object'
-          && value?.attributes
-          && value.attributes.hasOwnProperty('alternativeText')
+        value
+        && imageKeys.includes(key.toLowerCase())
+        && typeof value === 'object'
+        && (value.hasOwnProperty('alternativeText') || value?.data.hasOwnProperty('alternativeText'))
       ) {
-        cleaned['media'] = mediaFormater(value.attributes)
-      }
-      else {
+        cleaned['media'] = mediaFormater(value)
+      } else if (
+        value
+        && key.toLowerCase() === 'photo'
+        && value.hasOwnProperty('data')
+        && value.data.attributes.hasOwnProperty('alternativeText')
+      ) {
+        cleaned['media'] = mediaFormater(value.data.attributes)
+      } else {
         // Recursive on each key
         const lcFirstKey = String(key).charAt(0).toLowerCase() + String(key).slice(1)
         cleaned[lcFirstKey] = cleanStrapiData(value)

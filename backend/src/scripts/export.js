@@ -1,8 +1,8 @@
 // src/scripts/export.js
 
 const StrapiDatasource = require('../datasources/StrapiDatasource')
-const { localesConfig, dirConfig } = require('../config/config')
-const { fileHelper } = require('../helpers/fileHelper')
+const {localesConfig, dirConfig} = require('../config/config')
+const {fileHelper} = require('../helpers/fileHelper')
 const {extractMediaUrls} = require("../helpers/extractUrls");
 
 async function exportData() {
@@ -17,25 +17,31 @@ async function exportData() {
 
     const [
       experiences,
-      training,
-      skills,
       feedBacks,
+      home,
+      skills,
+      training,
+      projectList,
       footer
     ] = await Promise.all([
-        await strapi.getPage('experience-pro', locale),
-        await strapi.getPage('training', locale),
-        await strapi.getPage('skills', locale),
-        await strapi.getPage('feed-back', locale),
-        await strapi.getFooter(locale),
-      ])
+      await strapi.getExperiences(locale),
+      await strapi.getFeedBacks(locale),
+      await strapi.getHome(locale),
+      await strapi.getSkills(locale),
+      await strapi.getTrainings(locale),
+      await strapi.getProjectList(locale),
+      await strapi.getFooter(locale),
+    ])
 
     const finalData = {
-      experiences: experiences[0]?.attributes,
-      training: training[0]?.attributes,
-      skills: skills[0]?.attributes,
-      feedBacks: feedBacks[0]?.attributes,
-      footer: footer,
-      me: me,
+      experiences,
+      feedBacks,
+      home,
+      skills,
+      training,
+      projectList,
+      footer,
+      me,
     }
 
     console.log(`## Exported data of locale ${name}`)

@@ -64,6 +64,62 @@ class StrapiDatasource {
     }
   }
 
+  async getExperiences(locale) {
+    try {
+      const res = await this.getLocalizedData(`experience-by-locale`, {}, locale)
+      return cleanStrapiData(res.data)
+    } catch (err) {
+      console.error(err.message)
+    }
+  }
+
+  async getFeedBacks(locale) {
+    try {
+      const res = await this.getLocalizedData(`feed-back-by-locale`, {}, locale)
+      return cleanStrapiData(res.data)
+    } catch (err) {
+      console.error(err.message)
+    }
+  }
+
+  async getTrainings(locale) {
+    try {
+      const res = await this.getLocalizedData(`training-by-locale`, {}, locale)
+      // console.log(JSON.stringify(res.data, null, 2))
+      return cleanStrapiData(res.data)
+    } catch (err) {
+      console.error(err.message)
+    }
+  }
+
+  async getHome(locale) {
+    try {
+      const res = await this.getLocalizedData(`home-by-locale`, {}, locale)
+      return cleanStrapiData(res.data)
+    } catch (err) {
+      console.error(err.message)
+    }
+  }
+
+  async getSkills(locale) {
+    try {
+      const res = await this.getLocalizedData(`skill-by-locale`, {}, locale)
+      return cleanStrapiData(res.data)
+    } catch (err) {
+      console.error(err.message)
+    }
+  }
+
+  async getProjectList(locale) {
+    try {
+      const res = await this.getLocalizedData(`project-list-by-locale`, {}, locale)
+      return cleanStrapiData(res.data)
+    } catch (err) {
+      console.error(err.message)
+    }
+  }
+
+
   async getPage(slug, locale) {
     const params = {
       'filters[slug][$eq]': slug,
@@ -81,7 +137,6 @@ class StrapiDatasource {
   async getFooter(locale) {
     try {
       const res = await this.getLocalizedData('footer-by-locale', {}, locale)
-
       return {
         socials: res.data.SocialBloc,
       }
@@ -100,6 +155,7 @@ class StrapiDatasource {
   }
 
   async getMedia(fileUrl) {
+    console.log(fileUrl)
     const url = String(`${this.baseUrl.replace('api/', '')}${fileUrl.slice(1)}`)
     try {
       return await this.http.get(url, {responseType: "arraybuffer"});
