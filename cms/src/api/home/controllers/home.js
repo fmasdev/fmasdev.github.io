@@ -10,9 +10,20 @@ module.exports = createCoreController('api::home.home', ({ strapi }) => ({
   async findByLocale(ctx) {
     const {locale} = ctx.query;
 
-    const entry = await strapi.entityService.findMany('api::home.home', {
+    const entry = await strapi.entityService.findOne('api::home.home', 1,{
       filters: { locale: locale || 'fr' },
-      populate: 'deep',
+      populate: {
+        Presentation: true,
+        Components: {
+          populate: {
+            Cards: {
+              populate: {
+                Photo: true,
+              },
+            },
+          },
+        },
+      },
     });
 
     if (!entry) {

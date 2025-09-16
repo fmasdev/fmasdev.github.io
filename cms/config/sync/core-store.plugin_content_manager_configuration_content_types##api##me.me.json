@@ -103,6 +103,20 @@
           "sortable": true
         }
       },
+      "photo": {
+        "edit": {
+          "label": "photo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "photo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -197,6 +211,12 @@
           },
           {
             "name": "Email",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "photo",
             "size": 6
           }
         ]

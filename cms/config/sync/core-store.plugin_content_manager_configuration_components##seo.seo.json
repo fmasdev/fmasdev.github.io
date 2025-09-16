@@ -88,6 +88,20 @@
           "searchable": false,
           "sortable": false
         }
+      },
+      "photo": {
+        "edit": {
+          "label": "photo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "photo",
+          "searchable": false,
+          "sortable": false
+        }
       }
     },
     "layouts": {
@@ -115,6 +129,12 @@
           },
           {
             "name": "canonicalUrl",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "photo",
             "size": 6
           }
         ],

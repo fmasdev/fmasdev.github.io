@@ -6,6 +6,210 @@
     {
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
+      "subject": "api::experience.experience",
+      "properties": {
+        "fields": [
+          "Title",
+          "Experience",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::experience.experience",
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::experience.experience",
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::experience.experience",
+      "properties": {
+        "fields": [
+          "Title",
+          "Experience",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::experience.experience",
+      "properties": {
+        "fields": [
+          "Title",
+          "Experience",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::feed-back.feed-back",
+      "properties": {
+        "fields": [
+          "Title",
+          "FeedBackItems",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::feed-back.feed-back",
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::feed-back.feed-back",
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::feed-back.feed-back",
+      "properties": {
+        "fields": [
+          "Title",
+          "FeedBackItems",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::feed-back.feed-back",
+      "properties": {
+        "fields": [
+          "Title",
+          "FeedBackItems",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::footer.footer",
       "properties": {
         "fields": [
@@ -81,83 +285,16 @@
     {
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
-      "subject": "api::me.me",
+      "subject": "api::home.home",
       "properties": {
         "fields": [
-          "Name",
-          "Address",
-          "PostalCode",
-          "City",
-          "Phone",
-          "Email"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "actionParameters": {},
-      "subject": "api::me.me",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "actionParameters": {},
-      "subject": "api::me.me",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "actionParameters": {},
-      "subject": "api::me.me",
-      "properties": {
-        "fields": [
-          "Name",
-          "Address",
-          "PostalCode",
-          "City",
-          "Phone",
-          "Email"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "actionParameters": {},
-      "subject": "api::me.me",
-      "properties": {
-        "fields": [
-          "Name",
-          "Address",
-          "PostalCode",
-          "City",
-          "Phone",
-          "Email"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "actionParameters": {},
-      "subject": "api::page.page",
-      "properties": {
-        "fields": [
-          "Title",
-          "slug",
-          "Content",
-          "Seo.metaTitle",
-          "Seo.metaDescription",
-          "Seo.metaRobots",
-          "Seo.canonicalUrl",
-          "Seo.metaSocial.platform",
-          "Seo.metaSocial.title",
-          "Seo.metaSocial.description",
-          "Seo.metaSocial.image",
-          "Seo.metaSocial.twitterCard"
+          "Presentation.title",
+          "Presentation.Presentation",
+          "Presentation.Photo",
+          "Presentation.Cta.url",
+          "Presentation.Cta.title",
+          "Presentation.Cta.background",
+          "Components"
         ],
         "locales": [
           "en",
@@ -169,7 +306,7 @@
     {
       "action": "plugin::content-manager.explorer.delete",
       "actionParameters": {},
-      "subject": "api::page.page",
+      "subject": "api::home.home",
       "properties": {
         "locales": [
           "en",
@@ -181,7 +318,7 @@
     {
       "action": "plugin::content-manager.explorer.publish",
       "actionParameters": {},
-      "subject": "api::page.page",
+      "subject": "api::home.home",
       "properties": {
         "locales": [
           "en",
@@ -193,21 +330,16 @@
     {
       "action": "plugin::content-manager.explorer.read",
       "actionParameters": {},
-      "subject": "api::page.page",
+      "subject": "api::home.home",
       "properties": {
         "fields": [
-          "Title",
-          "slug",
-          "Content",
-          "Seo.metaTitle",
-          "Seo.metaDescription",
-          "Seo.metaRobots",
-          "Seo.canonicalUrl",
-          "Seo.metaSocial.platform",
-          "Seo.metaSocial.title",
-          "Seo.metaSocial.description",
-          "Seo.metaSocial.image",
-          "Seo.metaSocial.twitterCard"
+          "Presentation.title",
+          "Presentation.Presentation",
+          "Presentation.Photo",
+          "Presentation.Cta.url",
+          "Presentation.Cta.title",
+          "Presentation.Cta.background",
+          "Components"
         ],
         "locales": [
           "en",
@@ -219,21 +351,16 @@
     {
       "action": "plugin::content-manager.explorer.update",
       "actionParameters": {},
-      "subject": "api::page.page",
+      "subject": "api::home.home",
       "properties": {
         "fields": [
-          "Title",
-          "slug",
-          "Content",
-          "Seo.metaTitle",
-          "Seo.metaDescription",
-          "Seo.metaRobots",
-          "Seo.canonicalUrl",
-          "Seo.metaSocial.platform",
-          "Seo.metaSocial.title",
-          "Seo.metaSocial.description",
-          "Seo.metaSocial.image",
-          "Seo.metaSocial.twitterCard"
+          "Presentation.title",
+          "Presentation.Presentation",
+          "Presentation.Photo",
+          "Presentation.Cta.url",
+          "Presentation.Cta.title",
+          "Presentation.Cta.background",
+          "Components"
         ],
         "locales": [
           "en",
@@ -245,6 +372,325 @@
     {
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
+      "subject": "api::me.me",
+      "properties": {
+        "fields": [
+          "Name",
+          "Address",
+          "PostalCode",
+          "City",
+          "Phone",
+          "Email",
+          "photo"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::me.me",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::me.me",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::me.me",
+      "properties": {
+        "fields": [
+          "Name",
+          "Address",
+          "PostalCode",
+          "City",
+          "Phone",
+          "Email",
+          "photo"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::me.me",
+      "properties": {
+        "fields": [
+          "Name",
+          "Address",
+          "PostalCode",
+          "City",
+          "Phone",
+          "Email",
+          "photo"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::project-list.project-list",
+      "properties": {
+        "fields": [
+          "Title",
+          "ProjectItem",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::project-list.project-list",
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::project-list.project-list",
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::project-list.project-list",
+      "properties": {
+        "fields": [
+          "Title",
+          "ProjectItem",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::project-list.project-list",
+      "properties": {
+        "fields": [
+          "Title",
+          "ProjectItem",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::project.project",
+      "properties": {
+        "fields": [
+          "Title",
+          "slug"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::project.project",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::project.project",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::project.project",
+      "properties": {
+        "fields": [
+          "Title",
+          "slug"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::project.project",
+      "properties": {
+        "fields": [
+          "Title",
+          "slug"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::skill.skill",
+      "properties": {
+        "fields": [
+          "Title",
+          "Skills",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::skill.skill",
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::skill.skill",
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::skill.skill",
+      "properties": {
+        "fields": [
+          "Title",
+          "Skills",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::skill.skill",
+      "properties": {
+        "fields": [
+          "Title",
+          "Skills",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::stack-item.stack-item",
       "properties": {
         "fields": [
@@ -291,6 +737,108 @@
           "Name",
           "Logo",
           "Info"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::training.training",
+      "properties": {
+        "fields": [
+          "Title",
+          "Trainings",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::training.training",
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::training.training",
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::training.training",
+      "properties": {
+        "fields": [
+          "Title",
+          "Trainings",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::training.training",
+      "properties": {
+        "fields": [
+          "Title",
+          "Trainings",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
         ]
       },
       "conditions": []
