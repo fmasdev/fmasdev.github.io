@@ -10,11 +10,9 @@
 
 <script setup lang="ts">
 
-const props = defineProps<{
+defineProps<{
   linkTo: string
   title: string
   classList?: string | null
 }>()
-console.log('ctacomponent')
-
 </script>
