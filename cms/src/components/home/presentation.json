@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_home_presentations",
+  "info": {
+    "displayName": "presentation",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Presentation": {
+      "type": "string"
+    },
+    "Photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Cta": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.cta",
+      "max": 3
+    }
+  }
+}

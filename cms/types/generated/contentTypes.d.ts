@@ -998,6 +998,111 @@ export interface PluginNavigationNavigationsItemsRelated
   };
 }
 
+export interface ApiExperienceExperience extends Schema.SingleType {
+  collectionName: 'experiences';
+  info: {
+    singularName: 'experience';
+    pluralName: 'experiences';
+    displayName: 'Experience';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    Title: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Experience: Attribute.DynamicZone<
+      ['experience.experience-item', 'experience.experience']
+    > &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Seo: Attribute.Component<'seo.seo'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::experience.experience',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::experience.experience',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::experience.experience',
+      'oneToMany',
+      'api::experience.experience'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiFeedBackFeedBack extends Schema.SingleType {
+  collectionName: 'feed_backs';
+  info: {
+    singularName: 'feed-back';
+    pluralName: 'feed-backs';
+    displayName: 'FeedBack';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    Title: Attribute.String;
+    FeedBackItems: Attribute.DynamicZone<['experience.feed-back']>;
+    Seo: Attribute.Component<'seo.seo'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::feed-back.feed-back',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::feed-back.feed-back',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::feed-back.feed-back',
+      'oneToMany',
+      'api::feed-back.feed-back'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiFooterFooter extends Schema.SingleType {
   collectionName: 'footers';
   info: {
@@ -1045,6 +1150,51 @@ export interface ApiFooterFooter extends Schema.SingleType {
   };
 }
 
+export interface ApiHomeHome extends Schema.SingleType {
+  collectionName: 'homes';
+  info: {
+    singularName: 'home';
+    pluralName: 'homes';
+    displayName: 'home';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    Presentation: Attribute.Component<'home.presentation'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Components: Attribute.DynamicZone<['home.figure-card-bloc', 'home.bloc']> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::home.home', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::home.home', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::home.home',
+      'oneToMany',
+      'api::home.home'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiMeMe extends Schema.SingleType {
   collectionName: 'us';
   info: {
@@ -1063,6 +1213,7 @@ export interface ApiMeMe extends Schema.SingleType {
     City: Attribute.String;
     Phone: Attribute.String;
     Email: Attribute.Email;
+    photo: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1073,12 +1224,101 @@ export interface ApiMeMe extends Schema.SingleType {
   };
 }
 
-export interface ApiPagePage extends Schema.CollectionType {
-  collectionName: 'pages';
+export interface ApiProjectProject extends Schema.CollectionType {
+  collectionName: 'projects';
   info: {
-    singularName: 'page';
-    pluralName: 'pages';
-    displayName: 'Page';
+    singularName: 'project';
+    pluralName: 'projects';
+    displayName: 'Project';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Title: Attribute.String;
+    slug: Attribute.String & Attribute.Required & Attribute.Unique;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::project.project',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::project.project',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiProjectListProjectList extends Schema.SingleType {
+  collectionName: 'project_lists';
+  info: {
+    singularName: 'project-list';
+    pluralName: 'project-lists';
+    displayName: 'ProjectList';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    Title: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    ProjectItem: Attribute.DynamicZone<['experience.project']> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Seo: Attribute.Component<'seo.seo'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::project-list.project-list',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::project-list.project-list',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::project-list.project-list',
+      'oneToMany',
+      'api::project-list.project-list'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiSkillSkill extends Schema.SingleType {
+  collectionName: 'skills';
+  info: {
+    singularName: 'skill';
+    pluralName: 'skills';
+    displayName: 'Skill';
     description: '';
   };
   options: {
@@ -1096,20 +1336,11 @@ export interface ApiPagePage extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    slug: Attribute.String &
-      Attribute.Required &
-      Attribute.Unique &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Content: Attribute.DynamicZone<
+    Skills: Attribute.DynamicZone<
       [
-        'experience.experience-item',
-        'experience.experience',
-        'experience.project',
-        'experience.feed-back',
+        'skills.soft-skill',
+        'skills.character-trait',
+        'skills.skill',
         'skills.skills-list'
       ]
     > &
@@ -1127,14 +1358,22 @@ export interface ApiPagePage extends Schema.CollectionType {
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<'api::page.page', 'oneToOne', 'admin::user'> &
+    createdBy: Attribute.Relation<
+      'api::skill.skill',
+      'oneToOne',
+      'admin::user'
+    > &
       Attribute.Private;
-    updatedBy: Attribute.Relation<'api::page.page', 'oneToOne', 'admin::user'> &
+    updatedBy: Attribute.Relation<
+      'api::skill.skill',
+      'oneToOne',
+      'admin::user'
+    > &
       Attribute.Private;
     localizations: Attribute.Relation<
-      'api::page.page',
+      'api::skill.skill',
       'oneToMany',
-      'api::page.page'
+      'api::skill.skill'
     >;
     locale: Attribute.String;
   };
@@ -1170,6 +1409,65 @@ export interface ApiStackItemStackItem extends Schema.CollectionType {
       'admin::user'
     > &
       Attribute.Private;
+  };
+}
+
+export interface ApiTrainingTraining extends Schema.SingleType {
+  collectionName: 'trainings';
+  info: {
+    singularName: 'training';
+    pluralName: 'trainings';
+    displayName: 'Training';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    Title: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Trainings: Attribute.DynamicZone<['experience.experience']> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Seo: Attribute.Component<'seo.seo'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::training.training',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::training.training',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::training.training',
+      'oneToMany',
+      'api::training.training'
+    >;
+    locale: Attribute.String;
   };
 }
 
@@ -1254,10 +1552,16 @@ declare module '@strapi/types' {
       'plugin::navigation.navigation': PluginNavigationNavigation;
       'plugin::navigation.navigation-item': PluginNavigationNavigationItem;
       'plugin::navigation.navigations-items-related': PluginNavigationNavigationsItemsRelated;
+      'api::experience.experience': ApiExperienceExperience;
+      'api::feed-back.feed-back': ApiFeedBackFeedBack;
       'api::footer.footer': ApiFooterFooter;
+      'api::home.home': ApiHomeHome;
       'api::me.me': ApiMeMe;
-      'api::page.page': ApiPagePage;
+      'api::project.project': ApiProjectProject;
+      'api::project-list.project-list': ApiProjectListProjectList;
+      'api::skill.skill': ApiSkillSkill;
       'api::stack-item.stack-item': ApiStackItemStackItem;
+      'api::training.training': ApiTrainingTraining;
       'api::webservice.webservice': ApiWebserviceWebservice;
     }
   }

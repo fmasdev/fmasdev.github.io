@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "feed_backs",
+  "info": {
+    "singularName": "feed-back",
+    "pluralName": "feed-backs",
+    "displayName": "FeedBack",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "FeedBackItems": {
+      "type": "dynamiczone",
+      "components": [
+        "experience.feed-back"
+      ]
+    },
+    "Seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo"
+    }
+  }
+}

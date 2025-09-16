@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_home_blocs",
+  "info": {
+    "displayName": "CardBloc",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.home-card-block"
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "primary",
+        "primaryLight",
+        "secondary",
+        "accent"
+      ],
+      "default": "default"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

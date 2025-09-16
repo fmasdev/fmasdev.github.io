@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_home_figure_card_blocs",
+  "info": {
+    "displayName": "FigureCardBloc",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.figure-card",
+      "max": 3,
+      "min": 1
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "primary",
+        "primaryLight",
+        "secondary",
+        "accent"
+      ]
+    }
+  }
+}

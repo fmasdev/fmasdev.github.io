@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_home_ctas",
+  "info": {
+    "displayName": "Cta"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "primaryLight",
+        "secondary",
+        "accent"
+      ]
+    }
+  }
+}

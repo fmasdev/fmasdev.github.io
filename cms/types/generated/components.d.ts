@@ -98,6 +98,110 @@ export interface ExperienceProject extends Schema.Component {
   };
 }
 
+export interface HomeBloc extends Schema.Component {
+  collectionName: 'components_home_blocs';
+  info: {
+    displayName: 'CardBloc';
+    description: '';
+  };
+  attributes: {
+    Cards: Attribute.Component<'home.home-card-block', true>;
+    background: Attribute.Enumeration<
+      ['default', 'primary', 'primaryLight', 'secondary', 'accent']
+    > &
+      Attribute.DefaultTo<'default'>;
+    title: Attribute.String;
+  };
+}
+
+export interface HomeCta extends Schema.Component {
+  collectionName: 'components_home_ctas';
+  info: {
+    displayName: 'Cta';
+  };
+  attributes: {
+    url: Attribute.String;
+    title: Attribute.String;
+    background: Attribute.Enumeration<
+      ['primary', 'primaryLight', 'secondary', 'accent']
+    >;
+  };
+}
+
+export interface HomeFigureCardBloc extends Schema.Component {
+  collectionName: 'components_home_figure_card_blocs';
+  info: {
+    displayName: 'FigureCardBloc';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    Cards: Attribute.Component<'home.figure-card', true> &
+      Attribute.SetMinMax<
+        {
+          min: 1;
+          max: 3;
+        },
+        number
+      >;
+    background: Attribute.Enumeration<
+      ['default', 'primary', 'primaryLight', 'secondary', 'accent']
+    >;
+  };
+}
+
+export interface HomeFigureCard extends Schema.Component {
+  collectionName: 'components_home_figure_cards';
+  info: {
+    displayName: 'FigureCard';
+    description: '';
+  };
+  attributes: {
+    Title: Attribute.String;
+    Caption: Attribute.String;
+    Photo: Attribute.Media;
+    Text: Attribute.String;
+  };
+}
+
+export interface HomeHomeCardBlock extends Schema.Component {
+  collectionName: 'components_home_home_card_blocks';
+  info: {
+    displayName: 'Card';
+    description: '';
+  };
+  attributes: {
+    icon: Attribute.String;
+    textCenter: Attribute.Boolean;
+    titleColor: Attribute.Enumeration<
+      ['primary', 'primaryLight', 'secondary', 'accent', 'ternary']
+    >;
+    Title: Attribute.String;
+    Text: Attribute.String;
+    TextColor: Attribute.Enumeration<['default', 'ternary']>;
+  };
+}
+
+export interface HomePresentation extends Schema.Component {
+  collectionName: 'components_home_presentations';
+  info: {
+    displayName: 'presentation';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    Presentation: Attribute.String;
+    Photo: Attribute.Media;
+    Cta: Attribute.Component<'home.cta', true> &
+      Attribute.SetMinMax<
+        {
+          max: 3;
+        },
+        number
+      >;
+  };
+}
+
 export interface SeoSeo extends Schema.Component {
   collectionName: 'components_seo_seos';
   info: {
@@ -292,6 +396,12 @@ declare module '@strapi/types' {
       'experience.feed-back': ExperienceFeedBack;
       'experience.personnal-project': ExperiencePersonnalProject;
       'experience.project': ExperienceProject;
+      'home.bloc': HomeBloc;
+      'home.cta': HomeCta;
+      'home.figure-card-bloc': HomeFigureCardBloc;
+      'home.figure-card': HomeFigureCard;
+      'home.home-card-block': HomeHomeCardBlock;
+      'home.presentation': HomePresentation;
       'seo.seo': SeoSeo;
       'seo.social': SeoSocial;
       'shared.meta-social': SharedMetaSocial;

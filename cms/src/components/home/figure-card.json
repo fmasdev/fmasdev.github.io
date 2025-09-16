@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_home_figure_cards",
+  "info": {
+    "displayName": "FigureCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Caption": {
+      "type": "string"
+    },
+    "Photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Text": {
+      "type": "string"
+    }
+  }
+}
