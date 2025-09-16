@@ -66,28 +66,46 @@
 
           <div class="lg:col-span-2 grid sm:grid-cols-2 gap-6">
 
-            <div
-              v-for="card in sportsHobby.cards"
+
+            <figure
+              v-if="sportsHobby.cards[1].caption.length"
+              class="overflow-hidden rounded-xl shadow-md"
             >
-<!--              <figure-->
-<!--                v-if="card.caption.length"-->
-<!--                class="overflow-hidden rounded-xl shadow-md"-->
-<!--              >-->
-<!--&lt;!&ndash;                <img :src="`/media/${}`" alt="Ski" class="h-64 w-full object-cover hover:scale-105 transition" />&ndash;&gt;-->
-<!--                <figcaption class="p-3 text-sm bg-white">{{ card.caption }}</figcaption>-->
-<!--              </figure>-->
-            </div>
-
-            <figure class="overflow-hidden rounded-xl shadow-md">
-
-              <figcaption class="p-3 text-sm bg-white">Ski alpin — précision et plaisir de la montagne</figcaption>
+                <img
+                  :src="`/media/${sportsHobby.cards[1].media.original.path}`"
+                  :alt="sportsHobby.cards[1].media.name"
+                  class="h-64 w-full object-cover hover:scale-105 transition"
+                />
+              <figcaption class="p-3 text-sm bg-white">
+                {{ sportsHobby.cards[1].caption }}
+              </figcaption>
             </figure>
+
+
+            <figure
+              v-if="sportsHobby.cards[2].caption.length"
+              class="overflow-hidden rounded-xl shadow-md"
+            >
+              <img
+                :src="`/media/${sportsHobby.cards[2].media.original.path}`"
+                :alt="sportsHobby.cards[2].media.name"
+                class="h-64 w-full object-cover hover:scale-105 transition"
+              />
+              <figcaption class="p-3 text-sm bg-white">
+                {{ sportsHobby.cards[2].caption }}
+              </figcaption>
+            </figure>
+
           </div>
-          <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
-            <h3 class="text-lg font-semibold text-secondary mb-2">Randonnée nature</h3>
+          <div
+            v-if="!sportsHobby.cards[0].caption"
+            class="bg-white p-6 rounded-xl shadow-md border border-gray-100"
+          >
+            <h3 class="text-lg font-semibold text-secondary mb-2">
+              {{ sportsHobby.cards[0].title }}
+            </h3>
             <p class="text-sm text-text/80 leading-relaxed">
-              Les randonnées m’offrent un équilibre entre effort et contemplation, un moyen de
-              recharger mon énergie et d’alimenter ma créativité.
+              {{ sportsHobby.cards[0].text }}
             </p>
           </div>
         </div>
@@ -95,24 +113,34 @@
     </section>
 
     <!-- Valeurs -->
-    <section class="py-16 bg-primary text-white">
+    <section
+      v-if="personnalValues"
+      class="py-16 bg-primary text-white"
+    >
       <div class="max-w-7xl mx-auto px-6 lg:px-12">
-        <h3 class="text-2xl font-title mb-8 text-center">Mes valeurs</h3>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <h3 class="text-2xl font-title mb-8 text-center">
+          {{ personnalValues.title}}
+        </h3>
 
-          <div v-for="value in values" :key="value.title" class="bg-white/10 p-6 rounded-xl text-center">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            v-for="value in personnalValues.cards"
+            :key="value.title"
+            class="bg-white/10 p-6 rounded-xl text-center"
+          >
             <div class="text-3xl mb-2">{{ value.icon }}</div>
             <div class="font-semibold text-lg">{{ value.title }}</div>
-            <p class="text-sm text-white/80 mt-2">{{ value.desc }}</p>
+            <p class="text-sm text-white/80 mt-2">{{ value.text }}</p>
           </div>
         </div>
+
       </div>
     </section>
 
     <FooterComponent
       v-if="footerContent && meContent"
       :footerContent="footerContent"
-      :meContent="meContent"
+      :meContent="meContent.attributes"
     />
   </main>
 </template>
@@ -125,7 +153,6 @@ import CtaComponent from "@components/DesignSystem/Atoms/CtaComponent.vue";
 import {ref, watch} from "vue";
 import type {HomeType} from "@types/content/HomeType.js";
 import type {FooterType} from "@types/content/FooterType.js";
-import HomeSectionComponent from "@components/DesignSystem/organism/HomeSectionComponent.vue";
 
 // Home content
 const {content: homeContent} = useContentLoader('home')
@@ -142,15 +169,22 @@ watch(
     expertise.value = homeContent.components[0]
     sportsHobby.value = homeContent.components[1]
     personnalValues.value = homeContent.components[2]
-    console.log(expertise.value)
-    console.log(sportsHobby.value)
   },
   {immediate: true}
 )
 
 // Footer content
-// const {content: footerContent} = useContentLoader('footer')
+const {content: footerContent} = useContentLoader('footer')
 const footer = ref<FooterType>()
+watch(
+  footerContent,
+  (footerContent) => {
+    if (!footerContent) return
+    console.log(footerContent)
+    footer.value = footerContent
+  },
+  {immediate: true}
+)
 
 // me content
 const {content: meContent} = useContentLoader<MeType>('me')
@@ -164,41 +198,10 @@ watch(
   },
   {immediate: true}
 )
-//
-// const expertise = [
-//   {
-//     icon: "💻",
-//     title: "Développement fullstack",
-//     desc: "Backend API Platform, Symfony & Strapi, intégration front moderne avec Vue.js et Nuxt.",
-//   },
-//   {
-//     icon: "⚡",
-//     title: "Performance & scalabilité",
-//     desc: "Optimisation des plateformes, tests automatisés et infrastructures Docker.",
-//   },
-//   {
-//     icon: "🌍",
-//     title: "Projets multilingues",
-//     desc: "Expérience sur des plateformes internationales, gestion fine des contenus et SEO.",
-//   },
-// ]
 
-const values = [
-  {icon: "🎯", title: "Rigueur", desc: "Précision, qualité et bonnes pratiques."},
-  {icon: "🌱", title: "Curiosité", desc: "Apprentissage et veille technologique."},
-  {icon: "🤝", title: "Esprit d'équipe", desc: "Collaboration et partage."},
-  {icon: "🔧", title: "Créativité", desc: "Approches innovantes et solutions adaptées."},
-]
 </script>
 
 <style scoped>
-
-
-/* Contraste léger pour captions */
-.home-root .bg-background {
-  background-color: var(--background);
-}
-
 /* Small adjustments for images */
 .home-root img {
   display: block;
