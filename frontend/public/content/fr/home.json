@@ -4,33 +4,7 @@
   "presentation": {
     "id": 2,
     "title": "Frédéric Mas",
-    "presentation": "Développeur fullstack — PHP / JS. Je conçois et déploie des plateformes robustes, performantes et évolutives.",
-    "media": {
-      "name": "IMG_20221120_192535.jpg",
-      "alternativeText": "Photo Frédéric Mas",
-      "original": {
-        "path": "original/IMG_20221120_192535.jpg",
-        "height": 2856,
-        "width": 2765,
-        "mime": "image/jpeg",
-        "size": 605.27,
-        "strapiUrl": "/uploads/IMG_20221120_192535_286952d7a8.jpg"
-      }
-    },
-    "cta": [
-      {
-        "id": 3,
-        "url": "experience",
-        "title": "Voir mes expériences",
-        "background": "accent"
-      },
-      {
-        "id": 4,
-        "url": "skills",
-        "title": "Voir mes compétences",
-        "background": null
-      }
-    ]
+    "presentation": "Développeur fullstack — PHP / JS. Je conçois et déploie des plateformes robustes, performantes et évolutives."
   },
   "components": [
     {
@@ -78,19 +52,44 @@
           "id": 7,
           "title": "VTT",
           "caption": null,
-          "text": "Le VTT est pour moi bien plus qu’un sport : c’est un terrain d’aventure où je cherche toujours à repousser mes limites. Entre technique, endurance et liberté, il m’offre un équilibre unique entre effort intense et sensation de fluidité."
+          "text": "Le VTT est pour moi bien plus qu’un sport : c’est un terrain d’aventure où je cherche toujours à repousser mes limites. Entre technique, endurance et liberté, il m’offre un équilibre unique entre effort intense et sensation de fluidité.",
+          "photo": null
         },
         {
           "id": 8,
           "title": "SKI",
           "caption": "Ski alpin — précision et plaisir de la montagne",
-          "text": null
+          "text": null,
+          "media": {
+            "name": "IMG_20240103_162333.jpg",
+            "alternativeText": "Ski - Chamrousse",
+            "original": {
+              "path": "original/IMG_20240103_162333.jpg",
+              "height": 2592,
+              "width": 4608,
+              "mime": "image/jpeg",
+              "size": 991.22,
+              "strapiUrl": "/uploads/IMG_20240103_162333_69d89a6e07.jpg"
+            }
+          }
         },
         {
           "id": 9,
           "title": "RANDO",
           "caption": "Randonnée — l’art de ralentir et d’observer",
-          "text": null
+          "text": null,
+          "media": {
+            "name": "IMG_20240804_113432.jpg",
+            "alternativeText": "Randonnée - La Rhune",
+            "original": {
+              "path": "original/IMG_20240804_113432.jpg",
+              "height": 2592,
+              "width": 4608,
+              "mime": "image/jpeg",
+              "size": 1059.22,
+              "strapiUrl": "/uploads/IMG_20240804_113432_a02b5ef16a.jpg"
+            }
+          }
         }
       ]
     },

@@ -2,7 +2,26 @@
   "id": 1,
   "title": "Feed backs",
   "locale": "fr-FR",
-  "feedBackItems": [],
+  "feedBackItems": [
+    {
+      "__component": "experience.feed-back",
+      "id": 9,
+      "title": "Message LinkedIn",
+      "content": "Tu restes impressionnant de motivation, d'implication peu importe le projet, les technos, et peu importe les moments personnels qui sont parfois difficile a gérer. ",
+      "date": "2025-07-16",
+      "author": "Stéphane Sobecki",
+      "job": "Responsable de production"
+    },
+    {
+      "__component": "experience.feed-back",
+      "id": 10,
+      "title": "Feed-back candidat test Thomas",
+      "content": "##### Thermes descriptifs\n\nConformiste, fiable, prudent, aimable, méticuleux, persévérant, précis, attentif, bienveillant, logique, réservé, réfléchi, sérieux.\n\n##### Caractéristiques générales\n\n- Fixe, pour lui-même, des normes exigeantes.\n- Sait mettre la dernière main à la tache.\n- Se sent a l'aise au sein d'une équipe de spécialiste, de technitiens ou d'administratifs.\n- Il redoute les conflits, les problèmes, les ennuis.\n- Travaille de manière organisée et systématique pour trouver la solution \"parfaite\" aux problèmes qui lui sont soumis.\n- Se conforme au système, au règlement, et aux procédures.\n\n##### Motivation\n\nFrédéric Mas aime pouvoir travailler sur base de procédure et disposer d'information précises dans un environnement de travail stable.\n\n##### Son apport à l'organisation\n\nL'apport de Frédéric Mas à l'organisation se situe notamment dans sa capacité à implanter des systemes de contrôle de qualité, des normes et des procédures. Il fera preuve d'objectivité et de précision dans ses analyses qui ne seront pas biaisées par des éléments d'ordre émotionnels.\n\n\n",
+      "date": "2009-05-08",
+      "author": null,
+      "job": null
+    }
+  ],
   "seo": {
     "id": 7,
     "metaTitle": "Avis & retours — Frédéric Mas",
