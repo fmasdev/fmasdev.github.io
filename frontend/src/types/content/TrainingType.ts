@@ -7,7 +7,7 @@ export interface TrainingType {
   title: string
   slug: string
   locale: string
-  content: TrainingContentType[]
+  trainings: TrainingContentType[]
   seo: SeoType
 }
 
@@ -19,6 +19,6 @@ export interface TrainingContentType {
   start: string
   stop: string
   title: string
-  logo?: MediaType
+  media?: MediaType
   __component: string
 }

@@ -14,6 +14,9 @@ import { compare } from '../../../helpers/arrayHelper.js'
 const props = defineProps<{
   skills: MediaSkillsType[]
 }>()
+
+console.log(props.skills)
+
 const skillList = {
   languages: props.skills
     .filter(
@@ -59,4 +62,6 @@ const skillList = {
     )
     .sort((a, b) => compare(a, b, 'name')),
 }
+
+console.log(skillList)
 </script>

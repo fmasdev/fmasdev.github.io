@@ -34,7 +34,6 @@ import ListStringComponent from "@components/DesignSystem/Atoms/ListStringCompon
 import ListMediaComponent from "@components/DesignSystem/Atoms/ListMediaComponent.vue";
 import type {
   SoftSkillArrayType,
-  SoftSkillMediaArrayType,
   SoftSkillType
 } from '@types/content/SkillsType.js'
 
@@ -47,10 +46,10 @@ const methods = ref<SoftSkillArrayType>()
 
 // TOOLS
 const toolItems = props.skillList
-  .filter((skill: (SoftSkillType | SoftSkillMediaArrayType) )=> skill.type === 'TOOL')
+  .filter((skill: SoftSkillType )=> skill?.type === 'TOOL')
   .sort((a, b) => compare(a, b, 'name'))
 
-if (toolItems.every((tool: SoftSkillType) => tool?.logo?.media)) {
+if (toolItems.every((tool: SoftSkillType) => tool?.media)) {
   tools.value = {
     kind: 'media',
     items: toolItems
@@ -67,7 +66,7 @@ const methodItems = props.skillList
   .filter((skill: SoftSkillType) => skill.type === 'METHOD')
   .sort((a, b) => compare(a, b, 'name'))
 
-if (methodItems.every((method: SoftSkillType) => method?.logo?.media)) {
+if (methodItems.every((method: SoftSkillType) => method?.media)) {
     methods.value = {
       kind: "media",
       items: methodItems

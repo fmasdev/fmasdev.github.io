@@ -1,7 +1,7 @@
 <template>
   <SeoComponent
-    v-if="seoData?.id"
-    :seo="seoData"
+    v-if="experiences?.seo.id"
+    :seo="experiences.seo"
   />
 
   <section v-if="experiences" class="bg-background text-text py-12">
@@ -9,7 +9,7 @@
       <TitleComponent :title="experiences?.title" level="h2" />
 
       <ExperienceComponent
-        v-for="(experience, idx) in experiences.content"
+        v-for="(experience, idx) in experiences.experience"
         :key="idx"
         :experience="experience"
       />
@@ -23,16 +23,16 @@ import { useContentLoader } from '@composables/useContentLoader'
 import ExperienceComponent from '@components/DesignSystem/Molecule/ExperienceComponent.vue'
 import TitleComponent from '@components/DesignSystem/Atoms/TitleComponent.vue'
 import SeoComponent from "@components/DesignSystem/Molecule/SeoComponent.vue";
-import type {SeoType} from "@types/content/SeoType.js";
+import type {ExperiencesType} from "@types/content/ExperiencesType.js";
 
-const { content: experiences } = toRefs(useContentLoader('experiences'))
-const seoData = ref<SeoType>()
+const { content: experiencesContent } = toRefs(useContentLoader('experiences'))
+const experiences = ref<ExperiencesType>()
 
 watch(
-  experiences,
-  (experiences) => {
-    if (!experiences) return
-    seoData.value = experiences.seo
+  experiencesContent,
+  (experiencesContent) => {
+    if (!experiencesContent) return
+    experiences.value = experiencesContent
   },
   { immediate: true }
 )

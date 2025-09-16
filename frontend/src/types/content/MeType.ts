@@ -1,5 +1,7 @@
 // src/types/content/MeType.ts
 
+import type {MediaType} from "@types/content/MediaType.js";
+
 export interface MeType {
   id: number
   attributes: MeAttributesType
@@ -12,4 +14,5 @@ export interface MeAttributesType {
   city: string
   phone: string
   email: string
+  media: MediaType
 }

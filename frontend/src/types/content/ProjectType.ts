@@ -9,31 +9,18 @@ export interface ProjectType {
   contribution: string
   name: string
   isCompany: boolean
-  stack_items: {
-    data: StackType[]
-  }
-  webservices: {
-    data: WebserviceType[]
-  }
+  stack_items: StackType[]
+  webservices: WebserviceType[]
 }
 
 export interface StackType {
-  id: string
-  attributes: StackItemType
-}
-
-export interface StackItemType {
   name: string
   info: string
-  logo: MediaType
+  media: MediaType
 }
 
 export interface WebserviceType {
-  id: string
-  attributes: WebservicesItemType
-}
-export interface WebservicesItemType {
   name: string
   info: string
-  logo: MediaType
+  media: MediaType
 }

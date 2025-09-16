@@ -11,20 +11,33 @@
 
       <div class="space-y-2 text-left">
         <TitleComponent :title="$t('footer.contact')" level="h3" />
-
-        <p class="text-sm">email@example.com</p>
-        <p class="text-sm">+33 6 12 34 56 78</p>
+        <p>
+          <a
+            :href="`mailto:${meContent.email}`"
+            class="text-sm"
+          >
+            {{ meContent.email }}
+          </a>
+        </p>
+        <p>
+          <a
+            :href="`tel:${phoneNumberWithoutSpaces}`"
+            class="text-sm"
+          >
+            {{ meContent.phone }}
+          </a>
+        </p>
       </div>
 
       <div class="space-y-2 text-left">
         <TitleComponent :title="$t('footer.followMe')" level="h3" />
         <div class="space-x-4">
           <!-- todo rooter link -->
-          <a href="#" class="hover:text-accent transition-colors footer-link">
-            LinkedIn
-          </a>
-          <a href="#" class="hover:text-accent transition-colors footer-link">
-            GitHub
+          <a
+            v-for="social in footerContent.socials"
+            :href="social.Url"
+            class="hover:text-accent transition-colors footer-link">
+            {{ social.Name }}
           </a>
         </div>
       </div>
@@ -37,16 +50,17 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import type { MeType } from '@types/content/MeType.js'
+import type {MeAttributesType, MeType} from '@types/content/MeType.js'
 import type { FooterType } from '@types/content/FooterType.js'
 import TitleComponent from '@components/DesignSystem/Atoms/TitleComponent.vue'
 
-defineProps<{
+const props = defineProps<{
   footerContent: FooterType
-  meContent: MeType
+  meContent: MeAttributesType
 }>()
 
 const currentYear = computed(() => new Date().getFullYear())
+const phoneNumberWithoutSpaces = props.meContent.phone.replaceAll(' ', '')
 </script>
 
 <style scoped>

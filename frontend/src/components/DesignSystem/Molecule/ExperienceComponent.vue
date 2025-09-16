@@ -26,8 +26,8 @@
       <div>
         <MediaComponent
           class=""
-          :alt="experience.logo.media.alternativeText || ''"
-          :src="`/media/${experience.logo.media.original.path}`"
+          :alt="experience.media.alternativeText || ''"
+          :src="`/media/${experience.media.original.path}`"
         />
       </div>
     </div>

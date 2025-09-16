@@ -7,6 +7,7 @@ import SkillsPageComponent from '@components/Pages/SkillsPageComponent.vue'
 import PojectsPageComponent from '@components/Pages/PojectsPageComponent.vue'
 import ExperiencePageComponent from '@components/Pages/ExperiencePageComponent.vue'
 import MainLayout from '../layouts/MainLayout.vue'
+import FeedBackPageComponent from "@components/Pages/FeedBackPageComponent.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -31,6 +32,12 @@ const routes: Array<RouteRecordRaw> = [
     component: MainLayout,
     children: [{ path: '', component: SkillsPageComponent }],
     meta: { labelKey: 'navigation.skills' },
+  },
+  {
+    path: '/feed-backs',
+    component: MainLayout,
+    children: [{ path: '', component: FeedBackPageComponent }],
+    meta: { labelKey: 'navigation.feedBacks' },
   },
   {
     path: '/projects',

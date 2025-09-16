@@ -1,6 +1,9 @@
 <template>
   <header class="fixed top-0 left-0 w-full bg-primary text-white z-50">
-    <navbar-component :links="links" />
+    <navbar-component
+      v-if="meContent && links"
+      :links="links"
+      :me="meContent.attributes" />
   </header>
   <main class="bg-background text-text min-h-screen pt-16 px-0 md:px-6">
     <router-view />
@@ -8,7 +11,7 @@
   <FooterComponent
     v-if="footerContent && meContent"
     :footerContent="footerContent"
-    :meContent="meContent"
+    :meContent="meContent.attributes"
   />
 </template>
 
@@ -37,6 +40,7 @@ const { content: footerContent } = useContentLoader('footer')
 
 // me content
 const { content: meContent } = useContentLoader<MeType>('me')
+
 </script>
 
 <style scoped></style>

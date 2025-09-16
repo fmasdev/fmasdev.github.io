@@ -24,14 +24,14 @@ export interface MediaSkillsType {
   type: string
   language?: string
   advancement: number
-  logo?: MediaType
+  media?: MediaType
 }
 
 export interface SoftSkillType {
   id: number
   name: string
   type: string
-  logo?: MediaType
+  media?: MediaType
 }
 
 
@@ -46,7 +46,7 @@ export interface SoftSkillStringArrayType {
 
 export interface SoftSkillMediaArrayType {
   kind: "media"
-  items: SoftSkillMediaType[]
+  items: SoftSkillType[]
 }
 
 export interface CharacterTrait {

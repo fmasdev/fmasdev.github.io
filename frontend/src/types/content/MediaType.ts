@@ -5,17 +5,19 @@ import type {
 } from '@types/content/ProjectType.js'
 import type {SoftSkillArrayType, SoftSkillMediaType, SoftSkillType} from "@types/content/SkillsType.js";
 
+// todo review type
 export interface MediaType {
-  media: {
-    name: string
-    alternativeText: string | null
-    original: OriginalMediaType
-    thumbnail?: ThumbnailMediaType
-  }
+  name: string
+  alternativeText: string | null
+  original: OriginalMediaType
+  thumbnail?: ThumbnailMediaType
 }
 
-export interface OriginalMediaType extends MediaContentType {}
-export interface ThumbnailMediaType extends MediaContentType {}
+export interface OriginalMediaType extends MediaContentType {
+}
+
+export interface ThumbnailMediaType extends MediaContentType {
+}
 
 export interface MediaContentType {
   path: string

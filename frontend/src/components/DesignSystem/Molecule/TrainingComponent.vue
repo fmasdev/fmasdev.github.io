@@ -15,8 +15,8 @@
 
       <div>
         <MediaComponent
-          :alt="training.logo?.media.alternativeText || ''"
-          :src="`/media/${training?.logo.media.original.path}` || null"
+          :alt="training.media?.alternativeText || ''"
+          :src="`/media/${training.media?.original.path}` || null"
           class="max-h-20xl"
         />
       </div>

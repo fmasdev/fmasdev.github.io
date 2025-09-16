@@ -4,25 +4,25 @@
     :seo="seoData"
   />
 
-  <section v-if="skillsContent" class="bg-background text-text py-12">
+  <section v-if="pageTitle" class="bg-background text-text py-12">
     <div class="max-w-5xl mx-auto px-2 md:px-6">
       <TitleComponent :title="pageTitle" level="h2" />
 
       <div
-        v-if="skillsContent.characterTrait.length"
+        v-if="characterTrait"
         class="mb-12 p-6 rounded-2xl shadow-md bg-white border border-gray-200"
       >
         <div class="sm:items-center mb-4">
           <ListStringComponent
             :title="{title: $t('skills.title.characterTrait'), level: 'h3'}"
-            :list="skillsContent.characterTrait"
+            :list="characterTrait"
             :list-uc-first="true"
           />
         </div>
       </div>
 
       <div
-        v-if="skillsContent.softSkills.length"
+        v-if="softSkills"
         class="mb-12 p-6 rounded-2xl shadow-md bg-white border border-gray-200"
       >
         <div class="sm:items-center mb-4">
@@ -31,12 +31,12 @@
             level="h3"
           />
           <SoftSkillComponent
-            :skillList="skillsContent.softSkills" />
+            :skillList="softSkills" />
         </div>
       </div>
 
       <div
-        v-if="skillsContent.mediaSkills.length"
+        v-if="mediaSkills"
         class="mb-12 p-6 rounded-2xl shadow-md bg-white border border-gray-200"
       >
         <div class="sm:items-center mb-4">
@@ -45,7 +45,7 @@
             level="h3"
           />
           <SkillsComponent
-            :skills="skillsContent.mediaSkills"
+            :skills="mediaSkills"
           />
         </div>
       </div>
@@ -64,17 +64,11 @@ import SkillsComponent from '@components/DesignSystem/organism/SkillsComponent.v
 import type {SeoType} from "@types/content/SeoType.js";
 import SeoComponent from "@components/DesignSystem/Molecule/SeoComponent.vue";
 
-const pageTitle = ref<string>('')
 const seoData = ref<SeoType>()
-const skillsContent = ref<{
-  characterTrait: string[]
-  mediaSkills: MediaSkillsType[]
-  softSkills: SoftSkillType[]
-}>({
-  characterTrait: [],
-  mediaSkills: [],
-  softSkills: [],
-})
+const pageTitle = ref<string>('')
+const characterTrait = ref<string[]>()
+const softSkills = ref<SoftSkillType[]>()
+const mediaSkills = ref<MediaSkillsType[]>()
 
 const { content } = useContentLoader('skills')
 
@@ -83,12 +77,12 @@ watch(
   (skills) => {
     if (!skills) return
     seoData.value = skills.seo
-    skillsContent.value.characterTrait = skills.content[0].characterTrait.map(
+    pageTitle.value = skills.title
+    characterTrait.value = skills.skills[0].characterTrait.map(
       (trait: CharacterTrait) => trait.name
     )
-    skillsContent.value.mediaSkills = skills.content[0].mediaSkills ?? []
-    skillsContent.value.softSkills = skills.content[0].softSkill ?? []
-    pageTitle.value = skills.title ?? ''
+    softSkills.value = skills.skills[0].softSkill ?? []
+    mediaSkills.value = skills.skills[0].mediaSkills ?? []
   },
   { immediate: true }
 )

@@ -1,15 +1,20 @@
 <template>
   <SeoComponent
-    v-if="seoData?.id"
-    :seo="seoData"
+    v-if="trainings && trainings.seo?.id"
+    :seo="trainings.seo"
   />
 
-  <section v-if="trainings" class="text-text py-12">
+  <section class="text-text py-12">
     <div class="max-w-5xl mx-auto px-2 md:px-6">
-      <TitleComponent :title="trainings?.title" level="h2" />
+      <TitleComponent
+        v-if="trainings?.title"
+        :title="trainings?.title"
+        level="h2"
+      />
 
       <TrainingComponent
-        v-for="(training, idx) in trainings.content"
+        v-if="trainings?.trainings"
+        v-for="(training, idx) in trainings.trainings"
         :key="idx"
         :training="training"
       />
@@ -19,20 +24,23 @@
 
 <script setup lang="ts">
 import {ref, toRefs, watch} from 'vue'
-import TrainingComponent from '@components/DesignSystem/Molecule/TrainingComponent.vue'
 import { useContentLoader } from '@composables/useContentLoader.js'
-import TitleComponent from '@components/DesignSystem/Atoms/TitleComponent.vue'
 import SeoComponent from "@components/DesignSystem/Molecule/SeoComponent.vue";
+import TrainingComponent from '@components/DesignSystem/Molecule/TrainingComponent.vue'
+import TitleComponent from '@components/DesignSystem/Atoms/TitleComponent.vue'
+import type {TrainingType} from "@types/content/TrainingType.js";
 
-const { content: trainings } = toRefs(useContentLoader('training'))
+const { content } = toRefs(useContentLoader('training'))
 
-const seoData = ref()
+const trainings = ref<TrainingType>()
 
 watch(
-  trainings,
-  (trainings) => {
-    if (!trainings) return
-    seoData.value = trainings.seo
+  content,
+  (content) => {
+    if (!content) return
+    console.log(content)
+    trainings.value = content
+
   },
   { immediate: true }
 )

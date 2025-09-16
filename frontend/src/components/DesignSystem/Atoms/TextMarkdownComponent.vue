@@ -15,6 +15,5 @@ const props = defineProps<{
 }>()
 
 const markdown = new MarkdownIt()
-
 const renderedContent = computed(() => markdown.render(props?.text ?? ''))
 </script>

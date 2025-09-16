@@ -7,9 +7,9 @@
       <div v-for="skill in skillsList" :key="skill.id">
         <!--        <div class="flex flex-row justify-between">-->
         <MediaComponent
-          v-if="skill?.logo"
-          :alt="skill.logo.media.alternativeText || ''"
-          :src="`/media/${skill.logo.media.original.path}`"
+          v-if="skill?.media"
+          :alt="skill.media.alternativeText || ''"
+          :src="`/media/${skill.media.original.path}`"
           classList="block mr-5 lg:max-h-20"
         />
 

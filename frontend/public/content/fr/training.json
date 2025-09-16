@@ -1,135 +1,134 @@
 {
+  "id": 1,
   "title": "Formation",
-  "slug": "training",
   "locale": "fr-FR",
-  "content": [
+  "trainings": [
     {
-      "id": 8,
       "__component": "experience.experience",
+      "id": 13,
       "title": "Développeur Logiciel",
       "company": "IDEM (Ecole Régionnale du Numirique)",
       "city": "Le Soler",
       "start": "2017-09-03",
       "stop": "2018-05-16",
       "content": "Formation intensive couvrant l’ensemble du cycle de développement web, de la conception frontend au développement backend et à l’utilisation de frameworks modernes.\n\nFrontend : maîtrise des langages et outils modernes pour créer des interfaces web interactives et responsives :\n- HTML5, CSS3\n- JavaScript et jQuery\n- Sass, Bootstrap, jQuery UI\n\nBackend : développement d’applications web robustes et performantes :\n- PHP et Node.js\n- Gestion et interrogation de bases de données avec SQL\n\nFrameworks et technologies complémentaires : expérience pratique dans le développement d’applications web et mobiles :\n- Symfony et Laravel pour les applications PHP\n- Ionic pour le développement mobile hybride\n- Angular 4 pour des applications frontend dynamiques\n\nCette formation m’a permis de consolider mes compétences techniques, de comprendre le cycle complet d’un projet web et de travailler de manière agile sur des projets variés.",
-      "logo": {
-        "media": {
-          "name": "idem.jpg",
-          "alternativeText": "L'idem creative arts school logo",
-          "original": {
-            "path": "original/idem.jpg",
-            "height": 110,
-            "width": 320,
-            "mime": "image/jpeg",
-            "size": 6.31,
-            "strapiUrl": "/uploads/idem_d3ab014208.jpg"
-          }
+      "media": {
+        "name": "idem.jpg",
+        "alternativeText": "L'idem creative arts school logo",
+        "original": {
+          "path": "original/idem.jpg",
+          "height": 110,
+          "width": 320,
+          "mime": "image/jpeg",
+          "size": 6.31,
+          "strapiUrl": "/uploads/idem_d3ab014208.jpg"
         }
       }
     },
     {
-      "id": 9,
       "__component": "experience.experience",
+      "id": 14,
       "title": "Intégrateur Web",
       "company": "OpenClassRooms",
       "city": null,
       "start": "2016-10-17",
       "stop": "2016-12-02",
       "content": "Cours suivis et réussis :\n- Créer votre site web avec HTML5 et CSS3 : bases du développement web et structuration de pages\n- Prise en main de Bootstrap : création de sites responsives et utilisation des composants\n- Gérer son code avec Git et GitHub : versioning et collaboration sur des projets\n- Découper et intégrer une maquette : transformation de designs en pages web fonctionnelles",
-      "logo": {
-        "media": {
-          "name": "openclassrooms.jpg",
-          "alternativeText": "Openclassrooms logo",
-          "original": {
-            "path": "original/openclassrooms.jpg",
-            "height": 200,
-            "width": 310,
-            "mime": "image/jpeg",
-            "size": 12.32,
-            "strapiUrl": "/uploads/openclassrooms_32140e58c2.jpg"
-          }
+      "media": {
+        "name": "openclassrooms.jpg",
+        "alternativeText": "Openclassrooms logo",
+        "original": {
+          "path": "original/openclassrooms.jpg",
+          "height": 200,
+          "width": 310,
+          "mime": "image/jpeg",
+          "size": 12.32,
+          "strapiUrl": "/uploads/openclassrooms_32140e58c2.jpg"
         }
       }
     },
     {
-      "id": 10,
       "__component": "experience.experience",
+      "id": 15,
       "title": "Développeur Frontend",
       "company": "OpenClassRooms",
       "city": null,
       "start": "2016-12-05",
       "stop": "2017-01-13",
       "content": "Cours suivis et réussis\n- Introduction à jQuery : manipulation et animation du DOM\n- Apprenez à coder en JavaScript : bases de la programmation web dynamique\n- Créez des pages web interactives avec JavaScript : enrichissement des interfaces utilisateur\n- Utilisez des API REST dans vos projets web : intégration de services externes\n- Débutez l’analyse logicielle avec UML : modélisation et conception de logiciels\n",
-      "logo": {
-        "media": {
-          "name": "openclassrooms.jpg",
-          "alternativeText": "Openclassrooms logo",
-          "original": {
-            "path": "original/openclassrooms.jpg",
-            "height": 200,
-            "width": 310,
-            "mime": "image/jpeg",
-            "size": 12.32,
-            "strapiUrl": "/uploads/openclassrooms_32140e58c2.jpg"
-          }
+      "media": {
+        "name": "openclassrooms.jpg",
+        "alternativeText": "Openclassrooms logo",
+        "original": {
+          "path": "original/openclassrooms.jpg",
+          "height": 200,
+          "width": 310,
+          "mime": "image/jpeg",
+          "size": 12.32,
+          "strapiUrl": "/uploads/openclassrooms_32140e58c2.jpg"
         }
       }
     },
     {
-      "id": 11,
       "__component": "experience.experience",
+      "id": 16,
       "title": "Développeur PHP",
       "company": "OpenClassRooms",
       "city": null,
       "start": "2017-01-16",
       "stop": "2017-03-09",
       "content": "Cours suivis et réussis :\n- Réaliser des sites modernes et attractifs avec WordPress : création et personnalisation de sites web dynamiques\n- Construire un site web avec le framework Symfony : développement d’applications web robustes en PHP\n- Maîtriser MySQL et les bases de données relationnelles : conception, gestion et interrogation de bases de données",
-      "logo": {
-        "media": {
-          "name": "openclassrooms.jpg",
-          "alternativeText": "Openclassrooms logo",
-          "original": {
-            "path": "original/openclassrooms.jpg",
-            "height": 200,
-            "width": 310,
-            "mime": "image/jpeg",
-            "size": 12.32,
-            "strapiUrl": "/uploads/openclassrooms_32140e58c2.jpg"
-          }
+      "media": {
+        "name": "openclassrooms.jpg",
+        "alternativeText": "Openclassrooms logo",
+        "original": {
+          "path": "original/openclassrooms.jpg",
+          "height": 200,
+          "width": 310,
+          "mime": "image/jpeg",
+          "size": 12.32,
+          "strapiUrl": "/uploads/openclassrooms_32140e58c2.jpg"
         }
       }
     }
   ],
   "seo": {
-    "id": 5,
+    "id": 10,
     "metaTitle": "Formation — Frédéric Mas",
     "metaDescription": "Formations et parcours académiques : développement web et logiciel, maîtrise des technologies modernes et frameworks front-end/back-end.",
     "metaRobots": "index, follow",
-    "canonicalUrl": null,
+    "canonicalUrl": "/skills",
     "metaSocial": [
       {
-        "id": 2,
+        "id": 6,
         "platform": "linkedin",
-        "title": "https://www.linkedin.com/in/fredericmas66/",
-        "description": null,
+        "title": "Formation — Frédéric Mas",
+        "description": "Formations et parcours académiques : développement web et logiciel, maîtrise des technologies modernes et frameworks front-end/back-end.",
         "twitterCard": "summary",
-        "image": {
-          "data": null
+        "media": {
+          "name": "og-learn.jpg",
+          "alternativeText": null,
+          "original": {
+            "path": "original/og-learn.jpg",
+            "height": 908,
+            "width": 1280,
+            "mime": "image/jpeg",
+            "size": 65.26,
+            "strapiUrl": "/uploads/og_learn_c2ba8d267a.jpg"
+          }
         }
       }
     ],
-    "photo": {
-      "media": {
-        "name": "og-learn.jpg",
-        "alternativeText": null,
-        "original": {
-          "path": "original/og-learn.jpg",
-          "height": 908,
-          "width": 1280,
-          "mime": "image/jpeg",
-          "size": 65.26,
-          "strapiUrl": "/uploads/og_learn_c2ba8d267a.jpg"
-        }
+    "media": {
+      "name": "og-learn.jpg",
+      "alternativeText": null,
+      "original": {
+        "path": "original/og-learn.jpg",
+        "height": 908,
+        "width": 1280,
+        "mime": "image/jpeg",
+        "size": 65.26,
+        "strapiUrl": "/uploads/og_learn_c2ba8d267a.jpg"
       }
     }
   }

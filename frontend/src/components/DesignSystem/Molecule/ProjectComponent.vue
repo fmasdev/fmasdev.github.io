@@ -16,19 +16,19 @@
       :list="stackList"
     />
 
-    <!-- webservices  -->
-    <ListMediaComponent
-      v-if="webservicesList.length && isWebservicesListMedia"
-      :title="{title: $t('experiences.experience.project.webservices'), level: 'h4'}"
-      :list="webservicesList"
-      classes="mt-4"
-    />
-    <ListStringComponent
-      v-else-if="webservicesList.length"
-      :title="{title: $t('experiences.experience.project.webservices'), level: 'h4'}"
-      :list="webservicesList"
-      classes="mt-4"
-    />
+<!--    &lt;!&ndash; webservices  &ndash;&gt;-->
+<!--    <ListMediaComponent-->
+<!--      v-if="webservicesList.length && isWebservicesListMedia"-->
+<!--      :title="{title: $t('experiences.experience.project.webservices'), level: 'h4'}"-->
+<!--      :list="webservicesList"-->
+<!--      classes="mt-4"-->
+<!--    />-->
+<!--    <ListStringComponent-->
+<!--      v-else-if="webservicesList.length"-->
+<!--      :title="{title: $t('experiences.experience.project.webservices'), level: 'h4'}"-->
+<!--      :list="webservicesList"-->
+<!--      classes="mt-4"-->
+<!--    />-->
   </div>
 </template>
 
@@ -49,35 +49,39 @@ const props = defineProps<{
 
 // stack items
 const stackList = ref()
-const isStackListMedia = props.project?.stack_items.data.every(
-  (item: StackType) =>
-    item.attributes?.logo?.media && currentDeviceType.value !== 'mobile'
-)
+console.log(props.project.stack_items)
+
+const isStackListMedia = props.project?.stack_items.every(
+  (item: StackType) => item.media?.name
+) && currentDeviceType.value !== 'mobile'
+
+console.log(isStackListMedia)
+console.log(stackList)
 
 if (isStackListMedia) {
-  stackList.value = props.project?.stack_items.data.map(
-    (item: StackType) => item.attributes
+  stackList.value = props.project?.stack_items.map(
+    (item: StackType) => item
   )
 } else {
-  stackList.value = props.project?.stack_items.data.map(
-    (item: StackType) => item.attributes.name
+  stackList.value = props.project?.stack_items.map(
+    (item: StackType) => item.name
   )
 }
 
 // webservices
 const webservicesList = ref()
-const isWebservicesListMedia = props.project?.webservices.data.every(
+const isWebservicesListMedia = props.project?.webservices.every(
   (item: WebserviceType) =>
-    item.attributes?.logo.media && currentDeviceType.value !== 'mobile'
-)
+    item.media?.name
+) && currentDeviceType.value !== 'mobile'
 
 if (isWebservicesListMedia) {
-  webservicesList.value = props.project?.webservices.data.map(
-    (item: WebserviceType) => item.attributes
+  webservicesList.value = props.project?.webservices.map(
+    (item: WebserviceType) => item
   )
 } else {
-  webservicesList.value = props.project?.webservices.data.map(
-    (item: WebserviceType) => item.attributes.name
+  webservicesList.value = props.project?.webservices.map(
+    (item: WebserviceType) => item.name
   )
 }
 </script>

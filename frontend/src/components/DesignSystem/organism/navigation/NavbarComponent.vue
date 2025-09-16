@@ -2,9 +2,12 @@
   <nav class="bg-primary px-4 py-3">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
       <div class="text-xl font-title text-white">
-        <!-- todo add photo -->
         <router-link to="/">
-          Frédéric Mas - {{ $t('common.job') }}
+          <img
+            class="h-8 w-auto inline rounded-2xl"
+            :alt="me.media.alternativeText"
+            :src="`/media/${me.media.original.path}`" />
+          <h1 class="inline ml-3" >Frédéric Mas - {{ $t('common.job') }}</h1>
         </router-link>
       </div>
       <div class="hidden sm:flex space-x-0">
@@ -57,10 +60,12 @@ import { ref } from 'vue'
 import type { NavItemType } from '@types/common.ts'
 import DropdownComponent from '@components/DesignSystem/Atoms/DropdownComponent.vue'
 import { useI18n } from 'vue-i18n'
+import type {MeAttributesType } from "@types/content/MeType.js";
 
 const open = ref(false)
 const props = defineProps<{
   links: NavItemType[]
+  me: MeAttributesType
 }>()
 
 // Locales
