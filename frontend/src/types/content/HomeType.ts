@@ -1,6 +1,5 @@
 // src/types/content/HomeType.ts
 
-
 import type {MediaType} from "@types/content/MediaType.js";
 
 export interface HomeType {
@@ -24,11 +23,13 @@ export interface HomeCta {
   url: string
 }
 
-export type HomeComponentType = HomeFigureCardBlockType | HomeCardBlockType
+export type HomeComponentType =
+  | HomeFigureCardBlockType
+  | HomeCardBlockType
 
 export interface HomeCardBlockType {
   id: number
-  __component: 'card-bloc'
+  __component: 'home.bloc'
   title: string
   background: string
   cards: HomeCardType[]
@@ -46,13 +47,14 @@ export interface HomeCardType {
 
 export interface HomeFigureCardBlockType {
   id: number
-  __component: 'figure-card-bloc'
+  __component: 'home.figure-card-bloc'
   title: string
   background: string
   cards: HomeFigureCardType[]
 }
 
 export interface HomeFigureCardType {
+
   title: string
   text: string
   caption?: string

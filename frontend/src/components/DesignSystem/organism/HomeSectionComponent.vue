@@ -1,43 +1,79 @@
 <template>
-  <section :class="`py-16 max-w-7xl mx-auto px-6 lg:px-12 ${section.background}`">
-    <h2 class="text-3xl font-title text-primary mb-8 text-center">
-      {{component.title}}
-    </h2>
+  <section
+    class="py-16 mx-auto px-6 lg:px-12"
+    :class="outerClass">
     <div
-      :class="`grid md:grid-cols-${cardContainer.cols} gap-${cardContainer.gap}`">
-<!--      <div-->
-<!--        v-for="exp in expertise"-->
-<!--        :key="exp.title"-->
-<!--        class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition"-->
-<!--      >-->
-<!--        <div class="text-3xl mb-3">{{ exp.icon }}</div>-->
-<!--        <h3 class="text-xl font-semibold text-secondary mb-2">{{ exp.title }}</h3>-->
-<!--        <p class="text-sm text-text/80 leading-relaxed">{{ exp.desc }}</p>-->
-<!--      </div>-->
+      class="max-w-7xl mx-auto px-6 lg:px-12"
+      >
+      <h2
+        class="text-3xl font-title  mb-8 text-center"
+        :class="headingClass"
+      >
+        {{ component.title }}
+      </h2>
+
+      <div class="max-w-7xl grid items-center"
+        :class="innerClass"
+      >
+        <CardComponent
+          v-if="component.cards.length"
+          v-for="card in component.cards"
+          :key="card.id"
+          :card="card"
+          :type="resolveCardType(component.__component)"
+        />
+        <!-- todo cards Bloc-->
+
+      </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-
-import type {HomeComponentType} from "@types/content/HomeType.js";
+import type { HomeComponentType } from "@types/content/HomeType.ts"
+import {computed, onMounted, ref} from "vue"
+import CardComponent from "@components/DesignSystem/Molecule/CardComponent.vue";
 
 const props = defineProps<{
   component: HomeComponentType
 }>()
-const cardContainer = {
-  gap: 12 - (2 * props.component.cards.length) ,
-  cols: props.component.cards.length
-}
-const section = {
 
-  background: props.component.background === "default" ? 'bg-background' : `bg-${props.component.background}`
+const calcColAndGap = (cardNumber) => {
+  return {
+    col: cardNumber,
+    gap: 12 - ((cardNumber - 1) * 2)
+  }
 }
 
-console.log(props)
+const colAndGap = calcColAndGap(props.component.cards.length)
+const colors = props.component.background === 'default' ? ({
+    bg: 'background',
+    textColor: 'primary',
+  }) : ({
+    bg: props.component.background,
+    textColor: 'white'
+  })
+
+const resolveCardType = (componentType) => {
+  switch (componentType) {
+    case 'home.bloc':
+      return 'card'
+    case 'home.figure-card-bloc':
+      return 'figureCard'
+    default:
+      return null
+  }
+}
+
+const innerClass = computed(() => [
+  `md:grid-cols-${colAndGap.col} gap-${colAndGap.gap}`,
+  resolveCardType(props.component.__component) === 'card' && props.component.cards.length === 4
+    ? 'sm:grid-cols-2 lg:grid-cols-4' : ''
+])
+const headingClass = computed(() => [
+  `text-${colors.textColor}`
+])
+const outerClass = computed(() => [
+  `bg-${colors.bg}`
+])
 </script>
-
-<style scoped>
-
-
-</style>

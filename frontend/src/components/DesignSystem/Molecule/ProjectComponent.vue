@@ -49,14 +49,9 @@ const props = defineProps<{
 
 // stack items
 const stackList = ref()
-console.log(props.project.stack_items)
-
 const isStackListMedia = props.project?.stack_items.every(
   (item: StackType) => item.media?.name
 ) && currentDeviceType.value !== 'mobile'
-
-console.log(isStackListMedia)
-console.log(stackList)
 
 if (isStackListMedia) {
   stackList.value = props.project?.stack_items.map(

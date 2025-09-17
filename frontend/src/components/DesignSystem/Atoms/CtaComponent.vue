@@ -1,8 +1,8 @@
 <template>
   <RouterLink
     to="experience"
+    :class="ctaClass"
     class="px-6 py-3 rounded-lg font-medium shadow-md transition transform hover:-translate-y-0.5"
-    :class="classList"
   >
     Voir mes expériences
   </RouterLink>
@@ -10,9 +10,20 @@
 
 <script setup lang="ts">
 
-defineProps<{
+import {computed} from "vue";
+
+const props = defineProps<{
   linkTo: string
   title: string
-  classList?: string | null
+  background?: string
 }>()
+
+const ctaClass = computed(() => {
+  switch (props.background) {
+    case 'accent' :
+      return `!bg-accent`
+    default:
+      return ''
+  }
+})
 </script>

@@ -74,15 +74,16 @@ const { content } = useContentLoader('skills')
 
 watch(
   content,
-  (skills) => {
-    if (!skills) return
-    seoData.value = skills.seo
-    pageTitle.value = skills.title
-    characterTrait.value = skills.skills[0].characterTrait.map(
+  (content) => {
+    if (!content) return
+    console.log(content)
+    seoData.value = content.seo
+    pageTitle.value = content.title
+    characterTrait.value = content.skills[0].characterTrait.map(
       (trait: CharacterTrait) => trait.name
     )
-    softSkills.value = skills.skills[0].softSkill ?? []
-    mediaSkills.value = skills.skills[0].mediaSkills ?? []
+    softSkills.value = content.skills[0].softSkill ?? []
+    mediaSkills.value = content.skills[0].mediaSkills ?? []
   },
   { immediate: true }
 )

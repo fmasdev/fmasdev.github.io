@@ -4,7 +4,21 @@
   "presentation": {
     "id": 2,
     "title": "Frédéric Mas",
-    "presentation": "Développeur fullstack — PHP / JS. Je conçois et déploie des plateformes robustes, performantes et évolutives."
+    "presentation": "Développeur fullstack — PHP / JS. Je conçois et déploie des plateformes robustes, performantes et évolutives.",
+    "cta": [
+      {
+        "id": 3,
+        "url": "experience",
+        "title": "Voir mes expériences",
+        "background": "accent"
+      },
+      {
+        "id": 4,
+        "url": "skills",
+        "title": "Voir mes compétences",
+        "background": null
+      }
+    ]
   },
   "components": [
     {

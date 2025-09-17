@@ -21,9 +21,10 @@ export function useContentLoader<T = any>(file: string) {
       const response = await fetch(
         `${base}content/${locale.value}/${file}.json`
       )
+
       if (!response.ok) {
         throw new Error(
-          `Impossible de charger ${file}.json pour la locale ${locale.value}`
+          `Unable to load ${file}.json for locale ${locale.value}`
         )
       }
 
