@@ -13,7 +13,11 @@ module.exports = createCoreController('api::home.home', ({ strapi }) => ({
     const entry = await strapi.entityService.findOne('api::home.home', 1,{
       filters: { locale: locale || 'fr' },
       populate: {
-        Presentation: true,
+        Presentation: {
+          populate: {
+            Cta: true
+          }
+        },
         Components: {
           populate: {
             Cards: {
