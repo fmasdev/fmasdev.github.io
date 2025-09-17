@@ -1230,6 +1230,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
     singularName: 'project';
     pluralName: 'projects';
     displayName: 'Project';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1237,6 +1238,10 @@ export interface ApiProjectProject extends Schema.CollectionType {
   attributes: {
     Title: Attribute.String;
     slug: Attribute.String & Attribute.Required & Attribute.Unique;
+    media: Attribute.Media;
+    summary: Attribute.RichText;
+    content: Attribute.Component<'experience.project', true>;
+    status: Attribute.Enumeration<['PROJECT', 'IN_PROGRESS', 'FINISH']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

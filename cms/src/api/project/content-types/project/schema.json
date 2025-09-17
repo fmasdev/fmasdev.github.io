@@ -4,7 +4,8 @@
   "info": {
     "singularName": "project",
     "pluralName": "projects",
-    "displayName": "Project"
+    "displayName": "Project",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,6 +19,33 @@
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "summary": {
+      "type": "richtext"
+    },
+    "content": {
+      "type": "component",
+      "repeatable": true,
+      "component": "experience.project"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "PROJECT",
+        "IN_PROGRESS",
+        "FINISH"
+      ]
     }
   }
 }
