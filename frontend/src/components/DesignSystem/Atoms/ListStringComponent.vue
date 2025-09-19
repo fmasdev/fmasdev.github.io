@@ -1,8 +1,5 @@
 <template xmlns="http://www.w3.org/1999/html">
-  <p
-    class="text-sm text-gray-600 mb-5"
-    :class="classes"
-  >
+  <p class="text-sm text-gray-600 mb-5" :class="classes">
     <TitleComponent
       v-if="title?.title"
       :title="title.title"
@@ -14,9 +11,10 @@
     {{ listString }}
   </p>
 </template>
+
 <script setup lang="ts">
-import type {TitleType} from "@types/common.js";
-import TitleComponent from "@components/DesignSystem/Atoms/TitleComponent.vue";
+import type { TitleType } from '@/types/common.js'
+import TitleComponent from '@/components/DesignSystem/Atoms/TitleComponent.vue'
 
 const props = defineProps<{
   title?: TitleType

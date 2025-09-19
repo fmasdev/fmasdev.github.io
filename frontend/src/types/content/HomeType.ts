@@ -1,6 +1,6 @@
-// src/types/content/HomeType.ts
+// src/types/content/HomeType
 
-import type {MediaType} from "@types/content/MediaType.js";
+import type { MediaType } from '@/types/content/MediaType.js'
 
 export interface HomeType {
   id: number
@@ -23,13 +23,11 @@ export interface HomeCta {
   url: string
 }
 
-export type HomeComponentType =
-  | HomeFigureCardBlockType
-  | HomeCardBlockType
+export type HomeComponentType = HomeFigureCardBlockType | HomeCardBlockType
 
 export interface HomeCardBlockType {
   id: number
-  __component: 'home.bloc'
+  kind: 'CardBloc'
   title: string
   background: string
   cards: HomeCardType[]
@@ -37,6 +35,7 @@ export interface HomeCardBlockType {
 
 export interface HomeCardType {
   id: number
+  type: 'Card'
   icon: string
   title: string
   text: string
@@ -46,17 +45,20 @@ export interface HomeCardType {
 }
 
 export interface HomeFigureCardBlockType {
+  kind: 'FigureCardBloc'
   id: number
-  __component: 'home.figure-card-bloc'
   title: string
   background: string
   cards: HomeFigureCardType[]
 }
 
 export interface HomeFigureCardType {
-
+  id: number
+  type: 'FigureCard'
   title: string
   text: string
   caption?: string
-  media?: string
+  media?: MediaType
 }
+
+export type HomeCardUnion = HomeFigureCardType | HomeCardType

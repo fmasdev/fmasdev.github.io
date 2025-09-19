@@ -3,7 +3,8 @@
     <navbar-component
       v-if="meContent && links"
       :links="links"
-      :me="meContent.attributes" />
+      :me="meContent.attributes"
+    />
   </header>
   <main class="bg-background text-text min-h-screen pt-16 px-0 md:px-6">
     <router-view />
@@ -16,12 +17,12 @@
 </template>
 
 <script setup lang="ts">
-import NavbarComponent from '@components/DesignSystem/organism/navigation/NavbarComponent.vue'
-import FooterComponent from '@components/DesignSystem/organism/navigation/FooterComponent.vue'
 import { useRouter } from 'vue-router'
-import { useContentLoader } from '@composables/useContentLoader.js'
-import type { NavItemType } from '@types/common.js'
-import type { MeType } from '@types/content/MeType.js'
+import { useContentLoader } from '@/composables/useContentLoader.ts'
+import type { MeType } from '@/types/content/MeType.js'
+import type { NavItemType } from '@/types/common.js'
+import NavbarComponent from '@/components/DesignSystem/Organism/navigation/NavbarComponent.vue'
+import FooterComponent from '@/components/DesignSystem/Organism/navigation/FooterComponent.vue'
 
 // Navigation
 const router = useRouter()
@@ -40,7 +41,4 @@ const { content: footerContent } = useContentLoader('footer')
 
 // me content
 const { content: meContent } = useContentLoader<MeType>('me')
-
 </script>
-
-<style scoped></style>

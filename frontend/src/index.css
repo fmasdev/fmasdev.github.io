@@ -1,5 +1,5 @@
-@import '@assets/fonts/Roboto/Roboto.css';
-@import '@assets/fonts/Calibri/Calibri.css';
+@import '@/assets/fonts/Roboto/Roboto.css';
+@import '@/assets/fonts/Calibri/Calibri.css';
 @import 'tailwindcss';
 @config "../tailwind.config.ts";
 

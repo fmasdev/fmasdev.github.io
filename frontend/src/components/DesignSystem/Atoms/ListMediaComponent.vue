@@ -1,15 +1,13 @@
 <template>
   <div class="text-sm text-gray-600" :class="classes">
-    <TitleComponent
-      :title="title.title"
-      :level="title.level"
-    />
+    <TitleComponent :title="title.title" :level="title.level" />
 
     <div class="flex items-center space-x-4 flex-wrap">
       <img
-        v-for="item in list"
-        :alt="item.media.alternativeText || item.name"
-        :src="`/media/${item.media.original.path}`"
+        v-for="item in mediaItems"
+        :key="item.name ?? item.id"
+        :alt="item.media ? item.media.alternativeText ?? '' : item.name ?? ''"
+        :src="item.media ? `/media/${item.media.original.path}` : ''"
         class="max-h-10 lg:max-h-20 w-auto rounded border border-gray-300"
       />
     </div>
@@ -17,14 +15,23 @@
 </template>
 
 <script setup lang="ts">
-import type { MediaParentType } from '@types/content/MediaType.js'
-import TitleComponent from "@components/DesignSystem/Atoms/TitleComponent.vue";
-import type {TitleType } from "@types/common.js";
+import { computed } from "vue";
+import type { TitleType } from '@/types/common.js'
+import type { StackType, WebserviceType } from '@/types/content/ProjectType.ts'
+import type { SoftSkillType } from '@/types/content/SkillsType.ts'
+import TitleComponent from '@/components/DesignSystem/Atoms/TitleComponent.vue'
 
 const props = defineProps<{
   title: TitleType
-  list: MediaParentType[]
+  list: (StackType | WebserviceType | SoftSkillType)[]
   classes?: string
 }>()
+
+const mediaItems = computed(() =>
+  props.list.filter(
+    (item): item is StackType | WebserviceType | SoftSkillType =>
+      item.kind === 'stack' || item.kind === 'webservice' || item.kind === 'softskill'
+  )
+)
 
 </script>

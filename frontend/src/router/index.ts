@@ -1,7 +1,7 @@
 // router/index.ts
 
 import { createRouter, createWebHashHistory } from 'vue-router'
-import routes from '@router/routes.ts'
+import routes from './routes.ts'
 
 const router = createRouter({
   history: createWebHashHistory(),
