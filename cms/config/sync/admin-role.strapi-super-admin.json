@@ -543,7 +543,15 @@
       "properties": {
         "fields": [
           "Title",
-          "slug"
+          "slug",
+          "media",
+          "summary",
+          "content.Contribution",
+          "content.stack_items",
+          "content.Name",
+          "content.webservices",
+          "content.IsCompany",
+          "status"
         ]
       },
       "conditions": []
@@ -569,7 +577,15 @@
       "properties": {
         "fields": [
           "Title",
-          "slug"
+          "slug",
+          "media",
+          "summary",
+          "content.Contribution",
+          "content.stack_items",
+          "content.Name",
+          "content.webservices",
+          "content.IsCompany",
+          "status"
         ]
       },
       "conditions": []
@@ -581,7 +597,15 @@
       "properties": {
         "fields": [
           "Title",
-          "slug"
+          "slug",
+          "media",
+          "summary",
+          "content.Contribution",
+          "content.stack_items",
+          "content.Name",
+          "content.webservices",
+          "content.IsCompany",
+          "status"
         ]
       },
       "conditions": []

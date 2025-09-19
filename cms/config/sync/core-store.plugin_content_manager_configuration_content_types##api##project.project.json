@@ -47,6 +47,62 @@
           "sortable": true
         }
       },
+      "media": {
+        "edit": {
+          "label": "media",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "media",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "summary": {
+        "edit": {
+          "label": "summary",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "summary",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "content": {
+        "edit": {
+          "label": "content",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "content",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "status": {
+        "edit": {
+          "label": "status",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "status",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -107,12 +163,6 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "Title",
-        "slug",
-        "createdAt"
-      ],
       "edit": [
         [
           {
@@ -123,7 +173,35 @@
             "name": "slug",
             "size": 6
           }
+        ],
+        [
+          {
+            "name": "media",
+            "size": 6
+          },
+          {
+            "name": "status",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "summary",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "content",
+            "size": 12
+          }
         ]
+      ],
+      "list": [
+        "id",
+        "Title",
+        "slug",
+        "createdAt"
       ]
     },
     "uid": "api::project.project"
