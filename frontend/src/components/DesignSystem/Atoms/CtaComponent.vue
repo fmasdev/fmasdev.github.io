@@ -9,8 +9,7 @@
 </template>
 
 <script setup lang="ts">
-
-import {computed} from "vue";
+import { computed } from 'vue'
 
 const props = defineProps<{
   linkTo: string
@@ -20,7 +19,7 @@ const props = defineProps<{
 
 const ctaClass = computed(() => {
   switch (props.background) {
-    case 'accent' :
+    case 'accent':
       return `!bg-accent`
     default:
       return ''

@@ -25,11 +25,11 @@
 </template>
 
 <script setup lang="ts">
-import type { MediaSkillsType } from '@types/content/SkillsType.js'
-import MediaComponent from '@components/DesignSystem/Atoms/MediaComponent.vue'
-import TitleComponent from '@components/DesignSystem/Atoms/TitleComponent.vue'
+import type { MediaSkillsType } from '@/types/content/SkillsType.js'
+import MediaComponent from '@/components/DesignSystem/Atoms/MediaComponent.vue'
+import TitleComponent from '@/components/DesignSystem/Atoms/TitleComponent.vue'
 
-const props = defineProps<{
+defineProps<{
   title: string
   skillsList: MediaSkillsType[]
 }>()

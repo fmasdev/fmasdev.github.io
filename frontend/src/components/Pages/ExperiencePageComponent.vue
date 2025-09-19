@@ -1,8 +1,5 @@
 <template>
-  <SeoComponent
-    v-if="experiences?.seo.id"
-    :seo="experiences.seo"
-  />
+  <SeoComponent v-if="experiences?.seo.id" :seo="experiences.seo" />
 
   <section v-if="experiences" class="bg-background text-text py-12">
     <div class="max-w-5xl mx-auto px-2 md:px-6">
@@ -18,12 +15,12 @@
 </template>
 
 <script setup lang="ts">
-import {ref, toRefs, watch} from 'vue'
-import { useContentLoader } from '@composables/useContentLoader'
-import ExperienceComponent from '@components/DesignSystem/Molecule/ExperienceComponent.vue'
-import TitleComponent from '@components/DesignSystem/Atoms/TitleComponent.vue'
-import SeoComponent from "@components/DesignSystem/Molecule/SeoComponent.vue";
-import type {ExperiencesType} from "@types/content/ExperiencesType.js";
+import { ref, toRefs, watch } from 'vue'
+import { useContentLoader } from '@/composables/useContentLoader'
+import type { ExperiencesType } from '@/types/content/ExperiencesType.js'
+import ExperienceComponent from '@/components/DesignSystem/Molecule/ExperienceComponent.vue'
+import TitleComponent from '@/components/DesignSystem/Atoms/TitleComponent.vue'
+import SeoComponent from '@/components/DesignSystem/Molecule/SeoComponent.vue'
 
 const { content: experiencesContent } = toRefs(useContentLoader('experiences'))
 const experiences = ref<ExperiencesType>()

@@ -1,11 +1,5 @@
-// src/types/common/MediaType.ts
-import type {
-  StackItemType,
-  WebservicesItemType,
-} from '@types/content/ProjectType.js'
-import type {SoftSkillArrayType, SoftSkillMediaType, SoftSkillType} from "@types/content/SkillsType.js";
+// src/types/common/MediaType
 
-// todo review type
 export interface MediaType {
   name: string
   alternativeText: string | null
@@ -13,11 +7,9 @@ export interface MediaType {
   thumbnail?: ThumbnailMediaType
 }
 
-export interface OriginalMediaType extends MediaContentType {
-}
+export interface OriginalMediaType extends MediaContentType {}
 
-export interface ThumbnailMediaType extends MediaContentType {
-}
+export interface ThumbnailMediaType extends MediaContentType {}
 
 export interface MediaContentType {
   path: string
@@ -27,8 +19,3 @@ export interface MediaContentType {
   mime: string
   strapiUrl: string
 }
-
-export type MediaParentType =
-  | StackItemType
-  | WebservicesItemType
-  | SoftSkillMediaType

@@ -5,9 +5,10 @@
         <router-link to="/">
           <img
             class="h-8 w-auto inline rounded-2xl"
-            :alt="me.media.alternativeText"
-            :src="`/media/${me.media.original.path}`" />
-          <h1 class="inline ml-3" >Frédéric Mas - {{ $t('common.job') }}</h1>
+            :alt="me.media.alternativeText || ''"
+            :src="`/media/${me.media.original.path}`"
+          />
+          <h1 class="inline ml-3">Frédéric Mas - {{ $t('common.job') }}</h1>
         </router-link>
       </div>
       <div class="hidden sm:flex space-x-0">
@@ -57,10 +58,10 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import type { NavItemType } from '@types/common.ts'
-import DropdownComponent from '@components/DesignSystem/Atoms/DropdownComponent.vue'
 import { useI18n } from 'vue-i18n'
-import type {MeAttributesType } from "@types/content/MeType.js";
+import type { NavItemType } from '@/types/common.js'
+import type { MeAttributesType } from '@/types/content/MeType.js'
+import DropdownComponent from '@/components/DesignSystem/Atoms/DropdownComponent.vue'
 
 const open = ref(false)
 const props = defineProps<{

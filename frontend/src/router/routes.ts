@@ -1,13 +1,12 @@
-// router/routes.js
+// router/routes.ts
 
 import type { RouteRecordRaw } from 'vue-router'
-import HomePageComponent from '@components/Pages/HomePageComponent.vue'
-import TrainingPageComponent from '@components/Pages/TrainingPageComponent.vue'
-import SkillsPageComponent from '@components/Pages/SkillsPageComponent.vue'
-import PojectsPageComponent from '@components/Pages/PojectsPageComponent.vue'
-import ExperiencePageComponent from '@components/Pages/ExperiencePageComponent.vue'
+import HomePageComponent from '@/components/Pages/HomePageComponent.vue'
+import TrainingPageComponent from '@/components/Pages/TrainingPageComponent.vue'
+import SkillsPageComponent from '@/components/Pages/SkillsPageComponent.vue'
+import ExperiencePageComponent from '@/components/Pages/ExperiencePageComponent.vue'
 import MainLayout from '../layouts/MainLayout.vue'
-import FeedBackPageComponent from "@components/Pages/FeedBackPageComponent.vue";
+import FeedBackPageComponent from '@/components/Pages/FeedBackPageComponent.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -39,12 +38,12 @@ const routes: Array<RouteRecordRaw> = [
     children: [{ path: '', component: FeedBackPageComponent }],
     meta: { labelKey: 'navigation.feedBacks' },
   },
-  {
-    path: '/projects',
-    component: MainLayout,
-    children: [{ path: '', component: PojectsPageComponent }],
-    meta: { labelKey: 'navigation.projects' },
-  },
+  // {
+  //   path: '/projects',
+  //   component: MainLayout,
+  //   children: [{ path: '', component: PojectsPageComponent }],
+  //   meta: { labelKey: 'navigation.projects' },
+  // },
 ]
 
 export default routes

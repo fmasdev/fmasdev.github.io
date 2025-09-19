@@ -7,13 +7,15 @@
 </template>
 
 <script setup lang="ts">
-import MarkdownIt from 'markdown-it'
 import { computed } from 'vue'
+import { marked } from 'marked'
 
 const props = defineProps<{
   text: string | null
 }>()
 
-const markdown = new MarkdownIt()
-const renderedContent = computed(() => markdown.render(props?.text ?? ''))
+const renderedContent = computed(() => {
+  if (!props.text) return ''
+  return marked(props.text)
+})
 </script>

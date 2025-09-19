@@ -1,9 +1,5 @@
 <template>
-  <RouterLink
-    v-if="link?.url && src"
-    :to="link?.url"
-    :target="link.url?.target || '_self'"
-  >
+  <RouterLink v-if="link?.url && src" :to="link?.url">
     <img
       :alt="alt"
       :src="src"

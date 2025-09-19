@@ -1,8 +1,5 @@
 <template>
-  <SeoComponent
-    v-if="trainings && trainings.seo?.id"
-    :seo="trainings.seo"
-  />
+  <SeoComponent v-if="trainings && trainings.seo?.id" :seo="trainings.seo" />
 
   <section class="text-text py-12">
     <div class="max-w-5xl mx-auto px-2 md:px-6">
@@ -23,12 +20,12 @@
 </template>
 
 <script setup lang="ts">
-import {ref, toRefs, watch} from 'vue'
-import { useContentLoader } from '@composables/useContentLoader.js'
-import SeoComponent from "@components/DesignSystem/Molecule/SeoComponent.vue";
-import TrainingComponent from '@components/DesignSystem/Molecule/TrainingComponent.vue'
-import TitleComponent from '@components/DesignSystem/Atoms/TitleComponent.vue'
-import type {TrainingType} from "@types/content/TrainingType.js";
+import { ref, toRefs, watch } from 'vue'
+import { useContentLoader } from '@/composables/useContentLoader.ts'
+import type { TrainingType } from '@/types/content/TrainingType.js'
+import SeoComponent from '@/components/DesignSystem/Molecule/SeoComponent.vue'
+import TrainingComponent from '@/components/DesignSystem/Molecule/TrainingComponent.vue'
+import TitleComponent from '@/components/DesignSystem/Atoms/TitleComponent.vue'
 
 const { content } = toRefs(useContentLoader('training'))
 
@@ -38,9 +35,7 @@ watch(
   content,
   (content) => {
     if (!content) return
-    console.log(content)
     trainings.value = content
-
   },
   { immediate: true }
 )

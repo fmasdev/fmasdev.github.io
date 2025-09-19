@@ -12,18 +12,12 @@
       <div class="space-y-2 text-left">
         <TitleComponent :title="$t('footer.contact')" level="h3" />
         <p>
-          <a
-            :href="`mailto:${meContent.email}`"
-            class="text-sm"
-          >
+          <a :href="`mailto:${meContent.email}`" class="text-sm">
             {{ meContent.email }}
           </a>
         </p>
         <p>
-          <a
-            :href="`tel:${phoneNumberWithoutSpaces}`"
-            class="text-sm"
-          >
+          <a :href="`tel:${phoneNumberWithoutSpaces}`" class="text-sm">
             {{ meContent.phone }}
           </a>
         </p>
@@ -36,7 +30,8 @@
           <a
             v-for="social in footerContent.socials"
             :href="social.Url"
-            class="hover:text-accent transition-colors footer-link">
+            class="hover:text-accent transition-colors footer-link"
+          >
             {{ social.Name }}
           </a>
         </div>
@@ -50,9 +45,9 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import type {MeAttributesType, MeType} from '@types/content/MeType.js'
-import type { FooterType } from '@types/content/FooterType.js'
-import TitleComponent from '@components/DesignSystem/Atoms/TitleComponent.vue'
+import type { MeAttributesType } from '@/types/content/MeType.js'
+import type { FooterType } from '@/types/content/FooterType.js'
+import TitleComponent from '@/components/DesignSystem/Atoms/TitleComponent.vue'
 
 const props = defineProps<{
   footerContent: FooterType
@@ -60,7 +55,7 @@ const props = defineProps<{
 }>()
 
 const currentYear = computed(() => new Date().getFullYear())
-const phoneNumberWithoutSpaces = props.meContent.phone.replaceAll(' ', '')
+const phoneNumberWithoutSpaces = props.meContent.phone.replace(/ /g, '')
 </script>
 
 <style scoped>

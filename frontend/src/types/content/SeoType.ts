@@ -1,6 +1,6 @@
-// src/types/common/SeoType.ts
+// src/types/common/SeoType
 
-import type {MediaType} from "@types/content/MediaType.js";
+import type { MediaType } from '@/types/content/MediaType.js'
 
 export interface SeoType {
   id: number
@@ -8,7 +8,7 @@ export interface SeoType {
   metaDescription: string
   metaRobots?: string
   canonicalUrl?: string
-  photo?: MediaType
+  media?: MediaType
   metaSocial?: MetaSocialType[]
 }
 
@@ -16,7 +16,7 @@ export interface MetaSocialType {
   platform: string
   title?: string
   description?: string
-  image?: MediaType
+  media?: MediaType
   twitterCard?: 'summary' | 'summary_large_image'
 }
 

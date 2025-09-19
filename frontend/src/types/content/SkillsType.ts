@@ -1,10 +1,9 @@
 // src/types/content/SkillsType.ts
 
-import type { SeoType } from '@types/content/SeoType.js'
-import type { MediaType } from '@types/content/MediaType.js'
+import type { SeoType } from '@/types/content/SeoType.js'
+import type { MediaType } from '@/types/content/MediaType.js'
 
 export interface SkillsType {
-  __component: string
   title: string
   slug: string
   locale: string
@@ -28,24 +27,24 @@ export interface MediaSkillsType {
 }
 
 export interface SoftSkillType {
+  kind: 'softskill'
   id: number
   name: string
   type: string
   media?: MediaType
 }
 
-
 export type SoftSkillArrayType =
   | SoftSkillStringArrayType
   | SoftSkillMediaArrayType
 
 export interface SoftSkillStringArrayType {
-  kind: "string"
+  kind: 'string'
   items: string[]
 }
 
 export interface SoftSkillMediaArrayType {
-  kind: "media"
+  kind: 'media'
   items: SoftSkillType[]
 }
 

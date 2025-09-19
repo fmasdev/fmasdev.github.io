@@ -4,10 +4,7 @@
       class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4"
     >
       <div>
-        <TitleComponent
-          :title="experience?.title"
-          level="h3"
-        />
+        <TitleComponent :title="experience?.title" level="h3" />
         <p class="text-sm text-gray-600">
           {{ experience.company }}
           <span v-if="experience?.region"> • {{ experience.region }} </span>
@@ -38,7 +35,7 @@
 
     <div
       class="mt-4"
-      v-if="experience.__component === 'experience.experience-item'"
+      v-if="experience.kind === 'ExperienceItem'"
     >
       <TitleComponent
         :title="$t('experiences.experience.projects')"
@@ -56,15 +53,15 @@
 </template>
 
 <script setup lang="ts">
-import { dateHelper } from '../../../helpers/dateHelper.js'
-import { JobModeEnum } from '../../../enums/JobModeEnum.js'
-import ProjectComponent from '@components/DesignSystem/Molecule/ProjectComponent.vue'
+import { dateHelper } from '@/helpers/dateHelper.js'
+import { JobModeEnum } from '@/enums/JobModeEnum.js'
 import type {
   ExperienceExperienceType,
   ExperienceType,
-} from '@types/content/ExperiencesType.js'
-import MediaComponent from '@components/DesignSystem/Atoms/MediaComponent.vue'
-import TitleComponent from '@components/DesignSystem/Atoms/TitleComponent.vue'
+} from '@/types/content/ExperiencesType.js'
+import ProjectComponent from '@/components/DesignSystem/Molecule/ProjectComponent.vue'
+import MediaComponent from '@/components/DesignSystem/Atoms/MediaComponent.vue'
+import TitleComponent from '@/components/DesignSystem/Atoms/TitleComponent.vue'
 
 const props = defineProps<{
   experience: ExperienceType | ExperienceExperienceType
@@ -75,7 +72,7 @@ const stopDate = dateHelper.dateStringFormatToString(props.experience.stop)
 
 let jobMode: string | null = null
 
-if (props.experience.__component === 'experience.experience-item') {
+if (props.experience.kind === 'ExperienceItem') {
   jobMode = JobModeEnum[props.experience.remote]
 }
 </script>

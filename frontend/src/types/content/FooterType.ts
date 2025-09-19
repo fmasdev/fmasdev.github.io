@@ -1,4 +1,4 @@
-// src/types/common/FooterType.ts
+// src/types/common/FooterType
 
 export interface FooterType {
   socials: FooterSocialType[]

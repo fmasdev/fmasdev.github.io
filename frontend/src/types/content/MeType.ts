@@ -1,6 +1,6 @@
-// src/types/content/MeType.ts
+// src/types/content/MeType
 
-import type {MediaType} from "@types/content/MediaType.js";
+import type { MediaType } from '@/types/content/MediaType.js'
 
 export interface MeType {
   id: number

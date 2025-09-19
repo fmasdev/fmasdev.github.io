@@ -7,15 +7,13 @@
 </template>
 
 <script setup lang="ts">
-import SkillsListComponent from '@components/DesignSystem/Molecule/SkillsListComponent.vue'
-import type { MediaSkillsType } from '@types/content/SkillsType.js'
-import { compare } from '../../../helpers/arrayHelper.js'
+import { compare } from '@/helpers/arrayHelper.ts'
+import type { MediaSkillsType } from '@/types/content/SkillsType.js'
+import SkillsListComponent from '@/components/DesignSystem/Molecule/SkillsListComponent.vue'
 
 const props = defineProps<{
   skills: MediaSkillsType[]
 }>()
-
-console.log(props.skills)
 
 const skillList = {
   languages: props.skills
@@ -63,5 +61,4 @@ const skillList = {
     .sort((a, b) => compare(a, b, 'name')),
 }
 
-console.log(skillList)
 </script>

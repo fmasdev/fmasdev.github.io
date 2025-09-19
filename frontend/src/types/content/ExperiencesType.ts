@@ -1,8 +1,8 @@
-// src/types/ExperiencesType.ts
+// src/types/ExperiencesType
 
-import type { ProjectType } from '@types/content/ProjectType.js'
-import type { SeoType } from '@types/content/SeoType.js'
-import type { MediaType } from '@types/content/MediaType.js'
+import type { ProjectType } from '@/types/content/ProjectType.js'
+import type { SeoType } from '@/types/content/SeoType.js'
+import type { MediaType } from '@/types/content/MediaType.js'
 
 export interface ExperiencesType {
   title: string
@@ -13,7 +13,7 @@ export interface ExperiencesType {
 
 export interface ExperienceType {
   id: number
-  __component: 'experience.experience-item'
+  kind: 'ExperienceItem'
   title: string
   start: string
   stop: string
@@ -27,7 +27,7 @@ export interface ExperienceType {
 
 export interface ExperienceExperienceType {
   id: number
-  __component: 'experience.experience'
+  kind: 'Experience'
   title: string
   company: string
   city: string

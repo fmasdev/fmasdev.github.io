@@ -1,6 +1,6 @@
-// src/types/common/FeedbackType.ts
+// src/types/common/FeedbackType
 
-import type { SeoType } from '@types/content/SeoType.js'
+import type { SeoType } from '@/types/content/SeoType.js'
 
 export interface FeedbackType {
   __component: string

@@ -1,7 +1,7 @@
-// src/types/common/TrainingType.ts
+// src/types/common/TrainingType
 
-import type { SeoType } from '@types/content/SeoType.js'
-import type { MediaType } from '@types/content/MediaType.js'
+import type { SeoType } from '@/types/content/SeoType.js'
+import type { MediaType } from '@/types/content/MediaType.js'
 
 export interface TrainingType {
   title: string

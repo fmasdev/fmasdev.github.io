@@ -1,15 +1,15 @@
 <template>
   <div v-if="methods?.items.length">
-      <ListMediaComponent
-        v-if="methods.kind === 'media'"
-        :title="{ title: $t('skills.title.method'), level: 'h4' }"
-        :list="methods.items"
-      />
-      <ListStringComponent
-        v-else-if="methods.kind === 'string'"
-        :title="{ title: $t('skills.title.method'), level: 'h4' }"
-        :list="methods.items"
-      />
+    <ListMediaComponent
+      v-if="methods.kind === 'media'"
+      :title="{ title: $t('skills.title.method'), level: 'h4' }"
+      :list="methods.items"
+    />
+    <ListStringComponent
+      v-else-if="methods.kind === 'string'"
+      :title="{ title: $t('skills.title.method'), level: 'h4' }"
+      :list="methods.items"
+    />
   </div>
 
   <div v-if="tools?.items.length">
@@ -24,18 +24,17 @@
       :list="tools.items"
     />
   </div>
-
 </template>
 
 <script setup lang="ts">
-import {ref} from "vue";
-import {compare} from "../../../helpers/arrayHelper.js";
-import ListStringComponent from "@components/DesignSystem/Atoms/ListStringComponent.vue";
-import ListMediaComponent from "@components/DesignSystem/Atoms/ListMediaComponent.vue";
+import { ref } from 'vue'
+import { compare } from '@/helpers/arrayHelper.js'
 import type {
   SoftSkillArrayType,
-  SoftSkillType
-} from '@types/content/SkillsType.js'
+  SoftSkillType,
+} from '@/types/content/SkillsType.js'
+import ListStringComponent from '@/components/DesignSystem/Atoms/ListStringComponent.vue'
+import ListMediaComponent from '@/components/DesignSystem/Atoms/ListMediaComponent.vue'
 
 const props = defineProps<{
   skillList: SoftSkillType[]
@@ -46,18 +45,18 @@ const methods = ref<SoftSkillArrayType>()
 
 // TOOLS
 const toolItems = props.skillList
-  .filter((skill: SoftSkillType )=> skill?.type === 'TOOL')
+  .filter((skill: SoftSkillType) => skill?.type === 'TOOL')
   .sort((a, b) => compare(a, b, 'name'))
 
 if (toolItems.every((tool: SoftSkillType) => tool?.media)) {
   tools.value = {
     kind: 'media',
-    items: toolItems
+    items: toolItems,
   }
 } else {
   tools.value = {
     kind: 'string',
-    items: toolItems.map(tool => tool.name)
+    items: toolItems.map((tool) => tool.name),
   }
 }
 
@@ -67,14 +66,14 @@ const methodItems = props.skillList
   .sort((a, b) => compare(a, b, 'name'))
 
 if (methodItems.every((method: SoftSkillType) => method?.media)) {
-    methods.value = {
-      kind: "media",
-      items: methodItems
-    }
+  methods.value = {
+    kind: 'media',
+    items: methodItems,
+  }
 } else {
-    methods.value = {
-      kind: 'string',
-      items: methodItems.map(method => method.name)
-    }
+  methods.value = {
+    kind: 'string',
+    items: methodItems.map((method) => method.name),
+  }
 }
 </script>

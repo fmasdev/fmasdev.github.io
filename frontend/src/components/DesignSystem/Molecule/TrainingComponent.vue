@@ -35,11 +35,11 @@
   </div>
 </template>
 <script setup lang="ts">
-import type { TrainingContentType } from '@types/content/TrainingType.js'
-import { dateHelper } from '../../../helpers/dateHelper.js'
-import TextMarkdownComponent from '@components/DesignSystem/Atoms/TextMarkdownComponent.vue'
-import MediaComponent from '@components/DesignSystem/Atoms/MediaComponent.vue'
-import TitleComponent from '@components/DesignSystem/Atoms/TitleComponent.vue'
+import { dateHelper } from '@/helpers/dateHelper.js'
+import type { TrainingContentType } from '@/types/content/TrainingType.js'
+import TextMarkdownComponent from '@/components/DesignSystem/Atoms/TextMarkdownComponent.vue'
+import MediaComponent from '@/components/DesignSystem/Atoms/MediaComponent.vue'
+import TitleComponent from '@/components/DesignSystem/Atoms/TitleComponent.vue'
 
 const props = defineProps<{
   training: TrainingContentType

@@ -1,20 +1,17 @@
 <template>
-  <component
-    :is="level"
-    :class="classes"
-  >
+  <component :is="level" :class="classes">
     {{ title }}
   </component>
 </template>
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
-import type { TitleLevelType } from "@types/common.js";
+import type { TitleLevelType } from '@/types/common.js'
 
 const props = defineProps<{
-  title: string,
-  level: TitleLevelType,
-  classList?: string,
+  title: string
+  level: TitleLevelType
+  classList?: string
 }>()
 
 const getTitleClass = (level: TitleLevelType): string => {

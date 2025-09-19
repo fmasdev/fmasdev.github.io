@@ -4,7 +4,7 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, provide } from 'vue'
-import { updateDeviceType, currentDeviceType } from './helpers/deviceHelper.js'
+import { updateDeviceType, currentDeviceType } from './helpers/deviceHelper'
 
 onMounted(() => {
   updateDeviceType()

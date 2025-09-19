@@ -39,5 +39,3 @@ defineProps({
   classList: { type: String, required: false },
 })
 </script>
-
-<style scoped></style>

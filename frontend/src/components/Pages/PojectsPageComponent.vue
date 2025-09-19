@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-import TitleComponent from '@components/DesignSystem/Atoms/TitleComponent.vue'
+import TitleComponent from '@/components/DesignSystem/Atoms/TitleComponent.vue'
 
 const projects = { title: 'todo' }
 </script>

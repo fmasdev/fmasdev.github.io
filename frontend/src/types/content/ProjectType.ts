@@ -1,6 +1,6 @@
-// src/types/content/ProjectType.ts
+// src/types/content/ProjectType
 
-import type { MediaType } from '@types/content/MediaType.js'
+import type { MediaType } from '@/types/content/MediaType.js'
 
 // project dev
 export interface ProjectType {
@@ -14,12 +14,16 @@ export interface ProjectType {
 }
 
 export interface StackType {
+  kind: 'stack'
+  id: number
   name: string
   info: string
   media: MediaType
 }
 
 export interface WebserviceType {
+  kind: 'webservice'
+  id: number
   name: string
   info: string
   media: MediaType
