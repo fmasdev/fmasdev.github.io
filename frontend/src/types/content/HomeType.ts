@@ -35,7 +35,7 @@ export interface HomeCardBlockType {
 
 export interface HomeCardType {
   id: number
-  type: 'Card'
+  kind: 'Card'
   icon: string
   title: string
   text: string
@@ -54,7 +54,7 @@ export interface HomeFigureCardBlockType {
 
 export interface HomeFigureCardType {
   id: number
-  type: 'FigureCard'
+  kind: 'FigureCard'
   title: string
   text: string
   caption?: string

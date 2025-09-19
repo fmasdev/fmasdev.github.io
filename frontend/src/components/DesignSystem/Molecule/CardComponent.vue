@@ -1,5 +1,6 @@
 <template>
-  <div v-if="card.type === 'Card'" class="p-6 rounded-xl" :class="cardClass">
+
+  <div v-if="isCard(card)" class="p-6 rounded-xl" :class="cardClass">
     <div class="text-3xl mb-2">
       {{ card.icon }}
     </div>
@@ -11,7 +12,7 @@
     </p>
   </div>
 
-  <div v-if="card.type === 'FigureCard'">
+  <div v-if="isFigureCard(card)">
     <figure v-if="card.caption" class="overflow-hidden rounded-xl shadow-md">
       <img
         :src="`/media/${card.media?.original.path}`"
@@ -51,7 +52,15 @@ const props = defineProps<{
 }>()
 
 const isCard = (card: HomeCardUnion): card is HomeCardType => {
-  return card.type === 'Card'
+  console.log('must do : card ')
+  console.log(card.kind)
+  return card.kind === 'Card'
+}
+
+const isFigureCard = (card: HomeCardUnion): card is HomeFigureCardType => {
+  console.log('must do : figure card ')
+  console.log(card.kind)
+  return card.kind === 'FigureCard'
 }
 
 const cardClass = computed(() => {

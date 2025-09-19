@@ -8,7 +8,7 @@
       <div class="max-w-7xl grid items-center" :class="innerClass">
         <CardComponent
           v-if="component.cards.length"
-          v-for="card in component.cards"
+          v-for="card in cards"
           :key="card.id"
           :card="card"
           :type="resolveCardType(component.kind)"
@@ -20,7 +20,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import type { HomeComponentType } from '@/types/content/HomeType.js'
+import type {HomeCardType, HomeCardUnion, HomeComponentType, HomeFigureCardType} from '@/types/content/HomeType.js'
 import CardComponent from '@/components/DesignSystem/Molecule/CardComponent.vue'
 
 const props = defineProps<{
@@ -45,6 +45,15 @@ const colors =
         bg: props.component.background,
         textColor: 'white',
       }
+
+const cards: HomeCardUnion[] = props.component.cards.map(item => {
+  if (item.hasOwnProperty('media')) {
+    return { ...item, kind: 'FigureCard' } as HomeFigureCardType
+
+  } else {
+    return { ...item, kind: 'Card' } as HomeCardType
+  }
+})
 
 const resolveCardType = (componentType: string) => {
   switch (componentType) {
