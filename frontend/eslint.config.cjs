@@ -2,34 +2,34 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true
+    node: true,
   },
-  extends: ["eslint:recommended", "plugin:prettier/recommended"],
+  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
   parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module"
+    ecmaVersion: 'latest',
+    sourceType: 'module',
   },
   rules: {
-    quotes: ["error", "single"],
-    semi: ["error", "never"],
-    indent: ["error", 2],
+    quotes: ['error', 'single'],
+    semi: ['error', 'never'],
+    indent: ['error', 2],
     'prettier/prettier': [
-      "error",
+      'error',
       {
         singleQuote: true,
         semi: false,
-        tabWidth: 2
-      }
+        tabWidth: 2,
+      },
     ],
-    "vue/max-attributes-per-line": [
-      "error",
+    'vue/max-attributes-per-line': [
+      'error',
       {
         singleline: 1,
         multiline: {
           max: 1,
-          allowFirstLine: false
-        }
-      }
-    ]
-  }
+          allowFirstLine: false,
+        },
+      },
+    ],
+  },
 }
