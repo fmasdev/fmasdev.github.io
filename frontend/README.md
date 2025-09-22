@@ -1,5 +1,36 @@
-# Vue 3 + TypeScript + Vite
+# fmasdev.github.io
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## CMS
+### Start Strapi app dev
+`````shell
+   npm run develop
+`````
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Backend
+Backend request Strapi for build one json by frontend page.
+
+Commands in backend directory
+
+### Build jsons from dev mode
+````shell
+   cd backend && npm run dev:export
+````
+
+### Build jsons
+````shell
+    cd backend && npm run export
+````
+
+## Copy jsons from backend to frontend
+Copy manualy jsons or
+````shell
+   build_content.sh
+````
+
+## Deploy
+### Build du frontend
+````shell
+    cd frontend
+    npm run build
+    npm run deploy
+````
