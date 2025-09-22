@@ -1,13 +1,18 @@
 <template>
 
-  <div v-if="isCard(card)" class="p-6 rounded-xl" :class="cardClass">
+  <div v-if="isCard(card)"
+       class="p-6 rounded-xl"
+       :class="cardClass">
     <div class="text-3xl mb-2">
       {{ card.icon }}
     </div>
-    <div class="font-semibold text-lg" :class="titleClass">
+    <div
+      class="font-semibold text-lg"
+      :class="titleClass">
       {{ card.title }}
     </div>
-    <p class="text-sm mt-2 text-ternary" :class="textClass">
+    <p class="card-text text-sm mt-2"
+       :class="textClass">
       {{ card.text }}
     </p>
   </div>
@@ -52,14 +57,10 @@ const props = defineProps<{
 }>()
 
 const isCard = (card: HomeCardUnion): card is HomeCardType => {
-  console.log('must do : card ')
-  console.log(card.kind)
   return card.kind === 'Card'
 }
 
 const isFigureCard = (card: HomeCardUnion): card is HomeFigureCardType => {
-  console.log('must do : figure card ')
-  console.log(card.kind)
   return card.kind === 'FigureCard'
 }
 
@@ -67,12 +68,11 @@ const cardClass = computed(() => {
   if (isCard(props.card)) {
     return [
       props.card.textColor === 'ternary'
-        ? ' text-white/80 shadow-sm border border-gray-100 hover:shadow-md transition h-full'
-        : ' bg-white/10 h-full',
+        ? ' bg-white/10 h-full'
+        : ' text-white/80 shadow-sm border border-gray-100 hover:shadow-md transition h-full',
       props.card.textCenter && ' text-center',
     ]
   }
-
   return ' bg-white/10 h-full'
 })
 
@@ -88,3 +88,21 @@ const textClass = computed(() =>
     : ' text-text'
 )
 </script>
+
+<style scoped>
+.card-default {
+  border-color: var(--color-gray-100);
+  background-color: var(--color-white);
+
+}
+
+.card-primary {
+  background-color:  color-mix(in oklab, var(--color-white) 10%, transparent);
+  border-radius: var(--radius-xl);
+
+  .card-text {
+    color: color-mix(in oklab, var(--color-white) 80%, transparent);
+  }
+}
+
+</style>

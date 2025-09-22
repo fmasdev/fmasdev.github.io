@@ -5,7 +5,7 @@ import type { MediaType } from '@/types/content/MediaType.js'
 export interface HomeType {
   id: number
   presentation: HomePresentationType
-  components: HomeComponentType[]
+  components: HomeComponentUnion[]
 }
 
 export interface HomePresentationType {
@@ -23,7 +23,7 @@ export interface HomeCta {
   url: string
 }
 
-export type HomeComponentType = HomeFigureCardBlockType | HomeCardBlockType
+export type HomeComponentUnion = HomeFigureCardBlockType | HomeCardBlockType
 
 export interface HomeCardBlockType {
   id: number
