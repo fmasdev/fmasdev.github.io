@@ -1,0 +1,23 @@
+{
+  "id": 1,
+  "attributes": {
+    "name": "Mas",
+    "address": "Frédéric",
+    "postalCode": "66270",
+    "city": "Le Soler",
+    "phone": "+33 6 09 15 42 16",
+    "email": "f.mas.dev@gamail.com",
+    "media": {
+      "name": "IMG_20221120_192535.jpg",
+      "alternativeText": "Photo Frédéric Mas",
+      "original": {
+        "path": "original/IMG_20221120_192535.jpg",
+        "height": 2856,
+        "width": 2765,
+        "mime": "image/jpeg",
+        "size": 605.27,
+        "strapiUrl": "/uploads/IMG_20221120_192535_286952d7a8.jpg"
+      }
+    }
+  }
+}

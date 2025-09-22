@@ -1,0 +1,155 @@
+{
+  "id": 1,
+  "locale": "fr-FR",
+  "presentation": {
+    "id": 2,
+    "title": "Frédéric Mas",
+    "presentation": "Développeur fullstack — PHP / JS. Je conçois et déploie des plateformes robustes, performantes et évolutives.",
+    "cta": [
+      {
+        "id": 3,
+        "url": "experience",
+        "title": "Voir mes expériences",
+        "background": "accent"
+      },
+      {
+        "id": 4,
+        "url": "skills",
+        "title": "Voir mes compétences",
+        "background": null
+      }
+    ]
+  },
+  "components": [
+    {
+      "__component": "home.bloc",
+      "id": 4,
+      "background": "default",
+      "title": "Mon expertise",
+      "cards": [
+        {
+          "id": 18,
+          "icon": "💻",
+          "textCenter": false,
+          "titleColor": "secondary",
+          "title": "Développement fullstack",
+          "text": "Backend API Platform, Symfony & Strapi, intégration front moderne avec Vue.js et Nuxt.",
+          "textColor": "default"
+        },
+        {
+          "id": 19,
+          "icon": "⚡",
+          "textCenter": false,
+          "titleColor": "secondary",
+          "title": "Performance & scalabilité",
+          "text": "Optimisation des plateformes, tests automatisés et infrastructures Docker.",
+          "textColor": null
+        },
+        {
+          "id": 20,
+          "icon": "🌍",
+          "textCenter": false,
+          "titleColor": "secondary",
+          "title": " Projets multilingues",
+          "text": "Expérience sur des plateformes internationales, gestion fine des contenus et SEO.",
+          "textColor": "default"
+        }
+      ]
+    },
+    {
+      "__component": "home.figure-card-bloc",
+      "id": 2,
+      "title": "Mes passions sportives",
+      "background": "default",
+      "cards": [
+        {
+          "id": 7,
+          "title": "VTT",
+          "caption": null,
+          "text": "Le VTT est pour moi bien plus qu’un sport : c’est un terrain d’aventure où je cherche toujours à repousser mes limites. Entre technique, endurance et liberté, il m’offre un équilibre unique entre effort intense et sensation de fluidité.",
+          "photo": null
+        },
+        {
+          "id": 8,
+          "title": "SKI",
+          "caption": "Ski alpin — précision et plaisir de la montagne",
+          "text": null,
+          "media": {
+            "name": "IMG_20240103_162333.jpg",
+            "alternativeText": "Ski - Chamrousse",
+            "original": {
+              "path": "original/IMG_20240103_162333.jpg",
+              "height": 2592,
+              "width": 4608,
+              "mime": "image/jpeg",
+              "size": 991.22,
+              "strapiUrl": "/uploads/IMG_20240103_162333_69d89a6e07.jpg"
+            }
+          }
+        },
+        {
+          "id": 9,
+          "title": "RANDO",
+          "caption": "Randonnée — l’art de ralentir et d’observer",
+          "text": null,
+          "media": {
+            "name": "IMG_20240804_113432.jpg",
+            "alternativeText": "Randonnée - La Rhune",
+            "original": {
+              "path": "original/IMG_20240804_113432.jpg",
+              "height": 2592,
+              "width": 4608,
+              "mime": "image/jpeg",
+              "size": 1059.22,
+              "strapiUrl": "/uploads/IMG_20240804_113432_a02b5ef16a.jpg"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "__component": "home.bloc",
+      "id": 5,
+      "background": "primary",
+      "title": "Mes valeurs",
+      "cards": [
+        {
+          "id": 21,
+          "icon": "🎯",
+          "textCenter": true,
+          "titleColor": "ternary",
+          "title": "Rigueur",
+          "text": "Précision, qualité et bonnes pratiques.",
+          "textColor": "ternary"
+        },
+        {
+          "id": 22,
+          "icon": "🌱",
+          "textCenter": true,
+          "titleColor": "ternary",
+          "title": "Curiosité",
+          "text": "Apprentissage et veille technologique.",
+          "textColor": "ternary"
+        },
+        {
+          "id": 23,
+          "icon": "🤝",
+          "textCenter": true,
+          "titleColor": "ternary",
+          "title": "Esprit d'équipe",
+          "text": "Collaboration et partage.",
+          "textColor": "ternary"
+        },
+        {
+          "id": 24,
+          "icon": "🔧",
+          "textCenter": true,
+          "titleColor": "ternary",
+          "title": "Créativité",
+          "text": "Approches innovantes et solutions adaptées.",
+          "textColor": "ternary"
+        }
+      ]
+    }
+  ]
+}

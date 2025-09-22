@@ -1,0 +1,856 @@
+{
+  "id": 1,
+  "title": "Compétences",
+  "locale": "fr-FR",
+  "skills": [
+    {
+      "__component": "skills.skills-list",
+      "id": 2,
+      "mediaSkills": [
+        {
+          "id": 43,
+          "name": "Bootstrap",
+          "advancement": 0,
+          "type": "FRONT_FRAMEWORK",
+          "language": "CSS",
+          "media": {
+            "name": "bootstrap.jpg",
+            "alternativeText": "Bootstrap logo",
+            "original": {
+              "path": "original/bootstrap.jpg",
+              "height": 225,
+              "width": 224,
+              "mime": "image/jpeg",
+              "size": 5.51,
+              "strapiUrl": "/uploads/bootstrap_bb38ec0927.jpg"
+            }
+          }
+        },
+        {
+          "id": 44,
+          "name": "Vue.js",
+          "advancement": 0,
+          "type": "FRONT_FRAMEWORK",
+          "language": "JAVA_SCRIPT",
+          "media": {
+            "name": "vueJs.jpg",
+            "alternativeText": "Vue js logo",
+            "original": {
+              "path": "original/vueJs.jpg",
+              "height": 250,
+              "width": 250,
+              "mime": "image/jpeg",
+              "size": 6.33,
+              "strapiUrl": "/uploads/vue_Js_b140cc7b4a.jpg"
+            }
+          }
+        },
+        {
+          "id": 45,
+          "name": "Nuxt",
+          "advancement": 0,
+          "type": "FRONT_FRAMEWORK",
+          "language": "JAVA_SCRIPT",
+          "media": {
+            "name": "nuxtjs.jpg",
+            "alternativeText": "Nuxt js logo",
+            "original": {
+              "path": "original/nuxtjs.jpg",
+              "height": 225,
+              "width": 224,
+              "mime": "image/jpeg",
+              "size": 7.97,
+              "strapiUrl": "/uploads/nuxtjs_3575f83db0.jpg"
+            }
+          }
+        },
+        {
+          "id": 46,
+          "name": "React",
+          "advancement": 0,
+          "type": "FRONT_FRAMEWORK",
+          "language": "JAVA_SCRIPT",
+          "media": {
+            "name": "react.jpg",
+            "alternativeText": "React js logo",
+            "original": {
+              "path": "original/react.jpg",
+              "height": 219,
+              "width": 230,
+              "mime": "image/jpeg",
+              "size": 7.79,
+              "strapiUrl": "/uploads/react_4a6b8c21e6.jpg"
+            }
+          }
+        },
+        {
+          "id": 47,
+          "name": "Next",
+          "advancement": 0,
+          "type": "FRONT_FRAMEWORK",
+          "language": "JAVA_SCRIPT",
+          "media": {
+            "name": "nextjs.jpg",
+            "alternativeText": "Next js logo",
+            "original": {
+              "path": "original/nextjs.jpg",
+              "height": 350,
+              "width": 350,
+              "mime": "image/jpeg",
+              "size": 5.79,
+              "strapiUrl": "/uploads/nextjs_35ef957f5a.jpg"
+            }
+          }
+        },
+        {
+          "id": 48,
+          "name": "Symfony",
+          "advancement": 0,
+          "type": "BACK",
+          "language": "PHP",
+          "media": {
+            "name": "symfony.jpg",
+            "alternativeText": "Symfony logo",
+            "original": {
+              "path": "original/symfony.jpg",
+              "height": 200,
+              "width": 200,
+              "mime": "image/jpeg",
+              "size": 5.5,
+              "strapiUrl": "/uploads/symfony_ade27ba80a.jpg"
+            }
+          }
+        },
+        {
+          "id": 49,
+          "name": "Twig",
+          "advancement": 0,
+          "type": "FRONT_FRAMEWORK",
+          "language": "PHP",
+          "media": {
+            "name": "twig.jpg",
+            "alternativeText": "Twig logo",
+            "original": {
+              "path": "original/twig.jpg",
+              "height": 290,
+              "width": 290,
+              "mime": "image/jpeg",
+              "size": 6.51,
+              "strapiUrl": "/uploads/twig_98ec2893ce.jpg"
+            }
+          }
+        },
+        {
+          "id": 50,
+          "name": "Api platform",
+          "advancement": 0,
+          "type": "BACK",
+          "language": "PHP",
+          "media": {
+            "name": "api-platform.png",
+            "alternativeText": "Api platform logo",
+            "original": {
+              "path": "original/api-platform.png",
+              "height": 250,
+              "width": 250,
+              "mime": "image/png",
+              "size": 6.23,
+              "strapiUrl": "/uploads/api_platform_0b8123e0d8.png"
+            }
+          }
+        },
+        {
+          "id": 51,
+          "name": "Angular",
+          "advancement": 0,
+          "type": "FRONT_FRAMEWORK",
+          "language": "JAVA_SCRIPT",
+          "media": {
+            "name": "angular.jpg",
+            "alternativeText": "Angular Js logo",
+            "original": {
+              "path": "original/angular.jpg",
+              "height": 200,
+              "width": 200,
+              "mime": "image/jpeg",
+              "size": 4.89,
+              "strapiUrl": "/uploads/angular_1f572e6241.jpg"
+            }
+          }
+        },
+        {
+          "id": 52,
+          "name": "Bulma",
+          "advancement": 0,
+          "type": "FRONT_STYLES",
+          "language": "CSS",
+          "media": {
+            "name": "bulma.jpg",
+            "alternativeText": "Bulma logo",
+            "original": {
+              "path": "original/bulma.jpg",
+              "height": 375,
+              "width": 750,
+              "mime": "image/jpeg",
+              "size": 12.34,
+              "strapiUrl": "/uploads/bulma_3532bddf8f.jpg"
+            }
+          }
+        },
+        {
+          "id": 53,
+          "name": "Express Js",
+          "advancement": 0,
+          "type": "BACK",
+          "language": "JAVA_SCRIPT",
+          "media": {
+            "name": "expressjs.png",
+            "alternativeText": "Exoress js logo",
+            "original": {
+              "path": "original/expressjs.png",
+              "height": 499,
+              "width": 1000,
+              "mime": "image/png",
+              "size": 16.56,
+              "strapiUrl": "/uploads/expressjs_a01a265d7b.png"
+            }
+          }
+        },
+        {
+          "id": 54,
+          "name": "Gatsby",
+          "advancement": 0,
+          "type": "FRONT_FRAMEWORK",
+          "language": "JAVA_SCRIPT",
+          "media": {
+            "name": "gatsby.jpg",
+            "alternativeText": "Gatsby logo",
+            "original": {
+              "path": "original/gatsby.jpg",
+              "height": 145,
+              "width": 145,
+              "mime": "image/jpeg",
+              "size": 3.03,
+              "strapiUrl": "/uploads/gatsby_c9a22ee112.jpg"
+            }
+          }
+        },
+        {
+          "id": 55,
+          "name": "Graphql (Apollo)",
+          "advancement": 0,
+          "type": null,
+          "language": "JAVA_SCRIPT",
+          "logo": null
+        },
+        {
+          "id": 56,
+          "name": "Handlebar.js",
+          "advancement": 0,
+          "type": "FRONT_FRAMEWORK",
+          "language": "JAVA_SCRIPT",
+          "media": {
+            "name": "handlebar.jpg",
+            "alternativeText": "Handlebars logo",
+            "original": {
+              "path": "original/handlebar.jpg",
+              "height": 400,
+              "width": 400,
+              "mime": "image/jpeg",
+              "size": 13.24,
+              "strapiUrl": "/uploads/handlebar_16c08f3882.jpg"
+            }
+          }
+        },
+        {
+          "id": 57,
+          "name": "Ionic",
+          "advancement": 0,
+          "type": "MOBILE",
+          "language": "JAVA_SCRIPT",
+          "media": {
+            "name": "ionic.jpg",
+            "alternativeText": "Ionic logo",
+            "original": {
+              "path": "original/ionic.jpg",
+              "height": 250,
+              "width": 250,
+              "mime": "image/jpeg",
+              "size": 8.21,
+              "strapiUrl": "/uploads/ionic_27e44039dd.jpg"
+            }
+          }
+        },
+        {
+          "id": 58,
+          "name": "Zend",
+          "advancement": 0,
+          "type": "BACK",
+          "language": "PHP",
+          "media": {
+            "name": "zend.jpg",
+            "alternativeText": "Zend Framework logo",
+            "original": {
+              "path": "original/zend.jpg",
+              "height": 225,
+              "width": 225,
+              "mime": "image/jpeg",
+              "size": 6.71,
+              "strapiUrl": "/uploads/zend_78daf05f73.jpg"
+            }
+          }
+        },
+        {
+          "id": 59,
+          "name": "Laravel",
+          "advancement": 0,
+          "type": "BACK",
+          "language": "PHP",
+          "media": {
+            "name": "laravel.jpg",
+            "alternativeText": "Laravel logo",
+            "original": {
+              "path": "original/laravel.jpg",
+              "height": 200,
+              "width": 200,
+              "mime": "image/jpeg",
+              "size": 5.46,
+              "strapiUrl": "/uploads/laravel_dc778d65c7.jpg"
+            }
+          }
+        },
+        {
+          "id": 60,
+          "name": "Sails.js",
+          "advancement": 0,
+          "type": "FRONT_FRAMEWORK",
+          "language": "JAVA_SCRIPT",
+          "media": {
+            "name": "sailsjs.jpg",
+            "alternativeText": "Sails js logo",
+            "original": {
+              "path": "original/sailsjs.jpg",
+              "height": 300,
+              "width": 600,
+              "mime": "image/jpeg",
+              "size": 11.79,
+              "strapiUrl": "/uploads/sailsjs_29547d0a2c.jpg"
+            }
+          }
+        },
+        {
+          "id": 61,
+          "name": "Nest JS",
+          "advancement": 0,
+          "type": "BACK",
+          "language": "JAVA_SCRIPT",
+          "media": {
+            "name": "nestjs.jpg",
+            "alternativeText": "Nest js logo",
+            "original": {
+              "path": "original/nestjs.jpg",
+              "height": 719,
+              "width": 720,
+              "mime": "image/jpeg",
+              "size": 21.14,
+              "strapiUrl": "/uploads/nestjs_c3daf23aad.jpg"
+            }
+          }
+        },
+        {
+          "id": 62,
+          "name": "MySql",
+          "advancement": 0,
+          "type": "DATABASE",
+          "language": null,
+          "media": {
+            "name": "mysql.jpg",
+            "alternativeText": "MySQL logo",
+            "original": {
+              "path": "original/mysql.jpg",
+              "height": 250,
+              "width": 250,
+              "mime": "image/jpeg",
+              "size": 5.63,
+              "strapiUrl": "/uploads/mysql_dacae28784.jpg"
+            }
+          }
+        },
+        {
+          "id": 63,
+          "name": "MariaDB",
+          "advancement": 0,
+          "type": "DATABASE",
+          "language": null,
+          "media": {
+            "name": "mariadb.jpg",
+            "alternativeText": "MariaDb logo",
+            "original": {
+              "path": "original/mariadb.jpg",
+              "height": 280,
+              "width": 280,
+              "mime": "image/jpeg",
+              "size": 8.4,
+              "strapiUrl": "/uploads/mariadb_572fe8d2da.jpg"
+            }
+          }
+        },
+        {
+          "id": 64,
+          "name": "Postgesql",
+          "advancement": 0,
+          "type": "DATABASE",
+          "language": null,
+          "media": {
+            "name": "posgresql.jpg",
+            "alternativeText": "PostgreSQL logo",
+            "original": {
+              "path": "original/posgresql.jpg",
+              "height": 250,
+              "width": 250,
+              "mime": "image/jpeg",
+              "size": 9.27,
+              "strapiUrl": "/uploads/posgresql_7087280103.jpg"
+            }
+          }
+        },
+        {
+          "id": 65,
+          "name": "Oracle Database",
+          "advancement": 0,
+          "type": "DATABASE",
+          "language": null,
+          "media": {
+            "name": "oracle.jpg",
+            "alternativeText": "Oracle database logo",
+            "original": {
+              "path": "original/oracle.jpg",
+              "height": 165,
+              "width": 350,
+              "mime": "image/jpeg",
+              "size": 8.58,
+              "strapiUrl": "/uploads/oracle_da186033f4.jpg"
+            }
+          }
+        },
+        {
+          "id": 66,
+          "name": "mongoDB",
+          "advancement": 0,
+          "type": "DATABASE",
+          "language": null,
+          "media": {
+            "name": "mongodb.jpg",
+            "alternativeText": "mongoDB logo",
+            "original": {
+              "path": "original/mongodb.jpg",
+              "height": 550,
+              "width": 550,
+              "mime": "image/jpeg",
+              "size": 20.37,
+              "strapiUrl": "/uploads/mongodb_745eb831a8.jpg"
+            }
+          }
+        },
+        {
+          "id": 67,
+          "name": "Contentful",
+          "advancement": 0,
+          "type": "CMS",
+          "language": "JAVA_SCRIPT",
+          "media": {
+            "name": "contentful.jpg",
+            "alternativeText": "Contentful logo",
+            "original": {
+              "path": "original/contentful.jpg",
+              "height": 225,
+              "width": 225,
+              "mime": "image/jpeg",
+              "size": 4.76,
+              "strapiUrl": "/uploads/contentful_1544b12258.jpg"
+            }
+          }
+        },
+        {
+          "id": 68,
+          "name": "Strapi",
+          "advancement": 0,
+          "type": "CMS",
+          "language": "JAVA_SCRIPT",
+          "media": {
+            "name": "strapi.jpg",
+            "alternativeText": "Strapi logo",
+            "original": {
+              "path": "original/strapi.jpg",
+              "height": 280,
+              "width": 280,
+              "mime": "image/jpeg",
+              "size": 7.58,
+              "strapiUrl": "/uploads/strapi_c6550c02fb.jpg"
+            }
+          }
+        },
+        {
+          "id": 69,
+          "name": "eZ Publish",
+          "advancement": 0,
+          "type": "CMS",
+          "language": "PHP",
+          "media": {
+            "name": "ezpublish.jpg",
+            "alternativeText": "eZ Publish logo",
+            "original": {
+              "path": "original/ezpublish.jpg",
+              "height": 350,
+              "width": 350,
+              "mime": "image/jpeg",
+              "size": 6.51,
+              "strapiUrl": "/uploads/ezpublish_6cf8d670c2.jpg"
+            }
+          }
+        },
+        {
+          "id": 70,
+          "name": "Ibexa",
+          "advancement": 0,
+          "type": "CMS",
+          "language": "PHP",
+          "media": {
+            "name": "ibexa.jpg",
+            "alternativeText": "Ibexa logo",
+            "original": {
+              "path": "original/ibexa.jpg",
+              "height": 225,
+              "width": 225,
+              "mime": "image/jpeg",
+              "size": 5.45,
+              "strapiUrl": "/uploads/ibexa_5a4a3eb437.jpg"
+            }
+          }
+        },
+        {
+          "id": 71,
+          "name": "WordPress",
+          "advancement": 0,
+          "type": "CMS",
+          "language": "PHP",
+          "media": {
+            "name": "wordpress.jpg",
+            "alternativeText": "WordPress logo",
+            "original": {
+              "path": "original/wordpress.jpg",
+              "height": 980,
+              "width": 980,
+              "mime": "image/jpeg",
+              "size": 45.39,
+              "strapiUrl": "/uploads/wordpress_ea4cb9eb81.jpg"
+            }
+          }
+        },
+        {
+          "id": 72,
+          "name": "JavaScript",
+          "advancement": 0,
+          "type": "LANGUAGE",
+          "language": "JAVA_SCRIPT",
+          "media": {
+            "name": "javascript.jpg",
+            "alternativeText": "JavaScript logo",
+            "original": {
+              "path": "original/javascript.jpg",
+              "height": 225,
+              "width": 225,
+              "mime": "image/jpeg",
+              "size": 5.23,
+              "strapiUrl": "/uploads/javascript_35e35b00a5.jpg"
+            }
+          }
+        },
+        {
+          "id": 73,
+          "name": "TypeScript",
+          "advancement": 0,
+          "type": "LANGUAGE",
+          "language": "JAVA_SCRIPT",
+          "media": {
+            "name": "typescript.jpg",
+            "alternativeText": "TypeScript logo",
+            "original": {
+              "path": "original/typescript.jpg",
+              "height": 250,
+              "width": 250,
+              "mime": "image/jpeg",
+              "size": 6.47,
+              "strapiUrl": "/uploads/typescript_802a775d07.jpg"
+            }
+          }
+        },
+        {
+          "id": 74,
+          "name": "PHP",
+          "advancement": 0,
+          "type": "LANGUAGE",
+          "language": "PHP",
+          "media": {
+            "name": "php.jpg",
+            "alternativeText": "PHP logo",
+            "original": {
+              "path": "original/php.jpg",
+              "height": 400,
+              "width": 750,
+              "mime": "image/jpeg",
+              "size": 26.93,
+              "strapiUrl": "/uploads/php_4defc26e46.jpg"
+            }
+          }
+        },
+        {
+          "id": 75,
+          "name": "Docker",
+          "advancement": 0,
+          "type": "INFRASTUCTURE",
+          "language": null,
+          "media": {
+            "name": "docker.jpg",
+            "alternativeText": "Docker logo",
+            "original": {
+              "path": "original/docker.jpg",
+              "height": 225,
+              "width": 225,
+              "mime": "image/jpeg",
+              "size": 6.67,
+              "strapiUrl": "/uploads/docker_6e17cc685d.jpg"
+            }
+          }
+        },
+        {
+          "id": 76,
+          "name": "Node Js",
+          "advancement": 0,
+          "type": "INFRASTUCTURE",
+          "language": null,
+          "media": {
+            "name": "nodejs.jpg",
+            "alternativeText": "Node JS logo",
+            "original": {
+              "path": "original/nodejs.jpg",
+              "height": 900,
+              "width": 1250,
+              "mime": "image/jpeg",
+              "size": 43.95,
+              "strapiUrl": "/uploads/nodejs_022028f167.jpg"
+            }
+          }
+        },
+        {
+          "id": 77,
+          "name": "Traefik",
+          "advancement": 0,
+          "type": "INFRASTUCTURE",
+          "language": null,
+          "media": {
+            "name": "traefik.jpg",
+            "alternativeText": "Traefik logo",
+            "original": {
+              "path": "original/traefik.jpg",
+              "height": 577,
+              "width": 459,
+              "mime": "image/jpeg",
+              "size": 21.76,
+              "strapiUrl": "/uploads/traefik_1ba3ffb514.jpg"
+            }
+          }
+        },
+        {
+          "id": 78,
+          "name": "GitHub",
+          "advancement": 0,
+          "type": "GDS",
+          "language": null,
+          "media": {
+            "name": "github.jpg",
+            "alternativeText": "GitHub logo",
+            "original": {
+              "path": "original/github.jpg",
+              "height": 250,
+              "width": 250,
+              "mime": "image/jpeg",
+              "size": 6.6,
+              "strapiUrl": "/uploads/github_02b6f75f3f.jpg"
+            }
+          }
+        },
+        {
+          "id": 79,
+          "name": "GitLab",
+          "advancement": 0,
+          "type": null,
+          "language": null,
+          "media": {
+            "name": "gitlab.jpg",
+            "alternativeText": "GitLab logo",
+            "original": {
+              "path": "original/gitlab.jpg",
+              "height": 270,
+              "width": 270,
+              "mime": "image/jpeg",
+              "size": 7.44,
+              "strapiUrl": "/uploads/gitlab_f1b00b393c.jpg"
+            }
+          }
+        },
+        {
+          "id": 80,
+          "name": "Bitbucket",
+          "advancement": 0,
+          "type": "GDS",
+          "language": null,
+          "media": {
+            "name": "bitbucket.jpg",
+            "alternativeText": "Bitbucket logo",
+            "original": {
+              "path": "original/bitbucket.jpg",
+              "height": 600,
+              "width": 600,
+              "mime": "image/jpeg",
+              "size": 26.91,
+              "strapiUrl": "/uploads/bitbucket_c068688cc9.jpg"
+            }
+          }
+        }
+      ],
+      "softSkill": [
+        {
+          "id": 8,
+          "name": "Scrum",
+          "type": "METHOD",
+          "logo": null
+        },
+        {
+          "id": 9,
+          "name": "Kanban",
+          "type": "METHOD",
+          "logo": null
+        },
+        {
+          "id": 10,
+          "name": "Extreme Programming (XP)",
+          "type": "METHOD",
+          "logo": null
+        },
+        {
+          "id": 11,
+          "name": "Slack",
+          "type": "TOOL",
+          "media": {
+            "name": "slack.jpg",
+            "alternativeText": "Slack logo",
+            "original": {
+              "path": "original/slack.jpg",
+              "height": 143,
+              "width": 351,
+              "mime": "image/jpeg",
+              "size": 5.76,
+              "strapiUrl": "/uploads/slack_5f222492fd.jpg"
+            }
+          }
+        },
+        {
+          "id": 12,
+          "name": "Jira",
+          "type": "TOOL",
+          "media": {
+            "name": "jira.jpg",
+            "alternativeText": "Jira logo",
+            "original": {
+              "path": "original/jira.jpg",
+              "height": 160,
+              "width": 400,
+              "mime": "image/jpeg",
+              "size": 6.46,
+              "strapiUrl": "/uploads/jira_6819cb347f.jpg"
+            }
+          }
+        },
+        {
+          "id": 13,
+          "name": "Taiga",
+          "type": "TOOL",
+          "media": {
+            "name": "taiga.jpg",
+            "alternativeText": "Taiga logo",
+            "original": {
+              "path": "original/taiga.jpg",
+              "height": 282,
+              "width": 750,
+              "mime": "image/jpeg",
+              "size": 11.32,
+              "strapiUrl": "/uploads/taiga_f5ceedf911.jpg"
+            }
+          }
+        },
+        {
+          "id": 14,
+          "name": "Figma (developer)",
+          "type": "TOOL",
+          "media": {
+            "name": "figma.jpg",
+            "alternativeText": "Figma logo",
+            "original": {
+              "path": "original/figma.jpg",
+              "height": 159,
+              "width": 318,
+              "mime": "image/jpeg",
+              "size": 5.2,
+              "strapiUrl": "/uploads/figma_d7ddc170a5.jpg"
+            }
+          }
+        }
+      ],
+      "characterTrait": [
+        {
+          "id": 7,
+          "name": "persévérent"
+        },
+        {
+          "id": 8,
+          "name": "bienveillant"
+        },
+        {
+          "id": 9,
+          "name": "réservé"
+        },
+        {
+          "id": 10,
+          "name": "prudent"
+        },
+        {
+          "id": 11,
+          "name": "engagé"
+        },
+        {
+          "id": 12,
+          "name": "volontaire"
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "id": 9,
+    "metaTitle": "Compétences — Frédéric Mas",
+    "metaDescription": "Expertises techniques et méthodologies : Symfony, Vue.js, React, Strapi, Node.js. Soft skills et savoir-faire pour projets web et logiciels.",
+    "metaRobots": "index, follow",
+    "canonicalUrl": "/skills",
+    "metaSocial": [
+      {
+        "id": 5,
+        "platform": "linkedin",
+        "title": "Compétences — Frédéric Mas",
+        "description": "Expertises techniques et méthodologies : Symfony, Vue.js, React, Strapi, Node.js. Soft skills et savoir-faire pour projets web et logiciels.",
+        "twitterCard": null,
+        "image": null
+      }
+    ],
+    "photo": null
+  }
+}
