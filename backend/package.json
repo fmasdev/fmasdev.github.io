@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:start": "nodemon src/index.js",
     "dev:export": "nodemon src/scripts/export.js",
-    "export": "node src/scripts/export.js",
+    "export": "node src/scripts/export.js"
   },
   "author": "fred",
   "license": "ISC",
