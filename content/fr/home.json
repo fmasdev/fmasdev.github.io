@@ -151,5 +151,33 @@
         }
       ]
     }
-  ]
+  ],
+  "seo": {
+    "id": 11,
+    "metaTitle": "Frédéric Mas | Développeur Web JS, PHP",
+    "metaDescription": "Développeur full stack (Vue.js, React.js, Symfony, API Platform) avec 7 ans d’expérience en conception d’applications web performantes et modernes.",
+    "metaRobots": "index, follow",
+    "canonicalUrl": "https://fmasdev.github.io/",
+    "media": {
+      "name": "IMG_20221120_192535.jpg",
+      "alternativeText": "Photo Frédéric Mas",
+      "original": {
+        "path": "original/IMG_20221120_192535.jpg",
+        "height": 2856,
+        "width": 2765,
+        "mime": "image/jpeg",
+        "size": 605.27,
+        "strapiUrl": "/uploads/IMG_20221120_192535_286952d7a8.jpg"
+      }
+    },
+    "metaSocial": [
+      {
+        "id": 7,
+        "platform": "linkedin",
+        "title": "Frédéric Mas | Développeur Web JS, PHP",
+        "description": "Développeur full stack (Vue.js, React.js, Symfony, API Platform) avec 15 ans d’expérience en conception d’applications web performantes et modernes.",
+        "twitterCard": null
+      }
+    ]
+  }
 }
