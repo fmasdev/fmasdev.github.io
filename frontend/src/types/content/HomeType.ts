@@ -1,11 +1,13 @@
 // src/types/content/HomeType
 
 import type { MediaType } from '@/types/content/MediaType.js'
+import type {SeoType} from "@/types/content/SeoType.ts";
 
 export interface HomeType {
   id: number
   presentation: HomePresentationType
   components: HomeComponentUnion[]
+  seo: SeoType
 }
 
 export interface HomePresentationType {

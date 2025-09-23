@@ -1,5 +1,9 @@
 <template>
-  <!-- todo add seo -->
+  <SeoComponent
+    v-if="home?.seo"
+    :seo="home.seo"
+  />
+
   <main class="font-sans text-text bg-background">
     <section
       class="relative overflow-hidden bg-gradient-to-br from-primary to-secondary text-white"
@@ -8,9 +12,7 @@
         class="max-w-7xl mx-auto px-6 lg:px-12 py-20 flex flex-col lg:flex-row items-center gap-12"
       >
         <div v-if="home" class="flex-1">
-          <h1
-            class="text-4xl sm:text-5xl lg:text-6xl font-title font-bold leading-tight"
-          >
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-title font-bold leading-tight">
             {{ home.presentation.title }}
           </h1>
           <p class="mt-6 text-lg sm:text-xl max-w-xl text-white/90">
@@ -65,6 +67,7 @@ import type { FooterType } from '@/types/content/FooterType.js'
 import FooterComponent from '@/components/DesignSystem/Organism/navigation/FooterComponent.vue'
 import CtaComponent from '@/components/DesignSystem/Atoms/CtaComponent.vue'
 import HomeSectionComponent from '@/components/DesignSystem/Organism/HomeSectionComponent.vue'
+import SeoComponent from "@/components/DesignSystem/Molecule/SeoComponent.vue";
 
 // Home content
 const { content: homeContent } = useContentLoader('home')
