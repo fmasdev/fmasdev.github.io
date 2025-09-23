@@ -27,7 +27,13 @@ module.exports = createCoreController('api::home.home', ({ strapi }) => ({
             },
           },
         },
-      },
+        Seo: {
+          populate: {
+            photo: true,
+            metaSocial: true
+          }
+        }
+      }
     });
 
     if (!entry) {

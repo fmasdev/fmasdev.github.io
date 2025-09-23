@@ -1179,6 +1179,12 @@ export interface ApiHomeHome extends Schema.SingleType {
           localized: true;
         };
       }>;
+    Seo: Attribute.Component<'seo.seo'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
