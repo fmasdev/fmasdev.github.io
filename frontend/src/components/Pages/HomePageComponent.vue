@@ -81,7 +81,6 @@ watch(
   (homeContent) => {
     if (!homeContent) return
     home.value = homeContent
-    console.log(home.value)
     expertise.value = homeContent.components[0]
     sportsHobby.value = homeContent.components[1]
     personnalValues.value = homeContent.components[2]
