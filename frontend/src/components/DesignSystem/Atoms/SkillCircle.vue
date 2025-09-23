@@ -35,7 +35,7 @@
 <script setup lang="ts">
 defineProps({
   percentage: { type: Number, required: true },
-  color: { type: String, default: '#0038A8' }, // bleu alpine profond de ton thème
+  color: { type: String, default: '#0038A8' }, // bleu alpine profond
   classList: { type: String, required: false },
 })
 </script>

@@ -60,5 +60,4 @@ const skillList = {
     )
     .sort((a, b) => compare(a, b, 'name')),
 }
-
 </script>

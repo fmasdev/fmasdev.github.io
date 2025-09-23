@@ -1,6 +1,6 @@
 <template>
   <RouterLink
-    to="experience"
+    :to="linkTo"
     :class="ctaClass"
     class="px-6 py-3 rounded-lg font-medium shadow-md transition transform hover:-translate-y-0.5"
   >

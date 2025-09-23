@@ -88,21 +88,3 @@ const textClass = computed(() =>
     : ' text-text'
 )
 </script>
-
-<style scoped>
-.card-default {
-  border-color: var(--color-gray-100);
-  background-color: var(--color-white);
-
-}
-
-.card-primary {
-  background-color:  color-mix(in oklab, var(--color-white) 10%, transparent);
-  border-radius: var(--radius-xl);
-
-  .card-text {
-    color: color-mix(in oklab, var(--color-white) 80%, transparent);
-  }
-}
-
-</style>
