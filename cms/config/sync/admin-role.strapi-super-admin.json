@@ -471,17 +471,16 @@
       "properties": {
         "fields": [
           "Title",
-          "ProjectItem",
-          "Seo.metaTitle",
-          "Seo.metaDescription",
-          "Seo.metaRobots",
-          "Seo.canonicalUrl",
-          "Seo.metaSocial.platform",
-          "Seo.metaSocial.title",
-          "Seo.metaSocial.description",
-          "Seo.metaSocial.image",
-          "Seo.metaSocial.twitterCard",
-          "Seo.photo"
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaRobots",
+          "seo.canonicalUrl",
+          "seo.metaSocial.platform",
+          "seo.metaSocial.title",
+          "seo.metaSocial.description",
+          "seo.metaSocial.image",
+          "seo.metaSocial.twitterCard",
+          "seo.photo"
         ],
         "locales": [
           "en",
@@ -521,17 +520,16 @@
       "properties": {
         "fields": [
           "Title",
-          "ProjectItem",
-          "Seo.metaTitle",
-          "Seo.metaDescription",
-          "Seo.metaRobots",
-          "Seo.canonicalUrl",
-          "Seo.metaSocial.platform",
-          "Seo.metaSocial.title",
-          "Seo.metaSocial.description",
-          "Seo.metaSocial.image",
-          "Seo.metaSocial.twitterCard",
-          "Seo.photo"
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaRobots",
+          "seo.canonicalUrl",
+          "seo.metaSocial.platform",
+          "seo.metaSocial.title",
+          "seo.metaSocial.description",
+          "seo.metaSocial.image",
+          "seo.metaSocial.twitterCard",
+          "seo.photo"
         ],
         "locales": [
           "en",
@@ -547,17 +545,16 @@
       "properties": {
         "fields": [
           "Title",
-          "ProjectItem",
-          "Seo.metaTitle",
-          "Seo.metaDescription",
-          "Seo.metaRobots",
-          "Seo.canonicalUrl",
-          "Seo.metaSocial.platform",
-          "Seo.metaSocial.title",
-          "Seo.metaSocial.description",
-          "Seo.metaSocial.image",
-          "Seo.metaSocial.twitterCard",
-          "Seo.photo"
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaRobots",
+          "seo.canonicalUrl",
+          "seo.metaSocial.platform",
+          "seo.metaSocial.title",
+          "seo.metaSocial.description",
+          "seo.metaSocial.image",
+          "seo.metaSocial.twitterCard",
+          "seo.photo"
         ],
         "locales": [
           "en",

@@ -1281,6 +1281,58 @@ export interface ApiProjectProject extends Schema.CollectionType {
   };
 }
 
+export interface ApiProjectListProjectList extends Schema.SingleType {
+  collectionName: 'project_lists';
+  info: {
+    singularName: 'project-list';
+    pluralName: 'project-lists';
+    displayName: 'ProjectList';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    Title: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    seo: Attribute.Component<'seo.seo'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::project-list.project-list',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::project-list.project-list',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::project-list.project-list',
+      'oneToMany',
+      'api::project-list.project-list'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiSkillSkill extends Schema.SingleType {
   collectionName: 'skills';
   info: {
@@ -1536,6 +1588,7 @@ declare module '@strapi/types' {
       'api::home.home': ApiHomeHome;
       'api::me.me': ApiMeMe;
       'api::project.project': ApiProjectProject;
+      'api::project-list.project-list': ApiProjectListProjectList;
       'api::skill.skill': ApiSkillSkill;
       'api::stack-item.stack-item': ApiStackItemStackItem;
       'api::training.training': ApiTrainingTraining;
