@@ -129,10 +129,19 @@ class StrapiDatasource {
     }
   }
 
-  async getProjects() {
+  async getProjects(locale) {
     try {
-      const res = await this.getLocalizedData('projects', {populate: 'deep'})
+      const res = await this.getLocalizedData('projects', {populate: 'deep'}, locale)
       return cleanStrapiData(res.data.data)
+    } catch (err) {
+      console.error(err.message)
+    }
+  }
+
+  async getProjectList(locale){
+    try {
+      const res = await this.getLocalizedData('project-list-by-locale', {}, locale)
+      return cleanStrapiData(res.data)
     } catch (err) {
       console.error(err.message)
     }

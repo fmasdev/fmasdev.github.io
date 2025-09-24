@@ -4,12 +4,13 @@ const StrapiDatasource = require('../datasources/StrapiDatasource')
 const {localesConfig, dirConfig} = require('../config/config')
 const {fileHelper} = require('../helpers/fileHelper')
 const {extractMediaUrls} = require("../helpers/extractUrls");
+const projectListBuilder  = require("../helpers/projectListBuilder");
 
 async function exportData() {
   console.log('## START EXPORT DATA')
   const strapi = new StrapiDatasource()
 
-  // fetch untranslated single types without translation
+  // fetch untranslated single types without locale
   const me = await strapi.getMe()
 
   for (const [name, locale] of Object.entries(localesConfig)) {
@@ -22,6 +23,7 @@ async function exportData() {
       skills,
       training,
       projects,
+      projectList,
       footer
     ] = await Promise.all([
       await strapi.getExperiences(locale),
@@ -30,6 +32,7 @@ async function exportData() {
       await strapi.getSkills(locale),
       await strapi.getTrainings(locale),
       await strapi.getProjects(locale),
+      await strapi.getProjectList(locale),
       await strapi.getFooter(locale)
     ])
 
@@ -40,12 +43,12 @@ async function exportData() {
       skills,
       training,
       projects,
+      projectList: projectListBuilder(projectList, projects),
       footer,
       me,
     }
 
     console.log(`## Exported data of locale ${name}`)
-
 
     // fileHelper.downloadFile
     Object.keys(finalData).forEach((key) => {
