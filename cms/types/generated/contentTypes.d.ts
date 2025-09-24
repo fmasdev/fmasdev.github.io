@@ -1246,81 +1246,38 @@ export interface ApiProjectProject extends Schema.CollectionType {
     slug: Attribute.String & Attribute.Required & Attribute.Unique;
     media: Attribute.Media;
     summary: Attribute.RichText;
-    content: Attribute.Component<'experience.project', true>;
-    status: Attribute.Enumeration<['PROJECT', 'IN_PROGRESS', 'FINISH']>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::project.project',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::project.project',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiProjectListProjectList extends Schema.SingleType {
-  collectionName: 'project_lists';
-  info: {
-    singularName: 'project-list';
-    pluralName: 'project-lists';
-    displayName: 'ProjectList';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  pluginOptions: {
-    i18n: {
-      localized: true;
-    };
-  };
-  attributes: {
-    Title: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    ProjectItem: Attribute.DynamicZone<['experience.project']> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Seo: Attribute.Component<'seo.seo'> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::project-list.project-list',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::project-list.project-list',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    localizations: Attribute.Relation<
-      'api::project-list.project-list',
-      'oneToMany',
-      'api::project-list.project-list'
+    status: Attribute.Enumeration<
+      ['PROJECT', 'TASKS_WRITING', 'IN_PROGRESS', 'FINISH']
     >;
-    locale: Attribute.String;
+    detail: Attribute.RichText;
+    webservices: Attribute.Relation<
+      'api::project.project',
+      'oneToMany',
+      'api::webservice.webservice'
+    >;
+    stack_items: Attribute.Relation<
+      'api::project.project',
+      'oneToMany',
+      'api::stack-item.stack-item'
+    >;
+    Link: Attribute.Component<'link.link', true>;
+    Seo: Attribute.Component<'seo.seo'>;
+    slider: Attribute.Component<'slider.slider'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::project.project',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::project.project',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
   };
 }
 
@@ -1405,6 +1362,11 @@ export interface ApiStackItemStackItem extends Schema.CollectionType {
     Name: Attribute.String;
     Logo: Attribute.Media;
     Info: Attribute.String;
+    project: Attribute.Relation<
+      'api::stack-item.stack-item',
+      'manyToOne',
+      'api::project.project'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1517,6 +1479,11 @@ export interface ApiWebserviceWebservice extends Schema.CollectionType {
           localized: true;
         };
       }>;
+    project: Attribute.Relation<
+      'api::webservice.webservice',
+      'manyToOne',
+      'api::project.project'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1569,7 +1536,6 @@ declare module '@strapi/types' {
       'api::home.home': ApiHomeHome;
       'api::me.me': ApiMeMe;
       'api::project.project': ApiProjectProject;
-      'api::project-list.project-list': ApiProjectListProjectList;
       'api::skill.skill': ApiSkillSkill;
       'api::stack-item.stack-item': ApiStackItemStackItem;
       'api::training.training': ApiTrainingTraining;

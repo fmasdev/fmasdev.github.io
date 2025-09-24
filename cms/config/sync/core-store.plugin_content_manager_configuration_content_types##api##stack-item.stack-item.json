@@ -61,6 +61,21 @@
           "sortable": true
         }
       },
+      "project": {
+        "edit": {
+          "label": "project",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "Title"
+        },
+        "list": {
+          "label": "project",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -121,6 +136,12 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "Name",
+        "Logo",
+        "createdAt"
+      ],
       "edit": [
         [
           {
@@ -136,14 +157,12 @@
           {
             "name": "Logo",
             "size": 6
+          },
+          {
+            "name": "project",
+            "size": 6
           }
         ]
-      ],
-      "list": [
-        "id",
-        "Name",
-        "Logo",
-        "createdAt"
       ]
     },
     "uid": "api::stack-item.stack-item"

@@ -294,7 +294,17 @@
           "Presentation.Cta.url",
           "Presentation.Cta.title",
           "Presentation.Cta.background",
-          "Components"
+          "Components",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo"
         ],
         "locales": [
           "en",
@@ -339,7 +349,17 @@
           "Presentation.Cta.url",
           "Presentation.Cta.title",
           "Presentation.Cta.background",
-          "Components"
+          "Components",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo"
         ],
         "locales": [
           "en",
@@ -360,7 +380,17 @@
           "Presentation.Cta.url",
           "Presentation.Cta.title",
           "Presentation.Cta.background",
-          "Components"
+          "Components",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo"
         ],
         "locales": [
           "en",
@@ -546,12 +576,25 @@
           "slug",
           "media",
           "summary",
-          "content.Contribution",
-          "content.stack_items",
-          "content.Name",
-          "content.webservices",
-          "content.IsCompany",
-          "status"
+          "status",
+          "detail",
+          "webservices",
+          "stack_items",
+          "Link.Title",
+          "Link.URL",
+          "Link.Info",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo",
+          "slider.title",
+          "slider.Image"
         ]
       },
       "conditions": []
@@ -580,12 +623,25 @@
           "slug",
           "media",
           "summary",
-          "content.Contribution",
-          "content.stack_items",
-          "content.Name",
-          "content.webservices",
-          "content.IsCompany",
-          "status"
+          "status",
+          "detail",
+          "webservices",
+          "stack_items",
+          "Link.Title",
+          "Link.URL",
+          "Link.Info",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo",
+          "slider.title",
+          "slider.Image"
         ]
       },
       "conditions": []
@@ -600,12 +656,25 @@
           "slug",
           "media",
           "summary",
-          "content.Contribution",
-          "content.stack_items",
-          "content.Name",
-          "content.webservices",
-          "content.IsCompany",
-          "status"
+          "status",
+          "detail",
+          "webservices",
+          "stack_items",
+          "Link.Title",
+          "Link.URL",
+          "Link.Info",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo",
+          "slider.title",
+          "slider.Image"
         ]
       },
       "conditions": []
@@ -720,7 +789,8 @@
         "fields": [
           "Name",
           "Logo",
-          "Info"
+          "Info",
+          "project"
         ]
       },
       "conditions": []
@@ -747,7 +817,8 @@
         "fields": [
           "Name",
           "Logo",
-          "Info"
+          "Info",
+          "project"
         ]
       },
       "conditions": []
@@ -760,7 +831,8 @@
         "fields": [
           "Name",
           "Logo",
-          "Info"
+          "Info",
+          "project"
         ]
       },
       "conditions": []
@@ -875,7 +947,8 @@
         "fields": [
           "Name",
           "Logo",
-          "Info"
+          "Info",
+          "project"
         ],
         "locales": [
           "en",
@@ -916,7 +989,8 @@
         "fields": [
           "Name",
           "Logo",
-          "Info"
+          "Info",
+          "project"
         ],
         "locales": [
           "en",
@@ -933,7 +1007,8 @@
         "fields": [
           "Name",
           "Logo",
-          "Info"
+          "Info",
+          "project"
         ],
         "locales": [
           "en",

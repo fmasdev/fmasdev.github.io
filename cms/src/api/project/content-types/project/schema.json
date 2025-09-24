@@ -22,7 +22,7 @@
     },
     "media": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
@@ -34,18 +34,44 @@
     "summary": {
       "type": "richtext"
     },
-    "content": {
-      "type": "component",
-      "repeatable": true,
-      "component": "experience.project"
-    },
     "status": {
       "type": "enumeration",
       "enum": [
         "PROJECT",
+        "TASKS_WRITING",
         "IN_PROGRESS",
         "FINISH"
       ]
+    },
+    "detail": {
+      "type": "richtext"
+    },
+    "webservices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::webservice.webservice",
+      "mappedBy": "project"
+    },
+    "stack_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::stack-item.stack-item",
+      "mappedBy": "project"
+    },
+    "Link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "link.link"
+    },
+    "Seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo"
+    },
+    "slider": {
+      "type": "component",
+      "repeatable": false,
+      "component": "slider.slider"
     }
   }
 }

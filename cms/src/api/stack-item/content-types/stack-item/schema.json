@@ -28,6 +28,12 @@
     },
     "Info": {
       "type": "string"
+    },
+    "project": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::project.project",
+      "inversedBy": "stack_items"
     }
   }
 }

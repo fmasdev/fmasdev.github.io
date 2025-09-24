@@ -75,20 +75,6 @@
           "sortable": false
         }
       },
-      "content": {
-        "edit": {
-          "label": "content",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "content",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "status": {
         "edit": {
           "label": "status",
@@ -101,6 +87,92 @@
           "label": "status",
           "searchable": true,
           "sortable": true
+        }
+      },
+      "detail": {
+        "edit": {
+          "label": "detail",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "detail",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "webservices": {
+        "edit": {
+          "label": "webservices",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "Name"
+        },
+        "list": {
+          "label": "webservices",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "stack_items": {
+        "edit": {
+          "label": "stack_items",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "Name"
+        },
+        "list": {
+          "label": "stack_items",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Link": {
+        "edit": {
+          "label": "Link",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Link",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Seo": {
+        "edit": {
+          "label": "Seo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Seo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "slider": {
+        "edit": {
+          "label": "slider",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "slider",
+          "searchable": false,
+          "sortable": false
         }
       },
       "createdAt": {
@@ -192,7 +264,35 @@
         ],
         [
           {
-            "name": "content",
+            "name": "slider",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "detail",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "Link",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "stack_items",
+            "size": 6
+          },
+          {
+            "name": "webservices",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "Seo",
             "size": 12
           }
         ]
