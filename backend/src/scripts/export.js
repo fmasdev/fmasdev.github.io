@@ -9,7 +9,7 @@ async function exportData() {
   console.log('## START EXPORT DATA')
   const strapi = new StrapiDatasource()
 
-  // fetch untranslated single types
+  // fetch untranslated single types without translation
   const me = await strapi.getMe()
 
   for (const [name, locale] of Object.entries(localesConfig)) {
@@ -21,7 +21,7 @@ async function exportData() {
       home,
       skills,
       training,
-      projectList,
+      projects,
       footer
     ] = await Promise.all([
       await strapi.getExperiences(locale),
@@ -29,8 +29,8 @@ async function exportData() {
       await strapi.getHome(locale),
       await strapi.getSkills(locale),
       await strapi.getTrainings(locale),
-      await strapi.getProjectList(locale),
-      await strapi.getFooter(locale),
+      await strapi.getProjects(locale),
+      await strapi.getFooter(locale)
     ])
 
     const finalData = {
@@ -39,7 +39,7 @@ async function exportData() {
       home,
       skills,
       training,
-      projectList,
+      projects,
       footer,
       me,
     }

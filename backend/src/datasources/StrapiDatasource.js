@@ -109,30 +109,6 @@ class StrapiDatasource {
     }
   }
 
-  async getProjectList(locale) {
-    try {
-      const res = await this.getLocalizedData(`project-list-by-locale`, {}, locale)
-      return cleanStrapiData(res.data)
-    } catch (err) {
-      console.error(err.message)
-    }
-  }
-
-
-  async getPage(slug, locale) {
-    const params = {
-      'filters[slug][$eq]': slug,
-      populate: 'deep',
-    }
-
-    try {
-      const res = await this.getLocalizedData(`pages`, params, locale)
-      return cleanStrapiData(res.data.data)
-    } catch (err) {
-      console.error(err.message)
-    }
-  }
-
   async getFooter(locale) {
     try {
       const res = await this.getLocalizedData('footer-by-locale', {}, locale)
@@ -153,8 +129,16 @@ class StrapiDatasource {
     }
   }
 
+  async getProjects() {
+    try {
+      const res = await this.getLocalizedData('projects', {populate: 'deep'})
+      return cleanStrapiData(res.data.data)
+    } catch (err) {
+      console.error(err.message)
+    }
+  }
+
   async getMedia(fileUrl) {
-    console.log(fileUrl)
     const url = String(`${this.baseUrl.replace('api/', '')}${fileUrl.slice(1)}`)
     try {
       return await this.http.get(url, {responseType: "arraybuffer"});
