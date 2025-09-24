@@ -592,6 +592,10 @@
           "Seo.photo",
           "slider.title",
           "slider.Image"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
         ]
       },
       "conditions": []
@@ -600,14 +604,24 @@
       "action": "plugin::content-manager.explorer.delete",
       "actionParameters": {},
       "subject": "api::project.project",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "actionParameters": {},
       "subject": "api::project.project",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
       "conditions": []
     },
     {
@@ -639,6 +653,10 @@
           "Seo.photo",
           "slider.title",
           "slider.Image"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
         ]
       },
       "conditions": []
@@ -672,6 +690,10 @@
           "Seo.photo",
           "slider.title",
           "slider.Image"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
         ]
       },
       "conditions": []
