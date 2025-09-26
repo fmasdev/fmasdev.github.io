@@ -1,4 +1,3 @@
-
 const js = require('@eslint/js')
 const prettierPlugin = require('eslint-plugin-prettier')
 const vuePlugin = require('eslint-plugin-vue')
@@ -8,7 +7,7 @@ const tsPlugin = require('@typescript-eslint/eslint-plugin')
 module.exports = [
   ...vuePlugin.configs['flat/recommended'],
   {
-    files: ["**/*.js", "**/*.ts", "**/*.vue"],
+    files: ['**/*.js', '**/*.ts', '**/*.vue'],
     ignores: ['node_modules', 'dist', '.output', '.vscode'],
     languageOptions: {
       parser: tsParser,
