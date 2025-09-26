@@ -13,7 +13,8 @@ const cleanStrapiData = (data) => {
 
     for (const key in rest) {
       const value = rest[key]
-
+      // console.log(key)
+      // console.log(value)
       if (
         value
         && imageKeys.includes(key.toLowerCase())
@@ -38,9 +39,13 @@ const cleanStrapiData = (data) => {
       ) {
         cleaned['media'] = mediaFormater(value.data.attributes)
       } else {
+
         // Recursive on each key
-        const lcFirstKey = String(key).charAt(0).toLowerCase() + String(key).slice(1)
-        cleaned[lcFirstKey] = cleanStrapiData(value)
+        const formatedKey = key === 'URL'
+          ? key.toLowerCase()
+          : String(key).charAt(0).toLowerCase() + String(key).slice(1)
+
+        cleaned[formatedKey] = cleanStrapiData(value)
       }
     }
 

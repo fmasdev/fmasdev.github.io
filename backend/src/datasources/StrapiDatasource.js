@@ -1,13 +1,11 @@
 // config/datasources/StrapiDatasource.js
 
-const {
-  strapiDataSourceConfig: config,
-  appConfig,
-} = require('../config/config')
-const axios = require('axios')
-const { cleanStrapiData } = require('../helpers/cleanStrapiData')
+import { strapiDataSourceConfig as config} from '../config/config.js'
+import axios from 'axios'
+import { cleanStrapiData } from '../helpers/cleanStrapiData.js'
+import qs from 'qs';
 
-class StrapiDatasource {
+export default class StrapiDatasource {
   constructor() {
     this.baseUrl = config.url
     this.http = axios.create({
@@ -25,24 +23,17 @@ class StrapiDatasource {
     const hasParams = !!Object.keys(params).length
 
     if (hasParams) {
-      Object.entries(params).forEach(([key, value]) => {
-        if (!uri.includes('?')) {
-          uri += '?'
-        }
-        uri +=
-          value === params[Object.keys(params)[0]]
-            ? `${key}=${value}`
-            : `&${key}=${value}`
-      })
+      const query = qs.stringify(params, { encodeValuesOnly: true })
+      uri += `?${query}`
     }
-
+    console.log(uri)
     const contentTypeName = uri.split('?')[0].replace('api/', '')
     const localizedUri = locale
       ? hasParams
         ? `${uri}&locale=${locale}`
         : `${uri}?locale=${locale}`
       : uri
-
+    console.log(JSON.stringify(localizedUri, null, 2))
     try {
       return await this.http.get(localizedUri)
     } catch (error) {
@@ -130,8 +121,15 @@ class StrapiDatasource {
   }
 
   async getProjects(locale) {
+    const params = {
+      populate: {
+        stack_items: { populate: { Logo: '*'} },
+        webservices: { populate: { Logo: '*'} },
+        media: { populate: { formats: '*'} }
+      },
+    }
     try {
-      const res = await this.getLocalizedData('projects', {populate: 'deep'}, locale)
+      const res = await this.getLocalizedData('projects', params, locale)
       return cleanStrapiData(res.data.data)
     } catch (err) {
       console.error(err.message)
@@ -156,5 +154,3 @@ class StrapiDatasource {
     }
   }
 }
-
-module.exports = StrapiDatasource

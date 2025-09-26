@@ -1,10 +1,11 @@
 // src/scripts/export.js
 
-const StrapiDatasource = require('../datasources/StrapiDatasource')
-const {localesConfig, dirConfig} = require('../config/config')
-const {fileHelper} = require('../helpers/fileHelper')
-const {extractMediaUrls} = require("../helpers/extractUrls");
-const projectListBuilder  = require("../helpers/projectListBuilder");
+import StrapiDatasource from '../datasources/StrapiDatasource.js'
+import { localesConfig, dirConfig } from '../config/config.js'
+import fileHelper  from '../helpers/fileHelper.js'
+import extractMediaUrls from "../helpers/extractUrls.js"
+import projectListBuilder  from "../helpers/projectListBuilder.js"
+import arrayHelper from "../helpers/arrayHelper.js";
 
 async function exportData() {
   console.log('## START EXPORT DATA')
@@ -61,7 +62,8 @@ async function exportData() {
     console.log(`## Saved data of locale ${name}`)
     console.log(`## Extracting media URLs`)
 
-    const medias = extractMediaUrls(finalData)
+    const mediasTmps = extractMediaUrls(finalData)
+    const medias = arrayHelper.removeDuplicatesEntries(mediasTmps, 'name')
 
     console.log(`Found ${medias.length} media URLs`)
 

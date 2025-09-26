@@ -1,7 +1,6 @@
 // src/helpers/extractUrl.js
 
-
-export const extractMediaUrls = (data, urls = []) => {
+const extractMediaUrls = (data, urls = []) => {
   if (Array.isArray(data)) {
     data.forEach((item) => extractMediaUrls(item, urls));
   } else if (data && typeof data === "object") {
@@ -16,8 +15,7 @@ export const extractMediaUrls = (data, urls = []) => {
     }
   }
 
-
   return urls;
 }
 
-
+export default extractMediaUrls

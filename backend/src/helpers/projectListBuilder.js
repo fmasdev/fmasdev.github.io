@@ -12,7 +12,4 @@ const projectListBuilder = (projectList, projects) => {
   return projectList
 }
 
-
-
-
-module.exports = projectListBuilder
+export default projectListBuilder

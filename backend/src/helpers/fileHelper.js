@@ -1,8 +1,8 @@
 // src/helpers/fileHelper.js
 
-const fs = require('fs')
-const path = require('path')
-const util = require("node:util");
+import fs from 'fs'
+import path from 'path'
+import util from "node:util"
 
 const fileHelper = {
 
@@ -18,6 +18,7 @@ const fileHelper = {
   },
 
   async downloadFile(media, destRoot, strapiDatasource) {
+
     const utilities = {
       original: {
         path: path.join(destRoot, media.original.path),
@@ -40,6 +41,4 @@ const fileHelper = {
   },
 }
 
-module.exports = {
-  fileHelper,
-}
+export default fileHelper
