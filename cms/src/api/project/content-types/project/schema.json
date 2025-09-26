@@ -64,6 +64,7 @@
         "PROJECT",
         "TASKS_WRITING",
         "IN_PROGRESS",
+        "CONTINUOUS_IMPROVEMENT",
         "FINISH"
       ],
       "pluginOptions": {

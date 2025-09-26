@@ -1274,7 +1274,13 @@ export interface ApiProjectProject extends Schema.CollectionType {
         };
       }>;
     status: Attribute.Enumeration<
-      ['PROJECT', 'TASKS_WRITING', 'IN_PROGRESS', 'FINISH']
+      [
+        'PROJECT',
+        'TASKS_WRITING',
+        'IN_PROGRESS',
+        'CONTINUOUS_IMPROVEMENT',
+        'FINISH'
+      ]
     > &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -1468,6 +1474,11 @@ export interface ApiStackItemStackItem extends Schema.CollectionType {
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
     Name: Attribute.String;
     Logo: Attribute.Media;
@@ -1492,6 +1503,12 @@ export interface ApiStackItemStackItem extends Schema.CollectionType {
       'admin::user'
     > &
       Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::stack-item.stack-item',
+      'oneToMany',
+      'api::stack-item.stack-item'
+    >;
+    locale: Attribute.String;
   };
 }
 
