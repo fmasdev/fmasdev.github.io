@@ -25,7 +25,7 @@
     {
       "title": "Media management",
       "slug": "medias-management",
-      "summary": "Application de gestion multimédia permettant de récupérer les photos et vidéos depuis Google Photos, de synchroniser un media center, un disque dur externe et un réplicat compressé avec sauvegarde sur un ou plusieurs clouds. \n\n Elle inclut également un Kanban pour le suivi des tâches.",
+      "summary": "Application de gestion multimédia permettant de récupérer les photos et vidéos depuis Google Photos, de synchroniser un media center, un disque dur externe et un réplicat compressé (bz2) avec sauvegarde sur plusieurs clouds. Elle inclut également un Kanban pour le suivi des tâches.",
       "status": "TASKS_WRITING",
       "media": {
         "name": "og-experience.jpg",

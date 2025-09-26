@@ -24,6 +24,7 @@
               "id": 3,
               "name": "MySql",
               "info": "systèmes de gestion de bases de données relationnelles fiables et largement adoptés.",
+              "locale": "fr-FR",
               "media": {
                 "name": "mysql.jpg",
                 "alternativeText": "MySQL logo",
@@ -68,6 +69,7 @@
               "id": 4,
               "name": "ExpressJs",
               "info": "Framework minimaliste pour Node.js, spécialisé dans la création d’APIs REST et de middlewares performants.",
+              "locale": "fr-FR",
               "media": {
                 "name": "expressjs.png",
                 "alternativeText": "Exoress js logo",
@@ -120,6 +122,7 @@
               "id": 5,
               "name": "MongoDb",
               "info": "Base de données NoSQL orientée documents, conçue pour stocker et manipuler des données flexibles.",
+              "locale": "fr-FR",
               "media": {
                 "name": "mongodb.jpg",
                 "alternativeText": "mongoDB logo",
@@ -164,6 +167,7 @@
               "id": 6,
               "name": "SailsJs",
               "info": "Framework MVC pour Node.js, inspiré de Ruby on Rails, conçu pour les applications temps réel et orientées données.",
+              "locale": "fr-FR",
               "media": {
                 "name": "sailsjs.jpg",
                 "alternativeText": "Sails js logo",
@@ -208,6 +212,7 @@
               "id": 8,
               "name": "NestJs",
               "info": "Framework Node.js modulaire et typé, basé sur TypeScript, destiné au développement de backends évolutifs.",
+              "locale": "fr-FR",
               "media": {
                 "name": "nestjs.jpg",
                 "alternativeText": "Nest js logo",
@@ -252,6 +257,7 @@
               "id": 1,
               "name": "Symfony",
               "info": "Framework PHP orienté MVC, dédié au développement d’applications web robustes et modulaires.",
+              "locale": "fr-FR",
               "media": {
                 "name": "symfony.jpg",
                 "alternativeText": "Symfony logo",
@@ -296,6 +302,7 @@
               "id": 2,
               "name": "Twig",
               "info": "Moteur de templates moderne pour PHP, permettant de séparer la logique applicative de l’affichage.",
+              "locale": "fr-FR",
               "media": {
                 "name": "twig.jpg",
                 "alternativeText": "Twig logo",
@@ -349,6 +356,7 @@
               "id": 9,
               "name": "Strapi",
               "info": "CMS headless open-source basé sur Node.js, offrant une API flexible et une interface d’administration moderne en React.",
+              "locale": "fr-FR",
               "media": {
                 "name": "strapi.jpg",
                 "alternativeText": "Strapi logo",
@@ -401,6 +409,7 @@
               "id": 4,
               "name": "ExpressJs",
               "info": "Framework minimaliste pour Node.js, spécialisé dans la création d’APIs REST et de middlewares performants.",
+              "locale": "fr-FR",
               "media": {
                 "name": "expressjs.png",
                 "alternativeText": "Exoress js logo",
@@ -453,6 +462,7 @@
               "id": 10,
               "name": "GraphQL",
               "info": "Langage de requête pour APIs offrant un accès unifié, précis et performant aux données.",
+              "locale": "fr-FR",
               "media": {
                 "name": "graphql.jpg",
                 "alternativeText": "GraphQL logo",
@@ -497,6 +507,7 @@
               "id": 11,
               "name": "VueJs",
               "info": "Framework progressif JavaScript orienté composants, facilitant le développement d’interfaces modernes.",
+              "locale": "fr-FR",
               "media": {
                 "name": "vueJs.jpg",
                 "alternativeText": "Vue js logo",
@@ -558,6 +569,7 @@
               "id": 12,
               "name": "Ibexa",
               "info": "Evolution d’eZ Publish en CMS headless et modulaire, orienté expérience digitale et e-commerce.",
+              "locale": "fr-FR",
               "media": {
                 "name": "ibexa.jpg",
                 "alternativeText": "Ibexa logo",
@@ -602,6 +614,7 @@
               "id": 4,
               "name": "ExpressJs",
               "info": "Framework minimaliste pour Node.js, spécialisé dans la création d’APIs REST et de middlewares performants.",
+              "locale": "fr-FR",
               "media": {
                 "name": "expressjs.png",
                 "alternativeText": "Exoress js logo",
@@ -654,6 +667,7 @@
               "id": 10,
               "name": "GraphQL",
               "info": "Langage de requête pour APIs offrant un accès unifié, précis et performant aux données.",
+              "locale": "fr-FR",
               "media": {
                 "name": "graphql.jpg",
                 "alternativeText": "GraphQL logo",
@@ -698,6 +712,7 @@
               "id": 11,
               "name": "VueJs",
               "info": "Framework progressif JavaScript orienté composants, facilitant le développement d’interfaces modernes.",
+              "locale": "fr-FR",
               "media": {
                 "name": "vueJs.jpg",
                 "alternativeText": "Vue js logo",
@@ -759,6 +774,7 @@
               "id": 15,
               "name": "Api platform",
               "info": "Framework open-source basé sur Symfony, spécialisé dans la création rapide d’APIs REST et GraphQL.",
+              "locale": "fr-FR",
               "media": {
                 "name": "api-platform.png",
                 "alternativeText": "Api platform logo",
@@ -803,6 +819,7 @@
               "id": 16,
               "name": "MariaDb",
               "info": "Systèmes de gestion de bases de données relationnelles fiables et largement adoptés.",
+              "locale": "fr-FR",
               "media": {
                 "name": "mariadb.jpg",
                 "alternativeText": "MariaDb logo",
@@ -847,6 +864,7 @@
               "id": 11,
               "name": "VueJs",
               "info": "Framework progressif JavaScript orienté composants, facilitant le développement d’interfaces modernes.",
+              "locale": "fr-FR",
               "media": {
                 "name": "vueJs.jpg",
                 "alternativeText": "Vue js logo",
@@ -899,6 +917,7 @@
               "id": 25,
               "name": "Wordpress",
               "info": "WordPress est un système de gestion de contenu (CMS) open source, flexible et largement utilisé pour créer des sites web allant du simple blog au site e-commerce.",
+              "locale": "fr-FR",
               "media": {
                 "name": "wordpress.jpg",
                 "alternativeText": "WordPress logo",
@@ -952,6 +971,7 @@
               "id": 17,
               "name": "EzPublish",
               "info": "CMS historique basé sur PHP et Symfony, conçu pour les sites vitrines et applications digitales complexes.",
+              "locale": "fr-FR",
               "media": {
                 "name": "ezpublish.jpg",
                 "alternativeText": "eZ Publish logo",
@@ -996,6 +1016,7 @@
               "id": 1,
               "name": "Symfony",
               "info": "Framework PHP orienté MVC, dédié au développement d’applications web robustes et modulaires.",
+              "locale": "fr-FR",
               "media": {
                 "name": "symfony.jpg",
                 "alternativeText": "Symfony logo",
@@ -1040,6 +1061,7 @@
               "id": 2,
               "name": "Twig",
               "info": "Moteur de templates moderne pour PHP, permettant de séparer la logique applicative de l’affichage.",
+              "locale": "fr-FR",
               "media": {
                 "name": "twig.jpg",
                 "alternativeText": "Twig logo",
@@ -1084,6 +1106,7 @@
               "id": 7,
               "name": "React",
               "info": "Bibliothèque JavaScript pour construire des interfaces utilisateur dynamiques et réactives.",
+              "locale": "fr-FR",
               "media": {
                 "name": "react.jpg",
                 "alternativeText": "React js logo",
@@ -1128,6 +1151,7 @@
               "id": 10,
               "name": "GraphQL",
               "info": "Langage de requête pour APIs offrant un accès unifié, précis et performant aux données.",
+              "locale": "fr-FR",
               "media": {
                 "name": "graphql.jpg",
                 "alternativeText": "GraphQL logo",
@@ -1172,6 +1196,7 @@
               "id": 4,
               "name": "ExpressJs",
               "info": "Framework minimaliste pour Node.js, spécialisé dans la création d’APIs REST et de middlewares performants.",
+              "locale": "fr-FR",
               "media": {
                 "name": "expressjs.png",
                 "alternativeText": "Exoress js logo",
@@ -1224,6 +1249,7 @@
               "id": 16,
               "name": "MariaDb",
               "info": "Systèmes de gestion de bases de données relationnelles fiables et largement adoptés.",
+              "locale": "fr-FR",
               "media": {
                 "name": "mariadb.jpg",
                 "alternativeText": "MariaDb logo",
@@ -1268,6 +1294,7 @@
               "id": 11,
               "name": "VueJs",
               "info": "Framework progressif JavaScript orienté composants, facilitant le développement d’interfaces modernes.",
+              "locale": "fr-FR",
               "media": {
                 "name": "vueJs.jpg",
                 "alternativeText": "Vue js logo",
@@ -1329,6 +1356,7 @@
               "id": 18,
               "name": "Gatsby",
               "info": "Générateur de sites statiques basé sur React, optimisé pour la performance et le SEO.",
+              "locale": "fr-FR",
               "media": {
                 "name": "gatsby.jpg",
                 "alternativeText": "Gatsby logo",
@@ -1373,6 +1401,7 @@
               "id": 19,
               "name": "Contentful",
               "info": "CMS headless SaaS permettant de centraliser et distribuer les contenus via API.",
+              "locale": "fr-FR",
               "media": {
                 "name": "contentful.jpg",
                 "alternativeText": "Contentful logo",
@@ -1451,6 +1480,7 @@
               "id": 22,
               "name": "Zend",
               "info": "Framework PHP structuré et modulaire, conçu pour le développement de solutions web professionnelles et évolutives.",
+              "locale": "fr-FR",
               "media": {
                 "name": "zend.jpg",
                 "alternativeText": "Zend Framework logo",
@@ -1495,6 +1525,7 @@
               "id": 3,
               "name": "MySql",
               "info": "systèmes de gestion de bases de données relationnelles fiables et largement adoptés.",
+              "locale": "fr-FR",
               "media": {
                 "name": "mysql.jpg",
                 "alternativeText": "MySQL logo",
@@ -1539,6 +1570,7 @@
               "id": 21,
               "name": "Bulma",
               "info": "Framework CSS moderne basé sur Flexbox, centré sur la simplicité et la personnalisation du design.",
+              "locale": "fr-FR",
               "media": {
                 "name": "bulma.jpg",
                 "alternativeText": "Bulma logo",
@@ -1551,7 +1583,15 @@
                   "strapiUrl": "/uploads/bulma_3532bddf8f.jpg"
                 }
               },
-              "project": null,
+              "project": {
+                "id": 2,
+                "title": "Media management",
+                "slug": "medias-management",
+                "summary": "Application de gestion multimédia permettant de récupérer les photos et vidéos depuis Google Photos, de synchroniser un media center, un disque dur externe et un réplicat compressé (bz2) avec sauvegarde sur plusieurs clouds. Elle inclut également un Kanban pour le suivi des tâches.",
+                "status": "TASKS_WRITING",
+                "detail": "Une application permétant de :\n- récupérer des photos et vidéos des comptes google photo\n- de faire un sync entre : \n    - media center\n    - disque dur externe \n    - un réplicat du disque dur avec les photos en bz2\n    - une synchronisation du réplicat sur un ou plusieurs clouds\n\nKanban des taches en cours de réalisation.\nLes langages et frameworks a utiliser ne sont pas encore définis.",
+                "locale": "fr-FR"
+              },
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -1592,6 +1632,7 @@
               "id": 22,
               "name": "Zend",
               "info": "Framework PHP structuré et modulaire, conçu pour le développement de solutions web professionnelles et évolutives.",
+              "locale": "fr-FR",
               "media": {
                 "name": "zend.jpg",
                 "alternativeText": "Zend Framework logo",
@@ -1636,6 +1677,7 @@
               "id": 3,
               "name": "MySql",
               "info": "systèmes de gestion de bases de données relationnelles fiables et largement adoptés.",
+              "locale": "fr-FR",
               "media": {
                 "name": "mysql.jpg",
                 "alternativeText": "MySQL logo",
@@ -1680,6 +1722,7 @@
               "id": 2,
               "name": "Twig",
               "info": "Moteur de templates moderne pour PHP, permettant de séparer la logique applicative de l’affichage.",
+              "locale": "fr-FR",
               "media": {
                 "name": "twig.jpg",
                 "alternativeText": "Twig logo",
@@ -1724,6 +1767,7 @@
               "id": 23,
               "name": "Bootstrap",
               "info": "Framework CSS responsive offrant un ensemble de composants pour concevoir des interfaces cohérentes et adaptatives.",
+              "locale": "fr-FR",
               "media": {
                 "name": "bootstrap.jpg",
                 "alternativeText": "Bootstrap logo",
@@ -1777,6 +1821,7 @@
               "id": 4,
               "name": "ExpressJs",
               "info": "Framework minimaliste pour Node.js, spécialisé dans la création d’APIs REST et de middlewares performants.",
+              "locale": "fr-FR",
               "media": {
                 "name": "expressjs.png",
                 "alternativeText": "Exoress js logo",
@@ -1829,6 +1874,7 @@
               "id": 3,
               "name": "MySql",
               "info": "systèmes de gestion de bases de données relationnelles fiables et largement adoptés.",
+              "locale": "fr-FR",
               "media": {
                 "name": "mysql.jpg",
                 "alternativeText": "MySQL logo",
@@ -1873,6 +1919,7 @@
               "id": 24,
               "name": "HandlebarsJs",
               "info": "Moteur de templates JavaScript logique et déclaratif, facilitant la génération dynamique de vues HTML.",
+              "locale": "fr-FR",
               "media": {
                 "name": "handlebar.jpg",
                 "alternativeText": "Handlebars logo",
@@ -1977,7 +2024,15 @@
                   "strapiUrl": "/uploads/nexmo_46fab3cdba.jpg"
                 }
               },
-              "project": null,
+              "project": {
+                "id": 2,
+                "title": "Media management",
+                "slug": "medias-management",
+                "summary": "Application de gestion multimédia permettant de récupérer les photos et vidéos depuis Google Photos, de synchroniser un media center, un disque dur externe et un réplicat compressé (bz2) avec sauvegarde sur plusieurs clouds. Elle inclut également un Kanban pour le suivi des tâches.",
+                "status": "TASKS_WRITING",
+                "detail": "Une application permétant de :\n- récupérer des photos et vidéos des comptes google photo\n- de faire un sync entre : \n    - media center\n    - disque dur externe \n    - un réplicat du disque dur avec les photos en bz2\n    - une synchronisation du réplicat sur un ou plusieurs clouds\n\nKanban des taches en cours de réalisation.\nLes langages et frameworks a utiliser ne sont pas encore définis.",
+                "locale": "fr-FR"
+              },
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -2017,6 +2072,7 @@
               "id": 22,
               "name": "Zend",
               "info": "Framework PHP structuré et modulaire, conçu pour le développement de solutions web professionnelles et évolutives.",
+              "locale": "fr-FR",
               "media": {
                 "name": "zend.jpg",
                 "alternativeText": "Zend Framework logo",
@@ -2061,6 +2117,7 @@
               "id": 3,
               "name": "MySql",
               "info": "systèmes de gestion de bases de données relationnelles fiables et largement adoptés.",
+              "locale": "fr-FR",
               "media": {
                 "name": "mysql.jpg",
                 "alternativeText": "MySQL logo",
@@ -2250,6 +2307,7 @@
               "id": 22,
               "name": "Zend",
               "info": "Framework PHP structuré et modulaire, conçu pour le développement de solutions web professionnelles et évolutives.",
+              "locale": "fr-FR",
               "media": {
                 "name": "zend.jpg",
                 "alternativeText": "Zend Framework logo",
@@ -2294,6 +2352,7 @@
               "id": 2,
               "name": "Twig",
               "info": "Moteur de templates moderne pour PHP, permettant de séparer la logique applicative de l’affichage.",
+              "locale": "fr-FR",
               "media": {
                 "name": "twig.jpg",
                 "alternativeText": "Twig logo",
@@ -2483,6 +2542,7 @@
               "id": 22,
               "name": "Zend",
               "info": "Framework PHP structuré et modulaire, conçu pour le développement de solutions web professionnelles et évolutives.",
+              "locale": "fr-FR",
               "media": {
                 "name": "zend.jpg",
                 "alternativeText": "Zend Framework logo",
@@ -2705,6 +2765,7 @@
               "id": 1,
               "name": "Symfony",
               "info": "Framework PHP orienté MVC, dédié au développement d’applications web robustes et modulaires.",
+              "locale": "fr-FR",
               "media": {
                 "name": "symfony.jpg",
                 "alternativeText": "Symfony logo",
@@ -2749,6 +2810,7 @@
               "id": 2,
               "name": "Twig",
               "info": "Moteur de templates moderne pour PHP, permettant de séparer la logique applicative de l’affichage.",
+              "locale": "fr-FR",
               "media": {
                 "name": "twig.jpg",
                 "alternativeText": "Twig logo",
