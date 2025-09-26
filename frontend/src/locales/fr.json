@@ -59,5 +59,19 @@
       "mobile": "Framework mobile",
       "gds": "Gestionnaires de sources"
     }
+  },
+  "projectList": {
+    "moreInformations": "Plus d'informations",
+    "status": {
+      "title": "Statut",
+      "project": "En cours de réflexion",
+      "taskWriting": "En cours d'écriture de taches",
+      "inProgress": "En cours de développement",
+      "continuousImprovement": "En amélioration continue",
+      "finished": "Fini"
+    }
+  },
+  "project": {
+    "technical": "Stack technique"
   }
 }
