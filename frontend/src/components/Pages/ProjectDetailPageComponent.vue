@@ -4,26 +4,33 @@
     class="w-full"
   >
     <!-- Hero -->
-    <header class="flex items-stretch h-90 relative mb-30">
+    <header
+      class="flex flex-col md:flex-row items-stretch relative mb-12 md:mb-30"
+    >
+      <!-- Texte -->
       <div
-        class="z-10 w-2/3 h-full relative group flex flex-col justify-center"
+        class="z-10 w-full md:w-2/3 relative group flex flex-col justify-center p-6 md:pl-20"
       >
         <TitleComponent
           :title="project.title"
           level="h2"
-          class="text-4xl md:text-5xl font-bold mb-4 pl-20"
+          class="text-3xl md:text-5xl font-bold mb-4"
         />
+
         <span
-          class="inline-block px-4 py-1 mb-6 rounded-full text-sm font-semibold tracking-wide pl-20"
+          class="inline-block px-4 py-1 mb-6 rounded-full text-sm font-semibold tracking-wide"
         >
           {{ $t(getStatus(project.status)) }}
         </span>
       </div>
 
-      <div class="relative h-96 w-1/3">
+      <!-- Image -->
+      <div class="relative w-full md:w-1/3 h-64 md:h-96">
+        <!-- Barre oblique -->
         <div
-          class="absolute inset-0 bg-white -skew-x-6 origin-top-left shadow-lg"
+          class="absolute inset-0 bg-white -skew-x-6 origin-top-left shadow-lg hidden md:block -translate-x-[10px]"
         ></div>
+
         <img
           :src="`media/${project.media.original.path}`"
           alt="main project image"
@@ -33,7 +40,7 @@
     </header>
 
     <!-- Description -->
-    <section class="mb-12 max-w-5xl mx-auto">
+    <section class="mx-5 mb-12 max-w-5xl md:mx-auto">
       <TextMarkdownComponent
         :text="project.detail"
         class="text-lg leading-relaxed text-gray-700"
@@ -130,7 +137,7 @@ watch(
       (project: PersonalProjectContainerType) =>
         project.attributes.slug === slug
     ).attributes
-    console.log(currentProject)
+
     project.value = currentProject
     stackList.value = getList(currentProject.stack_items.data)
     webservicesList.value = getList(currentProject.webservices.data)
@@ -155,7 +162,6 @@ const getList = (list: StrapiListItemType[]): PersonalProjectListType => {
     currentDeviceType.value !== 'mobile'
 
   if (isListMedia) {
-    console.log(list.map((item) => item.attributes))
     return {
       list: list.map((item) => item.attributes),
       kind: 'listMedia',

@@ -26,7 +26,7 @@
             {{ meContent.email }}
           </a>
         </p>
-        <p>
+        <p v-if="meContent.phone">
           <a
             :href="`tel:${phoneNumberWithoutSpaces}`"
             class="text-sm hover:text-accent transition-colors footer-link"
@@ -80,7 +80,9 @@ const props = defineProps<{
 }>()
 
 const currentYear = computed(() => new Date().getFullYear())
-const phoneNumberWithoutSpaces = props.meContent.phone.replace(/ /g, '')
+const phoneNumberWithoutSpaces = props.meContent.phone
+  ? props.meContent.phone.replace(/ /g, '')
+  : ''
 </script>
 
 <style scoped>

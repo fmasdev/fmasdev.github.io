@@ -1,5 +1,8 @@
 <template>
-  <SeoComponent v-if="home?.seo" :seo="home.seo" />
+  <SeoComponent
+    v-if="home?.seo"
+    :seo="home.seo"
+  />
 
   <main class="font-sans text-text bg-background">
     <section

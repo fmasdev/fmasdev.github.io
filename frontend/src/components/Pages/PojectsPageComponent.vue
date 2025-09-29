@@ -12,9 +12,13 @@
 
     <div
       v-for="project in projectList.projects"
-      class="flex items-stretch h-90 relative mb-30"
+      :key="project.slug"
+      class="flex flex-col md:flex-row items-stretch mb-12"
     >
-      <div class="w-1/3 h-full overflow-hidden relative group">
+      <!-- Image -->
+      <div
+        class="w-full md:w-1/3 h-64 md:h-auto overflow-hidden relative group"
+      >
         <img
           :src="`/media/${project.media.original.path}`"
           :alt="project.media.alternativeText ?? ''"
@@ -22,30 +26,39 @@
         />
       </div>
 
-      <div class="w-2/3 h-full bg-white relative">
+      <!-- Content -->
+      <div class="w-full md:w-2/3 bg-white relative mt-4 md:mt-0 md:ml-5">
         <div
-          class="absolute left-0 top-0 h-full w-12 bg-white -skew-x-6 -translate-x-1/2 z-10 shadow-lg"
+          class="absolute left-0 top-0 h-full w-12 bg-white -skew-x-6 -translate-x-[calc(50%+10px)] z-10 shadow-lg hidden md:block"
         ></div>
 
         <div
-          class="relative z-20 p-8 flex flex-col justify-between h-full ml-5"
+          class="relative z-20 p-6 md:p-8 flex flex-col justify-between h-full"
         >
-          <TitleComponent
-            :title="project.title"
-            level="h3"
-          />
+          <!-- Titre + Status -->
+          <div class="mb-4 md:mb-6">
+            <TitleComponent
+              :title="project.title"
+              level="h3"
+            />
+            <p class="text-gray-600 mt-2">
+              {{ $t(getStatus(project.status)) }}
+            </p>
+          </div>
 
-          <TextMarkdownComponent :text="project.summary" />
+          <!-- Summary -->
+          <div class="mb-4 md:mb-6">
+            <TextMarkdownComponent :text="project.summary" />
+          </div>
 
-          <div class="flex flex-row justify-between">
-            <p class="text-gray-600">{{ $t(getStatus(project.status)) }}</p>
+          <!-- CTA -->
+          <div class="flex justify-start md:justify-between">
             <CtaComponent
               :title="$t('projectList.moreInformations')"
               :link-to="`/project/${project.slug}`"
               text-color="accent"
               :icon="{ position: 'right', name: 'arrow-right' }"
             />
-            <!-- todo arrow right icon to add to cta component -->
           </div>
         </div>
       </div>
@@ -81,7 +94,6 @@ watch(
   (content) => {
     if (!content) return
     projectList.value = content
-    console.log(projectList)
   },
   { immediate: true }
 )

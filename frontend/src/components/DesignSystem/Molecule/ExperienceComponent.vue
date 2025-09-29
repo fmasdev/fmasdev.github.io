@@ -36,7 +36,10 @@
       {{ experience.content }}
     </p>
 
-    <div class="mt-4" v-if="experience.kind === 'ExperienceItem'">
+    <div
+      class="mt-4"
+      v-if="experience.kind === 'ExperienceItem'"
+    >
       <TitleComponent
         :title="$t('experiences.experience.projects')"
         level="h4"
