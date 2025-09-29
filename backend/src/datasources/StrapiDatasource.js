@@ -26,14 +26,14 @@ export default class StrapiDatasource {
       const query = qs.stringify(params, { encodeValuesOnly: true })
       uri += `?${query}`
     }
-    console.log(uri)
+
     const contentTypeName = uri.split('?')[0].replace('api/', '')
     const localizedUri = locale
       ? hasParams
         ? `${uri}&locale=${locale}`
         : `${uri}?locale=${locale}`
       : uri
-    console.log(JSON.stringify(localizedUri, null, 2))
+
     try {
       return await this.http.get(localizedUri)
     } catch (error) {
@@ -125,7 +125,9 @@ export default class StrapiDatasource {
       populate: {
         stack_items: { populate: { Logo: '*'} },
         webservices: { populate: { Logo: '*'} },
-        media: { populate: { formats: '*'} }
+        media: { populate: { formats: '*'} },
+        slider: { populate: { Medias: '*' } },
+        Link: '*'
       },
     }
     try {

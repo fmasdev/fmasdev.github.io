@@ -1,6 +1,7 @@
 
 
 const projectListBuilder = (projectList, projects) => {
+
   projectList['projects'] = projects.map(project => ({
     title: project.attributes.title,
     slug: project.attributes.slug,

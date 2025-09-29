@@ -8,13 +8,12 @@ const cleanStrapiData = (data) => {
   if (data && typeof data === 'object') {
     // Clone without fields will be deleted
     const {createdAt, updatedAt, publishedAt, localizations, ...rest} = data
-    const imageKeys = ['image', 'logo', 'photo', 'media']
+    const imageKeys = ['image', 'logo', 'photo', 'media', 'medias']
     const cleaned = {}
 
     for (const key in rest) {
       const value = rest[key]
-      // console.log(key)
-      // console.log(value)
+      
       if (
         value
         && imageKeys.includes(key.toLowerCase())
@@ -24,6 +23,14 @@ const cleanStrapiData = (data) => {
         value.forEach(item => {
           cleaned['media'].push(mediaFormater(item))
         })
+      } else if (
+        value
+        && imageKeys.includes(key.toLowerCase())
+        && value.hasOwnProperty('data')
+        && Array.isArray(value.data)
+        && value.data[0].attributes.hasOwnProperty('alternativeText')
+      ) {
+        cleaned.medias = value.data.map(item => mediaFormater(item.attributes))
       } else if (
         value
         && imageKeys.includes(key.toLowerCase())
