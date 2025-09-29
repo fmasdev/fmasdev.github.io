@@ -2,7 +2,46 @@
   "id": 1,
   "title": "Liste de mes projets",
   "locale": "fr-FR",
-  "seo": null,
+  "seo": {
+    "id": 12,
+    "metaTitle": "Projets – Portfolio Media Management et CV",
+    "metaDescription": "Découvrez mes projets passés, en cours et à venir démontrant mes compétences en développement web.",
+    "metaRobots": "index, follow",
+    "canonicalUrl": "https://fmasdev.github.io/project-list",
+    "metaSocial": [
+      {
+        "id": 8,
+        "platform": "linkedin",
+        "title": "Projets – Portfolio Media Management et CV",
+        "description": "Découvrez mes projets passés, en cours et à venir démontrant mes compétences en développement web.",
+        "twitterCard": null,
+        "media": {
+          "name": "cv-project-list-page-screenshot.png",
+          "alternativeText": "Page projet liste screen shot",
+          "original": {
+            "path": "original/cv-project-list-page-screenshot.png",
+            "height": 927,
+            "width": 1897,
+            "mime": "image/png",
+            "size": 78.24,
+            "strapiUrl": "/uploads/cv_project_list_page_screenshot_db934d80ea.png"
+          }
+        }
+      }
+    ],
+    "media": {
+      "name": "cv-project-list-page-screenshot.png",
+      "alternativeText": "Page projet liste screen shot",
+      "original": {
+        "path": "original/cv-project-list-page-screenshot.png",
+        "height": 927,
+        "width": 1897,
+        "mime": "image/png",
+        "size": 78.24,
+        "strapiUrl": "/uploads/cv_project_list_page_screenshot_db934d80ea.png"
+      }
+    }
+  },
   "projects": [
     {
       "title": "Création de mon CV / portfolio",

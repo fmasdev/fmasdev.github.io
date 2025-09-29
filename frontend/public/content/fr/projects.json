@@ -6,7 +6,7 @@
       "slug": "cv-portfolio",
       "summary": "Création de mon CV / portfolio afin de présenter mon parcours et mes compétences de manière claire et moderne. Ce projet me permet de mettre en pratique une stack technique que je maîtrise, tout en offrant une démonstration concrète de mon savoir-faire en matière de développement web et d’intégration. L’objectif est de disposer d’un support professionnel qui reflète à la fois mes compétences techniques et ma capacité à concevoir une interface soignée et fonctionnelle.",
       "status": "IN_PROGRESS",
-      "detail": "Ce projet a pour objectif de concevoir un CV / portfolio moderne et évolutif, permettant de mettre en valeur mon parcours, mes compétences et mes réalisations. Au-delà d’un simple site vitrine, il s’agit d’un véritable terrain d’expérimentation technique dans lequel j’ai intégré une stack complète et cohérente, représentative de mon savoir-faire en développement web.\n\nLe frontend repose sur Vue 3 associé à Tailwind CSS, ce qui me permet de construire une interface claire, responsive et élégante. Grâce à Vue 3, je bénéficie d’une structure modulaire et performante, facilitant la maintenance et l’évolution du projet. Tailwind, quant à lui, m’offre une grande flexibilité dans le design, en garantissant un rendu moderne et homogène, tout en réduisant le temps consacré à la personnalisation des styles.\n\nPour la gestion de contenu, j’ai choisi Strapi, un CMS headless particulièrement adapté aux projets nécessitant une API souple et rapide à mettre en place. Strapi me permet de centraliser et d’organiser mes données (informations personnelles, projets, expériences, compétences) afin de les exposer de manière efficace et sécurisée au frontend.\n\nEn complément, j’ai développé un backend en Express dont le rôle est de générer et de builder les fichiers JSON destinés au frontend. Cette approche me permet de rendre le front totalement autonome : les pages consomment directement ces JSON préconstruits, ce qui élimine la dépendance à un serveur actif en production. Ainsi, le site peut être déployé et hébergé simplement sur GitHub Pages, tout en conservant une structure dynamique et facilement actualisable.\n\nCe projet représente pour moi une vitrine technique et professionnelle : il illustre ma capacité à concevoir un écosystème complet, depuis la gestion de contenu avec un CMS headless, jusqu’à l’intégration frontend moderne et performante, en passant par le développement backend et l’automatisation des données.",
+      "detail": "Ce projet a pour objectif de concevoir un CV / portfolio moderne et évolutif, permettant de mettre en valeur mon parcours, mes compétences et mes réalisations. Au-delà d’un simple site vitrine, il s’agit d’un véritable terrain d’expérimentation technique dans lequel j’ai intégré une stack complète et cohérente, représentative de mon savoir-faire en développement web.\n\nLe frontend repose sur Vue 3 associé à Tailwind CSS, ce qui me permet de construire une interface claire, responsive et élégante. Grâce à Vue 3, je bénéficie d’une structure modulaire et performante, facilitant la maintenance et l’évolution du projet. Tailwind, quant à lui, m’offre une grande flexibilité dans le design, en garantissant un rendu moderne et homogène, tout en réduisant le temps consacré à la personnalisation des styles.\n\nPour la gestion de contenu, j’ai choisi Strapi, un CMS headless particulièrement adapté aux projets nécessitant une API souple et rapide à mettre en place. Strapi me permet de centraliser et d’organiser mes données (informations personnelles, projets, expériences, compétences) afin de les exposer de manière efficace et sécurisée au frontend.\n\nEn complément, j’ai développé un backend en Express dont le rôle est de générer et de builder les fichiers JSON destinés au frontend. Cette approche me permet de rendre le front totalement autonome : les pages consomment directement ces JSON préconstruits, ce qui élimine la dépendance à un serveur actif en production. Ainsi, le site peut être déployé et hébergé simplement sur GitHub Pages, tout en conservant une structure dynamique et facilement actualisable.\n\nAu niveau de l’interface, j’ai volontairement différencié deux approches graphiques. La page d’accueil, la liste des projets ainsi que le détail de chaque projet adoptent un style plus visuel et immersif, proche de celui d’un site vitrine. L’objectif est de capter l’attention, de mettre en valeur les réalisations et de renforcer l’impact esthétique dès le premier contact.\nÀ l’inverse, les pages consacrées aux expériences, à la formation, aux compétences et aux retours (feedback) s’orientent davantage vers une logique « logiciel », avec une présentation plus structurée, claire et fonctionnelle. Ce contraste permet d’allier l’aspect démonstratif et esthétique d’un portfolio à l’efficacité et la lisibilité d’un outil professionnel.\n\nCe projet représente pour moi une vitrine technique et professionnelle : il illustre ma capacité à concevoir un écosystème complet, depuis la gestion de contenu avec un CMS headless, jusqu’à l’intégration frontend moderne et performante, en passant par le développement backend et l’automatisation des données.",
       "locale": "fr-FR",
       "stack_items": {
         "data": [
@@ -93,28 +93,7 @@
         ]
       },
       "webservices": {
-        "data": [
-          {
-            "id": 5,
-            "attributes": {
-              "name": "Secoiasoft",
-              "info": "Éditeur de logiciels proposant des ERP dédiés au secteur du tourisme et de l’hôtellerie de plein air.",
-              "locale": "fr-FR",
-              "media": {
-                "name": "sequoia_soft.jpg",
-                "alternativeText": "SequoiaSoft logo",
-                "original": {
-                  "path": "original/sequoia_soft.jpg",
-                  "height": 156,
-                  "width": 323,
-                  "mime": "image/jpeg",
-                  "size": 4.77,
-                  "strapiUrl": "/uploads/sequoia_soft_160d83e83c.jpg"
-                }
-              }
-            }
-          }
-        ]
+        "data": []
       },
       "media": {
         "name": "capture_cv.png",
@@ -127,7 +106,69 @@
           "size": 102.86,
           "strapiUrl": "/uploads/capture_cv_6e18636c45.png"
         }
-      }
+      },
+      "slider": {
+        "id": 1,
+        "title": "Présentation en images",
+        "medias": [
+          {
+            "name": "cv-home-page-screenshot.png",
+            "alternativeText": null,
+            "original": {
+              "path": "original/cv-home-page-screenshot.png",
+              "height": 926,
+              "width": 1897,
+              "mime": "image/png",
+              "size": 102.16,
+              "strapiUrl": "/uploads/cv_home_page_screenshot_b218b4715b.png"
+            }
+          },
+          {
+            "name": "cv-project-detail-page-screenshot.png",
+            "alternativeText": "Screen shot du détail d'un projet",
+            "original": {
+              "path": "original/cv-project-detail-page-screenshot.png",
+              "height": 927,
+              "width": 1900,
+              "mime": "image/png",
+              "size": 79.5,
+              "strapiUrl": "/uploads/cv_project_detail_page_screenshot_6e4aee7216.png"
+            }
+          },
+          {
+            "name": "cv-experience-page-screenshot.png",
+            "alternativeText": "Présentation de mes expériences sous forme application logicielle.",
+            "original": {
+              "path": "original/cv-experience-page-screenshot.png",
+              "height": 925,
+              "width": 1898,
+              "mime": "image/png",
+              "size": 56.29,
+              "strapiUrl": "/uploads/cv_experience_page_screenshot_ba6571007b.png"
+            }
+          },
+          {
+            "name": "capture_cv.png",
+            "alternativeText": null,
+            "original": {
+              "path": "original/capture_cv.png",
+              "height": 918,
+              "width": 1893,
+              "mime": "image/png",
+              "size": 102.86,
+              "strapiUrl": "/uploads/capture_cv_6e18636c45.png"
+            }
+          }
+        ]
+      },
+      "link": [
+        {
+          "id": 1,
+          "title": "Projet GitHub",
+          "url": "https://github.com/fmasdev/fmasdev.github.io",
+          "info": null
+        }
+      ]
     }
   },
   {
@@ -140,52 +181,10 @@
       "detail": "Une application permétant de :\n- récupérer des photos et vidéos des comptes google photo\n- de faire un sync entre : \n    - media center\n    - disque dur externe \n    - un réplicat du disque dur avec les photos en bz2\n    - une synchronisation du réplicat sur un ou plusieurs clouds\n\nKanban des taches en cours de réalisation.\nLes langages et frameworks a utiliser ne sont pas encore définis.",
       "locale": "fr-FR",
       "stack_items": {
-        "data": [
-          {
-            "id": 21,
-            "attributes": {
-              "name": "Bulma",
-              "info": "Framework CSS moderne basé sur Flexbox, centré sur la simplicité et la personnalisation du design.",
-              "locale": "fr-FR",
-              "media": {
-                "name": "bulma.jpg",
-                "alternativeText": "Bulma logo",
-                "original": {
-                  "path": "original/bulma.jpg",
-                  "height": 375,
-                  "width": 750,
-                  "mime": "image/jpeg",
-                  "size": 12.34,
-                  "strapiUrl": "/uploads/bulma_3532bddf8f.jpg"
-                }
-              }
-            }
-          }
-        ]
+        "data": []
       },
       "webservices": {
-        "data": [
-          {
-            "id": 6,
-            "attributes": {
-              "name": "Nexmo (Vonage API)",
-              "info": "Plateforme de communication cloud permettant d’intégrer facilement dans une application des fonctionnalités de SMS, voix, vidéo et authentification à deux facteurs (2FA).",
-              "locale": "fr-FR",
-              "media": {
-                "name": "nexmo.jpg",
-                "alternativeText": "Nexmo logo",
-                "original": {
-                  "path": "original/nexmo.jpg",
-                  "height": 475,
-                  "width": 950,
-                  "mime": "image/jpeg",
-                  "size": 17.91,
-                  "strapiUrl": "/uploads/nexmo_46fab3cdba.jpg"
-                }
-              }
-            }
-          }
-        ]
+        "data": []
       },
       "media": {
         "name": "og-experience.jpg",
@@ -198,7 +197,16 @@
           "size": 93.25,
           "strapiUrl": "/uploads/og_experience_d70ee23bd4.jpg"
         }
-      }
+      },
+      "slider": null,
+      "link": [
+        {
+          "id": 2,
+          "title": null,
+          "url": null,
+          "info": null
+        }
+      ]
     }
   }
 ]

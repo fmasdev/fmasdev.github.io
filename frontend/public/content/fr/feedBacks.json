@@ -5,12 +5,30 @@
   "feedBackItems": [
     {
       "__component": "experience.feed-back",
+      "id": 12,
+      "title": "Recommandation de mon manager chez Kaliop",
+      "content": "C’est une une personne très impliquée et motivée, qui est arrivé avec un solide bagage PHP /\nSymfony et qui a pivoté rapidement vers les technos JS (react et Node).\nSon implication et sa volonté de progresser sont sans faille.\nSa vélocité est optimale, lorsqu’il travaille au sein d’une équipe structurée, sous la direction d’un\nlead technique qui peut l’orienter dans la priorisation des tâches et la définition des objectifs.\nCette collaboration lui permet de donner le meilleur de lui-même, tout en continuant à\ndévelopper ses compétences et à gagner en autonomie.\nC’est un recrutement qui convient parfaitement pour renforcer une équipe dynamique. Je suis\nconvaincu qu’il apportera une valeur ajoutée réelle à toute organisation cherchant un\ndéveloppeur motivé, curieux et en constante évolution.",
+      "date": "2025-09-28",
+      "author": "Stéphane Sobecki",
+      "job": "Délivery Manager - Kaliop"
+    },
+    {
+      "__component": "experience.feed-back",
       "id": 9,
-      "title": "Message LinkedIn",
+      "title": "Message LinkedIn de mon manager chez Kaliop",
       "content": "Tu restes impressionnant de motivation, d'implication peu importe le projet, les technos, et peu importe les moments personnels qui sont parfois difficile a gérer. ",
       "date": "2025-07-16",
       "author": "Stéphane Sobecki",
-      "job": "Responsable de production"
+      "job": "Délivery Manager - Kaliop"
+    },
+    {
+      "__component": "experience.feed-back",
+      "id": 11,
+      "title": "Observation d'évaluation de formation Développeur logiciel",
+      "content": "Excellent travail, Frédéric cherche toujours beaucoup plus loin que ce qu'on lui demande. L'entreprise a été très satisfaite de son travail.",
+      "date": "2025-05-16",
+      "author": "Formateurs",
+      "job": null
     },
     {
       "__component": "experience.feed-back",
