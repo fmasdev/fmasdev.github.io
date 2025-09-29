@@ -6,8 +6,6 @@
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::project-list.project-list');
-
 module.exports = createCoreController('api::project-list.project-list', ({ strapi }) => ({
   async findByLocale(ctx) {
     const {locale} = ctx.query;

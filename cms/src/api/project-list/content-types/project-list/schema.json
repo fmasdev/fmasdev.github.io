@@ -23,18 +23,7 @@
       },
       "type": "string"
     },
-    "ProjectItem": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "dynamiczone",
-      "components": [
-        "experience.project"
-      ]
-    },
-    "Seo": {
+    "seo": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {

@@ -47,6 +47,20 @@
           "sortable": false
         }
       },
+      "Seo": {
+        "edit": {
+          "label": "Seo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Seo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -123,6 +137,12 @@
         [
           {
             "name": "Components",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "Seo",
             "size": 12
           }
         ]

@@ -1,13 +1,11 @@
 // config/datasources/StrapiDatasource.js
 
-const {
-  strapiDataSourceConfig: config,
-  appConfig,
-} = require('../config/config')
-const axios = require('axios')
-const { cleanStrapiData } = require('../helpers/cleanStrapiData')
+import { strapiDataSourceConfig as config} from '../config/config.js'
+import axios from 'axios'
+import { cleanStrapiData } from '../helpers/cleanStrapiData.js'
+import qs from 'qs';
 
-class StrapiDatasource {
+export default class StrapiDatasource {
   constructor() {
     this.baseUrl = config.url
     this.http = axios.create({
@@ -25,15 +23,8 @@ class StrapiDatasource {
     const hasParams = !!Object.keys(params).length
 
     if (hasParams) {
-      Object.entries(params).forEach(([key, value]) => {
-        if (!uri.includes('?')) {
-          uri += '?'
-        }
-        uri +=
-          value === params[Object.keys(params)[0]]
-            ? `${key}=${value}`
-            : `&${key}=${value}`
-      })
+      const query = qs.stringify(params, { encodeValuesOnly: true })
+      uri += `?${query}`
     }
 
     const contentTypeName = uri.split('?')[0].replace('api/', '')
@@ -109,30 +100,6 @@ class StrapiDatasource {
     }
   }
 
-  async getProjectList(locale) {
-    try {
-      const res = await this.getLocalizedData(`project-list-by-locale`, {}, locale)
-      return cleanStrapiData(res.data)
-    } catch (err) {
-      console.error(err.message)
-    }
-  }
-
-
-  async getPage(slug, locale) {
-    const params = {
-      'filters[slug][$eq]': slug,
-      populate: 'deep',
-    }
-
-    try {
-      const res = await this.getLocalizedData(`pages`, params, locale)
-      return cleanStrapiData(res.data.data)
-    } catch (err) {
-      console.error(err.message)
-    }
-  }
-
   async getFooter(locale) {
     try {
       const res = await this.getLocalizedData('footer-by-locale', {}, locale)
@@ -153,8 +120,34 @@ class StrapiDatasource {
     }
   }
 
+  async getProjects(locale) {
+    const params = {
+      populate: {
+        stack_items: { populate: { Logo: '*'} },
+        webservices: { populate: { Logo: '*'} },
+        media: { populate: { formats: '*'} },
+        slider: { populate: { Medias: '*' } },
+        Link: '*'
+      },
+    }
+    try {
+      const res = await this.getLocalizedData('projects', params, locale)
+      return cleanStrapiData(res.data.data)
+    } catch (err) {
+      console.error(err.message)
+    }
+  }
+
+  async getProjectList(locale){
+    try {
+      const res = await this.getLocalizedData('project-list-by-locale', {}, locale)
+      return cleanStrapiData(res.data)
+    } catch (err) {
+      console.error(err.message)
+    }
+  }
+
   async getMedia(fileUrl) {
-    console.log(fileUrl)
     const url = String(`${this.baseUrl.replace('api/', '')}${fileUrl.slice(1)}`)
     try {
       return await this.http.get(url, {responseType: "arraybuffer"});
@@ -163,5 +156,3 @@ class StrapiDatasource {
     }
   }
 }
-
-module.exports = StrapiDatasource

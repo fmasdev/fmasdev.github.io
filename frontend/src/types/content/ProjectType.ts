@@ -14,17 +14,26 @@ export interface ProjectType {
 }
 
 export interface StackType {
-  kind: 'stack'
-  id: number
+  kind?: 'stack'
+  id?: number
   name: string
   info: string
-  media: MediaType
+  media?: MediaType
 }
 
 export interface WebserviceType {
-  kind: 'webservice'
-  id: number
+  kind?: 'webservice'
+  id?: number
   name: string
   info: string
-  media: MediaType
+  media?: MediaType
+}
+
+export interface StrapiListItemType {
+  id: number
+  attributes: {
+    info: string
+    media?: MediaType
+    name: string
+  }
 }

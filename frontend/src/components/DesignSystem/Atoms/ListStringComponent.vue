@@ -1,11 +1,17 @@
 <template xmlns="http://www.w3.org/1999/html">
-  <p class="text-sm text-gray-600 mb-5" :class="classes">
+  <p
+    class="text-sm text-gray-600 mb-5"
+    :class="classes"
+  >
     <TitleComponent
       v-if="title?.title"
       :title="title.title"
       :level="title.level"
     />
-    <span v-if="titleString" class="font-semibold mb-2">
+    <span
+      v-if="titleString"
+      class="font-semibold mb-2"
+    >
       {{ titleString }}:
     </span>
     {{ listString }}

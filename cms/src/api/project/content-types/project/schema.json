@@ -10,42 +10,118 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "Title": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "slug": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "media": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "summary": {
-      "type": "richtext"
-    },
-    "content": {
-      "type": "component",
-      "repeatable": true,
-      "component": "experience.project"
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "status": {
       "type": "enumeration",
       "enum": [
         "PROJECT",
+        "TASKS_WRITING",
         "IN_PROGRESS",
+        "CONTINUOUS_IMPROVEMENT",
         "FINISH"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "detail": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "webservices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::webservice.webservice",
+      "mappedBy": "project"
+    },
+    "stack_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::stack-item.stack-item",
+      "mappedBy": "project"
+    },
+    "Link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "link.link",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "slider": {
+      "type": "component",
+      "repeatable": false,
+      "component": "slider.slider",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

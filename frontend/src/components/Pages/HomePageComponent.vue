@@ -8,7 +8,10 @@
       <div
         class="max-w-7xl mx-auto px-6 lg:px-12 py-20 flex flex-col lg:flex-row items-center gap-12"
       >
-        <div v-if="home" class="flex-1">
+        <div
+          v-if="home"
+          class="flex-1"
+        >
           <h1
             class="text-4xl sm:text-5xl lg:text-6xl font-title font-bold leading-tight"
           >

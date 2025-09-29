@@ -1,5 +1,8 @@
 <template>
-  <component :is="level" :class="classes">
+  <component
+    :is="level"
+    :class="classes"
+  >
     {{ title }}
   </component>
 </template>

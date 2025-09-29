@@ -33,16 +33,16 @@
           "sortable": true
         }
       },
-      "Image": {
+      "Medias": {
         "edit": {
-          "label": "Image",
+          "label": "Medias",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Image",
+          "label": "Medias",
           "searchable": false,
           "sortable": false
         }
@@ -52,7 +52,7 @@
       "list": [
         "id",
         "title",
-        "Image"
+        "Medias"
       ],
       "edit": [
         [
@@ -61,7 +61,7 @@
             "size": 6
           },
           {
-            "name": "Image",
+            "name": "Medias",
             "size": 6
           }
         ]

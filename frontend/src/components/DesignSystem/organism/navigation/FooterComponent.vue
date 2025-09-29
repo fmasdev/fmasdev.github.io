@@ -2,15 +2,22 @@
   <footer class="bg-primary text-white py-10">
     <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-3 gap-8">
       <div class="space-y-2 text-left">
-        <TitleComponent :title="$t('footer.about')" level="h3" />
+        <TitleComponent
+          :title="$t('footer.about')"
+          level="h3"
+        />
         <p class="text-sm">
-          Frédéric Mas – {{ $t('common.job') }}<br />
+          Frédéric Mas – {{ $t('common.job') }}
+          <br />
           CV & portfolio
         </p>
       </div>
 
       <div class="space-y-2 text-left">
-        <TitleComponent :title="$t('footer.contact')" level="h3" />
+        <TitleComponent
+          :title="$t('footer.contact')"
+          level="h3"
+        />
         <p>
           <a
             :href="`mailto:${meContent.email}`"
@@ -39,7 +46,10 @@
       </div>
 
       <div class="space-y-2 text-left">
-        <TitleComponent :title="$t('footer.followMe')" level="h3" />
+        <TitleComponent
+          :title="$t('footer.followMe')"
+          level="h3"
+        />
         <div class="space-x-4">
           <a
             v-for="social in footerContent.socials"

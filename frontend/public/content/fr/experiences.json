@@ -24,6 +24,7 @@
               "id": 3,
               "name": "MySql",
               "info": "systèmes de gestion de bases de données relationnelles fiables et largement adoptés.",
+              "locale": "fr-FR",
               "media": {
                 "name": "mysql.jpg",
                 "alternativeText": "MySQL logo",
@@ -36,6 +37,7 @@
                   "strapiUrl": "/uploads/mysql_dacae28784.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -67,6 +69,7 @@
               "id": 4,
               "name": "ExpressJs",
               "info": "Framework minimaliste pour Node.js, spécialisé dans la création d’APIs REST et de middlewares performants.",
+              "locale": "fr-FR",
               "media": {
                 "name": "expressjs.png",
                 "alternativeText": "Exoress js logo",
@@ -78,6 +81,15 @@
                   "size": 16.56,
                   "strapiUrl": "/uploads/expressjs_a01a265d7b.png"
                 }
+              },
+              "project": {
+                "id": 1,
+                "title": "Création de mon CV / portfolio",
+                "slug": "cv-portfolio",
+                "summary": "Création de mon CV / portfolio afin de présenter mon parcours et mes compétences de manière claire et moderne. Ce projet me permet de mettre en pratique une stack technique que je maîtrise, tout en offrant une démonstration concrète de mon savoir-faire en matière de développement web et d’intégration. L’objectif est de disposer d’un support professionnel qui reflète à la fois mes compétences techniques et ma capacité à concevoir une interface soignée et fonctionnelle.",
+                "status": "IN_PROGRESS",
+                "detail": "Ce projet a pour objectif de concevoir un CV / portfolio moderne et évolutif, permettant de mettre en valeur mon parcours, mes compétences et mes réalisations. Au-delà d’un simple site vitrine, il s’agit d’un véritable terrain d’expérimentation technique dans lequel j’ai intégré une stack complète et cohérente, représentative de mon savoir-faire en développement web.\n\nLe frontend repose sur Vue 3 associé à Tailwind CSS, ce qui me permet de construire une interface claire, responsive et élégante. Grâce à Vue 3, je bénéficie d’une structure modulaire et performante, facilitant la maintenance et l’évolution du projet. Tailwind, quant à lui, m’offre une grande flexibilité dans le design, en garantissant un rendu moderne et homogène, tout en réduisant le temps consacré à la personnalisation des styles.\n\nPour la gestion de contenu, j’ai choisi Strapi, un CMS headless particulièrement adapté aux projets nécessitant une API souple et rapide à mettre en place. Strapi me permet de centraliser et d’organiser mes données (informations personnelles, projets, expériences, compétences) afin de les exposer de manière efficace et sécurisée au frontend.\n\nEn complément, j’ai développé un backend en Express dont le rôle est de générer et de builder les fichiers JSON destinés au frontend. Cette approche me permet de rendre le front totalement autonome : les pages consomment directement ces JSON préconstruits, ce qui élimine la dépendance à un serveur actif en production. Ainsi, le site peut être déployé et hébergé simplement sur GitHub Pages, tout en conservant une structure dynamique et facilement actualisable.\n\nAu niveau de l’interface, j’ai volontairement différencié deux approches graphiques. La page d’accueil, la liste des projets ainsi que le détail de chaque projet adoptent un style plus visuel et immersif, proche de celui d’un site vitrine. L’objectif est de capter l’attention, de mettre en valeur les réalisations et de renforcer l’impact esthétique dès le premier contact.\nÀ l’inverse, les pages consacrées aux expériences, à la formation, aux compétences et aux retours (feedback) s’orientent davantage vers une logique « logiciel », avec une présentation plus structurée, claire et fonctionnelle. Ce contraste permet d’allier l’aspect démonstratif et esthétique d’un portfolio à l’efficacité et la lisibilité d’un outil professionnel.\n\nCe projet représente pour moi une vitrine technique et professionnelle : il illustre ma capacité à concevoir un écosystème complet, depuis la gestion de contenu avec un CMS headless, jusqu’à l’intégration frontend moderne et performante, en passant par le développement backend et l’automatisation des données.",
+                "locale": "fr-FR"
               },
               "createdBy": {
                 "id": 1,
@@ -110,6 +122,7 @@
               "id": 5,
               "name": "MongoDb",
               "info": "Base de données NoSQL orientée documents, conçue pour stocker et manipuler des données flexibles.",
+              "locale": "fr-FR",
               "media": {
                 "name": "mongodb.jpg",
                 "alternativeText": "mongoDB logo",
@@ -122,6 +135,7 @@
                   "strapiUrl": "/uploads/mongodb_745eb831a8.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -153,6 +167,7 @@
               "id": 6,
               "name": "SailsJs",
               "info": "Framework MVC pour Node.js, inspiré de Ruby on Rails, conçu pour les applications temps réel et orientées données.",
+              "locale": "fr-FR",
               "media": {
                 "name": "sailsjs.jpg",
                 "alternativeText": "Sails js logo",
@@ -165,6 +180,7 @@
                   "strapiUrl": "/uploads/sailsjs_29547d0a2c.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -196,6 +212,7 @@
               "id": 8,
               "name": "NestJs",
               "info": "Framework Node.js modulaire et typé, basé sur TypeScript, destiné au développement de backends évolutifs.",
+              "locale": "fr-FR",
               "media": {
                 "name": "nestjs.jpg",
                 "alternativeText": "Nest js logo",
@@ -208,6 +225,7 @@
                   "strapiUrl": "/uploads/nestjs_c3daf23aad.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -239,6 +257,7 @@
               "id": 1,
               "name": "Symfony",
               "info": "Framework PHP orienté MVC, dédié au développement d’applications web robustes et modulaires.",
+              "locale": "fr-FR",
               "media": {
                 "name": "symfony.jpg",
                 "alternativeText": "Symfony logo",
@@ -251,6 +270,7 @@
                   "strapiUrl": "/uploads/symfony_ade27ba80a.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -282,6 +302,7 @@
               "id": 2,
               "name": "Twig",
               "info": "Moteur de templates moderne pour PHP, permettant de séparer la logique applicative de l’affichage.",
+              "locale": "fr-FR",
               "media": {
                 "name": "twig.jpg",
                 "alternativeText": "Twig logo",
@@ -294,6 +315,7 @@
                   "strapiUrl": "/uploads/twig_98ec2893ce.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -334,6 +356,7 @@
               "id": 9,
               "name": "Strapi",
               "info": "CMS headless open-source basé sur Node.js, offrant une API flexible et une interface d’administration moderne en React.",
+              "locale": "fr-FR",
               "media": {
                 "name": "strapi.jpg",
                 "alternativeText": "Strapi logo",
@@ -345,6 +368,15 @@
                   "size": 7.58,
                   "strapiUrl": "/uploads/strapi_c6550c02fb.jpg"
                 }
+              },
+              "project": {
+                "id": 1,
+                "title": "Création de mon CV / portfolio",
+                "slug": "cv-portfolio",
+                "summary": "Création de mon CV / portfolio afin de présenter mon parcours et mes compétences de manière claire et moderne. Ce projet me permet de mettre en pratique une stack technique que je maîtrise, tout en offrant une démonstration concrète de mon savoir-faire en matière de développement web et d’intégration. L’objectif est de disposer d’un support professionnel qui reflète à la fois mes compétences techniques et ma capacité à concevoir une interface soignée et fonctionnelle.",
+                "status": "IN_PROGRESS",
+                "detail": "Ce projet a pour objectif de concevoir un CV / portfolio moderne et évolutif, permettant de mettre en valeur mon parcours, mes compétences et mes réalisations. Au-delà d’un simple site vitrine, il s’agit d’un véritable terrain d’expérimentation technique dans lequel j’ai intégré une stack complète et cohérente, représentative de mon savoir-faire en développement web.\n\nLe frontend repose sur Vue 3 associé à Tailwind CSS, ce qui me permet de construire une interface claire, responsive et élégante. Grâce à Vue 3, je bénéficie d’une structure modulaire et performante, facilitant la maintenance et l’évolution du projet. Tailwind, quant à lui, m’offre une grande flexibilité dans le design, en garantissant un rendu moderne et homogène, tout en réduisant le temps consacré à la personnalisation des styles.\n\nPour la gestion de contenu, j’ai choisi Strapi, un CMS headless particulièrement adapté aux projets nécessitant une API souple et rapide à mettre en place. Strapi me permet de centraliser et d’organiser mes données (informations personnelles, projets, expériences, compétences) afin de les exposer de manière efficace et sécurisée au frontend.\n\nEn complément, j’ai développé un backend en Express dont le rôle est de générer et de builder les fichiers JSON destinés au frontend. Cette approche me permet de rendre le front totalement autonome : les pages consomment directement ces JSON préconstruits, ce qui élimine la dépendance à un serveur actif en production. Ainsi, le site peut être déployé et hébergé simplement sur GitHub Pages, tout en conservant une structure dynamique et facilement actualisable.\n\nAu niveau de l’interface, j’ai volontairement différencié deux approches graphiques. La page d’accueil, la liste des projets ainsi que le détail de chaque projet adoptent un style plus visuel et immersif, proche de celui d’un site vitrine. L’objectif est de capter l’attention, de mettre en valeur les réalisations et de renforcer l’impact esthétique dès le premier contact.\nÀ l’inverse, les pages consacrées aux expériences, à la formation, aux compétences et aux retours (feedback) s’orientent davantage vers une logique « logiciel », avec une présentation plus structurée, claire et fonctionnelle. Ce contraste permet d’allier l’aspect démonstratif et esthétique d’un portfolio à l’efficacité et la lisibilité d’un outil professionnel.\n\nCe projet représente pour moi une vitrine technique et professionnelle : il illustre ma capacité à concevoir un écosystème complet, depuis la gestion de contenu avec un CMS headless, jusqu’à l’intégration frontend moderne et performante, en passant par le développement backend et l’automatisation des données.",
+                "locale": "fr-FR"
               },
               "createdBy": {
                 "id": 1,
@@ -377,6 +409,7 @@
               "id": 4,
               "name": "ExpressJs",
               "info": "Framework minimaliste pour Node.js, spécialisé dans la création d’APIs REST et de middlewares performants.",
+              "locale": "fr-FR",
               "media": {
                 "name": "expressjs.png",
                 "alternativeText": "Exoress js logo",
@@ -388,6 +421,15 @@
                   "size": 16.56,
                   "strapiUrl": "/uploads/expressjs_a01a265d7b.png"
                 }
+              },
+              "project": {
+                "id": 1,
+                "title": "Création de mon CV / portfolio",
+                "slug": "cv-portfolio",
+                "summary": "Création de mon CV / portfolio afin de présenter mon parcours et mes compétences de manière claire et moderne. Ce projet me permet de mettre en pratique une stack technique que je maîtrise, tout en offrant une démonstration concrète de mon savoir-faire en matière de développement web et d’intégration. L’objectif est de disposer d’un support professionnel qui reflète à la fois mes compétences techniques et ma capacité à concevoir une interface soignée et fonctionnelle.",
+                "status": "IN_PROGRESS",
+                "detail": "Ce projet a pour objectif de concevoir un CV / portfolio moderne et évolutif, permettant de mettre en valeur mon parcours, mes compétences et mes réalisations. Au-delà d’un simple site vitrine, il s’agit d’un véritable terrain d’expérimentation technique dans lequel j’ai intégré une stack complète et cohérente, représentative de mon savoir-faire en développement web.\n\nLe frontend repose sur Vue 3 associé à Tailwind CSS, ce qui me permet de construire une interface claire, responsive et élégante. Grâce à Vue 3, je bénéficie d’une structure modulaire et performante, facilitant la maintenance et l’évolution du projet. Tailwind, quant à lui, m’offre une grande flexibilité dans le design, en garantissant un rendu moderne et homogène, tout en réduisant le temps consacré à la personnalisation des styles.\n\nPour la gestion de contenu, j’ai choisi Strapi, un CMS headless particulièrement adapté aux projets nécessitant une API souple et rapide à mettre en place. Strapi me permet de centraliser et d’organiser mes données (informations personnelles, projets, expériences, compétences) afin de les exposer de manière efficace et sécurisée au frontend.\n\nEn complément, j’ai développé un backend en Express dont le rôle est de générer et de builder les fichiers JSON destinés au frontend. Cette approche me permet de rendre le front totalement autonome : les pages consomment directement ces JSON préconstruits, ce qui élimine la dépendance à un serveur actif en production. Ainsi, le site peut être déployé et hébergé simplement sur GitHub Pages, tout en conservant une structure dynamique et facilement actualisable.\n\nAu niveau de l’interface, j’ai volontairement différencié deux approches graphiques. La page d’accueil, la liste des projets ainsi que le détail de chaque projet adoptent un style plus visuel et immersif, proche de celui d’un site vitrine. L’objectif est de capter l’attention, de mettre en valeur les réalisations et de renforcer l’impact esthétique dès le premier contact.\nÀ l’inverse, les pages consacrées aux expériences, à la formation, aux compétences et aux retours (feedback) s’orientent davantage vers une logique « logiciel », avec une présentation plus structurée, claire et fonctionnelle. Ce contraste permet d’allier l’aspect démonstratif et esthétique d’un portfolio à l’efficacité et la lisibilité d’un outil professionnel.\n\nCe projet représente pour moi une vitrine technique et professionnelle : il illustre ma capacité à concevoir un écosystème complet, depuis la gestion de contenu avec un CMS headless, jusqu’à l’intégration frontend moderne et performante, en passant par le développement backend et l’automatisation des données.",
+                "locale": "fr-FR"
               },
               "createdBy": {
                 "id": 1,
@@ -420,6 +462,7 @@
               "id": 10,
               "name": "GraphQL",
               "info": "Langage de requête pour APIs offrant un accès unifié, précis et performant aux données.",
+              "locale": "fr-FR",
               "media": {
                 "name": "graphql.jpg",
                 "alternativeText": "GraphQL logo",
@@ -432,6 +475,7 @@
                   "strapiUrl": "/uploads/graphql_efc09849d4.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -463,6 +507,7 @@
               "id": 11,
               "name": "VueJs",
               "info": "Framework progressif JavaScript orienté composants, facilitant le développement d’interfaces modernes.",
+              "locale": "fr-FR",
               "media": {
                 "name": "vueJs.jpg",
                 "alternativeText": "Vue js logo",
@@ -474,6 +519,15 @@
                   "size": 6.33,
                   "strapiUrl": "/uploads/vue_Js_b140cc7b4a.jpg"
                 }
+              },
+              "project": {
+                "id": 1,
+                "title": "Création de mon CV / portfolio",
+                "slug": "cv-portfolio",
+                "summary": "Création de mon CV / portfolio afin de présenter mon parcours et mes compétences de manière claire et moderne. Ce projet me permet de mettre en pratique une stack technique que je maîtrise, tout en offrant une démonstration concrète de mon savoir-faire en matière de développement web et d’intégration. L’objectif est de disposer d’un support professionnel qui reflète à la fois mes compétences techniques et ma capacité à concevoir une interface soignée et fonctionnelle.",
+                "status": "IN_PROGRESS",
+                "detail": "Ce projet a pour objectif de concevoir un CV / portfolio moderne et évolutif, permettant de mettre en valeur mon parcours, mes compétences et mes réalisations. Au-delà d’un simple site vitrine, il s’agit d’un véritable terrain d’expérimentation technique dans lequel j’ai intégré une stack complète et cohérente, représentative de mon savoir-faire en développement web.\n\nLe frontend repose sur Vue 3 associé à Tailwind CSS, ce qui me permet de construire une interface claire, responsive et élégante. Grâce à Vue 3, je bénéficie d’une structure modulaire et performante, facilitant la maintenance et l’évolution du projet. Tailwind, quant à lui, m’offre une grande flexibilité dans le design, en garantissant un rendu moderne et homogène, tout en réduisant le temps consacré à la personnalisation des styles.\n\nPour la gestion de contenu, j’ai choisi Strapi, un CMS headless particulièrement adapté aux projets nécessitant une API souple et rapide à mettre en place. Strapi me permet de centraliser et d’organiser mes données (informations personnelles, projets, expériences, compétences) afin de les exposer de manière efficace et sécurisée au frontend.\n\nEn complément, j’ai développé un backend en Express dont le rôle est de générer et de builder les fichiers JSON destinés au frontend. Cette approche me permet de rendre le front totalement autonome : les pages consomment directement ces JSON préconstruits, ce qui élimine la dépendance à un serveur actif en production. Ainsi, le site peut être déployé et hébergé simplement sur GitHub Pages, tout en conservant une structure dynamique et facilement actualisable.\n\nAu niveau de l’interface, j’ai volontairement différencié deux approches graphiques. La page d’accueil, la liste des projets ainsi que le détail de chaque projet adoptent un style plus visuel et immersif, proche de celui d’un site vitrine. L’objectif est de capter l’attention, de mettre en valeur les réalisations et de renforcer l’impact esthétique dès le premier contact.\nÀ l’inverse, les pages consacrées aux expériences, à la formation, aux compétences et aux retours (feedback) s’orientent davantage vers une logique « logiciel », avec une présentation plus structurée, claire et fonctionnelle. Ce contraste permet d’allier l’aspect démonstratif et esthétique d’un portfolio à l’efficacité et la lisibilité d’un outil professionnel.\n\nCe projet représente pour moi une vitrine technique et professionnelle : il illustre ma capacité à concevoir un écosystème complet, depuis la gestion de contenu avec un CMS headless, jusqu’à l’intégration frontend moderne et performante, en passant par le développement backend et l’automatisation des données.",
+                "locale": "fr-FR"
               },
               "createdBy": {
                 "id": 1,
@@ -515,6 +569,7 @@
               "id": 12,
               "name": "Ibexa",
               "info": "Evolution d’eZ Publish en CMS headless et modulaire, orienté expérience digitale et e-commerce.",
+              "locale": "fr-FR",
               "media": {
                 "name": "ibexa.jpg",
                 "alternativeText": "Ibexa logo",
@@ -527,6 +582,7 @@
                   "strapiUrl": "/uploads/ibexa_5a4a3eb437.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -558,6 +614,7 @@
               "id": 4,
               "name": "ExpressJs",
               "info": "Framework minimaliste pour Node.js, spécialisé dans la création d’APIs REST et de middlewares performants.",
+              "locale": "fr-FR",
               "media": {
                 "name": "expressjs.png",
                 "alternativeText": "Exoress js logo",
@@ -569,6 +626,15 @@
                   "size": 16.56,
                   "strapiUrl": "/uploads/expressjs_a01a265d7b.png"
                 }
+              },
+              "project": {
+                "id": 1,
+                "title": "Création de mon CV / portfolio",
+                "slug": "cv-portfolio",
+                "summary": "Création de mon CV / portfolio afin de présenter mon parcours et mes compétences de manière claire et moderne. Ce projet me permet de mettre en pratique une stack technique que je maîtrise, tout en offrant une démonstration concrète de mon savoir-faire en matière de développement web et d’intégration. L’objectif est de disposer d’un support professionnel qui reflète à la fois mes compétences techniques et ma capacité à concevoir une interface soignée et fonctionnelle.",
+                "status": "IN_PROGRESS",
+                "detail": "Ce projet a pour objectif de concevoir un CV / portfolio moderne et évolutif, permettant de mettre en valeur mon parcours, mes compétences et mes réalisations. Au-delà d’un simple site vitrine, il s’agit d’un véritable terrain d’expérimentation technique dans lequel j’ai intégré une stack complète et cohérente, représentative de mon savoir-faire en développement web.\n\nLe frontend repose sur Vue 3 associé à Tailwind CSS, ce qui me permet de construire une interface claire, responsive et élégante. Grâce à Vue 3, je bénéficie d’une structure modulaire et performante, facilitant la maintenance et l’évolution du projet. Tailwind, quant à lui, m’offre une grande flexibilité dans le design, en garantissant un rendu moderne et homogène, tout en réduisant le temps consacré à la personnalisation des styles.\n\nPour la gestion de contenu, j’ai choisi Strapi, un CMS headless particulièrement adapté aux projets nécessitant une API souple et rapide à mettre en place. Strapi me permet de centraliser et d’organiser mes données (informations personnelles, projets, expériences, compétences) afin de les exposer de manière efficace et sécurisée au frontend.\n\nEn complément, j’ai développé un backend en Express dont le rôle est de générer et de builder les fichiers JSON destinés au frontend. Cette approche me permet de rendre le front totalement autonome : les pages consomment directement ces JSON préconstruits, ce qui élimine la dépendance à un serveur actif en production. Ainsi, le site peut être déployé et hébergé simplement sur GitHub Pages, tout en conservant une structure dynamique et facilement actualisable.\n\nAu niveau de l’interface, j’ai volontairement différencié deux approches graphiques. La page d’accueil, la liste des projets ainsi que le détail de chaque projet adoptent un style plus visuel et immersif, proche de celui d’un site vitrine. L’objectif est de capter l’attention, de mettre en valeur les réalisations et de renforcer l’impact esthétique dès le premier contact.\nÀ l’inverse, les pages consacrées aux expériences, à la formation, aux compétences et aux retours (feedback) s’orientent davantage vers une logique « logiciel », avec une présentation plus structurée, claire et fonctionnelle. Ce contraste permet d’allier l’aspect démonstratif et esthétique d’un portfolio à l’efficacité et la lisibilité d’un outil professionnel.\n\nCe projet représente pour moi une vitrine technique et professionnelle : il illustre ma capacité à concevoir un écosystème complet, depuis la gestion de contenu avec un CMS headless, jusqu’à l’intégration frontend moderne et performante, en passant par le développement backend et l’automatisation des données.",
+                "locale": "fr-FR"
               },
               "createdBy": {
                 "id": 1,
@@ -601,6 +667,7 @@
               "id": 10,
               "name": "GraphQL",
               "info": "Langage de requête pour APIs offrant un accès unifié, précis et performant aux données.",
+              "locale": "fr-FR",
               "media": {
                 "name": "graphql.jpg",
                 "alternativeText": "GraphQL logo",
@@ -613,6 +680,7 @@
                   "strapiUrl": "/uploads/graphql_efc09849d4.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -644,6 +712,7 @@
               "id": 11,
               "name": "VueJs",
               "info": "Framework progressif JavaScript orienté composants, facilitant le développement d’interfaces modernes.",
+              "locale": "fr-FR",
               "media": {
                 "name": "vueJs.jpg",
                 "alternativeText": "Vue js logo",
@@ -655,6 +724,15 @@
                   "size": 6.33,
                   "strapiUrl": "/uploads/vue_Js_b140cc7b4a.jpg"
                 }
+              },
+              "project": {
+                "id": 1,
+                "title": "Création de mon CV / portfolio",
+                "slug": "cv-portfolio",
+                "summary": "Création de mon CV / portfolio afin de présenter mon parcours et mes compétences de manière claire et moderne. Ce projet me permet de mettre en pratique une stack technique que je maîtrise, tout en offrant une démonstration concrète de mon savoir-faire en matière de développement web et d’intégration. L’objectif est de disposer d’un support professionnel qui reflète à la fois mes compétences techniques et ma capacité à concevoir une interface soignée et fonctionnelle.",
+                "status": "IN_PROGRESS",
+                "detail": "Ce projet a pour objectif de concevoir un CV / portfolio moderne et évolutif, permettant de mettre en valeur mon parcours, mes compétences et mes réalisations. Au-delà d’un simple site vitrine, il s’agit d’un véritable terrain d’expérimentation technique dans lequel j’ai intégré une stack complète et cohérente, représentative de mon savoir-faire en développement web.\n\nLe frontend repose sur Vue 3 associé à Tailwind CSS, ce qui me permet de construire une interface claire, responsive et élégante. Grâce à Vue 3, je bénéficie d’une structure modulaire et performante, facilitant la maintenance et l’évolution du projet. Tailwind, quant à lui, m’offre une grande flexibilité dans le design, en garantissant un rendu moderne et homogène, tout en réduisant le temps consacré à la personnalisation des styles.\n\nPour la gestion de contenu, j’ai choisi Strapi, un CMS headless particulièrement adapté aux projets nécessitant une API souple et rapide à mettre en place. Strapi me permet de centraliser et d’organiser mes données (informations personnelles, projets, expériences, compétences) afin de les exposer de manière efficace et sécurisée au frontend.\n\nEn complément, j’ai développé un backend en Express dont le rôle est de générer et de builder les fichiers JSON destinés au frontend. Cette approche me permet de rendre le front totalement autonome : les pages consomment directement ces JSON préconstruits, ce qui élimine la dépendance à un serveur actif en production. Ainsi, le site peut être déployé et hébergé simplement sur GitHub Pages, tout en conservant une structure dynamique et facilement actualisable.\n\nAu niveau de l’interface, j’ai volontairement différencié deux approches graphiques. La page d’accueil, la liste des projets ainsi que le détail de chaque projet adoptent un style plus visuel et immersif, proche de celui d’un site vitrine. L’objectif est de capter l’attention, de mettre en valeur les réalisations et de renforcer l’impact esthétique dès le premier contact.\nÀ l’inverse, les pages consacrées aux expériences, à la formation, aux compétences et aux retours (feedback) s’orientent davantage vers une logique « logiciel », avec une présentation plus structurée, claire et fonctionnelle. Ce contraste permet d’allier l’aspect démonstratif et esthétique d’un portfolio à l’efficacité et la lisibilité d’un outil professionnel.\n\nCe projet représente pour moi une vitrine technique et professionnelle : il illustre ma capacité à concevoir un écosystème complet, depuis la gestion de contenu avec un CMS headless, jusqu’à l’intégration frontend moderne et performante, en passant par le développement backend et l’automatisation des données.",
+                "locale": "fr-FR"
               },
               "createdBy": {
                 "id": 1,
@@ -696,6 +774,7 @@
               "id": 15,
               "name": "Api platform",
               "info": "Framework open-source basé sur Symfony, spécialisé dans la création rapide d’APIs REST et GraphQL.",
+              "locale": "fr-FR",
               "media": {
                 "name": "api-platform.png",
                 "alternativeText": "Api platform logo",
@@ -708,6 +787,7 @@
                   "strapiUrl": "/uploads/api_platform_0b8123e0d8.png"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -739,6 +819,7 @@
               "id": 16,
               "name": "MariaDb",
               "info": "Systèmes de gestion de bases de données relationnelles fiables et largement adoptés.",
+              "locale": "fr-FR",
               "media": {
                 "name": "mariadb.jpg",
                 "alternativeText": "MariaDb logo",
@@ -751,6 +832,7 @@
                   "strapiUrl": "/uploads/mariadb_572fe8d2da.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -782,6 +864,7 @@
               "id": 11,
               "name": "VueJs",
               "info": "Framework progressif JavaScript orienté composants, facilitant le développement d’interfaces modernes.",
+              "locale": "fr-FR",
               "media": {
                 "name": "vueJs.jpg",
                 "alternativeText": "Vue js logo",
@@ -793,6 +876,15 @@
                   "size": 6.33,
                   "strapiUrl": "/uploads/vue_Js_b140cc7b4a.jpg"
                 }
+              },
+              "project": {
+                "id": 1,
+                "title": "Création de mon CV / portfolio",
+                "slug": "cv-portfolio",
+                "summary": "Création de mon CV / portfolio afin de présenter mon parcours et mes compétences de manière claire et moderne. Ce projet me permet de mettre en pratique une stack technique que je maîtrise, tout en offrant une démonstration concrète de mon savoir-faire en matière de développement web et d’intégration. L’objectif est de disposer d’un support professionnel qui reflète à la fois mes compétences techniques et ma capacité à concevoir une interface soignée et fonctionnelle.",
+                "status": "IN_PROGRESS",
+                "detail": "Ce projet a pour objectif de concevoir un CV / portfolio moderne et évolutif, permettant de mettre en valeur mon parcours, mes compétences et mes réalisations. Au-delà d’un simple site vitrine, il s’agit d’un véritable terrain d’expérimentation technique dans lequel j’ai intégré une stack complète et cohérente, représentative de mon savoir-faire en développement web.\n\nLe frontend repose sur Vue 3 associé à Tailwind CSS, ce qui me permet de construire une interface claire, responsive et élégante. Grâce à Vue 3, je bénéficie d’une structure modulaire et performante, facilitant la maintenance et l’évolution du projet. Tailwind, quant à lui, m’offre une grande flexibilité dans le design, en garantissant un rendu moderne et homogène, tout en réduisant le temps consacré à la personnalisation des styles.\n\nPour la gestion de contenu, j’ai choisi Strapi, un CMS headless particulièrement adapté aux projets nécessitant une API souple et rapide à mettre en place. Strapi me permet de centraliser et d’organiser mes données (informations personnelles, projets, expériences, compétences) afin de les exposer de manière efficace et sécurisée au frontend.\n\nEn complément, j’ai développé un backend en Express dont le rôle est de générer et de builder les fichiers JSON destinés au frontend. Cette approche me permet de rendre le front totalement autonome : les pages consomment directement ces JSON préconstruits, ce qui élimine la dépendance à un serveur actif en production. Ainsi, le site peut être déployé et hébergé simplement sur GitHub Pages, tout en conservant une structure dynamique et facilement actualisable.\n\nAu niveau de l’interface, j’ai volontairement différencié deux approches graphiques. La page d’accueil, la liste des projets ainsi que le détail de chaque projet adoptent un style plus visuel et immersif, proche de celui d’un site vitrine. L’objectif est de capter l’attention, de mettre en valeur les réalisations et de renforcer l’impact esthétique dès le premier contact.\nÀ l’inverse, les pages consacrées aux expériences, à la formation, aux compétences et aux retours (feedback) s’orientent davantage vers une logique « logiciel », avec une présentation plus structurée, claire et fonctionnelle. Ce contraste permet d’allier l’aspect démonstratif et esthétique d’un portfolio à l’efficacité et la lisibilité d’un outil professionnel.\n\nCe projet représente pour moi une vitrine technique et professionnelle : il illustre ma capacité à concevoir un écosystème complet, depuis la gestion de contenu avec un CMS headless, jusqu’à l’intégration frontend moderne et performante, en passant par le développement backend et l’automatisation des données.",
+                "locale": "fr-FR"
               },
               "createdBy": {
                 "id": 1,
@@ -825,6 +917,7 @@
               "id": 25,
               "name": "Wordpress",
               "info": "WordPress est un système de gestion de contenu (CMS) open source, flexible et largement utilisé pour créer des sites web allant du simple blog au site e-commerce.",
+              "locale": "fr-FR",
               "media": {
                 "name": "wordpress.jpg",
                 "alternativeText": "WordPress logo",
@@ -837,6 +930,7 @@
                   "strapiUrl": "/uploads/wordpress_ea4cb9eb81.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -877,6 +971,7 @@
               "id": 17,
               "name": "EzPublish",
               "info": "CMS historique basé sur PHP et Symfony, conçu pour les sites vitrines et applications digitales complexes.",
+              "locale": "fr-FR",
               "media": {
                 "name": "ezpublish.jpg",
                 "alternativeText": "eZ Publish logo",
@@ -889,6 +984,7 @@
                   "strapiUrl": "/uploads/ezpublish_6cf8d670c2.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -920,6 +1016,7 @@
               "id": 1,
               "name": "Symfony",
               "info": "Framework PHP orienté MVC, dédié au développement d’applications web robustes et modulaires.",
+              "locale": "fr-FR",
               "media": {
                 "name": "symfony.jpg",
                 "alternativeText": "Symfony logo",
@@ -932,6 +1029,7 @@
                   "strapiUrl": "/uploads/symfony_ade27ba80a.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -963,6 +1061,7 @@
               "id": 2,
               "name": "Twig",
               "info": "Moteur de templates moderne pour PHP, permettant de séparer la logique applicative de l’affichage.",
+              "locale": "fr-FR",
               "media": {
                 "name": "twig.jpg",
                 "alternativeText": "Twig logo",
@@ -975,6 +1074,7 @@
                   "strapiUrl": "/uploads/twig_98ec2893ce.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -1006,6 +1106,7 @@
               "id": 7,
               "name": "React",
               "info": "Bibliothèque JavaScript pour construire des interfaces utilisateur dynamiques et réactives.",
+              "locale": "fr-FR",
               "media": {
                 "name": "react.jpg",
                 "alternativeText": "React js logo",
@@ -1018,6 +1119,7 @@
                   "strapiUrl": "/uploads/react_4a6b8c21e6.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -1049,6 +1151,7 @@
               "id": 10,
               "name": "GraphQL",
               "info": "Langage de requête pour APIs offrant un accès unifié, précis et performant aux données.",
+              "locale": "fr-FR",
               "media": {
                 "name": "graphql.jpg",
                 "alternativeText": "GraphQL logo",
@@ -1061,6 +1164,7 @@
                   "strapiUrl": "/uploads/graphql_efc09849d4.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -1092,6 +1196,7 @@
               "id": 4,
               "name": "ExpressJs",
               "info": "Framework minimaliste pour Node.js, spécialisé dans la création d’APIs REST et de middlewares performants.",
+              "locale": "fr-FR",
               "media": {
                 "name": "expressjs.png",
                 "alternativeText": "Exoress js logo",
@@ -1103,6 +1208,15 @@
                   "size": 16.56,
                   "strapiUrl": "/uploads/expressjs_a01a265d7b.png"
                 }
+              },
+              "project": {
+                "id": 1,
+                "title": "Création de mon CV / portfolio",
+                "slug": "cv-portfolio",
+                "summary": "Création de mon CV / portfolio afin de présenter mon parcours et mes compétences de manière claire et moderne. Ce projet me permet de mettre en pratique une stack technique que je maîtrise, tout en offrant une démonstration concrète de mon savoir-faire en matière de développement web et d’intégration. L’objectif est de disposer d’un support professionnel qui reflète à la fois mes compétences techniques et ma capacité à concevoir une interface soignée et fonctionnelle.",
+                "status": "IN_PROGRESS",
+                "detail": "Ce projet a pour objectif de concevoir un CV / portfolio moderne et évolutif, permettant de mettre en valeur mon parcours, mes compétences et mes réalisations. Au-delà d’un simple site vitrine, il s’agit d’un véritable terrain d’expérimentation technique dans lequel j’ai intégré une stack complète et cohérente, représentative de mon savoir-faire en développement web.\n\nLe frontend repose sur Vue 3 associé à Tailwind CSS, ce qui me permet de construire une interface claire, responsive et élégante. Grâce à Vue 3, je bénéficie d’une structure modulaire et performante, facilitant la maintenance et l’évolution du projet. Tailwind, quant à lui, m’offre une grande flexibilité dans le design, en garantissant un rendu moderne et homogène, tout en réduisant le temps consacré à la personnalisation des styles.\n\nPour la gestion de contenu, j’ai choisi Strapi, un CMS headless particulièrement adapté aux projets nécessitant une API souple et rapide à mettre en place. Strapi me permet de centraliser et d’organiser mes données (informations personnelles, projets, expériences, compétences) afin de les exposer de manière efficace et sécurisée au frontend.\n\nEn complément, j’ai développé un backend en Express dont le rôle est de générer et de builder les fichiers JSON destinés au frontend. Cette approche me permet de rendre le front totalement autonome : les pages consomment directement ces JSON préconstruits, ce qui élimine la dépendance à un serveur actif en production. Ainsi, le site peut être déployé et hébergé simplement sur GitHub Pages, tout en conservant une structure dynamique et facilement actualisable.\n\nAu niveau de l’interface, j’ai volontairement différencié deux approches graphiques. La page d’accueil, la liste des projets ainsi que le détail de chaque projet adoptent un style plus visuel et immersif, proche de celui d’un site vitrine. L’objectif est de capter l’attention, de mettre en valeur les réalisations et de renforcer l’impact esthétique dès le premier contact.\nÀ l’inverse, les pages consacrées aux expériences, à la formation, aux compétences et aux retours (feedback) s’orientent davantage vers une logique « logiciel », avec une présentation plus structurée, claire et fonctionnelle. Ce contraste permet d’allier l’aspect démonstratif et esthétique d’un portfolio à l’efficacité et la lisibilité d’un outil professionnel.\n\nCe projet représente pour moi une vitrine technique et professionnelle : il illustre ma capacité à concevoir un écosystème complet, depuis la gestion de contenu avec un CMS headless, jusqu’à l’intégration frontend moderne et performante, en passant par le développement backend et l’automatisation des données.",
+                "locale": "fr-FR"
               },
               "createdBy": {
                 "id": 1,
@@ -1135,6 +1249,7 @@
               "id": 16,
               "name": "MariaDb",
               "info": "Systèmes de gestion de bases de données relationnelles fiables et largement adoptés.",
+              "locale": "fr-FR",
               "media": {
                 "name": "mariadb.jpg",
                 "alternativeText": "MariaDb logo",
@@ -1147,6 +1262,7 @@
                   "strapiUrl": "/uploads/mariadb_572fe8d2da.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -1178,6 +1294,7 @@
               "id": 11,
               "name": "VueJs",
               "info": "Framework progressif JavaScript orienté composants, facilitant le développement d’interfaces modernes.",
+              "locale": "fr-FR",
               "media": {
                 "name": "vueJs.jpg",
                 "alternativeText": "Vue js logo",
@@ -1189,6 +1306,15 @@
                   "size": 6.33,
                   "strapiUrl": "/uploads/vue_Js_b140cc7b4a.jpg"
                 }
+              },
+              "project": {
+                "id": 1,
+                "title": "Création de mon CV / portfolio",
+                "slug": "cv-portfolio",
+                "summary": "Création de mon CV / portfolio afin de présenter mon parcours et mes compétences de manière claire et moderne. Ce projet me permet de mettre en pratique une stack technique que je maîtrise, tout en offrant une démonstration concrète de mon savoir-faire en matière de développement web et d’intégration. L’objectif est de disposer d’un support professionnel qui reflète à la fois mes compétences techniques et ma capacité à concevoir une interface soignée et fonctionnelle.",
+                "status": "IN_PROGRESS",
+                "detail": "Ce projet a pour objectif de concevoir un CV / portfolio moderne et évolutif, permettant de mettre en valeur mon parcours, mes compétences et mes réalisations. Au-delà d’un simple site vitrine, il s’agit d’un véritable terrain d’expérimentation technique dans lequel j’ai intégré une stack complète et cohérente, représentative de mon savoir-faire en développement web.\n\nLe frontend repose sur Vue 3 associé à Tailwind CSS, ce qui me permet de construire une interface claire, responsive et élégante. Grâce à Vue 3, je bénéficie d’une structure modulaire et performante, facilitant la maintenance et l’évolution du projet. Tailwind, quant à lui, m’offre une grande flexibilité dans le design, en garantissant un rendu moderne et homogène, tout en réduisant le temps consacré à la personnalisation des styles.\n\nPour la gestion de contenu, j’ai choisi Strapi, un CMS headless particulièrement adapté aux projets nécessitant une API souple et rapide à mettre en place. Strapi me permet de centraliser et d’organiser mes données (informations personnelles, projets, expériences, compétences) afin de les exposer de manière efficace et sécurisée au frontend.\n\nEn complément, j’ai développé un backend en Express dont le rôle est de générer et de builder les fichiers JSON destinés au frontend. Cette approche me permet de rendre le front totalement autonome : les pages consomment directement ces JSON préconstruits, ce qui élimine la dépendance à un serveur actif en production. Ainsi, le site peut être déployé et hébergé simplement sur GitHub Pages, tout en conservant une structure dynamique et facilement actualisable.\n\nAu niveau de l’interface, j’ai volontairement différencié deux approches graphiques. La page d’accueil, la liste des projets ainsi que le détail de chaque projet adoptent un style plus visuel et immersif, proche de celui d’un site vitrine. L’objectif est de capter l’attention, de mettre en valeur les réalisations et de renforcer l’impact esthétique dès le premier contact.\nÀ l’inverse, les pages consacrées aux expériences, à la formation, aux compétences et aux retours (feedback) s’orientent davantage vers une logique « logiciel », avec une présentation plus structurée, claire et fonctionnelle. Ce contraste permet d’allier l’aspect démonstratif et esthétique d’un portfolio à l’efficacité et la lisibilité d’un outil professionnel.\n\nCe projet représente pour moi une vitrine technique et professionnelle : il illustre ma capacité à concevoir un écosystème complet, depuis la gestion de contenu avec un CMS headless, jusqu’à l’intégration frontend moderne et performante, en passant par le développement backend et l’automatisation des données.",
+                "locale": "fr-FR"
               },
               "createdBy": {
                 "id": 1,
@@ -1230,6 +1356,7 @@
               "id": 18,
               "name": "Gatsby",
               "info": "Générateur de sites statiques basé sur React, optimisé pour la performance et le SEO.",
+              "locale": "fr-FR",
               "media": {
                 "name": "gatsby.jpg",
                 "alternativeText": "Gatsby logo",
@@ -1242,6 +1369,7 @@
                   "strapiUrl": "/uploads/gatsby_c9a22ee112.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -1273,6 +1401,7 @@
               "id": 19,
               "name": "Contentful",
               "info": "CMS headless SaaS permettant de centraliser et distribuer les contenus via API.",
+              "locale": "fr-FR",
               "media": {
                 "name": "contentful.jpg",
                 "alternativeText": "Contentful logo",
@@ -1285,6 +1414,7 @@
                   "strapiUrl": "/uploads/contentful_1544b12258.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -1350,6 +1480,7 @@
               "id": 22,
               "name": "Zend",
               "info": "Framework PHP structuré et modulaire, conçu pour le développement de solutions web professionnelles et évolutives.",
+              "locale": "fr-FR",
               "media": {
                 "name": "zend.jpg",
                 "alternativeText": "Zend Framework logo",
@@ -1362,6 +1493,7 @@
                   "strapiUrl": "/uploads/zend_78daf05f73.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -1393,6 +1525,7 @@
               "id": 3,
               "name": "MySql",
               "info": "systèmes de gestion de bases de données relationnelles fiables et largement adoptés.",
+              "locale": "fr-FR",
               "media": {
                 "name": "mysql.jpg",
                 "alternativeText": "MySQL logo",
@@ -1405,6 +1538,7 @@
                   "strapiUrl": "/uploads/mysql_dacae28784.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -1436,6 +1570,7 @@
               "id": 21,
               "name": "Bulma",
               "info": "Framework CSS moderne basé sur Flexbox, centré sur la simplicité et la personnalisation du design.",
+              "locale": "fr-FR",
               "media": {
                 "name": "bulma.jpg",
                 "alternativeText": "Bulma logo",
@@ -1448,6 +1583,7 @@
                   "strapiUrl": "/uploads/bulma_3532bddf8f.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -1488,6 +1624,7 @@
               "id": 22,
               "name": "Zend",
               "info": "Framework PHP structuré et modulaire, conçu pour le développement de solutions web professionnelles et évolutives.",
+              "locale": "fr-FR",
               "media": {
                 "name": "zend.jpg",
                 "alternativeText": "Zend Framework logo",
@@ -1500,6 +1637,7 @@
                   "strapiUrl": "/uploads/zend_78daf05f73.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -1531,6 +1669,7 @@
               "id": 3,
               "name": "MySql",
               "info": "systèmes de gestion de bases de données relationnelles fiables et largement adoptés.",
+              "locale": "fr-FR",
               "media": {
                 "name": "mysql.jpg",
                 "alternativeText": "MySQL logo",
@@ -1543,6 +1682,7 @@
                   "strapiUrl": "/uploads/mysql_dacae28784.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -1574,6 +1714,7 @@
               "id": 2,
               "name": "Twig",
               "info": "Moteur de templates moderne pour PHP, permettant de séparer la logique applicative de l’affichage.",
+              "locale": "fr-FR",
               "media": {
                 "name": "twig.jpg",
                 "alternativeText": "Twig logo",
@@ -1586,6 +1727,7 @@
                   "strapiUrl": "/uploads/twig_98ec2893ce.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -1617,6 +1759,7 @@
               "id": 23,
               "name": "Bootstrap",
               "info": "Framework CSS responsive offrant un ensemble de composants pour concevoir des interfaces cohérentes et adaptatives.",
+              "locale": "fr-FR",
               "media": {
                 "name": "bootstrap.jpg",
                 "alternativeText": "Bootstrap logo",
@@ -1629,6 +1772,7 @@
                   "strapiUrl": "/uploads/bootstrap_bb38ec0927.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -1669,6 +1813,7 @@
               "id": 4,
               "name": "ExpressJs",
               "info": "Framework minimaliste pour Node.js, spécialisé dans la création d’APIs REST et de middlewares performants.",
+              "locale": "fr-FR",
               "media": {
                 "name": "expressjs.png",
                 "alternativeText": "Exoress js logo",
@@ -1680,6 +1825,15 @@
                   "size": 16.56,
                   "strapiUrl": "/uploads/expressjs_a01a265d7b.png"
                 }
+              },
+              "project": {
+                "id": 1,
+                "title": "Création de mon CV / portfolio",
+                "slug": "cv-portfolio",
+                "summary": "Création de mon CV / portfolio afin de présenter mon parcours et mes compétences de manière claire et moderne. Ce projet me permet de mettre en pratique une stack technique que je maîtrise, tout en offrant une démonstration concrète de mon savoir-faire en matière de développement web et d’intégration. L’objectif est de disposer d’un support professionnel qui reflète à la fois mes compétences techniques et ma capacité à concevoir une interface soignée et fonctionnelle.",
+                "status": "IN_PROGRESS",
+                "detail": "Ce projet a pour objectif de concevoir un CV / portfolio moderne et évolutif, permettant de mettre en valeur mon parcours, mes compétences et mes réalisations. Au-delà d’un simple site vitrine, il s’agit d’un véritable terrain d’expérimentation technique dans lequel j’ai intégré une stack complète et cohérente, représentative de mon savoir-faire en développement web.\n\nLe frontend repose sur Vue 3 associé à Tailwind CSS, ce qui me permet de construire une interface claire, responsive et élégante. Grâce à Vue 3, je bénéficie d’une structure modulaire et performante, facilitant la maintenance et l’évolution du projet. Tailwind, quant à lui, m’offre une grande flexibilité dans le design, en garantissant un rendu moderne et homogène, tout en réduisant le temps consacré à la personnalisation des styles.\n\nPour la gestion de contenu, j’ai choisi Strapi, un CMS headless particulièrement adapté aux projets nécessitant une API souple et rapide à mettre en place. Strapi me permet de centraliser et d’organiser mes données (informations personnelles, projets, expériences, compétences) afin de les exposer de manière efficace et sécurisée au frontend.\n\nEn complément, j’ai développé un backend en Express dont le rôle est de générer et de builder les fichiers JSON destinés au frontend. Cette approche me permet de rendre le front totalement autonome : les pages consomment directement ces JSON préconstruits, ce qui élimine la dépendance à un serveur actif en production. Ainsi, le site peut être déployé et hébergé simplement sur GitHub Pages, tout en conservant une structure dynamique et facilement actualisable.\n\nAu niveau de l’interface, j’ai volontairement différencié deux approches graphiques. La page d’accueil, la liste des projets ainsi que le détail de chaque projet adoptent un style plus visuel et immersif, proche de celui d’un site vitrine. L’objectif est de capter l’attention, de mettre en valeur les réalisations et de renforcer l’impact esthétique dès le premier contact.\nÀ l’inverse, les pages consacrées aux expériences, à la formation, aux compétences et aux retours (feedback) s’orientent davantage vers une logique « logiciel », avec une présentation plus structurée, claire et fonctionnelle. Ce contraste permet d’allier l’aspect démonstratif et esthétique d’un portfolio à l’efficacité et la lisibilité d’un outil professionnel.\n\nCe projet représente pour moi une vitrine technique et professionnelle : il illustre ma capacité à concevoir un écosystème complet, depuis la gestion de contenu avec un CMS headless, jusqu’à l’intégration frontend moderne et performante, en passant par le développement backend et l’automatisation des données.",
+                "locale": "fr-FR"
               },
               "createdBy": {
                 "id": 1,
@@ -1712,6 +1866,7 @@
               "id": 3,
               "name": "MySql",
               "info": "systèmes de gestion de bases de données relationnelles fiables et largement adoptés.",
+              "locale": "fr-FR",
               "media": {
                 "name": "mysql.jpg",
                 "alternativeText": "MySQL logo",
@@ -1724,6 +1879,7 @@
                   "strapiUrl": "/uploads/mysql_dacae28784.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -1755,6 +1911,7 @@
               "id": 24,
               "name": "HandlebarsJs",
               "info": "Moteur de templates JavaScript logique et déclaratif, facilitant la génération dynamique de vues HTML.",
+              "locale": "fr-FR",
               "media": {
                 "name": "handlebar.jpg",
                 "alternativeText": "Handlebars logo",
@@ -1767,6 +1924,7 @@
                   "strapiUrl": "/uploads/handlebar_16c08f3882.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -1813,6 +1971,7 @@
                   "strapiUrl": "/uploads/stripe_8ea79b367d.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -1857,6 +2016,7 @@
                   "strapiUrl": "/uploads/nexmo_46fab3cdba.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -1896,6 +2056,7 @@
               "id": 22,
               "name": "Zend",
               "info": "Framework PHP structuré et modulaire, conçu pour le développement de solutions web professionnelles et évolutives.",
+              "locale": "fr-FR",
               "media": {
                 "name": "zend.jpg",
                 "alternativeText": "Zend Framework logo",
@@ -1908,6 +2069,7 @@
                   "strapiUrl": "/uploads/zend_78daf05f73.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -1939,6 +2101,7 @@
               "id": 3,
               "name": "MySql",
               "info": "systèmes de gestion de bases de données relationnelles fiables et largement adoptés.",
+              "locale": "fr-FR",
               "media": {
                 "name": "mysql.jpg",
                 "alternativeText": "MySQL logo",
@@ -1951,6 +2114,7 @@
                   "strapiUrl": "/uploads/mysql_dacae28784.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -1997,6 +2161,7 @@
                   "strapiUrl": "/uploads/objenious_d4127040c5.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -2041,6 +2206,7 @@
                   "strapiUrl": "/uploads/orange_iot_4686373bfc.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -2085,6 +2251,7 @@
                   "strapiUrl": "/uploads/sigfox_f803af9697.png"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -2124,6 +2291,7 @@
               "id": 22,
               "name": "Zend",
               "info": "Framework PHP structuré et modulaire, conçu pour le développement de solutions web professionnelles et évolutives.",
+              "locale": "fr-FR",
               "media": {
                 "name": "zend.jpg",
                 "alternativeText": "Zend Framework logo",
@@ -2136,6 +2304,7 @@
                   "strapiUrl": "/uploads/zend_78daf05f73.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -2167,6 +2336,7 @@
               "id": 2,
               "name": "Twig",
               "info": "Moteur de templates moderne pour PHP, permettant de séparer la logique applicative de l’affichage.",
+              "locale": "fr-FR",
               "media": {
                 "name": "twig.jpg",
                 "alternativeText": "Twig logo",
@@ -2179,6 +2349,7 @@
                   "strapiUrl": "/uploads/twig_98ec2893ce.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -2225,6 +2396,7 @@
                   "strapiUrl": "/uploads/objenious_d4127040c5.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -2269,6 +2441,7 @@
                   "strapiUrl": "/uploads/orange_iot_4686373bfc.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -2313,6 +2486,7 @@
                   "strapiUrl": "/uploads/the_things_network_6f5005af8f.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -2352,6 +2526,7 @@
               "id": 22,
               "name": "Zend",
               "info": "Framework PHP structuré et modulaire, conçu pour le développement de solutions web professionnelles et évolutives.",
+              "locale": "fr-FR",
               "media": {
                 "name": "zend.jpg",
                 "alternativeText": "Zend Framework logo",
@@ -2364,6 +2539,7 @@
                   "strapiUrl": "/uploads/zend_78daf05f73.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -2410,6 +2586,7 @@
                   "strapiUrl": "/uploads/objenious_d4127040c5.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -2454,6 +2631,7 @@
                   "strapiUrl": "/uploads/the_things_network_6f5005af8f.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -2498,6 +2676,7 @@
                   "strapiUrl": "/uploads/sigfox_f803af9697.png"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -2570,6 +2749,7 @@
               "id": 1,
               "name": "Symfony",
               "info": "Framework PHP orienté MVC, dédié au développement d’applications web robustes et modulaires.",
+              "locale": "fr-FR",
               "media": {
                 "name": "symfony.jpg",
                 "alternativeText": "Symfony logo",
@@ -2582,6 +2762,7 @@
                   "strapiUrl": "/uploads/symfony_ade27ba80a.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -2613,6 +2794,7 @@
               "id": 2,
               "name": "Twig",
               "info": "Moteur de templates moderne pour PHP, permettant de séparer la logique applicative de l’affichage.",
+              "locale": "fr-FR",
               "media": {
                 "name": "twig.jpg",
                 "alternativeText": "Twig logo",
@@ -2625,6 +2807,7 @@
                   "strapiUrl": "/uploads/twig_98ec2893ce.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -2671,6 +2854,7 @@
                   "strapiUrl": "/uploads/stripe_8ea79b367d.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",
@@ -2715,6 +2899,7 @@
                   "strapiUrl": "/uploads/docusign_7f7c4cc653.jpg"
                 }
               },
+              "project": null,
               "createdBy": {
                 "id": 1,
                 "firstname": "Frédéric",

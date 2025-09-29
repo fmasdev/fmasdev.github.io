@@ -294,7 +294,17 @@
           "Presentation.Cta.url",
           "Presentation.Cta.title",
           "Presentation.Cta.background",
-          "Components"
+          "Components",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo"
         ],
         "locales": [
           "en",
@@ -339,7 +349,17 @@
           "Presentation.Cta.url",
           "Presentation.Cta.title",
           "Presentation.Cta.background",
-          "Components"
+          "Components",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo"
         ],
         "locales": [
           "en",
@@ -360,7 +380,17 @@
           "Presentation.Cta.url",
           "Presentation.Cta.title",
           "Presentation.Cta.background",
-          "Components"
+          "Components",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo"
         ],
         "locales": [
           "en",
@@ -441,17 +471,16 @@
       "properties": {
         "fields": [
           "Title",
-          "ProjectItem",
-          "Seo.metaTitle",
-          "Seo.metaDescription",
-          "Seo.metaRobots",
-          "Seo.canonicalUrl",
-          "Seo.metaSocial.platform",
-          "Seo.metaSocial.title",
-          "Seo.metaSocial.description",
-          "Seo.metaSocial.image",
-          "Seo.metaSocial.twitterCard",
-          "Seo.photo"
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaRobots",
+          "seo.canonicalUrl",
+          "seo.metaSocial.platform",
+          "seo.metaSocial.title",
+          "seo.metaSocial.description",
+          "seo.metaSocial.image",
+          "seo.metaSocial.twitterCard",
+          "seo.photo"
         ],
         "locales": [
           "en",
@@ -491,17 +520,16 @@
       "properties": {
         "fields": [
           "Title",
-          "ProjectItem",
-          "Seo.metaTitle",
-          "Seo.metaDescription",
-          "Seo.metaRobots",
-          "Seo.canonicalUrl",
-          "Seo.metaSocial.platform",
-          "Seo.metaSocial.title",
-          "Seo.metaSocial.description",
-          "Seo.metaSocial.image",
-          "Seo.metaSocial.twitterCard",
-          "Seo.photo"
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaRobots",
+          "seo.canonicalUrl",
+          "seo.metaSocial.platform",
+          "seo.metaSocial.title",
+          "seo.metaSocial.description",
+          "seo.metaSocial.image",
+          "seo.metaSocial.twitterCard",
+          "seo.photo"
         ],
         "locales": [
           "en",
@@ -517,17 +545,16 @@
       "properties": {
         "fields": [
           "Title",
-          "ProjectItem",
-          "Seo.metaTitle",
-          "Seo.metaDescription",
-          "Seo.metaRobots",
-          "Seo.canonicalUrl",
-          "Seo.metaSocial.platform",
-          "Seo.metaSocial.title",
-          "Seo.metaSocial.description",
-          "Seo.metaSocial.image",
-          "Seo.metaSocial.twitterCard",
-          "Seo.photo"
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaRobots",
+          "seo.canonicalUrl",
+          "seo.metaSocial.platform",
+          "seo.metaSocial.title",
+          "seo.metaSocial.description",
+          "seo.metaSocial.image",
+          "seo.metaSocial.twitterCard",
+          "seo.photo"
         ],
         "locales": [
           "en",
@@ -546,12 +573,29 @@
           "slug",
           "media",
           "summary",
-          "content.Contribution",
-          "content.stack_items",
-          "content.Name",
-          "content.webservices",
-          "content.IsCompany",
-          "status"
+          "status",
+          "detail",
+          "webservices",
+          "stack_items",
+          "Link.Title",
+          "Link.URL",
+          "Link.Info",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo",
+          "slider.title",
+          "slider.Medias"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
         ]
       },
       "conditions": []
@@ -560,14 +604,24 @@
       "action": "plugin::content-manager.explorer.delete",
       "actionParameters": {},
       "subject": "api::project.project",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "actionParameters": {},
       "subject": "api::project.project",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
       "conditions": []
     },
     {
@@ -580,12 +634,29 @@
           "slug",
           "media",
           "summary",
-          "content.Contribution",
-          "content.stack_items",
-          "content.Name",
-          "content.webservices",
-          "content.IsCompany",
-          "status"
+          "status",
+          "detail",
+          "webservices",
+          "stack_items",
+          "Link.Title",
+          "Link.URL",
+          "Link.Info",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo",
+          "slider.title",
+          "slider.Medias"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
         ]
       },
       "conditions": []
@@ -600,12 +671,29 @@
           "slug",
           "media",
           "summary",
-          "content.Contribution",
-          "content.stack_items",
-          "content.Name",
-          "content.webservices",
-          "content.IsCompany",
-          "status"
+          "status",
+          "detail",
+          "webservices",
+          "stack_items",
+          "Link.Title",
+          "Link.URL",
+          "Link.Info",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.metaRobots",
+          "Seo.canonicalUrl",
+          "Seo.metaSocial.platform",
+          "Seo.metaSocial.title",
+          "Seo.metaSocial.description",
+          "Seo.metaSocial.image",
+          "Seo.metaSocial.twitterCard",
+          "Seo.photo",
+          "slider.title",
+          "slider.Medias"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
         ]
       },
       "conditions": []
@@ -720,7 +808,12 @@
         "fields": [
           "Name",
           "Logo",
-          "Info"
+          "Info",
+          "project"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
         ]
       },
       "conditions": []
@@ -729,14 +822,24 @@
       "action": "plugin::content-manager.explorer.delete",
       "actionParameters": {},
       "subject": "api::stack-item.stack-item",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "actionParameters": {},
       "subject": "api::stack-item.stack-item",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
       "conditions": []
     },
     {
@@ -747,7 +850,12 @@
         "fields": [
           "Name",
           "Logo",
-          "Info"
+          "Info",
+          "project"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
         ]
       },
       "conditions": []
@@ -760,7 +868,12 @@
         "fields": [
           "Name",
           "Logo",
-          "Info"
+          "Info",
+          "project"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
         ]
       },
       "conditions": []
@@ -875,7 +988,8 @@
         "fields": [
           "Name",
           "Logo",
-          "Info"
+          "Info",
+          "project"
         ],
         "locales": [
           "en",
@@ -916,7 +1030,8 @@
         "fields": [
           "Name",
           "Logo",
-          "Info"
+          "Info",
+          "project"
         ],
         "locales": [
           "en",
@@ -933,7 +1048,8 @@
         "fields": [
           "Name",
           "Logo",
-          "Info"
+          "Info",
+          "project"
         ],
         "locales": [
           "en",

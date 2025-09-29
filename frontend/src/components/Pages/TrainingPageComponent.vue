@@ -1,5 +1,8 @@
 <template>
-  <SeoComponent v-if="trainings && trainings.seo?.id" :seo="trainings.seo" />
+  <SeoComponent
+    v-if="trainings && trainings.seo?.id"
+    :seo="trainings.seo"
+  />
 
   <section class="text-text py-12">
     <div class="max-w-5xl mx-auto px-2 md:px-6">

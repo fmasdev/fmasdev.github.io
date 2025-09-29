@@ -1,9 +1,18 @@
 <template>
-  <SeoComponent v-if="seoData?.id" :seo="seoData" />
+  <SeoComponent
+    v-if="seoData?.id"
+    :seo="seoData"
+  />
 
-  <section v-if="pageTitle" class="bg-background text-text py-12">
+  <section
+    v-if="pageTitle"
+    class="bg-background text-text py-12"
+  >
     <div class="max-w-5xl mx-auto px-2 md:px-6">
-      <TitleComponent :title="pageTitle" level="h2" />
+      <TitleComponent
+        :title="pageTitle"
+        level="h2"
+      />
 
       <div
         v-if="characterTrait"
@@ -36,7 +45,10 @@
         class="mb-12 p-6 rounded-2xl shadow-md bg-white border border-gray-200"
       >
         <div class="sm:items-center mb-4">
-          <TitleComponent :title="$t('skills.title.technical')" level="h3" />
+          <TitleComponent
+            :title="$t('skills.title.technical')"
+            level="h3"
+          />
           <SkillsComponent :skills="mediaSkills" />
         </div>
       </div>

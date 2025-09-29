@@ -840,7 +840,7 @@
     "metaTitle": "Compétences — Frédéric Mas",
     "metaDescription": "Expertises techniques et méthodologies : Symfony, Vue.js, React, Strapi, Node.js. Soft skills et savoir-faire pour projets web et logiciels.",
     "metaRobots": "index, follow",
-    "canonicalUrl": "/skills",
+    "canonicalUrl": "https://fmasdev.github.io/skills",
     "metaSocial": [
       {
         "id": 5,
@@ -848,9 +848,50 @@
         "title": "Compétences — Frédéric Mas",
         "description": "Expertises techniques et méthodologies : Symfony, Vue.js, React, Strapi, Node.js. Soft skills et savoir-faire pour projets web et logiciels.",
         "twitterCard": null,
-        "image": null
+        "media": {
+          "name": "og-skills.jpg",
+          "alternativeText": null,
+          "original": {
+            "path": "original/og-skills.jpg",
+            "height": 853,
+            "width": 1280,
+            "mime": "image/jpeg",
+            "size": 100.72,
+            "strapiUrl": "/uploads/og_skills_063c16a2df.jpg"
+          }
+        }
+      },
+      {
+        "id": 10,
+        "platform": "linkedin",
+        "title": "Compétences — Frédéric Mas",
+        "description": "Expertises techniques et méthodologies : Symfony, Vue.js, React, Strapi, Node.js. Soft skills et savoir-faire pour projets web et logiciels.",
+        "twitterCard": "summary",
+        "media": {
+          "name": "og-skills.jpg",
+          "alternativeText": null,
+          "original": {
+            "path": "original/og-skills.jpg",
+            "height": 853,
+            "width": 1280,
+            "mime": "image/jpeg",
+            "size": 100.72,
+            "strapiUrl": "/uploads/og_skills_063c16a2df.jpg"
+          }
+        }
       }
     ],
-    "photo": null
+    "media": {
+      "name": "og-skills.jpg",
+      "alternativeText": null,
+      "original": {
+        "path": "original/og-skills.jpg",
+        "height": 853,
+        "width": 1280,
+        "mime": "image/jpeg",
+        "size": 100.72,
+        "strapiUrl": "/uploads/og_skills_063c16a2df.jpg"
+      }
+    }
   }
 }

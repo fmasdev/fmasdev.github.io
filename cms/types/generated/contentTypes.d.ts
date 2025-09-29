@@ -1241,13 +1241,86 @@ export interface ApiProjectProject extends Schema.CollectionType {
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
-    Title: Attribute.String;
-    slug: Attribute.String & Attribute.Required & Attribute.Unique;
-    media: Attribute.Media;
-    summary: Attribute.RichText;
-    content: Attribute.Component<'experience.project', true>;
-    status: Attribute.Enumeration<['PROJECT', 'IN_PROGRESS', 'FINISH']>;
+    Title: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    slug: Attribute.String &
+      Attribute.Required &
+      Attribute.Unique &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    media: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    summary: Attribute.RichText &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    status: Attribute.Enumeration<
+      [
+        'PROJECT',
+        'TASKS_WRITING',
+        'IN_PROGRESS',
+        'CONTINUOUS_IMPROVEMENT',
+        'FINISH'
+      ]
+    > &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    detail: Attribute.RichText &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    webservices: Attribute.Relation<
+      'api::project.project',
+      'oneToMany',
+      'api::webservice.webservice'
+    >;
+    stack_items: Attribute.Relation<
+      'api::project.project',
+      'oneToMany',
+      'api::stack-item.stack-item'
+    >;
+    Link: Attribute.Component<'link.link', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Seo: Attribute.Component<'seo.seo'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    slider: Attribute.Component<'slider.slider'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1263,6 +1336,12 @@ export interface ApiProjectProject extends Schema.CollectionType {
       'admin::user'
     > &
       Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::project.project',
+      'oneToMany',
+      'api::project.project'
+    >;
+    locale: Attribute.String;
   };
 }
 
@@ -1288,13 +1367,7 @@ export interface ApiProjectListProjectList extends Schema.SingleType {
           localized: true;
         };
       }>;
-    ProjectItem: Attribute.DynamicZone<['experience.project']> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Seo: Attribute.Component<'seo.seo'> &
+    seo: Attribute.Component<'seo.seo'> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1401,10 +1474,20 @@ export interface ApiStackItemStackItem extends Schema.CollectionType {
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
     Name: Attribute.String;
     Logo: Attribute.Media;
     Info: Attribute.String;
+    project: Attribute.Relation<
+      'api::stack-item.stack-item',
+      'manyToOne',
+      'api::project.project'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1420,6 +1503,12 @@ export interface ApiStackItemStackItem extends Schema.CollectionType {
       'admin::user'
     > &
       Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::stack-item.stack-item',
+      'oneToMany',
+      'api::stack-item.stack-item'
+    >;
+    locale: Attribute.String;
   };
 }
 
@@ -1517,6 +1606,11 @@ export interface ApiWebserviceWebservice extends Schema.CollectionType {
           localized: true;
         };
       }>;
+    project: Attribute.Relation<
+      'api::webservice.webservice',
+      'manyToOne',
+      'api::project.project'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

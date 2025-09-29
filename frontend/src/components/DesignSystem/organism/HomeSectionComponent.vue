@@ -1,7 +1,13 @@
 <template>
-  <section class="py-16" :class="outerClass">
+  <section
+    class="py-16"
+    :class="outerClass"
+  >
     <div class="max-w-7xl mx-auto px-6 lg:px-12">
-      <h2 class="text-3xl font-title mb-8 text-center" :class="headingClass">
+      <h2
+        class="text-3xl font-title mb-8 text-center"
+        :class="headingClass"
+      >
         {{ component.title }}
       </h2>
 

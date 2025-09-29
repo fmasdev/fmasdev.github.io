@@ -51,30 +51,6 @@ export interface ExperienceFeedBack extends Schema.Component {
   };
 }
 
-export interface ExperiencePersonnalProject extends Schema.Component {
-  collectionName: 'components_experience_personnal_projects';
-  info: {
-    displayName: 'PersonnalProject';
-    description: '';
-  };
-  attributes: {
-    Name: Attribute.String;
-    Image: Attribute.Media;
-    IsImageLeft: Attribute.Boolean & Attribute.DefaultTo<true>;
-    Content: Attribute.RichText;
-    StackItems: Attribute.Relation<
-      'experience.personnal-project',
-      'oneToMany',
-      'api::stack-item.stack-item'
-    >;
-    webservices: Attribute.Relation<
-      'experience.personnal-project',
-      'oneToMany',
-      'api::webservice.webservice'
-    >;
-  };
-}
-
 export interface ExperienceProject extends Schema.Component {
   collectionName: 'components_experience_projects';
   info: {
@@ -199,6 +175,30 @@ export interface HomePresentation extends Schema.Component {
         },
         number
       >;
+  };
+}
+
+export interface LinkLink extends Schema.Component {
+  collectionName: 'components_link_links';
+  info: {
+    displayName: 'Link';
+  };
+  attributes: {
+    Title: Attribute.String;
+    URL: Attribute.String;
+    Info: Attribute.String;
+  };
+}
+
+export interface MediaSlider extends Schema.Component {
+  collectionName: 'components_media_sliders';
+  info: {
+    displayName: 'Slider';
+  };
+  attributes: {
+    Title: Attribute.String;
+    DisplayTitle: Attribute.Boolean;
+    medias: Attribute.Media;
   };
 }
 
@@ -369,10 +369,11 @@ export interface SliderSlider extends Schema.Component {
   collectionName: 'components_slider_sliders';
   info: {
     displayName: 'Slider';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
-    Image: Attribute.Media;
+    Medias: Attribute.Media;
   };
 }
 
@@ -394,7 +395,6 @@ declare module '@strapi/types' {
       'experience.experience-item': ExperienceExperienceItem;
       'experience.experience': ExperienceExperience;
       'experience.feed-back': ExperienceFeedBack;
-      'experience.personnal-project': ExperiencePersonnalProject;
       'experience.project': ExperienceProject;
       'home.bloc': HomeBloc;
       'home.cta': HomeCta;
@@ -402,6 +402,8 @@ declare module '@strapi/types' {
       'home.figure-card': HomeFigureCard;
       'home.home-card-block': HomeHomeCardBlock;
       'home.presentation': HomePresentation;
+      'link.link': LinkLink;
+      'media.slider': MediaSlider;
       'seo.seo': SeoSeo;
       'seo.social': SeoSocial;
       'shared.meta-social': SharedMetaSocial;

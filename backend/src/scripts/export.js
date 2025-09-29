@@ -1,15 +1,17 @@
 // src/scripts/export.js
 
-const StrapiDatasource = require('../datasources/StrapiDatasource')
-const {localesConfig, dirConfig} = require('../config/config')
-const {fileHelper} = require('../helpers/fileHelper')
-const {extractMediaUrls} = require("../helpers/extractUrls");
+import StrapiDatasource from '../datasources/StrapiDatasource.js'
+import { localesConfig, dirConfig } from '../config/config.js'
+import fileHelper  from '../helpers/fileHelper.js'
+import extractMediaUrls from "../helpers/extractUrls.js"
+import projectListBuilder  from "../helpers/projectListBuilder.js"
+import arrayHelper from "../helpers/arrayHelper.js";
 
 async function exportData() {
   console.log('## START EXPORT DATA')
   const strapi = new StrapiDatasource()
 
-  // fetch untranslated single types
+  // fetch untranslated single types without locale
   const me = await strapi.getMe()
 
   for (const [name, locale] of Object.entries(localesConfig)) {
@@ -21,6 +23,7 @@ async function exportData() {
       home,
       skills,
       training,
+      projects,
       projectList,
       footer
     ] = await Promise.all([
@@ -29,8 +32,9 @@ async function exportData() {
       await strapi.getHome(locale),
       await strapi.getSkills(locale),
       await strapi.getTrainings(locale),
+      await strapi.getProjects(locale),
       await strapi.getProjectList(locale),
-      await strapi.getFooter(locale),
+      await strapi.getFooter(locale)
     ])
 
     const finalData = {
@@ -39,13 +43,13 @@ async function exportData() {
       home,
       skills,
       training,
-      projectList,
+      projects,
+      projectList: projectListBuilder(projectList, projects),
       footer,
       me,
     }
 
     console.log(`## Exported data of locale ${name}`)
-
 
     // fileHelper.downloadFile
     Object.keys(finalData).forEach((key) => {
@@ -58,7 +62,8 @@ async function exportData() {
     console.log(`## Saved data of locale ${name}`)
     console.log(`## Extracting media URLs`)
 
-    const medias = extractMediaUrls(finalData)
+    const mediasTmps = extractMediaUrls(finalData)
+    const medias = arrayHelper.removeDuplicatesEntries(mediasTmps, 'name')
 
     console.log(`Found ${medias.length} media URLs`)
 
