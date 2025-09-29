@@ -1,36 +1,45 @@
 # fmasdev.github.io
 
 ## CMS
+
 ### Start Strapi app dev
-`````shell
+
+```shell
    npm run develop
-`````
+```
 
 ## Backend
+
 Backend request Strapi for build one json by frontend page.
 
 Commands in backend directory
 
 ### Build jsons from dev mode
-````shell
+
+```shell
    cd backend && npm run dev:export
-````
+```
 
 ### Build jsons
-````shell
+
+```shell
     cd backend && npm run export
-````
+```
 
 ## Copy jsons from backend to frontend
+
 Copy manualy jsons or
-````shell
+
+```shell
    build_content.sh
-````
+```
 
 ## Deploy
+
 ### Build du frontend
-````shell
+
+```shell
     cd frontend
     npm run build
     npm run deploy
-````
+```
