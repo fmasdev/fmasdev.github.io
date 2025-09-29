@@ -1,5 +1,6 @@
 <template>
-  <RouterLink
+  <component
+    :is="isExternalLink ? 'a' : 'RouterLink'"
     :to="linkTo"
     :class="[
       'inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium shadow-md transition transform hover:-translate-y-0.5',
@@ -20,16 +21,22 @@
       :is="Icon"
       :class="['w-4 h-4', textColor]"
     />
-  </RouterLink>
+  </component>
 </template>
 
 <script setup lang="ts">
-import {computed} from 'vue'
+import { computed } from 'vue'
 
 const props = defineProps<{
   linkTo: string
   title: string
-  background?: 'accent' | 'primary' | 'primary-light'
+  isExternalLink?: {
+    type: boolean
+    required: false
+    default: false
+  }
+  target?: string
+  background?: string
   textColor?: string
   icon?: {
     position: 'right' | 'left'
@@ -48,7 +55,7 @@ const textColor = computed(() => {
     case 'accent':
       return `text-accent`
     case 'primaryLight':
-      return  'text-primary-light'
+      return 'text-primary-light'
     case 'secondary':
       return 'text-secondary'
     default:

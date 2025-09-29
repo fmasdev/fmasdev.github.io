@@ -1,7 +1,7 @@
 // src/types/content/HomeType
 
 import type { MediaType } from '@/types/content/MediaType.js'
-import type {SeoType} from "@/types/content/SeoType.ts";
+import type { SeoType } from '@/types/content/SeoType.ts'
 
 export interface HomeType {
   id: number

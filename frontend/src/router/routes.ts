@@ -8,7 +8,7 @@ import ExperiencePageComponent from '@/components/Pages/ExperiencePageComponent.
 import MainLayout from '../layouts/MainLayout.vue'
 import FeedBackPageComponent from '@/components/Pages/FeedBackPageComponent.vue'
 import PojectsPageComponent from '@/components/Pages/PojectsPageComponent.vue'
-import ProjectDetail from '@/components/Pages/ProjectDetail.vue'
+import ProjectDetailPageComponent from '@/components/Pages/ProjectDetailPageComponent.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -49,7 +49,8 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/project/:slug',
     name: 'project-detail',
-    component: ProjectDetail,
+    component: MainLayout,
+    children: [{ path: '', component: ProjectDetailPageComponent }],
     props: true,
   },
 ]
