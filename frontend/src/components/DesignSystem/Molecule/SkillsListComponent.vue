@@ -1,10 +1,16 @@
 <template>
   <div>
-    <TitleComponent :title="title" level="h4" />
+    <TitleComponent
+      :title="title"
+      level="h4"
+    />
     <div
       class="flex flex-col md:flex-row flex-wrap items-center justify-left mb-10"
     >
-      <div v-for="skill in skillsList" :key="skill.id">
+      <div
+        v-for="skill in skillsList"
+        :key="skill.id"
+      >
         <!--        <div class="flex flex-row justify-between">-->
         <MediaComponent
           v-if="skill?.media"

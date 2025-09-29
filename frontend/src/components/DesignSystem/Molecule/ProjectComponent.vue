@@ -22,19 +22,24 @@
       :list="stackList"
     />
 
-    <!--    &lt;!&ndash; webservices  &ndash;&gt;-->
-    <!--    <ListMediaComponent-->
-    <!--      v-if="webservicesList.length && isWebservicesListMedia"-->
-    <!--      :title="{title: $t('experiences.experience.project.webservices'), level: 'h4'}"-->
-    <!--      :list="webservicesList"-->
-    <!--      classes="mt-4"-->
-    <!--    />-->
-    <!--    <ListStringComponent-->
-    <!--      v-else-if="webservicesList.length"-->
-    <!--      :title="{title: $t('experiences.experience.project.webservices'), level: 'h4'}"-->
-    <!--      :list="webservicesList"-->
-    <!--      classes="mt-4"-->
-    <!--    />-->
+    <ListMediaComponent
+      v-if="webservicesList.length && isWebservicesListMedia"
+      :title="{
+        title: $t('experiences.experience.project.webservices'),
+        level: 'h4',
+      }"
+      :list="webservicesList"
+      classes="mt-4"
+    />
+    <ListStringComponent
+      v-else-if="webservicesList.length"
+      :title="{
+        title: $t('experiences.experience.project.webservices'),
+        level: 'h4',
+      }"
+      :list="webservicesList"
+      classes="mt-4"
+    />
   </div>
 </template>
 
@@ -55,6 +60,7 @@ const props = defineProps<{
 
 // stack items
 const stackList = ref()
+
 const isStackListMedia =
   props.project?.stack_items.every((item: StackType) => item.media?.name) &&
   currentDeviceType.value !== 'mobile'

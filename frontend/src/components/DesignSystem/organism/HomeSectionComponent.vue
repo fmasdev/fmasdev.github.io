@@ -1,15 +1,23 @@
 <template>
-  <section class="py-16 " :class="outerClass">
+  <section
+    class="py-16"
+    :class="outerClass"
+  >
     <div class="max-w-7xl mx-auto px-6 lg:px-12">
-      <h2 class="text-3xl font-title mb-8 text-center" :class="headingClass">
+      <h2
+        class="text-3xl font-title mb-8 text-center"
+        :class="headingClass"
+      >
         {{ component.title }}
       </h2>
 
-      <div class="grid grid-cols-1"
-           :class="[
-             colAndGap.col === 4 ? 'md:grid-cols-4' : 'md:grid-cols-3',
-             colAndGap.gap === 6 ? 'gap-6' : 'gap-4'
-           ]">
+      <div
+        class="grid grid-cols-1"
+        :class="[
+          colAndGap.col === 4 ? 'md:grid-cols-4' : 'md:grid-cols-3',
+          colAndGap.gap === 6 ? 'gap-6' : 'gap-4',
+        ]"
+      >
         <CardComponent
           v-if="component.cards.length"
           v-for="card in cards"
@@ -23,12 +31,12 @@
 </template>
 
 <script setup lang="ts">
-import {computed, ref} from 'vue'
+import { computed, ref } from 'vue'
 import type {
   HomeCardType,
   HomeCardUnion,
   HomeComponentUnion,
-  HomeFigureCardType
+  HomeFigureCardType,
 } from '@/types/content/HomeType.js'
 import CardComponent from '@/components/DesignSystem/Molecule/CardComponent.vue'
 
@@ -38,13 +46,13 @@ const props = defineProps<{
 
 const componentType = ref<'CardBloc' | 'FigureCardBloc'>()
 
-const cards: HomeCardUnion[] = props.component.cards.map(item => {
+const cards: HomeCardUnion[] = props.component.cards.map((item) => {
   if (item.hasOwnProperty('media')) {
     componentType.value = 'FigureCardBloc'
-    return {...item, kind: 'FigureCard'} as HomeFigureCardType
+    return { ...item, kind: 'FigureCard' } as HomeFigureCardType
   } else {
     componentType.value = 'CardBloc'
-    return {...item, kind: 'Card'} as HomeCardType
+    return { ...item, kind: 'Card' } as HomeCardType
   }
 })
 
@@ -59,7 +67,6 @@ const resolveCardType = (componentType: string) => {
   }
 }
 
-
 const calcColAndGap = (cardNumber: number) => {
   return {
     col: cardNumber,
@@ -71,13 +78,13 @@ const colAndGap = calcColAndGap(props.component.cards.length)
 const colors =
   props.component.background === 'default'
     ? {
-      bg: 'background',
-      textColor: 'primary',
-    }
+        bg: 'background',
+        textColor: 'primary',
+      }
     : {
-      bg: props.component.background,
-      textColor: 'white',
-    }
+        bg: props.component.background,
+        textColor: 'white',
+      }
 
 const headingClass = computed(() => [`text-${colors.textColor}`])
 const outerClass = computed(() => [`bg-${colors.bg}`])

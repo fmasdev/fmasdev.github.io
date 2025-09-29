@@ -4,10 +4,13 @@
       class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4"
     >
       <div>
-        <TitleComponent :title="experience?.title" level="h3" />
+        <TitleComponent
+          :title="experience?.title"
+          level="h3"
+        />
         <p class="text-sm text-gray-600">
           {{ experience.company }}
-          <span v-if="experience?.region"> • {{ experience.region }} </span>
+          <span v-if="experience?.region">• {{ experience.region }}</span>
           <span
             v-if="jobMode"
             class="ml-2 px-2 py-0.5 rounded-full text-xs font-medium bg-primaryLight text-primary"
@@ -71,6 +74,12 @@ const startDate = dateHelper.dateStringFormatToString(props.experience.start)
 const stopDate = dateHelper.dateStringFormatToString(props.experience.stop)
 
 let jobMode: string | null = null
+
+if (props.experience.__component === 'experience.experience-item') {
+  props.experience.kind = 'ExperienceItem'
+} else if (props.experience.__component === 'experience.experience') {
+  props.experience.kind = 'Experience'
+}
 
 if (props.experience.kind === 'ExperienceItem') {
   jobMode = JobModeEnum[props.experience.remote]

@@ -2,29 +2,43 @@
   <footer class="bg-primary text-white py-10">
     <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-3 gap-8">
       <div class="space-y-2 text-left">
-        <TitleComponent :title="$t('footer.about')" level="h3"/>
+        <TitleComponent
+          :title="$t('footer.about')"
+          level="h3"
+        />
         <p class="text-sm">
-          Frédéric Mas – {{ $t('common.job') }}<br/>
+          Frédéric Mas – {{ $t('common.job') }}
+          <br />
           CV & portfolio
         </p>
       </div>
 
       <div class="space-y-2 text-left">
-        <TitleComponent :title="$t('footer.contact')" level="h3"/>
+        <TitleComponent
+          :title="$t('footer.contact')"
+          level="h3"
+        />
         <p>
-          <a :href="`mailto:${meContent.email}`" class="text-sm hover:text-accent transition-colors footer-link">
+          <a
+            :href="`mailto:${meContent.email}`"
+            class="text-sm hover:text-accent transition-colors footer-link"
+          >
             {{ meContent.email }}
           </a>
         </p>
         <p>
-          <a :href="`tel:${phoneNumberWithoutSpaces}`" class="text-sm hover:text-accent transition-colors footer-link">
+          <a
+            :href="`tel:${phoneNumberWithoutSpaces}`"
+            class="text-sm hover:text-accent transition-colors footer-link"
+          >
             {{ meContent.phone }}
           </a>
         </p>
         <p>
-          <a href="/pdf/CV-Frédéric_Mas.pdf"
-             target="_blank"
-             class="hover:text-accent transition-colors footer-link"
+          <a
+            href="/pdf/CV-Frédéric_Mas.pdf"
+            target="_blank"
+            class="hover:text-accent transition-colors footer-link"
           >
             {{ $t('footer.downloadCv') }}
           </a>
@@ -32,7 +46,10 @@
       </div>
 
       <div class="space-y-2 text-left">
-        <TitleComponent :title="$t('footer.followMe')" level="h3"/>
+        <TitleComponent
+          :title="$t('footer.followMe')"
+          level="h3"
+        />
         <div class="space-x-4">
           <a
             v-for="social in footerContent.socials"
@@ -52,9 +69,9 @@
 </template>
 
 <script setup lang="ts">
-import {computed} from 'vue'
-import type {MeAttributesType} from '@/types/content/MeType.js'
-import type {FooterType} from '@/types/content/FooterType.js'
+import { computed } from 'vue'
+import type { MeAttributesType } from '@/types/content/MeType.js'
+import type { FooterType } from '@/types/content/FooterType.js'
 import TitleComponent from '@/components/DesignSystem/Atoms/TitleComponent.vue'
 
 const props = defineProps<{

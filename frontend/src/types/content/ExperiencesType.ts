@@ -14,6 +14,7 @@ export interface ExperiencesType {
 export interface ExperienceType {
   id: number
   kind: 'ExperienceItem'
+  __component: string
   title: string
   start: string
   stop: string
@@ -28,6 +29,7 @@ export interface ExperienceType {
 export interface ExperienceExperienceType {
   id: number
   kind: 'Experience'
+  __component: string
   title: string
   company: string
   city: string

@@ -1,24 +1,31 @@
 <template>
-
-  <div v-if="isCard(card)"
-       class="p-6 rounded-xl"
-       :class="cardClass">
+  <div
+    v-if="isCard(card)"
+    class="p-6 rounded-xl"
+    :class="cardClass"
+  >
     <div class="text-3xl mb-2">
       {{ card.icon }}
     </div>
     <div
       class="font-semibold text-lg"
-      :class="titleClass">
+      :class="titleClass"
+    >
       {{ card.title }}
     </div>
-    <p class="card-text text-sm mt-2"
-       :class="textClass">
+    <p
+      class="card-text text-sm mt-2"
+      :class="textClass"
+    >
       {{ card.text }}
     </p>
   </div>
 
   <div v-if="isFigureCard(card)">
-    <figure v-if="card.caption" class="overflow-hidden rounded-xl shadow-md">
+    <figure
+      v-if="card.caption"
+      class="overflow-hidden rounded-xl shadow-md"
+    >
       <img
         :src="`/media/${card.media?.original.path}`"
         :alt="card.media?.name"
@@ -78,7 +85,7 @@ const cardClass = computed(() => {
 
 const titleClass = computed(() =>
   isCard(props.card) && props.card.textColor === 'ternary'
-    ? ' !text-ternary'
+    ? ' !text-white/80'
     : ' text-secondary'
 )
 

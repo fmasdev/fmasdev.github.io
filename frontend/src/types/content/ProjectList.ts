@@ -38,7 +38,7 @@ export interface PersonalProjectType {
   }
   slider?: {
     id: number
-    medias: MediaType[] 
+    medias: MediaType[]
   }
   seo: SeoType
   link: Link[]
@@ -61,6 +61,6 @@ export type ProjectListStringType = {
   list: string[]
 }
 
-export type PersonalProjectListType = 
+export type PersonalProjectListType =
   | ProjectListMediaType
   | ProjectListStringType

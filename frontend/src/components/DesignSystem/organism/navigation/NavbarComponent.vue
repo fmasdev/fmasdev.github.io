@@ -42,7 +42,10 @@
       </button>
     </div>
     <!-- todo multilangue btn  -->
-    <div v-if="open" class="mt-2 flex flex-col space-y-2">
+    <div
+      v-if="open"
+      class="mt-2 flex flex-col space-y-2"
+    >
       <router-link
         v-for="link in props.links"
         :key="link.path"

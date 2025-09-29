@@ -4,7 +4,10 @@
       class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4"
     >
       <div>
-        <TitleComponent :title="training?.title" level="h3" />
+        <TitleComponent
+          :title="training?.title"
+          level="h3"
+        />
 
         <div class="text-sm text-gray-600 flex items-center gap-2">
           <span>{{ startDate }}</span>

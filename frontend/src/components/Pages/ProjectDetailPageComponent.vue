@@ -40,7 +40,6 @@
       />
     </section>
 
-  
     <section class="mb-12 text-center max-w-3xl mx-auto">
       <!-- Stack list -->
       <div
@@ -150,13 +149,13 @@ const getStatus = (projectStatus: string): string => {
   return ''
 }
 
-const getList = (list: StrapiListItemType[]):PersonalProjectListType => {
+const getList = (list: StrapiListItemType[]): PersonalProjectListType => {
   const isListMedia =
     list.every((item) => item.attributes.media?.name) &&
     currentDeviceType.value !== 'mobile'
 
   if (isListMedia) {
-    console.log(list.map(item=> item.attributes))
+    console.log(list.map((item) => item.attributes))
     return {
       list: list.map((item) => item.attributes),
       kind: 'listMedia',
@@ -168,5 +167,4 @@ const getList = (list: StrapiListItemType[]):PersonalProjectListType => {
     kind: 'listString',
   }
 }
-
 </script>

@@ -1,5 +1,8 @@
 <template>
-  <SeoComponent v-if="feedBacks?.seo?.id" :seo="feedBacks.seo" />
+  <SeoComponent
+    v-if="feedBacks?.seo?.id"
+    :seo="feedBacks.seo"
+  />
 
   <section class="bg-background text-text py-12">
     <div class="max-w-5xl mx-auto px-2 md:px-6">
