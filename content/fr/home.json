@@ -115,7 +115,7 @@
       "cards": [
         {
           "id": 21,
-          "icon": "🎯",
+          "icon": null,
           "textCenter": true,
           "titleColor": "ternary",
           "title": "Rigueur",
@@ -124,7 +124,7 @@
         },
         {
           "id": 22,
-          "icon": "🌱",
+          "icon": null,
           "textCenter": true,
           "titleColor": "ternary",
           "title": "Curiosité",
@@ -133,7 +133,7 @@
         },
         {
           "id": 23,
-          "icon": "🤝",
+          "icon": null,
           "textCenter": true,
           "titleColor": "ternary",
           "title": "Esprit d'équipe",
@@ -142,7 +142,7 @@
         },
         {
           "id": 24,
-          "icon": "🔧",
+          "icon": null,
           "textCenter": true,
           "titleColor": "ternary",
           "title": "Créativité",

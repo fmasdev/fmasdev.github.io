@@ -1,86 +1,83 @@
 {
   "id": 1,
-  "title": "Mes projets",
+  "title": "Liste de mes projets",
   "locale": "fr-FR",
-  "projectItem": [
-    {
-      "__component": "experience.project",
-      "id": 58,
-      "contribution": null,
-      "name": "CV",
-      "isCompany": false,
-      "stack_items": [
-        {
-          "id": 9,
-          "name": "Strapi",
-          "info": "CMS headless open-source basé sur Node.js, offrant une API flexible et une interface d’administration moderne en React.",
-          "media": {
-            "name": "strapi.jpg",
-            "alternativeText": "Strapi logo",
-            "original": {
-              "path": "original/strapi.jpg",
-              "height": 280,
-              "width": 280,
-              "mime": "image/jpeg",
-              "size": 7.58,
-              "strapiUrl": "/uploads/strapi_c6550c02fb.jpg"
-            }
-          }
-        },
-        {
-          "id": 4,
-          "name": "ExpressJs",
-          "info": "Framework minimaliste pour Node.js, spécialisé dans la création d’APIs REST et de middlewares performants.",
-          "media": {
-            "name": "expressjs.png",
-            "alternativeText": "Exoress js logo",
-            "original": {
-              "path": "original/expressjs.png",
-              "height": 499,
-              "width": 1000,
-              "mime": "image/png",
-              "size": 16.56,
-              "strapiUrl": "/uploads/expressjs_a01a265d7b.png"
-            }
-          }
-        },
-        {
-          "id": 11,
-          "name": "VueJs",
-          "info": "Framework progressif JavaScript orienté composants, facilitant le développement d’interfaces modernes.",
-          "media": {
-            "name": "vueJs.jpg",
-            "alternativeText": "Vue js logo",
-            "original": {
-              "path": "original/vueJs.jpg",
-              "height": 250,
-              "width": 250,
-              "mime": "image/jpeg",
-              "size": 6.33,
-              "strapiUrl": "/uploads/vue_Js_b140cc7b4a.jpg"
-            }
-          }
-        },
-        {
-          "id": 26,
-          "name": "Tailwind CSS",
-          "info": "Un framework CSS utilitaire rempli de classes qui peuvent être composées pour créer n'importe quelle conception.",
-          "media": {
-            "name": "tailwind.jpg",
-            "alternativeText": "Tailwind css logo",
-            "original": {
-              "path": "original/tailwind.jpg",
-              "height": 102,
-              "width": 318,
-              "mime": "image/jpeg",
-              "size": 3.81,
-              "strapiUrl": "/uploads/tailwind_f1bc525407.jpg"
-            }
+  "seo": {
+    "id": 12,
+    "metaTitle": "Projets – Portfolio Media Management et CV",
+    "metaDescription": "Découvrez mes projets passés, en cours et à venir démontrant mes compétences en développement web.",
+    "metaRobots": "index, follow",
+    "canonicalUrl": "https://fmasdev.github.io/project-list",
+    "metaSocial": [
+      {
+        "id": 8,
+        "platform": "linkedin",
+        "title": "Projets – Portfolio Media Management et CV",
+        "description": "Découvrez mes projets passés, en cours et à venir démontrant mes compétences en développement web.",
+        "twitterCard": null,
+        "media": {
+          "name": "cv-project-list-page-screenshot.png",
+          "alternativeText": "Page projet liste screen shot",
+          "original": {
+            "path": "original/cv-project-list-page-screenshot.png",
+            "height": 927,
+            "width": 1897,
+            "mime": "image/png",
+            "size": 78.24,
+            "strapiUrl": "/uploads/cv_project_list_page_screenshot_db934d80ea.png"
           }
         }
-      ],
-      "webservices": []
+      }
+    ],
+    "media": {
+      "name": "cv-project-list-page-screenshot.png",
+      "alternativeText": "Page projet liste screen shot",
+      "original": {
+        "path": "original/cv-project-list-page-screenshot.png",
+        "height": 927,
+        "width": 1897,
+        "mime": "image/png",
+        "size": 78.24,
+        "strapiUrl": "/uploads/cv_project_list_page_screenshot_db934d80ea.png"
+      }
     }
-  ],
-  "seo": null
+  },
+  "projects": [
+    {
+      "title": "Création de mon CV / portfolio",
+      "slug": "cv-portfolio",
+      "summary": "Création de mon CV / portfolio afin de présenter mon parcours et mes compétences de manière claire et moderne. Ce projet me permet de mettre en pratique une stack technique que je maîtrise, tout en offrant une démonstration concrète de mon savoir-faire en matière de développement web et d’intégration. L’objectif est de disposer d’un support professionnel qui reflète à la fois mes compétences techniques et ma capacité à concevoir une interface soignée et fonctionnelle.",
+      "status": "IN_PROGRESS",
+      "media": {
+        "name": "capture_cv.png",
+        "alternativeText": null,
+        "original": {
+          "path": "original/capture_cv.png",
+          "height": 918,
+          "width": 1893,
+          "mime": "image/png",
+          "size": 102.86,
+          "strapiUrl": "/uploads/capture_cv_6e18636c45.png"
+        }
+      }
+    },
+    {
+      "title": "Media management",
+      "slug": "medias-management",
+      "summary": "Application de gestion multimédia permettant de récupérer les photos et vidéos depuis Google Photos, de synchroniser un media center, un disque dur externe et un réplicat compressé (bz2) avec sauvegarde sur plusieurs clouds. Elle inclut également un Kanban pour le suivi des tâches.",
+      "status": "TASKS_WRITING",
+      "media": {
+        "name": "og-experience.jpg",
+        "alternativeText": "project not realized",
+        "original": {
+          "path": "original/og-experience.jpg",
+          "height": 853,
+          "width": 1280,
+          "mime": "image/jpeg",
+          "size": 93.25,
+          "strapiUrl": "/uploads/og_experience_d70ee23bd4.jpg"
+        }
+      }
+    }
+  ]
 }
