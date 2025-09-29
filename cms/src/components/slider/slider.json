@@ -1,22 +1,24 @@
 {
   "collectionName": "components_slider_sliders",
   "info": {
-    "displayName": "Slider"
+    "displayName": "Slider",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string"
     },
-    "Image": {
+    "Medias": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }

@@ -369,10 +369,11 @@ export interface SliderSlider extends Schema.Component {
   collectionName: 'components_slider_sliders';
   info: {
     displayName: 'Slider';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
-    Image: Attribute.Media;
+    Medias: Attribute.Media;
   };
 }
 

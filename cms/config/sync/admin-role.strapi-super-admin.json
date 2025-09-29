@@ -591,7 +591,7 @@
           "Seo.metaSocial.twitterCard",
           "Seo.photo",
           "slider.title",
-          "slider.Image"
+          "slider.Medias"
         ],
         "locales": [
           "en",
@@ -652,7 +652,7 @@
           "Seo.metaSocial.twitterCard",
           "Seo.photo",
           "slider.title",
-          "slider.Image"
+          "slider.Medias"
         ],
         "locales": [
           "en",
@@ -689,7 +689,7 @@
           "Seo.metaSocial.twitterCard",
           "Seo.photo",
           "slider.title",
-          "slider.Image"
+          "slider.Medias"
         ],
         "locales": [
           "en",
@@ -810,6 +810,10 @@
           "Logo",
           "Info",
           "project"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
         ]
       },
       "conditions": []
@@ -818,14 +822,24 @@
       "action": "plugin::content-manager.explorer.delete",
       "actionParameters": {},
       "subject": "api::stack-item.stack-item",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "actionParameters": {},
       "subject": "api::stack-item.stack-item",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "fr-FR"
+        ]
+      },
       "conditions": []
     },
     {
@@ -838,6 +852,10 @@
           "Logo",
           "Info",
           "project"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
         ]
       },
       "conditions": []
@@ -852,6 +870,10 @@
           "Logo",
           "Info",
           "project"
+        ],
+        "locales": [
+          "en",
+          "fr-FR"
         ]
       },
       "conditions": []
